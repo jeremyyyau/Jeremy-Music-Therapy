@@ -63,16 +63,24 @@ function Index() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   return (
-    <div className="relative min-h-screen bg-background">
+    <div className="relative min-h-screen">
       {/* Blended instruments background */}
       <div
         aria-hidden
-        className="pointer-events-none fixed inset-0 -z-10 bg-cover bg-center bg-no-repeat opacity-[0.08]"
+        className="pointer-events-none fixed inset-0 -z-20 bg-background"
+      />
+      <div
+        aria-hidden
+        className="pointer-events-none fixed inset-0 -z-10 bg-cover bg-center bg-no-repeat opacity-30 mix-blend-multiply"
         style={{ backgroundImage: `url(${instrumentsBg.url})` }}
       />
       <div
         aria-hidden
-        className="pointer-events-none fixed inset-0 -z-10 bg-gradient-to-b from-background/70 via-background/50 to-background/80"
+        className="pointer-events-none fixed inset-0 -z-10 bg-gradient-to-b from-background/60 via-background/40 to-background/70"
+      />
+      <div
+        aria-hidden
+        className="pointer-events-none fixed inset-0 -z-10 bg-primary/5"
       />
       <header className="sticky top-0 z-50 w-full border-b border-border/40 bg-background/70 backdrop-blur-md">
         <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4">
