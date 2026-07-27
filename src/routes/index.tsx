@@ -74,7 +74,7 @@ function Index() {
         aria-hidden
         className="pointer-events-none fixed inset-0 -z-10 bg-gradient-to-b from-background/70 via-background/50 to-background/80"
       />
-      <header className="sticky top-0 z-50 w-full border-b border-border/40 bg-background/80 backdrop-blur-md">
+      <header className="sticky top-0 z-50 w-full border-b border-border/40 bg-background/70 backdrop-blur-md">
         <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4">
           <a href="#" className="flex items-center gap-2">
             <Music className="h-6 w-6 text-primary" />
@@ -173,7 +173,7 @@ function Index() {
         </section>
 
         {/* About Section */}
-        <section id="about" className="bg-secondary/30 py-20 lg:py-28">
+        <section id="about" className="bg-secondary/40 backdrop-blur-sm py-20 lg:py-28">
           <div className="mx-auto grid max-w-7xl grid-cols-1 items-center gap-12 px-6 lg:grid-cols-2">
             <div className="relative overflow-hidden rounded-3xl shadow-xl">
               <img
@@ -273,7 +273,7 @@ function Index() {
         </section>
 
         {/* Services */}
-        <section id="services" className="bg-secondary/30 py-20 lg:py-28">
+        <section id="services" className="bg-secondary/40 backdrop-blur-sm py-20 lg:py-28">
           <div className="mx-auto max-w-7xl px-6">
             <div className="mb-16 max-w-3xl">
               <p className="mb-3 text-sm font-medium uppercase tracking-widest text-primary">
@@ -387,7 +387,7 @@ function Index() {
       </main>
 
       {/* Footer */}
-      <footer className="border-t border-border/60 bg-secondary/30 py-12">
+      <footer className="border-t border-border/60 bg-secondary/40 backdrop-blur-sm py-12">
         <div className="mx-auto max-w-7xl px-6">
           <div className="flex flex-col items-center justify-between gap-6 md:flex-row">
             <div className="flex items-center gap-2">
