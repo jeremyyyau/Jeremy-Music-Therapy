@@ -21,6 +21,7 @@ import { contactFormSchema, type ContactFormValues } from "@/lib/contact.schema"
 import { submitContactForm } from "@/lib/contact.functions";
 import heroImage from "@/assets/hero-music-therapy.jpg";
 import aboutImage from "@/assets/about-therapist.jpg";
+import instrumentsBg from "@/assets/instruments-bg.jpg.asset.json";
 
 export const Route = createFileRoute("/")({
   component: Index,
