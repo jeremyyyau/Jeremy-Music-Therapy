@@ -29,7 +29,7 @@ function createServerSupabaseClient() {
 }
 
 export const submitContactForm = createServerFn({ method: "POST" })
-  .inputValidator((data: ContactFormValues) => {
+  .validator((data: ContactFormValues) => {
     const parsed = contactFormSchema.safeParse(data);
     if (!parsed.success) {
       throw new Error(parsed.error.errors.map((e) => e.message).join(" "));
