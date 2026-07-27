@@ -1,0 +1,1 @@
+DROP POLICY IF EXISTS "Service role can manage contact submissions" ON public.contact_submissions;
