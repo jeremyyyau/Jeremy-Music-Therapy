@@ -22,6 +22,7 @@ import { submitContactForm } from "@/lib/contact.functions";
 import heroImage from "@/assets/hero-music-therapy.jpg";
 import aboutImage from "@/assets/about-therapist.jpg";
 import { SitePage } from "@/components/site-chrome";
+import { Reveal } from "@/components/reveal";
 
 export const Route = createFileRoute("/")({
   component: Index,
