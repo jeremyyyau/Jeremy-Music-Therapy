@@ -29,28 +29,30 @@ function AboutPage() {
     <SitePage>
       <section className="py-20 lg:py-28">
         <div className="mx-auto max-w-4xl px-6">
-          <p className="mb-3 text-sm font-medium uppercase tracking-widest text-primary">
-            About Me
-          </p>
-          <h1 className="font-heading text-4xl font-semibold text-foreground md:text-5xl">
-            The person behind the music.
-          </h1>
-          <p className="mt-6 text-lg leading-relaxed text-muted-foreground">
-            I'm a board-certified music therapist (MT-BC) who believes every person carries a
-            song worth listening to. My work is about creating the safety and space for that
-            song to be heard — by you, and by the people around you.
-          </p>
+          <Reveal>
+            <p className="mb-3 text-sm font-medium uppercase tracking-widest text-primary">
+              About Me
+            </p>
+            <h1 className="font-heading text-4xl font-semibold text-foreground md:text-5xl">
+              The person behind the music.
+            </h1>
+            <p className="mt-6 text-lg leading-relaxed text-muted-foreground">
+              I'm a board-certified music therapist (MT-BC) who believes every person carries a
+              song worth listening to. My work is about creating the safety and space for that
+              song to be heard — by you, and by the people around you.
+            </p>
+          </Reveal>
 
-          <div className="mt-12 overflow-hidden rounded-3xl shadow-xl">
+          <Reveal direction="scale" delay={150} className="mt-12 overflow-hidden rounded-3xl shadow-xl">
             <img
               src={aboutImage}
               alt="Hands holding a wooden ukulele"
               className="aspect-[16/9] w-full object-cover"
             />
-          </div>
+          </Reveal>
 
           <div className="mt-14 space-y-10">
-            <div>
+            <Reveal>
               <h2 className="font-heading text-2xl font-semibold text-foreground md:text-3xl">
                 My path to music therapy
               </h2>
@@ -67,9 +69,9 @@ function AboutPage() {
                   in trauma-informed care, neurologic music therapy, and family-centered practice.
                 </p>
               </div>
-            </div>
+            </Reveal>
 
-            <div>
+            <Reveal>
               <h2 className="font-heading text-2xl font-semibold text-foreground md:text-3xl">
                 How I work
               </h2>
@@ -86,9 +88,9 @@ function AboutPage() {
                   experience — just a willingness to show up and try.
                 </p>
               </div>
-            </div>
+            </Reveal>
 
-            <div>
+            <Reveal>
               <h2 className="font-heading text-2xl font-semibold text-foreground md:text-3xl">
                 Credentials & training
               </h2>
@@ -99,9 +101,9 @@ function AboutPage() {
                 <li>• Continuing education in trauma-informed care and NMT</li>
                 <li>• Member of the American Music Therapy Association</li>
               </ul>
-            </div>
+            </Reveal>
 
-            <div>
+            <Reveal>
               <h2 className="font-heading text-2xl font-semibold text-foreground md:text-3xl">
                 Populations I love working with
               </h2>
@@ -113,17 +115,17 @@ function AboutPage() {
                   loved one, please reach out — I'm happy to talk it through.
                 </p>
               </div>
-            </div>
+            </Reveal>
           </div>
 
-          <div className="mt-14 flex flex-wrap gap-4">
+          <Reveal className="mt-14 flex flex-wrap gap-4">
             <Button asChild size="lg" className="rounded-full px-8">
               <Link to="/" hash="contact">Book a Free Consultation</Link>
             </Button>
             <Button asChild variant="outline" size="lg" className="rounded-full px-8">
               <Link to="/services">See Services</Link>
             </Button>
-          </div>
+          </Reveal>
         </div>
       </section>
     </SitePage>
