@@ -96,7 +96,7 @@ function Index() {
       {/* About Section */}
       <section id="about" className="bg-secondary/40 backdrop-blur-sm py-20 lg:py-28">
         <div className="mx-auto grid max-w-7xl grid-cols-1 items-center gap-12 px-6 lg:grid-cols-2">
-          <div className="relative overflow-hidden rounded-3xl shadow-xl">
+          <Reveal direction="left" className="relative overflow-hidden rounded-3xl shadow-xl">
             <img
               src={aboutImage}
               alt="Close-up of hands holding a wooden ukulele, representing a personal, gentle approach to music therapy"
@@ -105,8 +105,8 @@ function Index() {
               loading="lazy"
               className="aspect-[4/5] w-full object-cover"
             />
-          </div>
-          <div>
+          </Reveal>
+          <Reveal direction="right" delay={120}>
             <p className="mb-3 text-sm font-medium uppercase tracking-widest text-primary">
               About Me
             </p>
@@ -136,7 +136,7 @@ function Index() {
                 <Link to="/about">Read my full story</Link>
               </Button>
             </div>
-          </div>
+          </Reveal>
         </div>
       </section>
 
