@@ -2,6 +2,7 @@ import { createFileRoute, Link } from "@tanstack/react-router";
 import { Heart, Users, Calendar, Brain, Sparkles, Music } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { SitePage } from "@/components/site-chrome";
+import { Reveal } from "@/components/reveal";
 
 export const Route = createFileRoute("/music-therapy")({
   component: MusicTherapyPage,
