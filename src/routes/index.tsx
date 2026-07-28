@@ -59,7 +59,7 @@ function Index() {
       {/* Hero Section */}
       <section className="relative overflow-hidden">
         <div className="mx-auto grid min-h-[calc(100vh-72px)] max-w-7xl grid-cols-1 items-center gap-12 px-6 py-16 lg:grid-cols-2 lg:py-24">
-          <div className="order-2 flex flex-col justify-center lg:order-1">
+          <Reveal direction="left" className="order-2 flex flex-col justify-center lg:order-1">
             <p className="mb-4 text-sm font-medium uppercase tracking-widest text-primary">
               Board-Certified Music Therapist
             </p>
@@ -78,8 +78,8 @@ function Index() {
                 <a href="#about">Learn More</a>
               </Button>
             </div>
-          </div>
-          <div className="order-1 lg:order-2">
+          </Reveal>
+          <Reveal direction="right" delay={150} className="order-1 lg:order-2">
             <div className="relative overflow-hidden rounded-3xl shadow-2xl">
               <img
                 src={heroImage}
@@ -89,7 +89,7 @@ function Index() {
                 className="aspect-[4/3] w-full object-cover"
               />
             </div>
-          </div>
+          </Reveal>
         </div>
       </section>
 
