@@ -278,7 +278,7 @@ function Index() {
       {/* Contact Section */}
       <section id="contact" className="py-20 lg:py-28">
         <div className="mx-auto grid max-w-7xl grid-cols-1 gap-12 px-6 lg:grid-cols-2">
-          <div>
+          <Reveal direction="left">
             <p className="mb-3 text-sm font-medium uppercase tracking-widest text-primary">
               Get in Touch
             </p>
@@ -319,11 +319,11 @@ function Index() {
                 </div>
               </div>
             </div>
-          </div>
+          </Reveal>
 
-          <div className="rounded-3xl border border-border/60 bg-card p-8 shadow-lg md:p-10">
+          <Reveal direction="right" delay={150} className="rounded-3xl border border-border/60 bg-card p-8 shadow-lg md:p-10">
             <ContactForm />
-          </div>
+          </Reveal>
         </div>
       </section>
     </SitePage>
