@@ -22,6 +22,7 @@ import { submitContactForm } from "@/lib/contact.functions";
 import heroImage from "@/assets/hero-music-therapy.jpg";
 import aboutImage from "@/assets/about-therapist.jpg";
 import { SitePage } from "@/components/site-chrome";
+import { Reveal } from "@/components/reveal";
 
 export const Route = createFileRoute("/")({
   component: Index,
@@ -58,7 +59,7 @@ function Index() {
       {/* Hero Section */}
       <section className="relative overflow-hidden">
         <div className="mx-auto grid min-h-[calc(100vh-72px)] max-w-7xl grid-cols-1 items-center gap-12 px-6 py-16 lg:grid-cols-2 lg:py-24">
-          <div className="order-2 flex flex-col justify-center lg:order-1">
+          <Reveal direction="left" className="order-2 flex flex-col justify-center lg:order-1">
             <p className="mb-4 text-sm font-medium uppercase tracking-widest text-primary">
               Board-Certified Music Therapist
             </p>
@@ -77,8 +78,8 @@ function Index() {
                 <a href="#about">Learn More</a>
               </Button>
             </div>
-          </div>
-          <div className="order-1 lg:order-2">
+          </Reveal>
+          <Reveal direction="right" delay={150} className="order-1 lg:order-2">
             <div className="relative overflow-hidden rounded-3xl shadow-2xl">
               <img
                 src={heroImage}
@@ -88,14 +89,14 @@ function Index() {
                 className="aspect-[4/3] w-full object-cover"
               />
             </div>
-          </div>
+          </Reveal>
         </div>
       </section>
 
       {/* About Section */}
       <section id="about" className="bg-secondary/40 backdrop-blur-sm py-20 lg:py-28">
         <div className="mx-auto grid max-w-7xl grid-cols-1 items-center gap-12 px-6 lg:grid-cols-2">
-          <div className="relative overflow-hidden rounded-3xl shadow-xl">
+          <Reveal direction="left" className="relative overflow-hidden rounded-3xl shadow-xl">
             <img
               src={aboutImage}
               alt="Close-up of hands holding a wooden ukulele, representing a personal, gentle approach to music therapy"
@@ -104,8 +105,8 @@ function Index() {
               loading="lazy"
               className="aspect-[4/5] w-full object-cover"
             />
-          </div>
-          <div>
+          </Reveal>
+          <Reveal direction="right" delay={120}>
             <p className="mb-3 text-sm font-medium uppercase tracking-widest text-primary">
               About Me
             </p>
@@ -135,14 +136,14 @@ function Index() {
                 <Link to="/about">Read my full story</Link>
               </Button>
             </div>
-          </div>
+          </Reveal>
         </div>
       </section>
 
       {/* What is Music Therapy */}
       <section id="music-therapy" className="py-20 lg:py-28">
         <div className="mx-auto max-w-7xl px-6">
-          <div className="mx-auto max-w-3xl text-center">
+          <Reveal className="mx-auto max-w-3xl text-center">
             <p className="mb-3 text-sm font-medium uppercase tracking-widest text-primary">
               What is Music Therapy?
             </p>
@@ -155,7 +156,7 @@ function Index() {
               your needs — whether that's emotional expression, communication, motor skills,
               memory, or simply finding a moment of calm.
             </p>
-          </div>
+          </Reveal>
 
           <div className="mt-16 grid grid-cols-1 gap-8 md:grid-cols-3">
             {[
@@ -177,9 +178,11 @@ function Index() {
                 description:
                   "Support developmental, cognitive, or physical goals through structured musical experiences.",
               },
-            ].map((item) => (
-              <div
+            ].map((item, i) => (
+              <Reveal
                 key={item.title}
+                direction="up"
+                delay={i * 120}
                 className="group rounded-2xl border border-border/60 bg-card p-8 shadow-sm transition-all hover:border-primary/30 hover:shadow-md"
               >
                 <div className="mb-4 inline-flex rounded-xl bg-primary/10 p-3">
@@ -191,29 +194,29 @@ function Index() {
                 <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
                   {item.description}
                 </p>
-              </div>
+              </Reveal>
             ))}
           </div>
 
-          <div className="mt-12 text-center">
+          <Reveal className="mt-12 text-center">
             <Button asChild variant="outline" className="rounded-full">
               <Link to="/music-therapy">Learn more about music therapy</Link>
             </Button>
-          </div>
+          </Reveal>
         </div>
       </section>
 
       {/* Services */}
       <section id="services" className="bg-secondary/40 backdrop-blur-sm py-20 lg:py-28">
         <div className="mx-auto max-w-7xl px-6">
-          <div className="mb-16 max-w-3xl">
+          <Reveal className="mb-16 max-w-3xl">
             <p className="mb-3 text-sm font-medium uppercase tracking-widest text-primary">
               Services
             </p>
             <h2 className="font-heading text-3xl font-semibold text-foreground md:text-4xl">
               Sessions designed around you.
             </h2>
-          </div>
+          </Reveal>
 
           <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
             {[
@@ -247,9 +250,11 @@ function Index() {
                 description:
                   "A free 20-minute call to explore whether music therapy is a good fit for you or your loved one.",
               },
-            ].map((service) => (
-              <div
+            ].map((service, i) => (
+              <Reveal
                 key={service.title}
+                direction="up"
+                delay={(i % 3) * 120}
                 className="rounded-2xl border border-border/60 bg-background p-8 shadow-sm transition-all hover:border-primary/30 hover:shadow-md"
               >
                 <h3 className="font-heading text-xl font-semibold text-foreground">
@@ -258,22 +263,22 @@ function Index() {
                 <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
                   {service.description}
                 </p>
-              </div>
+              </Reveal>
             ))}
           </div>
 
-          <div className="mt-12">
+          <Reveal className="mt-12">
             <Button asChild variant="outline" className="rounded-full">
               <Link to="/services">See full service details</Link>
             </Button>
-          </div>
+          </Reveal>
         </div>
       </section>
 
       {/* Contact Section */}
       <section id="contact" className="py-20 lg:py-28">
         <div className="mx-auto grid max-w-7xl grid-cols-1 gap-12 px-6 lg:grid-cols-2">
-          <div>
+          <Reveal direction="left">
             <p className="mb-3 text-sm font-medium uppercase tracking-widest text-primary">
               Get in Touch
             </p>
@@ -314,11 +319,11 @@ function Index() {
                 </div>
               </div>
             </div>
-          </div>
+          </Reveal>
 
-          <div className="rounded-3xl border border-border/60 bg-card p-8 shadow-lg md:p-10">
+          <Reveal direction="right" delay={150} className="rounded-3xl border border-border/60 bg-card p-8 shadow-lg md:p-10">
             <ContactForm />
-          </div>
+          </Reveal>
         </div>
       </section>
     </SitePage>

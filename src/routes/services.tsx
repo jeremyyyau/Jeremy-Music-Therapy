@@ -1,6 +1,7 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { Button } from "@/components/ui/button";
 import { SitePage } from "@/components/site-chrome";
+import { Reveal } from "@/components/reveal";
 
 export const Route = createFileRoute("/services")({
   component: ServicesPage,
@@ -72,23 +73,27 @@ function ServicesPage() {
     <SitePage>
       <section className="py-20 lg:py-28">
         <div className="mx-auto max-w-4xl px-6">
-          <p className="mb-3 text-sm font-medium uppercase tracking-widest text-primary">
-            Services
-          </p>
-          <h1 className="font-heading text-4xl font-semibold text-foreground md:text-5xl">
-            Sessions designed around you.
-          </h1>
-          <p className="mt-6 text-lg leading-relaxed text-muted-foreground">
-            Here's a closer look at how I work with clients. If you're not sure which offering
-            fits, start with a free consultation and we'll figure it out together.
-          </p>
+          <Reveal>
+            <p className="mb-3 text-sm font-medium uppercase tracking-widest text-primary">
+              Services
+            </p>
+            <h1 className="font-heading text-4xl font-semibold text-foreground md:text-5xl">
+              Sessions designed around you.
+            </h1>
+            <p className="mt-6 text-lg leading-relaxed text-muted-foreground">
+              Here's a closer look at how I work with clients. If you're not sure which offering
+              fits, start with a free consultation and we'll figure it out together.
+            </p>
+          </Reveal>
         </div>
 
         <div className="mx-auto mt-16 max-w-5xl px-6">
           <div className="space-y-6">
-            {services.map((s) => (
-              <article
+            {services.map((s, i) => (
+              <Reveal
                 key={s.title}
+                direction={i % 2 === 0 ? "left" : "right"}
+                as="article"
                 className="rounded-2xl border border-border/60 bg-card p-8 shadow-sm md:p-10"
               >
                 <h2 className="font-heading text-2xl font-semibold text-card-foreground">
@@ -101,13 +106,13 @@ function ServicesPage() {
                 <p className="mt-4 text-sm text-muted-foreground">
                   <span className="font-medium text-foreground">Format:</span> {s.format}
                 </p>
-              </article>
+              </Reveal>
             ))}
           </div>
         </div>
 
         <div className="mx-auto mt-16 max-w-4xl px-6">
-          <div className="rounded-3xl border border-border/60 bg-secondary/40 p-8 md:p-10">
+          <Reveal className="rounded-3xl border border-border/60 bg-secondary/40 p-8 md:p-10">
             <h2 className="font-heading text-2xl font-semibold text-foreground md:text-3xl">
               Rates & payment
             </h2>
@@ -117,16 +122,16 @@ function ServicesPage() {
               possible out-of-network reimbursement — reach out for current rates and
               availability.
             </p>
-          </div>
+          </Reveal>
 
-          <div className="mt-12 flex flex-wrap gap-4">
+          <Reveal className="mt-12 flex flex-wrap gap-4">
             <Button asChild size="lg" className="rounded-full px-8">
               <Link to="/" hash="contact">Book a Free Consultation</Link>
             </Button>
             <Button asChild variant="outline" size="lg" className="rounded-full px-8">
               <Link to="/music-therapy">Learn about music therapy</Link>
             </Button>
-          </div>
+          </Reveal>
         </div>
       </section>
     </SitePage>
