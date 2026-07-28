@@ -143,7 +143,7 @@ function Index() {
       {/* What is Music Therapy */}
       <section id="music-therapy" className="py-20 lg:py-28">
         <div className="mx-auto max-w-7xl px-6">
-          <div className="mx-auto max-w-3xl text-center">
+          <Reveal className="mx-auto max-w-3xl text-center">
             <p className="mb-3 text-sm font-medium uppercase tracking-widest text-primary">
               What is Music Therapy?
             </p>
@@ -156,7 +156,7 @@ function Index() {
               your needs — whether that's emotional expression, communication, motor skills,
               memory, or simply finding a moment of calm.
             </p>
-          </div>
+          </Reveal>
 
           <div className="mt-16 grid grid-cols-1 gap-8 md:grid-cols-3">
             {[
@@ -178,9 +178,11 @@ function Index() {
                 description:
                   "Support developmental, cognitive, or physical goals through structured musical experiences.",
               },
-            ].map((item) => (
-              <div
+            ].map((item, i) => (
+              <Reveal
                 key={item.title}
+                direction="up"
+                delay={i * 120}
                 className="group rounded-2xl border border-border/60 bg-card p-8 shadow-sm transition-all hover:border-primary/30 hover:shadow-md"
               >
                 <div className="mb-4 inline-flex rounded-xl bg-primary/10 p-3">
@@ -192,15 +194,15 @@ function Index() {
                 <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
                   {item.description}
                 </p>
-              </div>
+              </Reveal>
             ))}
           </div>
 
-          <div className="mt-12 text-center">
+          <Reveal className="mt-12 text-center">
             <Button asChild variant="outline" className="rounded-full">
               <Link to="/music-therapy">Learn more about music therapy</Link>
             </Button>
-          </div>
+          </Reveal>
         </div>
       </section>
 
