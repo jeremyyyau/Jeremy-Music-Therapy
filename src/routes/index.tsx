@@ -209,14 +209,14 @@ function Index() {
       {/* Services */}
       <section id="services" className="bg-secondary/40 backdrop-blur-sm py-20 lg:py-28">
         <div className="mx-auto max-w-7xl px-6">
-          <div className="mb-16 max-w-3xl">
+          <Reveal className="mb-16 max-w-3xl">
             <p className="mb-3 text-sm font-medium uppercase tracking-widest text-primary">
               Services
             </p>
             <h2 className="font-heading text-3xl font-semibold text-foreground md:text-4xl">
               Sessions designed around you.
             </h2>
-          </div>
+          </Reveal>
 
           <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
             {[
@@ -250,9 +250,11 @@ function Index() {
                 description:
                   "A free 20-minute call to explore whether music therapy is a good fit for you or your loved one.",
               },
-            ].map((service) => (
-              <div
+            ].map((service, i) => (
+              <Reveal
                 key={service.title}
+                direction="up"
+                delay={(i % 3) * 120}
                 className="rounded-2xl border border-border/60 bg-background p-8 shadow-sm transition-all hover:border-primary/30 hover:shadow-md"
               >
                 <h3 className="font-heading text-xl font-semibold text-foreground">
@@ -261,15 +263,15 @@ function Index() {
                 <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
                   {service.description}
                 </p>
-              </div>
+              </Reveal>
             ))}
           </div>
 
-          <div className="mt-12">
+          <Reveal className="mt-12">
             <Button asChild variant="outline" className="rounded-full">
               <Link to="/services">See full service details</Link>
             </Button>
-          </div>
+          </Reveal>
         </div>
       </section>
 
