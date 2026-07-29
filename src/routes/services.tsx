@@ -89,6 +89,19 @@ function ServicesPage() {
           </Reveal>
         </div>
 
+        <div className="mx-auto mt-14 max-w-5xl px-6">
+          <Reveal direction="up" className="overflow-hidden rounded-3xl border border-border/60 shadow-sm">
+            <img
+              src={svcIndividual.url}
+              alt="Therapist and client sharing a warm moment in a sunlit session room"
+              loading="lazy"
+              width={1024}
+              height={1024}
+              className="h-64 w-full object-cover mix-blend-multiply md:h-96"
+            />
+          </Reveal>
+        </div>
+
         <div className="mx-auto mt-16 max-w-5xl px-6">
           <div className="space-y-6">
             {services.map((s, i) => (
