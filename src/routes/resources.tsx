@@ -74,7 +74,7 @@ function ResourcesPage() {
               <Reveal
                 key={r.label}
                 direction="up"
-                delay={(i % 5) * 100}
+                delay={i * 100}
                 className="group"
               >
                 <a
