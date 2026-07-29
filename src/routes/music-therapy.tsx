@@ -122,6 +122,16 @@ function MusicTherapyPage() {
         </div>
 
         <div className="mx-auto mt-20 max-w-4xl px-6 space-y-12">
+          <Reveal direction="up" className="overflow-hidden rounded-3xl border border-border/60 shadow-sm">
+            <img
+              src={mtListening.url}
+              alt="Small hand drum and mallets on soft woven fabric in warm light"
+              loading="lazy"
+              width={1024}
+              height={1024}
+              className="h-56 w-full object-cover mix-blend-multiply md:h-72"
+            />
+          </Reveal>
           <Reveal>
             <h2 className="font-heading text-2xl font-semibold text-foreground md:text-3xl">
               What a session actually looks like
