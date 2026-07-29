@@ -127,6 +127,16 @@ function ServicesPage() {
         </div>
 
         <div className="mx-auto mt-16 max-w-4xl px-6">
+          <Reveal direction="up" className="mb-12 overflow-hidden rounded-3xl border border-border/60 shadow-sm">
+            <img
+              src={svcGroup.url}
+              alt="Small group circle sharing hand percussion in warm afternoon light"
+              loading="lazy"
+              width={1024}
+              height={1024}
+              className="h-56 w-full object-cover mix-blend-multiply md:h-72"
+            />
+          </Reveal>
           <Reveal className="rounded-3xl border border-border/60 bg-secondary/40 p-8 md:p-10">
             <h2 className="font-heading text-2xl font-semibold text-foreground md:text-3xl">
               Rates & payment
