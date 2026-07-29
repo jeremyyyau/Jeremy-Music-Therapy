@@ -15,6 +15,7 @@ export const navItems: NavItem[] = [
   { label: "About", to: "/about" },
   { label: "Music Therapy", to: "/music-therapy" },
   { label: "Services", to: "/services" },
+  { label: "Resources", to: "/resources" },
 ];
 
 export function SiteBackground() {
