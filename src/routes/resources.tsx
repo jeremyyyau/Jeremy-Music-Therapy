@@ -33,7 +33,6 @@ const resources = [
   { label: "Soundtrap", url: "#" },
   { label: "Radio Garden", url: "#" },
   { label: "Loopimal", url: "#" },
-  { label: "Learning Music", url: "#" },
 ];
 
 function ResourcesPage() {
@@ -75,7 +74,7 @@ function ResourcesPage() {
               <Reveal
                 key={r.label}
                 direction="up"
-                delay={(i % 5) * 100}
+                delay={i * 100}
                 className="group"
               >
                 <a
