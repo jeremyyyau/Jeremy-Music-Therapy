@@ -85,6 +85,19 @@ function MusicTherapyPage() {
           </Reveal>
         </div>
 
+        <div className="mx-auto mt-14 max-w-5xl px-6">
+          <Reveal direction="up" className="overflow-hidden rounded-3xl border border-border/60 shadow-sm">
+            <img
+              src={mtSession.url}
+              alt="Hands gently playing an acoustic guitar in warm natural light"
+              loading="lazy"
+              width={1024}
+              height={1024}
+              className="h-64 w-full object-cover mix-blend-multiply md:h-96"
+            />
+          </Reveal>
+        </div>
+
         <div className="mx-auto mt-16 max-w-6xl px-6">
           <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
             {benefits.map((b, i) => (
