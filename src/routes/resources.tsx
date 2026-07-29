@@ -33,7 +33,6 @@ const resources = [
   { label: "Soundtrap", url: "#" },
   { label: "Radio Garden", url: "#" },
   { label: "Loopimal", url: "#" },
-  { label: "Learning Music", url: "#" },
 ];
 
 function ResourcesPage() {
