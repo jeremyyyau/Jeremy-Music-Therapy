@@ -3,6 +3,8 @@ import { Heart, Users, Calendar, Brain, Sparkles, Music } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { SitePage } from "@/components/site-chrome";
 import { Reveal } from "@/components/reveal";
+import mtSession from "@/assets/mt-session.jpg.asset.json";
+import mtListening from "@/assets/mt-listening.jpg.asset.json";
 
 export const Route = createFileRoute("/music-therapy")({
   component: MusicTherapyPage,
@@ -83,6 +85,19 @@ function MusicTherapyPage() {
           </Reveal>
         </div>
 
+        <div className="mx-auto mt-14 max-w-5xl px-6">
+          <Reveal direction="up" className="overflow-hidden rounded-3xl border border-border/60 shadow-sm">
+            <img
+              src={mtSession.url}
+              alt="Hands gently playing an acoustic guitar in warm natural light"
+              loading="lazy"
+              width={1024}
+              height={1024}
+              className="h-64 w-full object-cover mix-blend-multiply md:h-96"
+            />
+          </Reveal>
+        </div>
+
         <div className="mx-auto mt-16 max-w-6xl px-6">
           <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
             {benefits.map((b, i) => (
@@ -107,6 +122,16 @@ function MusicTherapyPage() {
         </div>
 
         <div className="mx-auto mt-20 max-w-4xl px-6 space-y-12">
+          <Reveal direction="up" className="overflow-hidden rounded-3xl border border-border/60 shadow-sm">
+            <img
+              src={mtListening.url}
+              alt="Small hand drum and mallets on soft woven fabric in warm light"
+              loading="lazy"
+              width={1024}
+              height={1024}
+              className="h-56 w-full object-cover mix-blend-multiply md:h-72"
+            />
+          </Reveal>
           <Reveal>
             <h2 className="font-heading text-2xl font-semibold text-foreground md:text-3xl">
               What a session actually looks like

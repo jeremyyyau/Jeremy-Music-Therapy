@@ -2,6 +2,8 @@ import { createFileRoute, Link } from "@tanstack/react-router";
 import { Button } from "@/components/ui/button";
 import { SitePage } from "@/components/site-chrome";
 import { Reveal } from "@/components/reveal";
+import svcIndividual from "@/assets/svc-individual.jpg.asset.json";
+import svcGroup from "@/assets/svc-group.jpg.asset.json";
 
 export const Route = createFileRoute("/services")({
   component: ServicesPage,
@@ -87,6 +89,19 @@ function ServicesPage() {
           </Reveal>
         </div>
 
+        <div className="mx-auto mt-14 max-w-5xl px-6">
+          <Reveal direction="up" className="overflow-hidden rounded-3xl border border-border/60 shadow-sm">
+            <img
+              src={svcIndividual.url}
+              alt="Therapist and client sharing a warm moment in a sunlit session room"
+              loading="lazy"
+              width={1024}
+              height={1024}
+              className="h-64 w-full object-cover mix-blend-multiply md:h-96"
+            />
+          </Reveal>
+        </div>
+
         <div className="mx-auto mt-16 max-w-5xl px-6">
           <div className="space-y-6">
             {services.map((s, i) => (
@@ -112,6 +127,16 @@ function ServicesPage() {
         </div>
 
         <div className="mx-auto mt-16 max-w-4xl px-6">
+          <Reveal direction="up" className="mb-12 overflow-hidden rounded-3xl border border-border/60 shadow-sm">
+            <img
+              src={svcGroup.url}
+              alt="Small group circle sharing hand percussion in warm afternoon light"
+              loading="lazy"
+              width={1024}
+              height={1024}
+              className="h-56 w-full object-cover mix-blend-multiply md:h-72"
+            />
+          </Reveal>
           <Reveal className="rounded-3xl border border-border/60 bg-secondary/40 p-8 md:p-10">
             <h2 className="font-heading text-2xl font-semibold text-foreground md:text-3xl">
               Rates & payment
