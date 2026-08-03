@@ -3,7 +3,7 @@ import { Link } from "@tanstack/react-router";
 import { Music, Menu, X } from "lucide-react";
 
 import { Button } from "@/components/ui/button";
-import instrumentsBg from "@/assets/instruments-bg.jpg.asset.json";
+import instrumentsBg from "@/assets/instruments-bg.webp";
 
 type NavItem = {
   label: string;

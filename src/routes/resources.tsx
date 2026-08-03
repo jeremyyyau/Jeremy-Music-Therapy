@@ -3,8 +3,8 @@ import { SitePage } from "@/components/site-chrome";
 import { Reveal } from "@/components/reveal";
 import { QuoteBand } from "@/components/quote-band";
 
-import resourcesHero from "@/assets/resources-hero.jpg.asset.json";
-import resourceThumb from "@/assets/resource-thumb.jpg.asset.json";
+import resourcesHero from "@/assets/resources-hero.webp";
+import resourceThumb from "@/assets/resource-thumb.webp";
 
 export const Route = createFileRoute("/resources")({
   component: ResourcesPage,
