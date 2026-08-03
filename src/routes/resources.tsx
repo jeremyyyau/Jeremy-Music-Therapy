@@ -84,9 +84,9 @@ function ResourcesPage() {
                   href={r.url}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="block rounded-2xl border border-border/60 bg-card p-3 shadow-sm transition-all duration-300 hover:-translate-y-3 hover:scale-[1.02] hover:border-primary hover:bg-secondary/50 hover:shadow-card-hover"
+                  className="block rounded-2xl border border-border/60 bg-card p-3 shadow-sm transition-all duration-300 hover:-translate-y-3 hover:scale-105 hover:border-primary hover:bg-secondary/60 hover:shadow-card-hover"
                 >
-                  <div className="overflow-hidden rounded-xl bg-background/50">
+                  <div className="overflow-hidden rounded-xl bg-background/50 transition-colors duration-300 group-hover:bg-primary/10">
                     <img
                       src={resourceThumb}
                       alt={`${r.label} resource thumbnail`}
@@ -94,10 +94,10 @@ function ResourcesPage() {
                       decoding="async"
                       width={512}
                       height={512}
-                      className="aspect-square w-full object-cover mix-blend-multiply transition-all duration-500 group-hover:scale-110 group-hover:brightness-105"
+                      className="aspect-square w-full object-cover mix-blend-multiply transition-all duration-500 group-hover:scale-110 group-hover:brightness-110 group-hover:contrast-105"
                     />
                   </div>
-                  <p className="mt-3 text-center text-sm font-medium text-foreground transition-colors group-hover:text-primary">
+                  <p className="mt-3 text-center text-sm font-medium text-foreground transition-all duration-300 group-hover:scale-105 group-hover:text-primary">
                     {r.label}
                   </p>
                 </a>
