@@ -100,7 +100,7 @@ function Index() {
       </section>
 
       {/* About Section */}
-      <section id="about" className="bg-secondary/40 backdrop-blur-sm py-20 lg:py-28">
+      <section id="about" className="bg-secondary/40 py-20 lg:py-28">
         <div className="mx-auto grid max-w-7xl grid-cols-1 items-center gap-12 px-6 lg:grid-cols-2">
           <Reveal direction="left" className="relative overflow-hidden rounded-3xl shadow-xl">
             <img
@@ -214,7 +214,7 @@ function Index() {
       </section>
 
       {/* Services */}
-      <section id="services" className="bg-secondary/40 backdrop-blur-sm py-20 lg:py-28">
+      <section id="services" className="bg-secondary/40 py-20 lg:py-28">
         <div className="mx-auto max-w-7xl px-6">
           <Reveal className="mb-16 max-w-3xl">
             <p className="mb-3 text-sm font-medium uppercase tracking-widest text-primary">

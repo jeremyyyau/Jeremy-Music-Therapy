@@ -10,7 +10,7 @@ type QuoteBandProps = {
 export function QuoteBand({ quote, author, className }: QuoteBandProps) {
   return (
     <section
-      className={`border-y border-border/50 bg-secondary/30 py-16 backdrop-blur-sm lg:py-20 ${className ?? ""}`}
+      className={`border-y border-border/50 bg-secondary/30 py-16 lg:py-20 ${className ?? ""}`}
     >
       <div className="mx-auto max-w-3xl px-6 text-center">
         <Reveal direction="up">
