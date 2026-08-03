@@ -25,7 +25,7 @@ export function SiteBackground() {
       <div
         aria-hidden
         className="pointer-events-none fixed inset-0 -z-10 bg-cover bg-center bg-no-repeat opacity-30 mix-blend-multiply"
-        style={{ backgroundImage: `url(${instrumentsBg.url})` }}
+        style={{ backgroundImage: `url(${instrumentsBg})` }}
       />
       <div
         aria-hidden

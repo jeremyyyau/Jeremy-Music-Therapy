@@ -19,8 +19,8 @@ import { Textarea } from "@/components/ui/textarea";
 
 import { contactFormSchema, type ContactFormValues } from "@/lib/contact.schema";
 import { submitContactForm } from "@/lib/contact.functions";
-import heroImage from "@/assets/hero-music-therapy.jpg";
-import aboutImage from "@/assets/about-therapist.jpg";
+import heroImage from "@/assets/hero-music-therapy.webp";
+import aboutImage from "@/assets/about-therapist.webp";
 import { SitePage } from "@/components/site-chrome";
 import { Reveal } from "@/components/reveal";
 import { QuoteBand } from "@/components/quote-band";

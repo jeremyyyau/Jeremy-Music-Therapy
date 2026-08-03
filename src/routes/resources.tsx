@@ -60,7 +60,7 @@ function ResourcesPage() {
         <div className="mx-auto mt-14 max-w-5xl px-6">
           <Reveal direction="up" className="overflow-hidden rounded-3xl border border-border/60 shadow-sm">
             <img
-              src={resourcesHero.url}
+              src={resourcesHero}
               alt="Headphones, sheet music, and small instruments arranged on a warm cream background"
               loading="lazy"
               width={1024}
@@ -87,7 +87,7 @@ function ResourcesPage() {
                 >
                   <div className="overflow-hidden rounded-xl bg-background/50">
                     <img
-                      src={resourceThumb.url}
+                      src={resourceThumb}
                       alt={`${r.label} resource thumbnail`}
                       loading="lazy"
                       width={512}

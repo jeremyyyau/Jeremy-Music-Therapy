@@ -90,7 +90,7 @@ function MusicTherapyPage() {
         <div className="mx-auto mt-14 max-w-5xl px-6">
           <Reveal direction="up" className="overflow-hidden rounded-3xl border border-border/60 shadow-sm">
             <img
-              src={mtSession.url}
+              src={mtSession}
               alt="Hands gently playing an acoustic guitar in warm natural light"
               loading="lazy"
               width={1024}
@@ -126,7 +126,7 @@ function MusicTherapyPage() {
         <div className="mx-auto mt-20 max-w-4xl px-6 space-y-12">
           <Reveal direction="up" className="overflow-hidden rounded-3xl border border-border/60 shadow-sm">
             <img
-              src={mtListening.url}
+              src={mtListening}
               alt="Small hand drum and mallets on soft woven fabric in warm light"
               loading="lazy"
               width={1024}
