@@ -23,6 +23,8 @@ import heroImage from "@/assets/hero-music-therapy.jpg";
 import aboutImage from "@/assets/about-therapist.jpg";
 import { SitePage } from "@/components/site-chrome";
 import { Reveal } from "@/components/reveal";
+import { QuoteBand } from "@/components/quote-band";
+
 
 export const Route = createFileRoute("/")({
   component: Index,
@@ -275,8 +277,14 @@ function Index() {
         </div>
       </section>
 
+      <QuoteBand
+        quote="Music gives a soul to the universe, wings to the mind, flight to the imagination, and life to everything."
+        author="Plato"
+      />
+
       {/* Contact Section */}
       <section id="contact" className="py-20 lg:py-28">
+
         <div className="mx-auto grid max-w-7xl grid-cols-1 gap-12 px-6 lg:grid-cols-2">
           <Reveal direction="left">
             <p className="mb-3 text-sm font-medium uppercase tracking-widest text-primary">
