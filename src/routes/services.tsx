@@ -97,6 +97,7 @@ function ServicesPage() {
               src={svcIndividual}
               alt="Therapist and client sharing a warm moment in a sunlit session room"
               loading="lazy"
+              decoding="async"
               width={1024}
               height={1024}
               className="h-64 w-full object-cover mix-blend-multiply md:h-96"
@@ -134,6 +135,7 @@ function ServicesPage() {
               src={svcGroup}
               alt="Small group circle sharing hand percussion in warm afternoon light"
               loading="lazy"
+              decoding="async"
               width={1024}
               height={1024}
               className="h-56 w-full object-cover mix-blend-multiply md:h-72"

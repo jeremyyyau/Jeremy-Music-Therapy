@@ -105,6 +105,7 @@ function Index() {
               width={800}
               height={1008}
               loading="lazy"
+              decoding="async"
               className="aspect-[4/5] w-full object-cover"
             />
           </Reveal>

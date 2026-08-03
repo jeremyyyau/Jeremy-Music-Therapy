@@ -93,6 +93,7 @@ function MusicTherapyPage() {
               src={mtSession}
               alt="Hands gently playing an acoustic guitar in warm natural light"
               loading="lazy"
+              decoding="async"
               width={1024}
               height={1024}
               className="h-64 w-full object-cover mix-blend-multiply md:h-96"
@@ -129,6 +130,7 @@ function MusicTherapyPage() {
               src={mtListening}
               alt="Small hand drum and mallets on soft woven fabric in warm light"
               loading="lazy"
+              decoding="async"
               width={1024}
               height={1024}
               className="h-56 w-full object-cover mix-blend-multiply md:h-72"

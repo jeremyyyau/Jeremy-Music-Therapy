@@ -63,6 +63,7 @@ function ResourcesPage() {
               src={resourcesHero}
               alt="Headphones, sheet music, and small instruments arranged on a warm cream background"
               loading="lazy"
+              decoding="async"
               width={1024}
               height={1024}
               className="h-64 w-full object-cover mix-blend-multiply md:h-96"
@@ -90,6 +91,7 @@ function ResourcesPage() {
                       src={resourceThumb}
                       alt={`${r.label} resource thumbnail`}
                       loading="lazy"
+                      decoding="async"
                       width={512}
                       height={512}
                       className="aspect-square w-full object-cover mix-blend-multiply transition-transform duration-500 group-hover:scale-105"
