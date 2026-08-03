@@ -49,6 +49,10 @@ function AboutPage() {
             <img
               src={aboutImage}
               alt="Hands holding a wooden ukulele"
+              width={1200}
+              height={675}
+              loading="lazy"
+              decoding="async"
               className="aspect-[16/9] w-full object-cover"
             />
           </Reveal>
