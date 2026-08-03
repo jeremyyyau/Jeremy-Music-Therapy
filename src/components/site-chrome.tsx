@@ -78,7 +78,7 @@ export function SiteHeader() {
             />
           ))}
           <Button asChild size="sm" className="rounded-full">
-            <a href="/#contact">Contact Us</a>
+            <Link to="/" hash="contact">Contact Us</Link>
           </Button>
         </nav>
 
