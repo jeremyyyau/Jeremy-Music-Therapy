@@ -107,9 +107,9 @@ export function SiteHeader() {
               />
             ))}
             <Button asChild className="rounded-full">
-              <a href="/#contact" onClick={() => setMobileMenuOpen(false)}>
+              <Link to="/" hash="contact" onClick={() => setMobileMenuOpen(false)}>
                 Contact Us
-              </a>
+              </Link>
             </Button>
           </nav>
         </div>
