@@ -12,10 +12,10 @@ type NavItem = {
 };
 
 export const navItems: NavItem[] = [
-  { label: "About", to: "/about" },
   { label: "Music Therapy", to: "/music-therapy" },
   { label: "Services", to: "/services" },
   { label: "Resources", to: "/resources" },
+  { label: "About", to: "/about" },
 ];
 
 export function SiteBackground() {
@@ -78,7 +78,7 @@ export function SiteHeader() {
             />
           ))}
           <Button asChild size="sm" className="rounded-full">
-            <a href="/#contact">Get in Touch</a>
+            <a href="/#contact">Contact Us</a>
           </Button>
         </nav>
 
@@ -108,7 +108,7 @@ export function SiteHeader() {
             ))}
             <Button asChild className="rounded-full">
               <a href="/#contact" onClick={() => setMobileMenuOpen(false)}>
-                Get in Touch
+                Contact Us
               </a>
             </Button>
           </nav>
