@@ -19,8 +19,8 @@ import { Textarea } from "@/components/ui/textarea";
 
 import { contactFormSchema, type ContactFormValues } from "@/lib/contact.schema";
 import { submitContactForm } from "@/lib/contact.functions";
-import heroImage from "@/assets/hero-music-therapy.jpg";
-import aboutImage from "@/assets/about-therapist.jpg";
+import heroImage from "@/assets/hero-music-therapy.webp";
+import aboutImage from "@/assets/about-therapist.webp";
 import { SitePage } from "@/components/site-chrome";
 import { Reveal } from "@/components/reveal";
 import { QuoteBand } from "@/components/quote-band";
@@ -88,6 +88,10 @@ function Index() {
                 alt="Warm, inviting music therapy room with guitar, drums, and soft natural light"
                 width={1200}
                 height={800}
+                loading="eager"
+                fetchPriority="high"
+                decoding="async"
+                sizes="(min-width: 1024px) 50vw, 100vw"
                 className="aspect-[4/3] w-full object-cover"
               />
             </div>
@@ -96,7 +100,7 @@ function Index() {
       </section>
 
       {/* About Section */}
-      <section id="about" className="bg-secondary/40 backdrop-blur-sm py-20 lg:py-28">
+      <section id="about" className="bg-secondary/40 py-20 lg:py-28">
         <div className="mx-auto grid max-w-7xl grid-cols-1 items-center gap-12 px-6 lg:grid-cols-2">
           <Reveal direction="left" className="relative overflow-hidden rounded-3xl shadow-xl">
             <img
@@ -105,6 +109,7 @@ function Index() {
               width={800}
               height={1008}
               loading="lazy"
+              decoding="async"
               className="aspect-[4/5] w-full object-cover"
             />
           </Reveal>
@@ -209,7 +214,7 @@ function Index() {
       </section>
 
       {/* Services */}
-      <section id="services" className="bg-secondary/40 backdrop-blur-sm py-20 lg:py-28">
+      <section id="services" className="bg-secondary/40 py-20 lg:py-28">
         <div className="mx-auto max-w-7xl px-6">
           <Reveal className="mb-16 max-w-3xl">
             <p className="mb-3 text-sm font-medium uppercase tracking-widest text-primary">

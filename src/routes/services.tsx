@@ -4,8 +4,8 @@ import { SitePage } from "@/components/site-chrome";
 import { Reveal } from "@/components/reveal";
 import { QuoteBand } from "@/components/quote-band";
 
-import svcIndividual from "@/assets/svc-individual.jpg.asset.json";
-import svcGroup from "@/assets/svc-group.jpg.asset.json";
+import svcIndividual from "@/assets/svc-individual.webp";
+import svcGroup from "@/assets/svc-group.webp";
 
 export const Route = createFileRoute("/services")({
   component: ServicesPage,
@@ -94,9 +94,10 @@ function ServicesPage() {
         <div className="mx-auto mt-14 max-w-5xl px-6">
           <Reveal direction="up" className="overflow-hidden rounded-3xl border border-border/60 shadow-sm">
             <img
-              src={svcIndividual.url}
+              src={svcIndividual}
               alt="Therapist and client sharing a warm moment in a sunlit session room"
               loading="lazy"
+              decoding="async"
               width={1024}
               height={1024}
               className="h-64 w-full object-cover mix-blend-multiply md:h-96"
@@ -131,9 +132,10 @@ function ServicesPage() {
         <div className="mx-auto mt-16 max-w-4xl px-6">
           <Reveal direction="up" className="mb-12 overflow-hidden rounded-3xl border border-border/60 shadow-sm">
             <img
-              src={svcGroup.url}
+              src={svcGroup}
               alt="Small group circle sharing hand percussion in warm afternoon light"
               loading="lazy"
+              decoding="async"
               width={1024}
               height={1024}
               className="h-56 w-full object-cover mix-blend-multiply md:h-72"

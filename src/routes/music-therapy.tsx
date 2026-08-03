@@ -5,8 +5,8 @@ import { SitePage } from "@/components/site-chrome";
 import { Reveal } from "@/components/reveal";
 import { QuoteBand } from "@/components/quote-band";
 
-import mtSession from "@/assets/mt-session.jpg.asset.json";
-import mtListening from "@/assets/mt-listening.jpg.asset.json";
+import mtSession from "@/assets/mt-session.webp";
+import mtListening from "@/assets/mt-listening.webp";
 
 export const Route = createFileRoute("/music-therapy")({
   component: MusicTherapyPage,
@@ -90,9 +90,10 @@ function MusicTherapyPage() {
         <div className="mx-auto mt-14 max-w-5xl px-6">
           <Reveal direction="up" className="overflow-hidden rounded-3xl border border-border/60 shadow-sm">
             <img
-              src={mtSession.url}
+              src={mtSession}
               alt="Hands gently playing an acoustic guitar in warm natural light"
               loading="lazy"
+              decoding="async"
               width={1024}
               height={1024}
               className="h-64 w-full object-cover mix-blend-multiply md:h-96"
@@ -126,9 +127,10 @@ function MusicTherapyPage() {
         <div className="mx-auto mt-20 max-w-4xl px-6 space-y-12">
           <Reveal direction="up" className="overflow-hidden rounded-3xl border border-border/60 shadow-sm">
             <img
-              src={mtListening.url}
+              src={mtListening}
               alt="Small hand drum and mallets on soft woven fabric in warm light"
               loading="lazy"
+              decoding="async"
               width={1024}
               height={1024}
               className="h-56 w-full object-cover mix-blend-multiply md:h-72"

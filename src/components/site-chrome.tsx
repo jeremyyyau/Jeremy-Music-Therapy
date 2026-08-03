@@ -3,7 +3,7 @@ import { Link } from "@tanstack/react-router";
 import { Music, Menu, X } from "lucide-react";
 
 import { Button } from "@/components/ui/button";
-import instrumentsBg from "@/assets/instruments-bg.jpg.asset.json";
+import instrumentsBg from "@/assets/instruments-bg.webp";
 
 type NavItem = {
   label: string;
@@ -25,7 +25,7 @@ export function SiteBackground() {
       <div
         aria-hidden
         className="pointer-events-none fixed inset-0 -z-10 bg-cover bg-center bg-no-repeat opacity-30 mix-blend-multiply"
-        style={{ backgroundImage: `url(${instrumentsBg.url})` }}
+        style={{ backgroundImage: `url(${instrumentsBg})` }}
       />
       <div
         aria-hidden
@@ -120,7 +120,7 @@ export function SiteHeader() {
 
 export function SiteFooter() {
   return (
-    <footer className="border-t border-border/60 bg-secondary/40 backdrop-blur-sm py-12">
+    <footer className="border-t border-border/60 bg-secondary/40 py-12">
       <div className="mx-auto max-w-7xl px-6">
         <div className="flex flex-col items-center justify-between gap-6 md:flex-row">
           <div className="flex items-center gap-2">

@@ -3,8 +3,8 @@ import { SitePage } from "@/components/site-chrome";
 import { Reveal } from "@/components/reveal";
 import { QuoteBand } from "@/components/quote-band";
 
-import resourcesHero from "@/assets/resources-hero.jpg.asset.json";
-import resourceThumb from "@/assets/resource-thumb.jpg.asset.json";
+import resourcesHero from "@/assets/resources-hero.webp";
+import resourceThumb from "@/assets/resource-thumb.webp";
 
 export const Route = createFileRoute("/resources")({
   component: ResourcesPage,
@@ -60,9 +60,10 @@ function ResourcesPage() {
         <div className="mx-auto mt-14 max-w-5xl px-6">
           <Reveal direction="up" className="overflow-hidden rounded-3xl border border-border/60 shadow-sm">
             <img
-              src={resourcesHero.url}
+              src={resourcesHero}
               alt="Headphones, sheet music, and small instruments arranged on a warm cream background"
               loading="lazy"
+              decoding="async"
               width={1024}
               height={1024}
               className="h-64 w-full object-cover mix-blend-multiply md:h-96"
@@ -87,9 +88,10 @@ function ResourcesPage() {
                 >
                   <div className="overflow-hidden rounded-xl bg-background/50">
                     <img
-                      src={resourceThumb.url}
+                      src={resourceThumb}
                       alt={`${r.label} resource thumbnail`}
                       loading="lazy"
+                      decoding="async"
                       width={512}
                       height={512}
                       className="aspect-square w-full object-cover mix-blend-multiply transition-transform duration-500 group-hover:scale-105"

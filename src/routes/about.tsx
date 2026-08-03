@@ -4,7 +4,7 @@ import { SitePage } from "@/components/site-chrome";
 import { Reveal } from "@/components/reveal";
 import { QuoteBand } from "@/components/quote-band";
 
-import aboutImage from "@/assets/about-therapist.jpg";
+import aboutImage from "@/assets/about-therapist.webp";
 
 export const Route = createFileRoute("/about")({
   component: AboutPage,
@@ -49,6 +49,10 @@ function AboutPage() {
             <img
               src={aboutImage}
               alt="Hands holding a wooden ukulele"
+              width={1200}
+              height={675}
+              loading="lazy"
+              decoding="async"
               className="aspect-[16/9] w-full object-cover"
             />
           </Reveal>
