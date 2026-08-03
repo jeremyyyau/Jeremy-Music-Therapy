@@ -1,6 +1,8 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { SitePage } from "@/components/site-chrome";
 import { Reveal } from "@/components/reveal";
+import { QuoteBand } from "@/components/quote-band";
+
 import resourcesHero from "@/assets/resources-hero.jpg.asset.json";
 import resourceThumb from "@/assets/resource-thumb.jpg.asset.json";
 
@@ -115,6 +117,12 @@ function ResourcesPage() {
           </Reveal>
         </div>
       </section>
+
+      <QuoteBand
+        quote="Play is the highest form of research — and music is play you can feel."
+        author="A note on creative exploration"
+      />
     </SitePage>
+
   );
 }

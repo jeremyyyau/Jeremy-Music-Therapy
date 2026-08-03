@@ -3,6 +3,8 @@ import { Heart, Users, Calendar, Brain, Sparkles, Music } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { SitePage } from "@/components/site-chrome";
 import { Reveal } from "@/components/reveal";
+import { QuoteBand } from "@/components/quote-band";
+
 import mtSession from "@/assets/mt-session.jpg.asset.json";
 import mtListening from "@/assets/mt-listening.jpg.asset.json";
 
@@ -203,6 +205,12 @@ function MusicTherapyPage() {
           </Reveal>
         </div>
       </section>
+
+      <QuoteBand
+        quote="Music can name the unnameable and communicate the unknowable."
+        author="Leonard Bernstein"
+      />
     </SitePage>
+
   );
 }
