@@ -14,8 +14,8 @@ type NavItem = {
 export const navItems: NavItem[] = [
   { label: "Music Therapy", to: "/music-therapy" },
   { label: "Services", to: "/services" },
-  { label: "Resources", to: "/resources" },
   { label: "About", to: "/about" },
+  { label: "Resources", to: "/resources" },
 ];
 
 export function SiteBackground() {
