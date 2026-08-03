@@ -5,17 +5,17 @@ import { cva, type VariantProps } from "class-variance-authority";
 import { cn } from "@/lib/utils";
 
 const buttonVariants = cva(
-  "inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium cursor-pointer transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 disabled:cursor-not-allowed [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0",
+  "inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium cursor-pointer transition-all duration-200 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 disabled:cursor-not-allowed [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0",
   {
     variants: {
       variant: {
-        default: "bg-primary text-primary-foreground shadow hover:bg-primary/90",
-        destructive: "bg-destructive text-destructive-foreground shadow-sm hover:bg-destructive/90",
+        default: "bg-primary text-primary-foreground shadow shadow-raised hover:brightness-95 hover:saturate-110 hover:shadow-glow-lg hover:-translate-y-1.5 hover:ring-2 hover:ring-primary/40 active:translate-y-0 active:shadow-none active:ring-0",
+        destructive: "bg-destructive text-destructive-foreground shadow-sm hover:bg-destructive/90 hover:shadow-md hover:-translate-y-0.5 active:translate-y-0",
         outline:
-          "border border-input bg-background shadow-sm hover:bg-accent hover:text-accent-foreground",
-        secondary: "bg-secondary text-secondary-foreground shadow-sm hover:bg-secondary/80",
-        ghost: "hover:bg-accent hover:text-accent-foreground",
-        link: "text-primary underline-offset-4 hover:underline",
+          "border border-input bg-background shadow-sm hover:border-primary hover:bg-primary hover:text-primary-foreground hover:brightness-105 hover:saturate-110 hover:shadow-glow hover:-translate-y-1.5 hover:ring-2 hover:ring-primary/40 active:translate-y-0 active:shadow-none active:ring-0",
+        secondary: "bg-secondary text-secondary-foreground shadow-sm hover:bg-secondary/70 hover:text-primary hover:shadow-glow hover:-translate-y-1 active:translate-y-0 active:shadow-none",
+        ghost: "hover:bg-primary/15 hover:text-primary hover:shadow-sm hover:-translate-y-0.5 hover:ring-1 hover:ring-primary/30",
+        link: "text-primary underline-offset-4 hover:underline hover:text-primary/80 hover:brightness-110",
       },
       size: {
         default: "h-9 px-4 py-2",
