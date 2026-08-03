@@ -9,12 +9,12 @@ const buttonVariants = cva(
   {
     variants: {
       variant: {
-        default: "bg-primary text-primary-foreground shadow shadow-raised hover:brightness-95 hover:saturate-110 hover:shadow-glow-lg hover:-translate-y-1.5 hover:ring-2 hover:ring-primary/40 active:translate-y-0 active:shadow-none active:ring-0",
-        destructive: "bg-destructive text-destructive-foreground shadow-sm hover:bg-destructive/90 hover:shadow-md hover:-translate-y-0.5 active:translate-y-0",
+        default: "bg-primary text-primary-foreground shadow shadow-raised hover:brightness-95 hover:saturate-110 hover:shadow-glow hover:ring-2 hover:ring-primary/60 active:shadow-none active:ring-0",
+        destructive: "bg-destructive text-destructive-foreground shadow-sm hover:bg-destructive/90 hover:shadow-md active:shadow-none",
         outline:
-          "border border-input bg-background shadow-sm hover:border-primary hover:bg-primary hover:text-primary-foreground hover:brightness-105 hover:saturate-110 hover:shadow-glow hover:-translate-y-1.5 hover:ring-2 hover:ring-primary/40 active:translate-y-0 active:shadow-none active:ring-0",
-        secondary: "bg-secondary text-secondary-foreground shadow-sm hover:bg-secondary/70 hover:text-primary hover:shadow-glow hover:-translate-y-1 active:translate-y-0 active:shadow-none",
-        ghost: "hover:bg-primary/15 hover:text-primary hover:shadow-sm hover:-translate-y-0.5 hover:ring-1 hover:ring-primary/30",
+          "border border-input bg-background shadow-sm hover:border-primary hover:bg-primary hover:text-primary-foreground hover:brightness-105 hover:saturate-110 hover:shadow-glow active:shadow-none",
+        secondary: "bg-secondary text-secondary-foreground shadow-sm hover:bg-secondary/70 hover:text-primary hover:shadow-glow active:shadow-none",
+        ghost: "hover:bg-primary/15 hover:text-primary hover:shadow-sm hover:ring-1 hover:ring-primary/30",
         link: "text-primary underline-offset-4 hover:underline hover:text-primary/80 hover:brightness-110",
       },
       size: {
