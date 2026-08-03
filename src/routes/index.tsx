@@ -88,6 +88,10 @@ function Index() {
                 alt="Warm, inviting music therapy room with guitar, drums, and soft natural light"
                 width={1200}
                 height={800}
+                loading="eager"
+                fetchPriority="high"
+                decoding="async"
+                sizes="(min-width: 1024px) 50vw, 100vw"
                 className="aspect-[4/3] w-full object-cover"
               />
             </div>
