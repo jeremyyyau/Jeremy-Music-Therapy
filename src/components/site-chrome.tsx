@@ -62,28 +62,28 @@ export function SiteHeader() {
   return (
     <header className="sticky top-0 z-50 w-full border-b border-border/40 bg-background/70 backdrop-blur-md">
       <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4">
-        <Link to="/" className="flex items-center gap-2">
-          <Music className="h-6 w-6 text-primary" />
-          <span className="font-heading text-xl font-semibold text-foreground">
+        <Link to="/" className="group flex items-center gap-2 transition-all duration-200 hover:opacity-90 hover:scale-[1.02]">
+          <Music className="h-6 w-6 text-primary transition-all duration-200 group-hover:scale-110 group-hover:rotate-6 group-hover:drop-shadow-[0_0_8px_rgba(0,0,0,0.15)]" />
+          <span className="font-heading text-xl font-semibold text-foreground transition-colors duration-200 group-hover:text-primary">
             Music Therapy
           </span>
         </Link>
 
-        <nav className="hidden items-center gap-8 md:flex">
+        <nav className="hidden items-center gap-2 md:flex">
           {navItems.map((item) => (
             <NavLink
               key={item.label}
               item={item}
-              className="text-sm font-medium text-foreground/80 transition-colors hover:text-primary"
+              className="rounded-full px-3 py-1.5 text-sm font-medium text-foreground/80 transition-all duration-200 hover:bg-primary/20 hover:text-primary"
             />
           ))}
-          <Button asChild size="sm" className="rounded-full">
+          <Button asChild size="sm" className="rounded-full ml-2">
             <Link to="/" hash="contact">Contact Us</Link>
           </Button>
         </nav>
 
         <button
-          className="md:hidden"
+          className="rounded-full p-2 transition-all duration-200 hover:bg-primary/10 hover:text-primary md:hidden"
           onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
           aria-label="Toggle menu"
         >
@@ -97,16 +97,16 @@ export function SiteHeader() {
 
       {mobileMenuOpen && (
         <div className="border-t border-border/40 bg-background px-6 py-4 md:hidden">
-          <nav className="flex flex-col gap-4">
+          <nav className="flex flex-col gap-2">
             {navItems.map((item) => (
               <NavLink
                 key={item.label}
                 item={item}
                 onClick={() => setMobileMenuOpen(false)}
-                className="text-base font-medium text-foreground/80 transition-colors hover:text-primary"
+                className="rounded-xl px-3 py-2 text-base font-medium text-foreground/80 transition-all duration-200 hover:bg-primary/20 hover:text-primary"
               />
             ))}
-            <Button asChild className="rounded-full">
+            <Button asChild className="rounded-full mt-2">
               <Link to="/" hash="contact" onClick={() => setMobileMenuOpen(false)}>
                 Contact Us
               </Link>
@@ -132,12 +132,12 @@ export function SiteFooter() {
           <p className="text-sm text-muted-foreground">
             © {new Date().getFullYear()} Music Therapy Practice. All rights reserved.
           </p>
-          <div className="flex gap-6">
+          <div className="flex flex-wrap justify-center gap-2 md:gap-1">
             {navItems.map((item) => (
               <NavLink
                 key={item.label}
                 item={item}
-                className="text-sm text-muted-foreground transition-colors hover:text-primary"
+                className="rounded-full px-3 py-1 text-sm text-muted-foreground transition-all duration-200 hover:bg-primary/20 hover:text-primary"
               />
             ))}
           </div>
