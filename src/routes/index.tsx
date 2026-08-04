@@ -407,7 +407,7 @@ function Index() {
                 </div>
                 <div>
                   <p className="font-medium text-foreground">Location</p>
-                  <p className="text-sm text-muted-foreground">In-person and virtual sessions available</p>
+                  <p className="text-sm text-muted-foreground">Home visits, home clinic in Picnic Point, and telehealth</p>
                 </div>
               </div>
             </div>
