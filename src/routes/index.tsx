@@ -376,9 +376,9 @@ function Index() {
               I'd love to hear from you.
             </h2>
             <p className="mt-6 max-w-md text-lg leading-relaxed text-muted-foreground">
-              Whether you're curious about music therapy, ready to schedule a session, or just
-              have a question, send me a message. I'll respond within 1-2 business days.
-            </p>
+              Whether you're exploring music therapy for the first time, comparing services, or
+              ready to talk about goals and funding, send me a message. I'll respond within 1-2
+              business days — and I'll be honest if another service is the better fit.
 
             <div className="mt-10 space-y-5">
               <div className="flex items-start gap-4">
