@@ -30,26 +30,28 @@ export const Route = createFileRoute("/")({
   component: Index,
   head: () => ({
     meta: [
-      { title: "Music Therapy | Healing Through Sound" },
+      { title: "Registered Music Therapist | Personalised Music Therapy" },
       {
         name: "description",
         content:
-          "A warm, person-centered music therapy practice offering individual and group sessions for children, adults, and families seeking growth, connection, and healing.",
+          "Independent Registered Music Therapist (RMT) with 8+ years across hospitals, schools, disability, aged care and community settings. Home visits, telehealth and clinic sessions.",
       },
       {
         property: "og:title",
-        content: "Music Therapy | Healing Through Sound",
+        content: "Registered Music Therapist | Personalised Music Therapy",
       },
       {
         property: "og:description",
         content:
-          "A warm, person-centered music therapy practice offering individual and group sessions for children, adults, and families seeking growth, connection, and healing.",
+          "Independent Registered Music Therapist (RMT) with 8+ years of clinical experience. Home visits, telehealth and home clinic sessions in Picnic Point.",
       },
-      { name: "twitter:title", content: "Music Therapy | Healing Through Sound" },
+      { property: "og:type", content: "website" },
+      { name: "twitter:card", content: "summary_large_image" },
+      { name: "twitter:title", content: "Registered Music Therapist | Personalised Music Therapy" },
       {
         name: "twitter:description",
         content:
-          "A warm, person-centered music therapy practice offering individual and group sessions for children, adults, and families seeking growth, connection, and healing.",
+          "Independent Registered Music Therapist (RMT) with 8+ years of clinical experience. Home visits, telehealth and home clinic sessions in Picnic Point.",
       },
     ],
   }),
@@ -63,18 +65,19 @@ function Index() {
         <div className="mx-auto grid min-h-[calc(100vh-72px)] max-w-7xl grid-cols-1 items-center gap-12 px-6 py-16 lg:grid-cols-2 lg:py-24">
           <Reveal direction="left" className="order-2 flex flex-col justify-center lg:order-1">
             <p className="mb-4 text-sm font-medium uppercase tracking-widest text-primary">
-              Board-Certified Music Therapist
+              Registered Music Therapist (RMT) · 8+ Years Experience
             </p>
             <h1 className="font-heading text-4xl font-semibold leading-tight text-foreground md:text-5xl lg:text-6xl">
-              Healing happens when music meets connection.
+              Music is simply the medium. Relationships create lasting change.
             </h1>
             <p className="mt-6 max-w-lg text-lg leading-relaxed text-muted-foreground">
-              I offer a gentle, creative space where children, adults, and families can use
-              music to process emotions, build skills, and feel more at home in themselves.
+              An independent, person-centred practice for children, adults and older people —
+              drawing on eight years of clinical experience across hospitals, schools, disability
+              services, aged care, mental health and community settings.
             </p>
             <div className="mt-8 flex flex-wrap gap-4">
               <Button asChild size="lg" className="rounded-full px-8">
-                <a href="#contact">Book a Free Consultation</a>
+                <a href="#contact">Start a conversation</a>
               </Button>
               <Button asChild variant="outline" size="lg" className="rounded-full px-8">
                 <a href="#about">Learn More</a>
@@ -118,24 +121,27 @@ function Index() {
               About Me
             </p>
             <h2 className="font-heading text-3xl font-semibold text-foreground md:text-4xl">
-              Hi, I'm your music therapist.
+              Experience built by saying yes.
             </h2>
             <div className="mt-6 space-y-4 text-base leading-relaxed text-muted-foreground">
               <p>
-                I became a music therapist because I saw, again and again, how music reaches
-                places that words alone cannot. Whether it's a child finding their first
-                confident voice, an adult navigating grief, or a family learning to communicate
-                in new ways, music creates a safe bridge.
+                I'm a Registered Music Therapist (RMT) with a Master of Music Therapy and a
+                Bachelor of Music (Performance) from the University of Melbourne, and over eight
+                years of clinical practice. I also supervise clinical placements for music
+                therapy students at Western Sydney University and the University of Melbourne.
               </p>
               <p>
-                My approach is warm, collaborative, and grounded in evidence. I hold a
-                board-certification in music therapy and have experience supporting clients
-                across the lifespan — from early childhood through older adulthood.
+                Rather than specialising early, I chose to immerse myself in as many areas of
+                music therapy as I could — hospital mental health teams, multidisciplinary clinic
+                work alongside speech and occupational therapy, disability services, aged care,
+                palliative care and community programs. I wanted to understand people, not just
+                diagnoses.
               </p>
               <p>
-                I don't believe in a one-size-fits-all session. Every person who walks through
-                the door brings their own story, preferences, and goals. Together, we'll find
-                the sounds, songs, and rhythms that feel right for you.
+                That breadth means a wide range of approaches to draw on, so sessions can be
+                shaped around the person in front of me. Above all, I aim to create a welcoming
+                space where people feel safe to connect, express themselves and discover what's
+                possible through music.
               </p>
             </div>
             <div className="mt-8">
