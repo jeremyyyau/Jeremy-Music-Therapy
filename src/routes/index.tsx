@@ -161,13 +161,13 @@ function Index() {
               What is Music Therapy?
             </p>
             <h2 className="font-heading text-3xl font-semibold text-foreground md:text-4xl">
-              More than music lessons. More than entertainment.
+              For everyone — not defined by diagnosis.
             </h2>
             <p className="mt-6 text-lg leading-relaxed text-muted-foreground">
-              Music therapy is the clinical and evidence-based use of music to support
-              non-musical goals. A board-certified music therapist designs each session around
-              your needs — whether that's emotional expression, communication, motor skills,
-              memory, or simply finding a moment of calm.
+              Music therapy is a clinical, evidence-based practice that uses music to support
+              non-musical goals across emotional, cognitive, physical and social domains. Most
+              people already use music therapeutically without realising it; therapy simply makes
+              that intentional, guided by your goals, strengths and challenges.
             </p>
           </Reveal>
 
@@ -175,21 +175,21 @@ function Index() {
             {[
               {
                 icon: Heart,
-                title: "Emotional Wellbeing",
+                title: "Active interventions",
                 description:
-                  "Use music to express feelings, reduce anxiety, and process life experiences in a supportive setting.",
+                  "Improvisation, songwriting, singing and playing instruments — making music together to build expression and connection.",
               },
               {
                 icon: Users,
-                title: "Connection & Communication",
+                title: "Receptive interventions",
                 description:
-                  "Strengthen relationships, build social skills, and find new ways to share what's inside.",
+                  "Guided listening, lyric analysis and music-assisted relaxation to support regulation, reflection and calm.",
               },
               {
                 icon: Calendar,
-                title: "Growth & Rehabilitation",
+                title: "Flexibly adapted",
                 description:
-                  "Support developmental, cognitive, or physical goals through structured musical experiences.",
+                  "For disability, neuro-developmental conditions, acquired brain injuries and mental health — accessible and resource-oriented.",
               },
             ].map((item, i) => (
               <Reveal
@@ -224,44 +224,48 @@ function Index() {
         <div className="mx-auto max-w-7xl px-6">
           <Reveal className="mb-16 max-w-3xl">
             <p className="mb-3 text-sm font-medium uppercase tracking-widest text-primary">
-              Services
+              Sessions
             </p>
             <h2 className="font-heading text-3xl font-semibold text-foreground md:text-4xl">
-              Sessions designed around you.
+              Therapy that comes to you.
             </h2>
+            <p className="mt-6 text-lg leading-relaxed text-muted-foreground">
+              At home, in the clinic, online or in a group program — whichever suits your goals,
+              lifestyle and funding.
+            </p>
           </Reveal>
 
           <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
             {[
               {
-                title: "Individual Sessions",
+                title: "Home Visits",
                 description:
-                  "One-on-one music therapy tailored to your personal goals, preferences, and pace. In-person or online.",
+                  "Sessions in your own environment, with all instruments and equipment provided.",
               },
               {
-                title: "Family Sessions",
+                title: "Home Clinic — Picnic Point",
                 description:
-                  "Shared musical experiences that support bonding, communication, and family routines.",
+                  "A calm, fully equipped therapy room for focused sessions with a wider range of instruments.",
               },
               {
-                title: "Group Sessions",
+                title: "Telehealth",
                 description:
-                  "Small group sessions focused on social connection, shared goals, and the joy of making music together.",
+                  "Online sessions for older children and adults, including rural clients and those for whom attending in person is harder.",
               },
               {
-                title: "Adaptive Lessons",
+                title: "Instrumental Learning",
                 description:
-                  "Instrument or voice instruction adapted for accessibility and therapeutic goals.",
+                  "Learning an instrument to support attention, motor movement, executive functioning, regulation and impulse control.",
               },
               {
-                title: "Community & Workshops",
+                title: "Group & Day Programs",
                 description:
-                  "Presentations and workshops for schools, organizations, or care communities.",
+                  "Day programs, aged care, childcare and schools — with performance and music-learning opportunities.",
               },
               {
-                title: "Consultation",
+                title: "An Initial Conversation",
                 description:
-                  "A free 20-minute call to explore whether music therapy is a good fit for you or your loved one.",
+                  "A relaxed chat about goals and funding, and an honest view on whether my practice is the right fit.",
               },
             ].map((service, i) => (
               <Reveal
@@ -282,11 +286,78 @@ function Index() {
 
           <Reveal className="mt-12">
             <Button asChild variant="outline" className="rounded-full">
-              <Link to="/services">See full service details</Link>
+              <Link to="/services">See full session details</Link>
             </Button>
           </Reveal>
         </div>
       </section>
+
+      {/* More than music */}
+      <section className="py-20 lg:py-28">
+        <div className="mx-auto max-w-7xl px-6">
+          <Reveal className="max-w-3xl">
+            <p className="mb-3 text-sm font-medium uppercase tracking-widest text-primary">
+              More Than Music
+            </p>
+            <h2 className="font-heading text-3xl font-semibold text-foreground md:text-4xl">
+              Take your time finding the right fit.
+            </h2>
+            <div className="mt-6 space-y-4 text-base leading-relaxed text-muted-foreground">
+              <p>
+                Choosing a therapist is about more than qualifications. Larger clinics suit some
+                families; others value a personal, flexible service where one therapist knows the
+                whole story. You're genuinely welcome to explore your options and decide what
+                feels right — there is no one-size-fits-all approach to therapy.
+              </p>
+              <p>
+                What I'd gently offer is this: meaningful developmental progress usually needs
+                time and the right foundations. Trust, consistency and a relationship where a
+                person feels safe to try are what allow the outcomes to follow.
+              </p>
+            </div>
+          </Reveal>
+
+          <div className="mt-12 grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-4">
+            {[
+              {
+                title: "Continuity of care",
+                description:
+                  "One therapist, no handovers — a relationship and a plan that deepen over time.",
+              },
+              {
+                title: "Flexible & responsive",
+                description:
+                  "Direct communication, adaptable scheduling and less administrative complexity.",
+              },
+              {
+                title: "Family at the centre",
+                description:
+                  "Parents and carers know their loved one best; your insights shape the work.",
+              },
+              {
+                title: "Success, broadly defined",
+                description:
+                  "Confidence, connection, participation and joy — alongside clinical goals.",
+              },
+            ].map((item, i) => (
+              <Reveal
+                key={item.title}
+                direction="up"
+                delay={i * 100}
+                className="group rounded-2xl border border-border/60 bg-card p-6 shadow-sm transition-all duration-300 hover:border-primary hover:bg-secondary/50 hover:shadow-card-hover"
+              >
+                <h3 className="font-heading text-lg font-semibold text-card-foreground">
+                  {item.title}
+                </h3>
+                <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
+                  {item.description}
+                </p>
+              </Reveal>
+            ))}
+          </div>
+        </div>
+      </section>
+
 
       <QuoteBand
         quote="Music gives a soul to the universe, wings to the mind, flight to the imagination, and life to everything."
