@@ -138,7 +138,7 @@ function ServicesPage() {
                 key={s.title}
                 direction={i % 2 === 0 ? "left" : "right"}
                 as="article"
-                className="group rounded-2xl border border-border/60 bg-card p-8 shadow-sm transition-all duration-300 hover:-translate-y-3 hover:scale-[1.02] hover:border-primary hover:bg-secondary/50 hover:shadow-card-hover md:p-10"
+                className="group rounded-2xl border border-border/60 bg-card p-8 shadow-sm transition-all duration-300 hover:border-primary hover:bg-secondary hover:shadow-card-hover md:p-10"
               >
                 <h2 className="font-heading text-2xl font-semibold text-card-foreground">
                   {s.title}
@@ -197,7 +197,7 @@ function ServicesPage() {
                 key={item.title}
                 direction="up"
                 delay={(i % 2) * 120}
-                className="group rounded-2xl border border-border/60 bg-card p-6 shadow-sm transition-all duration-300 hover:border-primary hover:bg-secondary/50 hover:shadow-card-hover"
+                className="group rounded-2xl border border-border/60 bg-card p-6 shadow-sm transition-all duration-300 hover:border-primary hover:bg-secondary hover:shadow-card-hover"
               >
                 <h3 className="font-heading text-lg font-semibold text-card-foreground">
                   {item.title}

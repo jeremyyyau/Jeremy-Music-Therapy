@@ -165,7 +165,7 @@ function AboutPage() {
                     key={item.title}
                     direction="up"
                     delay={(i % 2) * 120}
-                    className="group rounded-2xl border border-border/60 bg-card p-6 shadow-sm transition-all duration-300 hover:border-primary hover:bg-secondary/50 hover:shadow-card-hover"
+                    className="group rounded-2xl border border-border/60 bg-card p-6 shadow-sm transition-all duration-300 hover:border-primary hover:bg-secondary hover:shadow-card-hover"
                   >
                     <h3 className="font-heading text-lg font-semibold text-card-foreground">
                       {item.title}
