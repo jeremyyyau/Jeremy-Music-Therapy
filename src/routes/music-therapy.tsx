@@ -12,18 +12,20 @@ export const Route = createFileRoute("/music-therapy")({
   component: MusicTherapyPage,
   head: () => ({
     meta: [
-      { title: "What is Music Therapy | Music Therapy Practice" },
+      { title: "What is Music Therapy | Evidence-Based Practice" },
       {
         name: "description",
         content:
-          "Learn what music therapy is, how it works, who it helps, and what an evidence-based session actually looks like.",
+          "Music therapy is a clinical, evidence-based practice using active and receptive music interventions to support emotional, cognitive, physical and social goals.",
       },
-      { property: "og:title", content: "What is Music Therapy | Music Therapy Practice" },
+      { property: "og:title", content: "What is Music Therapy | Evidence-Based Practice" },
       {
         property: "og:description",
         content:
-          "Learn what music therapy is, how it works, who it helps, and what an evidence-based session actually looks like.",
+          "Music therapy uses active and receptive music interventions to support emotional, cognitive, physical and social goals — for people of all abilities.",
       },
+      { property: "og:type", content: "website" },
+      { name: "twitter:card", content: "summary_large_image" },
     ],
   }),
 });
@@ -39,31 +41,31 @@ const benefits = [
     icon: Users,
     title: "Connection & communication",
     description:
-      "Shared rhythm and song create moments of eye contact, turn-taking, and connection, especially for those who find talking hard.",
+      "Shared rhythm and song create moments of eye contact, turn-taking and connection, especially for those who find talking hard.",
   },
   {
     icon: Brain,
     title: "Cognition & memory",
     description:
-      "Familiar songs activate memory pathways, supporting attention, orientation, and recall — particularly in dementia care.",
+      "Familiar songs activate memory pathways, supporting attention, orientation and recall — particularly in dementia care.",
   },
   {
     icon: Calendar,
     title: "Developmental goals",
     description:
-      "Music-based play supports speech, motor coordination, and social skills in children on all developmental paths.",
+      "Music-based play supports speech, motor coordination and social skills in children on all developmental paths.",
   },
   {
     icon: Sparkles,
-    title: "Pain & stress relief",
+    title: "Regulation & relaxation",
     description:
-      "Live music and guided listening lower physiological stress markers and can reduce perceived pain.",
+      "Live music and guided listening support regulation, lower physiological stress markers and can reduce perceived pain.",
   },
   {
     icon: Music,
     title: "Identity & self-expression",
     description:
-      "Songwriting, improvisation, and preferred-music listening help clients explore who they are and who they're becoming.",
+      "Songwriting, improvisation and preferred-music listening help clients explore who they are and who they're becoming.",
   },
 ];
 
@@ -80,9 +82,9 @@ function MusicTherapyPage() {
               Evidence-based care, delivered through music.
             </h1>
             <p className="mt-6 text-lg leading-relaxed text-muted-foreground">
-              Music therapy is the clinical, research-supported use of music by a credentialed
-              professional to help clients meet personalized, non-musical goals — from emotional
-              regulation to communication to rehabilitation.
+              Music therapy is a clinical, evidence-based practice that uses music to support
+              non-musical therapeutic goals across emotional, cognitive, physical and social
+              domains.
             </p>
           </Reveal>
         </div>
@@ -98,6 +100,29 @@ function MusicTherapyPage() {
               height={1024}
               className="h-64 w-full object-cover mix-blend-multiply md:h-96"
             />
+          </Reveal>
+        </div>
+
+        <div className="mx-auto mt-16 max-w-4xl px-6 space-y-12">
+          <Reveal>
+            <h2 className="font-heading text-2xl font-semibold text-foreground md:text-3xl">
+              Active and receptive approaches
+            </h2>
+            <div className="mt-4 space-y-4 text-base leading-relaxed text-muted-foreground">
+              <p>
+                Sessions can draw on <strong className="text-foreground">active
+                interventions</strong> — improvisation, songwriting, singing and playing
+                instruments — or <strong className="text-foreground">receptive
+                interventions</strong> such as guided listening, lyric analysis and
+                music-assisted relaxation. Most often, they blend both.
+              </p>
+              <p>
+                These methods are flexibly adapted to suit diverse populations, including
+                children and adults with disabilities, neuro-developmental conditions, acquired
+                brain injuries and mental health challenges — so outcomes stay accessible,
+                resource-oriented and meaningful for everyone.
+              </p>
+            </div>
           </Reveal>
         </div>
 
@@ -136,35 +161,24 @@ function MusicTherapyPage() {
               className="h-56 w-full object-cover mix-blend-multiply md:h-72"
             />
           </Reveal>
+
           <Reveal>
             <h2 className="font-heading text-2xl font-semibold text-foreground md:text-3xl">
-              What a session actually looks like
+              Who is it for?
             </h2>
             <div className="mt-4 space-y-4 text-base leading-relaxed text-muted-foreground">
               <p>
-                We start with an assessment — a conversation and some musical exploration — so
-                I understand your goals, preferences, and what music already means to you. From
-                there, I design sessions around a mix of experiences:
+                Music therapy is for everyone. Most people already use music therapeutically
+                without realising it — listening to something calming after a stressful day,
+                playing upbeat songs to lift motivation, or using music to focus while studying.
               </p>
-              <ul className="ml-6 list-disc space-y-2">
-                <li>
-                  <strong className="text-foreground">Improvisation</strong> — making music
-                  together on instruments chosen for accessibility, no experience needed.
-                </li>
-                <li>
-                  <strong className="text-foreground">Songwriting</strong> — using lyrics and
-                  melody to give shape to what's hard to say.
-                </li>
-                <li>
-                  <strong className="text-foreground">Receptive listening</strong> — guided
-                  listening to preferred or curated music to support relaxation, memory, or
-                  emotional processing.
-                </li>
-                <li>
-                  <strong className="text-foreground">Singing & movement</strong> — using voice
-                  and body to build breath, coordination, and expression.
-                </li>
-              </ul>
+              <p>
+                Music therapy builds on that, using music in a more intentional and clinical
+                way. It isn't defined by diagnosis, but by goals, strengths and challenges.
+                People from very different backgrounds often share similar goals, and the
+                inherent creativity of music therapy supports them in ways that draw on their
+                own preferences and abilities.
+              </p>
             </div>
           </Reveal>
 
@@ -175,34 +189,35 @@ function MusicTherapyPage() {
             <div className="mt-4 space-y-4 text-base leading-relaxed text-muted-foreground">
               <p>
                 A music lesson teaches you to play. Music therapy uses music to help you grow —
-                emotionally, socially, cognitively, or physically. You don't need to become a
-                musician, and there's no performance or grading. The music is a tool, not the
-                goal.
+                emotionally, socially, cognitively or physically. You don't need to become a
+                musician, and there's no performance or grading. That said, learning an
+                instrument can itself be therapeutic, supporting selective attention, fine and
+                gross motor movement, executive functioning, regulation and impulse control.
               </p>
             </div>
           </Reveal>
 
           <Reveal>
             <h2 className="font-heading text-2xl font-semibold text-foreground md:text-3xl">
-              Is it right for me?
+              Progress takes time
             </h2>
             <div className="mt-4 space-y-4 text-base leading-relaxed text-muted-foreground">
               <p>
-                Music therapy has been studied in a wide range of populations — children with
-                autism and other developmental differences, people managing anxiety or
-                depression, stroke and Parkinson's rehabilitation, dementia care, palliative
-                and hospice care, and much more. If you're not sure, a free consultation is the
-                easiest way to find out.
+                Meaningful developmental outcomes rarely arrive in a single session. They grow
+                out of trust, consistency and the right foundations — a relationship where a
+                person feels safe enough to try something new. If you're weighing up options,
+                take the time you need. Finding the service that genuinely fits you or your
+                family matters more than starting quickly.
               </p>
             </div>
           </Reveal>
 
           <Reveal className="flex flex-wrap gap-4">
             <Button asChild size="lg" className="rounded-full px-8">
-              <Link to="/" hash="contact">Book a Free Consultation</Link>
+              <Link to="/" hash="contact">Ask a question</Link>
             </Button>
             <Button asChild variant="outline" size="lg" className="rounded-full px-8">
-              <Link to="/services">See Services</Link>
+              <Link to="/services">See sessions & services</Link>
             </Button>
           </Reveal>
         </div>
@@ -213,6 +228,5 @@ function MusicTherapyPage() {
         author="Leonard Bernstein"
       />
     </SitePage>
-
   );
 }
