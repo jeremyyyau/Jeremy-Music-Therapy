@@ -379,6 +379,8 @@ function Index() {
               Whether you're exploring music therapy for the first time, comparing services, or
               ready to talk about goals and funding, send me a message. I'll respond within 1-2
               business days — and I'll be honest if another service is the better fit.
+            </p>
+
 
             <div className="mt-10 space-y-5">
               <div className="flex items-start gap-4">
