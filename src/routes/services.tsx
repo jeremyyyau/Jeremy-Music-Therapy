@@ -11,64 +11,89 @@ export const Route = createFileRoute("/services")({
   component: ServicesPage,
   head: () => ({
     meta: [
-      { title: "Services | Music Therapy Practice" },
+      { title: "Sessions & Services | Independent Music Therapy" },
       {
         name: "description",
         content:
-          "Individual, family, and group music therapy sessions, adaptive lessons, community workshops, and free consultations — in person or online.",
+          "Home visits with all instruments provided, telehealth for older children and adults, home clinic sessions in Picnic Point, group programs and therapeutic instrumental learning.",
       },
-      { property: "og:title", content: "Services | Music Therapy Practice" },
+      { property: "og:title", content: "Sessions & Services | Independent Music Therapy" },
       {
         property: "og:description",
         content:
-          "Individual, family, and group music therapy sessions, adaptive lessons, community workshops, and free consultations — in person or online.",
+          "Home visits, telehealth, home clinic sessions in Picnic Point, group programs and therapeutic instrumental learning — tailored to your goals and funding.",
       },
+      { property: "og:type", content: "website" },
+      { name: "twitter:card", content: "summary_large_image" },
     ],
   }),
 });
 
 const services = [
   {
-    title: "Individual Sessions",
-    who: "Children, teens, and adults working toward personal goals.",
+    title: "Home Visits",
+    who: "Children, adults and families who are most comfortable at home.",
     description:
-      "One-on-one music therapy tailored to your goals, preferences, and pace. Sessions often focus on emotional expression, anxiety management, self-esteem, communication, or rehabilitation goals.",
-    format: "45 or 60 minutes • Weekly or bi-weekly • In-person or online",
+      "Sessions in your own environment, where skills are most likely to generalise into daily life. All instruments and equipment are provided — there's nothing you need to buy or set up.",
+    format: "Individual or family • Regular or fortnightly • In your home",
   },
   {
-    title: "Family Sessions",
-    who: "Families with young children, or families navigating a transition.",
+    title: "Home Clinic — Picnic Point",
+    who: "Clients who prefer a dedicated therapy space.",
     description:
-      "Shared musical experiences that strengthen bonding, communication, and daily routines. Especially helpful when a family member has a developmental difference or when a shared ritual is needed.",
-    format: "45 or 60 minutes • Weekly or bi-weekly • In-person",
+      "A calm, well-equipped clinic room with a full range of instruments, set up for focused sessions with fewer distractions and easy access to a wider variety of resources.",
+    format: "Individual or family • Regular or fortnightly • Picnic Point",
   },
   {
-    title: "Group Sessions",
-    who: "Small groups of 3–6 with shared goals.",
+    title: "Telehealth",
+    who: "Older children and adults, including clients in rural areas.",
     description:
-      "Music-based groups focused on social connection, peer support, and the specific joy of making music with others. Themes can include grief support, teen expression, or adaptive music for adults.",
-    format: "60 minutes • Weekly • In-person",
+      "Online sessions for clients where distance, physical access or social challenges make attending in person harder. Telehealth can be the more suitable option — not just a substitute.",
+    format: "Individual • Regular or fortnightly • Video call",
   },
   {
-    title: "Adaptive Lessons",
-    who: "Clients who want to learn an instrument with therapeutic support.",
+    title: "Instrumental Learning",
+    who: "Clients working toward cognitive, motor and regulation goals.",
     description:
-      "Instrument or voice instruction adapted for accessibility, sensory needs, and therapeutic goals. Progress is measured in growth and enjoyment, not audition-level performance.",
-    format: "30 or 45 minutes • Weekly • In-person or online",
+      "Learning an instrument can carry real therapeutic value — supporting selective attention, fine and gross motor movement, executive functioning, regulation and impulse control — with instruction adapted to accessibility and sensory needs.",
+    format: "Individual • Weekly • Home, clinic or telehealth",
   },
   {
-    title: "Community & Workshops",
-    who: "Schools, care communities, and organizations.",
+    title: "Group & Day Programs",
+    who: "Day programs, aged care, childcare and school settings.",
     description:
-      "On-site workshops, presentations, and short-term programs. Popular formats include staff wellness workshops, in-service trainings, and family-education evenings.",
+      "Group music therapy built around social connection, participation and shared goals — with room for performance elements and opportunities for music learning and engagement.",
     format: "Custom scope and length • On-site",
   },
   {
-    title: "Free Consultation",
-    who: "Anyone curious about music therapy.",
+    title: "An Initial Conversation",
+    who: "Anyone considering music therapy.",
     description:
-      "A no-pressure conversation to explore whether music therapy is a good fit for you or your loved one. We'll talk about your goals, answer your questions, and figure out next steps together.",
-    format: "20 minutes • Video call or phone",
+      "A no-pressure chat about goals, funding and whether my practice is the right fit. If another service suits you better, I'll happily say so — the right match matters more than filling a spot.",
+    format: "Around 20 minutes • Phone or video call",
+  },
+];
+
+const moreThanMusic = [
+  {
+    title: "Continuity of care",
+    description:
+      "Working directly with one therapist means no handovers, consistent goals and a relationship that deepens over time.",
+  },
+  {
+    title: "Flexible and responsive",
+    description:
+      "Flexible scheduling, direct communication and less administrative complexity, so time and funding go further.",
+  },
+  {
+    title: "Family at the centre",
+    description:
+      "Parents and carers know their loved one best. Your insights shape the work, and we support the wellbeing of everyone involved.",
+  },
+  {
+    title: "Success, broadly defined",
+    description:
+      "Confidence, connection, participation, self-expression and moments of joy — alongside clinical goals, not instead of them.",
   },
 ];
 
@@ -79,14 +104,15 @@ function ServicesPage() {
         <div className="mx-auto max-w-4xl px-6">
           <Reveal>
             <p className="mb-3 text-sm font-medium uppercase tracking-widest text-primary">
-              Services
+              Sessions & Services
             </p>
             <h1 className="font-heading text-4xl font-semibold text-foreground md:text-5xl">
               Sessions designed around you.
             </h1>
             <p className="mt-6 text-lg leading-relaxed text-muted-foreground">
-              Here's a closer look at how I work with clients. If you're not sure which offering
-              fits, start with a free consultation and we'll figure it out together.
+              Therapy can happen at home, in the clinic, online or in a group program. If you're
+              not sure which fits, start with a conversation and we'll work it out together —
+              including whether my practice is the right place to begin.
             </p>
           </Reveal>
         </div>
@@ -129,7 +155,7 @@ function ServicesPage() {
           </div>
         </div>
 
-        <div className="mx-auto mt-16 max-w-4xl px-6">
+        <div className="mx-auto mt-20 max-w-5xl px-6">
           <Reveal direction="up" className="mb-12 overflow-hidden rounded-3xl border border-border/60 shadow-sm">
             <img
               src={svcGroup}
@@ -141,21 +167,65 @@ function ServicesPage() {
               className="h-56 w-full object-cover mix-blend-multiply md:h-72"
             />
           </Reveal>
-          <Reveal className="rounded-3xl border border-border/60 bg-secondary/40 p-8 md:p-10">
+
+          <Reveal>
+            <p className="mb-3 text-sm font-medium uppercase tracking-widest text-primary">
+              More Than Music
+            </p>
+            <h2 className="font-heading text-3xl font-semibold text-foreground md:text-4xl">
+              Choosing the right therapist is about more than qualifications.
+            </h2>
+            <div className="mt-6 space-y-4 text-base leading-relaxed text-muted-foreground">
+              <p>
+                It's about finding someone whose approach feels right for you and your family.
+                Larger clinics are the best fit for some people; others value a more personal,
+                flexible experience where therapy is tailored to their goals, lifestyle and
+                changing needs.
+              </p>
+              <p>
+                As an independent music therapist, I offer a personalised service built on
+                trust, collaboration and genuine connection. Together we can adapt sessions,
+                explore different approaches, and make the most of your funding and time so that
+                therapy stays meaningful and sustainable.
+              </p>
+            </div>
+          </Reveal>
+
+          <div className="mt-10 grid grid-cols-1 gap-6 md:grid-cols-2">
+            {moreThanMusic.map((item, i) => (
+              <Reveal
+                key={item.title}
+                direction="up"
+                delay={(i % 2) * 120}
+                className="group rounded-2xl border border-border/60 bg-card p-6 shadow-sm transition-all duration-300 hover:border-primary hover:bg-secondary/50 hover:shadow-card-hover"
+              >
+                <h3 className="font-heading text-lg font-semibold text-card-foreground">
+                  {item.title}
+                </h3>
+                <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
+                  {item.description}
+                </p>
+              </Reveal>
+            ))}
+          </div>
+
+          <Reveal className="mt-12 rounded-3xl border border-border/60 bg-secondary/40 p-8 md:p-10">
             <h2 className="font-heading text-2xl font-semibold text-foreground md:text-3xl">
-              Rates & payment
+              Finding the right fit
             </h2>
             <p className="mt-4 text-base leading-relaxed text-muted-foreground">
-              Session rates vary by format and length. I offer a limited number of sliding-scale
-              spots to keep music therapy accessible. I'm happy to provide a superbill for
-              possible out-of-network reimbursement — reach out for current rates and
-              availability.
+              I encourage every family to find the service that feels right for them. There is no
+              one-size-fits-all approach to therapy, and the best outcomes happen when clients
+              feel comfortable, supported and genuinely connected with their therapist. Equally,
+              it often takes time to build the foundations that developmental progress grows
+              from — so give any therapeutic relationship room to establish itself. Either way, I
+              feel privileged to be part of that journey.
             </p>
           </Reveal>
 
           <Reveal className="mt-12 flex flex-wrap gap-4">
             <Button asChild size="lg" className="rounded-full px-8">
-              <Link to="/" hash="contact">Book a Free Consultation</Link>
+              <Link to="/" hash="contact">Start a conversation</Link>
             </Button>
             <Button asChild variant="outline" size="lg" className="rounded-full px-8">
               <Link to="/music-therapy">Learn about music therapy</Link>
@@ -169,6 +239,5 @@ function ServicesPage() {
         author="Leo Tolstoy"
       />
     </SitePage>
-
   );
 }
