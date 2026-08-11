@@ -332,22 +332,23 @@ function Index() {
               {
                 title: "Continuity of care",
                 description:
-                  "One therapist, no handovers — a relationship and a plan that deepen over time.",
+                  "One clinician, no handovers — consistent goals and a treatment plan that deepens over time.",
               },
               {
                 title: "Flexible & responsive",
                 description:
-                  "Direct communication, adaptable scheduling and less administrative complexity.",
+                  "Direct communication, adaptable scheduling and minimal administrative overhead.",
               },
               {
                 title: "Family at the centre",
                 description:
-                  "Parents and carers know their loved one best; your insights shape the work.",
+                  "Parents and carers are key informants; your observations shape assessment and goal setting.",
               },
               {
-                title: "Success, broadly defined",
+                title: "Outcomes, broadly measured",
                 description:
-                  "Confidence, connection, participation and joy — alongside clinical goals.",
+                  "Confidence, connection, participation and quality of life tracked alongside clinical goals.",
+
               },
             ].map((item, i) => (
               <Reveal
@@ -386,10 +387,12 @@ function Index() {
               I'd love to hear from you.
             </h2>
             <p className="mt-6 max-w-md text-lg leading-relaxed text-muted-foreground">
-              Whether you're exploring music therapy for the first time, comparing services, or
-              ready to talk about goals and funding, send me a message. I'll respond within 1-2
-              business days — and I'll be honest if another service is the better fit.
+              Whether you're exploring music therapy for the first time, comparing providers, or
+              ready to discuss goals, referrals and funding, send me a message. I'll respond within
+              1–2 business days — and I'll say so plainly if another service is clinically the
+              better fit.
             </p>
+
 
 
             <div className="mt-10 space-y-5">
