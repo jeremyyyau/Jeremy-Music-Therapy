@@ -35,38 +35,39 @@ const benefits = [
     icon: Heart,
     title: "Emotional wellbeing",
     description:
-      "Music can reach feelings that words can't touch — grief, anxiety, joy, anger — and give them a safe form of expression.",
+      "Music can access affect that language can't reach — grief, anxiety, anger, joy — providing a contained, safe channel for expression and processing.",
   },
   {
     icon: Users,
-    title: "Connection & communication",
+    title: "Communication & social skills",
     description:
-      "Shared rhythm and song create moments of eye contact, turn-taking and connection, especially for those who find talking hard.",
+      "Shared rhythm and song structure scaffold joint attention, eye contact and turn-taking, particularly for clients with limited verbal communication.",
   },
   {
     icon: Brain,
     title: "Cognition & memory",
     description:
-      "Familiar songs activate memory pathways, supporting attention, orientation and recall — particularly in dementia care.",
+      "Familiar and preferred music engages widely distributed memory networks, supporting attention, orientation and autobiographical recall in dementia care.",
   },
   {
     icon: Calendar,
     title: "Developmental goals",
     description:
-      "Music-based play supports speech, motor coordination and social skills in children on all developmental paths.",
+      "Structured music-based play targets speech and language, motor coordination and social skills across all developmental trajectories.",
   },
   {
     icon: Sparkles,
     title: "Regulation & relaxation",
     description:
-      "Live music and guided listening support regulation, lower physiological stress markers and can reduce perceived pain.",
+      "Live music and guided listening support arousal regulation, and are associated with reduced physiological stress markers and lower perceived pain.",
   },
   {
     icon: Music,
     title: "Identity & self-expression",
     description:
-      "Songwriting, improvisation and preferred-music listening help clients explore who they are and who they're becoming.",
+      "Therapeutic songwriting, improvisation and preferred-music listening support identity work, self-efficacy and narrative processing.",
   },
+
 ];
 
 function MusicTherapyPage() {
