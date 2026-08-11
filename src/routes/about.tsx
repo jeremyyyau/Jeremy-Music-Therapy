@@ -81,12 +81,14 @@ function AboutPage() {
               Music is simply the medium. Relationships create lasting change.
             </h1>
             <p className="mt-6 text-lg leading-relaxed text-muted-foreground">
-              I'm a Registered Music Therapist (RMT) with a Master of Music Therapy from the University of Melbourne.
-              Over more than eight years I've had the privilege of supporting children, adults and older people across
-              hospitals, schools, disability services, aged care, mental health, palliative care and community settings.
-              Working alongside multidisciplinary teams has given me a broad perspective and shaped the flexible,
-              person-centred approach I bring to every therapeutic relationship.
+              I'm a Registered Music Therapist (RMT) with a Master of Music Therapy from the
+              University of Melbourne. Over more than eight years of clinical practice I've
+              supported children, adults and older people across hospital, education, disability,
+              aged care, mental health, palliative care and community settings. Working within
+              multidisciplinary teams has shaped the flexible, person-centred and evidence-based
+              approach I bring to every therapeutic relationship.
             </p>
+
           </Reveal>
 
           <Reveal direction="scale" delay={150} className="mt-12 overflow-hidden rounded-3xl shadow-xl">
@@ -108,19 +110,22 @@ function AboutPage() {
               </h2>
               <div className="mt-4 space-y-4 text-base leading-relaxed text-muted-foreground">
                 <p>
-                  My journey into music therapy began long before university. As a child and aspiring musician, I was
-                  deeply influenced by my godfather, a music therapy lecturer at New York University, who taught me that
-                  music belongs to everyone — that nobody should feel judged for expressing themselves through it. That
-                  simple belief has guided every step of my career.
+                  My path into music therapy began long before university. As a child and aspiring
+                  musician, I was deeply influenced by my godfather, a music therapy lecturer at
+                  New York University, who taught me that music belongs to everyone — that nobody
+                  should feel judged for expressing themselves through it. That principle still
+                  underpins how I practise.
                 </p>
                 <p>
-                  Rather than specialising early, I chose to immerse myself in as many areas of music therapy as I
-                  could. I rarely said "no" to an opportunity, because I wanted to understand people, not just
-                  diagnoses. I was fortunate to find my way into a wide range of therapy spaces alongside acclaimed
-                  mentors who challenged me to think creatively, adapt my approach, and recognise the strengths and
-                  stories each client brings in their own way of engaging with music.
+                  Rather than specialising early, I chose to practise across as many clinical
+                  populations as I could. I rarely declined an opportunity, because I wanted to
+                  understand people and their presentations, not diagnoses alone. I was fortunate
+                  to work in a wide range of clinical settings alongside experienced mentors and
+                  supervisors who challenged me to reason clinically, adapt interventions in the
+                  moment, and build on the strengths each client brings to music.
                 </p>
               </div>
+
             </Reveal>
 
             <Reveal>
@@ -135,9 +140,11 @@ function AboutPage() {
             <Reveal>
               <h2 className="font-heading text-2xl font-semibold text-foreground md:text-3xl">Breadth of experience</h2>
               <p className="mt-4 text-base leading-relaxed text-muted-foreground">
-                A wide range of settings means a wide range of approaches to draw on — so sessions can be shaped around
-                the person in front of me rather than a single method.
+                A wide range of clinical settings means a wide range of evidence-informed
+                approaches to draw on — so interventions can be selected for the person in front
+                of me rather than applied from a single fixed method.
               </p>
+
               <div className="mt-8 grid grid-cols-1 gap-6 md:grid-cols-2">
                 {experience.map((item, i) => (
                   <Reveal
