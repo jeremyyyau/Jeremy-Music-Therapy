@@ -114,17 +114,19 @@ function MusicTherapyPage() {
             <div className="mt-4 space-y-4 text-base leading-relaxed text-muted-foreground">
               <p>
                 Sessions can draw on <strong className="text-foreground">active
-                interventions</strong> — improvisation, songwriting, singing and playing
-                instruments — or <strong className="text-foreground">receptive
-                interventions</strong> such as guided listening, lyric analysis and
-                music-assisted relaxation. Most often, they blend both.
+                interventions</strong> — clinical improvisation, therapeutic songwriting, singing
+                and instrument play — or <strong className="text-foreground">receptive
+                interventions</strong> such as guided listening, lyric analysis and music-assisted
+                relaxation. Most treatment plans combine both, selected on the basis of assessment
+                and reviewed as goals shift.
               </p>
               <p>
-                These methods are flexibly adapted to suit diverse populations, including
-                children and adults with disabilities, neuro-developmental conditions, acquired
-                brain injuries and mental health challenges — so outcomes stay accessible,
-                resource-oriented and meaningful for everyone.
+                These methods are flexibly adapted for diverse populations, including children and
+                adults with disability, neuro-developmental conditions, acquired brain injury and
+                mental health presentations — so interventions remain accessible, strengths-based
+                and clinically meaningful.
               </p>
+
             </div>
           </Reveal>
         </div>
