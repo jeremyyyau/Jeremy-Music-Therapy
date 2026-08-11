@@ -71,10 +71,12 @@ function Index() {
               Music is simply the medium. Relationships create lasting change.
             </h1>
             <p className="mt-6 max-w-lg text-lg leading-relaxed text-muted-foreground">
-              An independent, person-centred practice for children, adults and older people —
-              drawing on eight years of clinical experience across hospitals, schools, disability
-              services, aged care, mental health and community settings.
+              An independent, person-centred practice offering evidence-based music therapy for
+              children, adults and older people — informed by eight years of clinical experience
+              across hospital, education, disability, aged care, mental health and community
+              settings, with goals set collaboratively and reviewed as you progress.
             </p>
+
             <div className="mt-8 flex flex-wrap gap-4">
               <Button asChild size="lg" className="rounded-full px-8">
                 <a href="#contact">Start a conversation</a>
@@ -121,7 +123,7 @@ function Index() {
               About Me
             </p>
             <h2 className="font-heading text-3xl font-semibold text-foreground md:text-4xl">
-              Experience built by saying yes.
+              Clinical breadth, built by saying yes.
             </h2>
             <div className="mt-6 space-y-4 text-base leading-relaxed text-muted-foreground">
               <p>
@@ -131,19 +133,21 @@ function Index() {
                 therapy students at Western Sydney University and the University of Melbourne.
               </p>
               <p>
-                Rather than specialising early, I chose to immerse myself in as many areas of
-                music therapy as I could — hospital mental health teams, multidisciplinary clinic
-                work alongside speech and occupational therapy, disability services, aged care,
-                palliative care and community programs. I wanted to understand people, not just
-                diagnoses.
+                Rather than specialising early, I chose to practise across as many clinical areas
+                as I could — hospital mental health teams, multidisciplinary clinic work alongside
+                speech pathology and occupational therapy, disability services, aged care,
+                palliative care and community programs. That transdisciplinary grounding means I
+                work with the whole person, not the diagnosis alone.
               </p>
               <p>
-                That breadth means a wide range of approaches to draw on, so sessions can be
-                shaped around the person in front of me. Above all, I aim to create a welcoming
-                space where people feel safe to connect, express themselves and discover what's
-                possible through music.
+                Practically, it means a broad repertoire of evidence-informed interventions to
+                draw on, so each session plan can be matched to presentation, capacity and
+                preference — and adjusted through ongoing clinical observation and review. Above
+                all, I aim to create a welcoming, safe therapeutic space where people can connect,
+                express themselves and discover what's possible through music.
               </p>
             </div>
+
             <div className="mt-8">
               <Button asChild variant="outline" className="rounded-full">
                 <Link to="/about">Read my full story</Link>
@@ -161,13 +165,14 @@ function Index() {
               What is Music Therapy?
             </p>
             <h2 className="font-heading text-3xl font-semibold text-foreground md:text-4xl">
-              For everyone — not defined by diagnosis.
+              Goal-directed, not diagnosis-defined.
             </h2>
             <p className="mt-6 text-lg leading-relaxed text-muted-foreground">
-              Music therapy is a clinical, evidence-based practice that uses music to support
-              non-musical goals across emotional, cognitive, physical and social domains. Most
-              people already use music therapeutically without realising it; therapy simply makes
-              that intentional, guided by your goals, strengths and challenges.
+              Music therapy is a clinical, evidence-based allied health discipline in which a
+              registered therapist uses music interventions to address non-musical therapeutic
+              goals across emotional, cognitive, communication, physical and social domains.
+              Most people already use music self-therapeutically; therapy makes that intentional,
+              structured and measurable — directed by assessed goals, strengths and challenges.
             </p>
           </Reveal>
 
@@ -177,21 +182,22 @@ function Index() {
                 icon: Heart,
                 title: "Active interventions",
                 description:
-                  "Improvisation, songwriting, singing and playing instruments — making music together to build expression and connection.",
+                  "Clinical improvisation, therapeutic songwriting, singing and instrument play to build expression, communication and engagement.",
               },
               {
                 icon: Users,
                 title: "Receptive interventions",
                 description:
-                  "Guided listening, lyric analysis and music-assisted relaxation to support regulation, reflection and calm.",
+                  "Guided listening, lyric analysis and music-assisted relaxation to support emotional regulation, reflection and stress reduction.",
               },
               {
                 icon: Calendar,
-                title: "Flexibly adapted",
+                title: "Adapted to presentation",
                 description:
-                  "For disability, neuro-developmental conditions, acquired brain injuries and mental health — accessible and resource-oriented.",
+                  "Methods adapted for disability, neuro-developmental conditions, acquired brain injury and mental health — accessible, strengths-based and resource-oriented.",
               },
             ].map((item, i) => (
+
               <Reveal
                 key={item.title}
                 direction="up"
