@@ -172,9 +172,11 @@ function AboutPage() {
                   thought possible. Those moments of connection, confidence and joy are why I love this work.
                 </p>
                 <p>
-                  Whether we're building communication skills, supporting emotional wellbeing, navigating grief,
-                  encouraging independence, or simply finding a safe space for self-expression, the most meaningful
-                  outcomes happen when people feel seen, supported and believed in.
+                  Whether we're targeting communication skills, emotional regulation, grief
+                  processing, functional independence or simply a safe space for self-expression,
+                  the most durable outcomes emerge when people feel seen, supported and believed
+                  in — which is why therapeutic rapport is treated as clinical work, not a
+                  preliminary to it.
                 </p>
               </div>
             </Reveal>
@@ -182,10 +184,12 @@ function AboutPage() {
             <Reveal>
               <h2 className="font-heading text-2xl font-semibold text-foreground md:text-3xl">In the session room</h2>
               <p className="mt-4 text-base leading-relaxed text-muted-foreground">
-                As a musician I draw on a range of instruments to create engaging, responsive sessions tailored to each
-                individual — and I'm committed to lifelong learning so I can keep offering the best possible support to
-                the people and families I work with.
+                As a multi-instrumentalist I can adapt the musical medium to each client's
+                preferences, sensory profile and physical access needs — and I maintain ongoing
+                professional development and clinical supervision so practice stays current with
+                the evidence base.
               </p>
+
               <ul className="mt-6 flex flex-wrap gap-2">
                 {instruments.map((inst) => (
                   <li
