@@ -236,8 +236,8 @@ function Index() {
               Therapy that comes to you.
             </h2>
             <p className="mt-6 text-lg leading-relaxed text-muted-foreground">
-              At home, in the clinic, online or in a group program — whichever suits your goals,
-              lifestyle and funding.
+              At home, in the clinic, via telehealth or in a group program — service delivery is
+              matched to your therapeutic goals, functional needs, daily routine and funding.
             </p>
           </Reveal>
 
@@ -246,33 +246,34 @@ function Index() {
               {
                 title: "Home Visits",
                 description:
-                  "Sessions in your own environment, with all instruments and equipment provided.",
+                  "Sessions in your natural environment, where skills are most likely to generalise. All instruments and equipment provided.",
               },
               {
                 title: "Home Clinic — Picnic Point",
                 description:
-                  "A calm, fully equipped therapy room for focused sessions with a wider range of instruments.",
+                  "A calm, purpose-equipped therapy room for focused sessions with a wider range of instruments and fewer distractions.",
               },
               {
                 title: "Telehealth",
                 description:
-                  "Online sessions for older children and adults, including rural clients and those for whom attending in person is harder.",
+                  "Evidence-supported online delivery for older children and adults, including rural clients and those for whom in-person attendance is a barrier.",
               },
               {
                 title: "Instrumental Learning",
                 description:
-                  "Learning an instrument to support attention, motor movement, executive functioning, regulation and impulse control.",
+                  "Therapeutic instrumental instruction targeting selective attention, fine and gross motor skills, executive functioning and impulse control.",
               },
               {
                 title: "Group & Day Programs",
                 description:
-                  "Day programs, aged care, childcare and schools — with performance and music-learning opportunities.",
+                  "Group programs in day services, aged care, childcare and schools, structured around social participation and shared goals.",
               },
               {
                 title: "An Initial Conversation",
                 description:
-                  "A relaxed chat about goals and funding, and an honest view on whether my practice is the right fit.",
+                  "A no-pressure discussion of goals, funding and clinical suitability — including an honest view on whether another service fits better.",
               },
+
             ].map((service, i) => (
               <Reveal
                 key={service.title}
@@ -310,17 +311,20 @@ function Index() {
             </h2>
             <div className="mt-6 space-y-4 text-base leading-relaxed text-muted-foreground">
               <p>
-                Choosing a therapist is about more than qualifications. Larger clinics suit some
-                families; others value a personal, flexible service where one therapist knows the
-                whole story. You're genuinely welcome to explore your options and decide what
-                feels right — there is no one-size-fits-all approach to therapy.
+                Choosing a therapist involves more than qualifications. Larger clinics suit some
+                families; others value a personal, flexible service where one clinician holds the
+                whole clinical picture. You're genuinely welcome to explore your options and
+                decide what fits — there is no single model that suits every presentation.
               </p>
               <p>
-                What I'd gently offer is this: meaningful developmental progress usually needs
-                time and the right foundations. Trust, consistency and a relationship where a
-                person feels safe to try are what allow the outcomes to follow.
+                What the evidence consistently shows is this: outcomes in music therapy are
+                mediated by the therapeutic relationship and by consistent, repeated engagement
+                over time. Trust, session consistency and a space where a person feels safe enough
+                to attempt something new are the conditions that allow measurable developmental
+                change to follow.
               </p>
             </div>
+
           </Reveal>
 
           <div className="mt-12 grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-4">
