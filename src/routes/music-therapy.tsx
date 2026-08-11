@@ -83,10 +83,12 @@ function MusicTherapyPage() {
               Evidence-based care, delivered through music.
             </h1>
             <p className="mt-6 text-lg leading-relaxed text-muted-foreground">
-              Music therapy is a clinical, evidence-based practice that uses music to support
-              non-musical therapeutic goals across emotional, cognitive, physical and social
-              domains.
+              Music therapy is a clinical, evidence-based allied health discipline in which a
+              registered therapist uses planned music interventions to address non-musical
+              therapeutic goals across emotional, cognitive, communication, physical and social
+              domains, with progress reviewed against goals over time.
             </p>
+
           </Reveal>
         </div>
 

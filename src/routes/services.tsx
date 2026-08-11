@@ -32,46 +32,47 @@ export const Route = createFileRoute("/services")({
 const services = [
   {
     title: "Home Visits",
-    who: "Children, adults and families who are most comfortable at home.",
+    who: "Children, adults and families best supported in their own environment.",
     description:
-      "Sessions in your own environment, where skills are most likely to generalise into daily life. All instruments and equipment are provided — there's nothing you need to buy or set up.",
-    format: "Individual or family • Regular or fortnightly • In your home",
+      "Sessions in your natural environment, where newly acquired skills are most likely to generalise into daily routines. All instruments and equipment are provided — nothing to purchase or set up.",
+    format: "Individual or family • Weekly or fortnightly • In your home",
   },
   {
     title: "Home Clinic — Picnic Point",
-    who: "Clients who prefer a dedicated therapy space.",
+    who: "Clients who benefit from a dedicated, low-distraction therapy space.",
     description:
-      "A calm, well-equipped clinic room with a full range of instruments, set up for focused sessions with fewer distractions and easy access to a wider variety of resources.",
-    format: "Individual or family • Regular or fortnightly • Picnic Point",
+      "A calm, purpose-equipped clinic room with a full range of instruments, suited to focused sessions where reduced sensory distraction and access to broader resources support engagement.",
+    format: "Individual or family • Weekly or fortnightly • Picnic Point",
   },
   {
     title: "Telehealth",
-    who: "Older children and adults, including clients in rural areas.",
+    who: "Older children and adults, including clients in rural and remote areas.",
     description:
-      "Online sessions for clients where distance, physical access or social challenges make attending in person harder. Telehealth can be the more suitable option — not just a substitute.",
-    format: "Individual • Regular or fortnightly • Video call",
+      "Online delivery where distance, physical access or social anxiety present barriers to in-person attendance. Telehealth is a clinically appropriate mode of delivery in its own right, not simply a substitute.",
+    format: "Individual • Weekly or fortnightly • Video call",
   },
   {
     title: "Instrumental Learning",
-    who: "Clients working toward cognitive, motor and regulation goals.",
+    who: "Clients with cognitive, motor and self-regulation goals.",
     description:
-      "Learning an instrument can carry real therapeutic value — supporting selective attention, fine and gross motor movement, executive functioning, regulation and impulse control — with instruction adapted to accessibility and sensory needs.",
+      "Therapeutic instrumental instruction with documented benefits for selective attention, fine and gross motor control, executive functioning, emotional regulation and impulse control — with technique and equipment adapted to accessibility and sensory needs.",
     format: "Individual • Weekly • Home, clinic or telehealth",
   },
   {
     title: "Group & Day Programs",
     who: "Day programs, aged care, childcare and school settings.",
     description:
-      "Group music therapy built around social connection, participation and shared goals — with room for performance elements and opportunities for music learning and engagement.",
+      "Group music therapy structured around social participation, peer interaction and shared goals — with scope for performance elements and music-learning opportunities where they serve the group's aims.",
     format: "Custom scope and length • On-site",
   },
   {
     title: "An Initial Conversation",
     who: "Anyone considering music therapy.",
     description:
-      "A no-pressure chat about goals, funding and whether my practice is the right fit. If another service suits you better, I'll happily say so — the right match matters more than filling a spot.",
+      "A no-pressure discussion of goals, funding and clinical suitability. If another service is the better clinical match, I'll say so — appropriate referral matters more than filling a caseload.",
     format: "Around 20 minutes • Phone or video call",
   },
+
 ];
 
 const moreThanMusic = [
