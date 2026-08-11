@@ -71,10 +71,12 @@ function Index() {
               Music is simply the medium. Relationships create lasting change.
             </h1>
             <p className="mt-6 max-w-lg text-lg leading-relaxed text-muted-foreground">
-              An independent, person-centred practice for children, adults and older people —
-              drawing on eight years of clinical experience across hospitals, schools, disability
-              services, aged care, mental health and community settings.
+              An independent, person-centred practice offering evidence-based music therapy for
+              children, adults and older people — informed by eight years of clinical experience
+              across hospital, education, disability, aged care, mental health and community
+              settings, with goals set collaboratively and reviewed as you progress.
             </p>
+
             <div className="mt-8 flex flex-wrap gap-4">
               <Button asChild size="lg" className="rounded-full px-8">
                 <a href="#contact">Start a conversation</a>
@@ -121,7 +123,7 @@ function Index() {
               About Me
             </p>
             <h2 className="font-heading text-3xl font-semibold text-foreground md:text-4xl">
-              Experience built by saying yes.
+              Clinical breadth, built by saying yes.
             </h2>
             <div className="mt-6 space-y-4 text-base leading-relaxed text-muted-foreground">
               <p>
@@ -131,19 +133,21 @@ function Index() {
                 therapy students at Western Sydney University and the University of Melbourne.
               </p>
               <p>
-                Rather than specialising early, I chose to immerse myself in as many areas of
-                music therapy as I could — hospital mental health teams, multidisciplinary clinic
-                work alongside speech and occupational therapy, disability services, aged care,
-                palliative care and community programs. I wanted to understand people, not just
-                diagnoses.
+                Rather than specialising early, I chose to practise across as many clinical areas
+                as I could — hospital mental health teams, multidisciplinary clinic work alongside
+                speech pathology and occupational therapy, disability services, aged care,
+                palliative care and community programs. That transdisciplinary grounding means I
+                work with the whole person, not the diagnosis alone.
               </p>
               <p>
-                That breadth means a wide range of approaches to draw on, so sessions can be
-                shaped around the person in front of me. Above all, I aim to create a welcoming
-                space where people feel safe to connect, express themselves and discover what's
-                possible through music.
+                Practically, it means a broad repertoire of evidence-informed interventions to
+                draw on, so each session plan can be matched to presentation, capacity and
+                preference — and adjusted through ongoing clinical observation and review. Above
+                all, I aim to create a welcoming, safe therapeutic space where people can connect,
+                express themselves and discover what's possible through music.
               </p>
             </div>
+
             <div className="mt-8">
               <Button asChild variant="outline" className="rounded-full">
                 <Link to="/about">Read my full story</Link>
@@ -161,13 +165,14 @@ function Index() {
               What is Music Therapy?
             </p>
             <h2 className="font-heading text-3xl font-semibold text-foreground md:text-4xl">
-              For everyone — not defined by diagnosis.
+              Goal-directed, not diagnosis-defined.
             </h2>
             <p className="mt-6 text-lg leading-relaxed text-muted-foreground">
-              Music therapy is a clinical, evidence-based practice that uses music to support
-              non-musical goals across emotional, cognitive, physical and social domains. Most
-              people already use music therapeutically without realising it; therapy simply makes
-              that intentional, guided by your goals, strengths and challenges.
+              Music therapy is a clinical, evidence-based allied health discipline in which a
+              registered therapist uses music interventions to address non-musical therapeutic
+              goals across emotional, cognitive, communication, physical and social domains.
+              Most people already use music self-therapeutically; therapy makes that intentional,
+              structured and measurable — directed by assessed goals, strengths and challenges.
             </p>
           </Reveal>
 
@@ -177,21 +182,22 @@ function Index() {
                 icon: Heart,
                 title: "Active interventions",
                 description:
-                  "Improvisation, songwriting, singing and playing instruments — making music together to build expression and connection.",
+                  "Clinical improvisation, therapeutic songwriting, singing and instrument play to build expression, communication and engagement.",
               },
               {
                 icon: Users,
                 title: "Receptive interventions",
                 description:
-                  "Guided listening, lyric analysis and music-assisted relaxation to support regulation, reflection and calm.",
+                  "Guided listening, lyric analysis and music-assisted relaxation to support emotional regulation, reflection and stress reduction.",
               },
               {
                 icon: Calendar,
-                title: "Flexibly adapted",
+                title: "Adapted to presentation",
                 description:
-                  "For disability, neuro-developmental conditions, acquired brain injuries and mental health — accessible and resource-oriented.",
+                  "Methods adapted for disability, neuro-developmental conditions, acquired brain injury and mental health — accessible, strengths-based and resource-oriented.",
               },
             ].map((item, i) => (
+
               <Reveal
                 key={item.title}
                 direction="up"
@@ -230,8 +236,8 @@ function Index() {
               Therapy that comes to you.
             </h2>
             <p className="mt-6 text-lg leading-relaxed text-muted-foreground">
-              At home, in the clinic, online or in a group program — whichever suits your goals,
-              lifestyle and funding.
+              At home, in the clinic, via telehealth or in a group program — service delivery is
+              matched to your therapeutic goals, functional needs, daily routine and funding.
             </p>
           </Reveal>
 
@@ -240,33 +246,34 @@ function Index() {
               {
                 title: "Home Visits",
                 description:
-                  "Sessions in your own environment, with all instruments and equipment provided.",
+                  "Sessions in your natural environment, where skills are most likely to generalise. All instruments and equipment provided.",
               },
               {
                 title: "Home Clinic — Picnic Point",
                 description:
-                  "A calm, fully equipped therapy room for focused sessions with a wider range of instruments.",
+                  "A calm, purpose-equipped therapy room for focused sessions with a wider range of instruments and fewer distractions.",
               },
               {
                 title: "Telehealth",
                 description:
-                  "Online sessions for older children and adults, including rural clients and those for whom attending in person is harder.",
+                  "Evidence-supported online delivery for older children and adults, including rural clients and those for whom in-person attendance is a barrier.",
               },
               {
                 title: "Instrumental Learning",
                 description:
-                  "Learning an instrument to support attention, motor movement, executive functioning, regulation and impulse control.",
+                  "Therapeutic instrumental instruction targeting selective attention, fine and gross motor skills, executive functioning and impulse control.",
               },
               {
                 title: "Group & Day Programs",
                 description:
-                  "Day programs, aged care, childcare and schools — with performance and music-learning opportunities.",
+                  "Group programs in day services, aged care, childcare and schools, structured around social participation and shared goals.",
               },
               {
                 title: "An Initial Conversation",
                 description:
-                  "A relaxed chat about goals and funding, and an honest view on whether my practice is the right fit.",
+                  "A no-pressure discussion of goals, funding and clinical suitability — including an honest view on whether another service fits better.",
               },
+
             ].map((service, i) => (
               <Reveal
                 key={service.title}
@@ -304,17 +311,20 @@ function Index() {
             </h2>
             <div className="mt-6 space-y-4 text-base leading-relaxed text-muted-foreground">
               <p>
-                Choosing a therapist is about more than qualifications. Larger clinics suit some
-                families; others value a personal, flexible service where one therapist knows the
-                whole story. You're genuinely welcome to explore your options and decide what
-                feels right — there is no one-size-fits-all approach to therapy.
+                Choosing a therapist involves more than qualifications. Larger clinics suit some
+                families; others value a personal, flexible service where one clinician holds the
+                whole clinical picture. You're genuinely welcome to explore your options and
+                decide what fits — there is no single model that suits every presentation.
               </p>
               <p>
-                What I'd gently offer is this: meaningful developmental progress usually needs
-                time and the right foundations. Trust, consistency and a relationship where a
-                person feels safe to try are what allow the outcomes to follow.
+                What the evidence consistently shows is this: outcomes in music therapy are
+                mediated by the therapeutic relationship and by consistent, repeated engagement
+                over time. Trust, session consistency and a space where a person feels safe enough
+                to attempt something new are the conditions that allow measurable developmental
+                change to follow.
               </p>
             </div>
+
           </Reveal>
 
           <div className="mt-12 grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-4">
@@ -322,22 +332,23 @@ function Index() {
               {
                 title: "Continuity of care",
                 description:
-                  "One therapist, no handovers — a relationship and a plan that deepen over time.",
+                  "One clinician, no handovers — consistent goals and a treatment plan that deepens over time.",
               },
               {
                 title: "Flexible & responsive",
                 description:
-                  "Direct communication, adaptable scheduling and less administrative complexity.",
+                  "Direct communication, adaptable scheduling and minimal administrative overhead.",
               },
               {
                 title: "Family at the centre",
                 description:
-                  "Parents and carers know their loved one best; your insights shape the work.",
+                  "Parents and carers are key informants; your observations shape assessment and goal setting.",
               },
               {
-                title: "Success, broadly defined",
+                title: "Outcomes, broadly measured",
                 description:
-                  "Confidence, connection, participation and joy — alongside clinical goals.",
+                  "Confidence, connection, participation and quality of life tracked alongside clinical goals.",
+
               },
             ].map((item, i) => (
               <Reveal
@@ -376,10 +387,12 @@ function Index() {
               I'd love to hear from you.
             </h2>
             <p className="mt-6 max-w-md text-lg leading-relaxed text-muted-foreground">
-              Whether you're exploring music therapy for the first time, comparing services, or
-              ready to talk about goals and funding, send me a message. I'll respond within 1-2
-              business days — and I'll be honest if another service is the better fit.
+              Whether you're exploring music therapy for the first time, comparing providers, or
+              ready to discuss goals, referrals and funding, send me a message. I'll respond within
+              1–2 business days — and I'll say so plainly if another service is clinically the
+              better fit.
             </p>
+
 
 
             <div className="mt-10 space-y-5">

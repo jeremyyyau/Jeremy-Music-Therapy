@@ -35,38 +35,39 @@ const benefits = [
     icon: Heart,
     title: "Emotional wellbeing",
     description:
-      "Music can reach feelings that words can't touch — grief, anxiety, joy, anger — and give them a safe form of expression.",
+      "Music can access affect that language can't reach — grief, anxiety, anger, joy — providing a contained, safe channel for expression and processing.",
   },
   {
     icon: Users,
-    title: "Connection & communication",
+    title: "Communication & social skills",
     description:
-      "Shared rhythm and song create moments of eye contact, turn-taking and connection, especially for those who find talking hard.",
+      "Shared rhythm and song structure scaffold joint attention, eye contact and turn-taking, particularly for clients with limited verbal communication.",
   },
   {
     icon: Brain,
     title: "Cognition & memory",
     description:
-      "Familiar songs activate memory pathways, supporting attention, orientation and recall — particularly in dementia care.",
+      "Familiar and preferred music engages widely distributed memory networks, supporting attention, orientation and autobiographical recall in dementia care.",
   },
   {
     icon: Calendar,
     title: "Developmental goals",
     description:
-      "Music-based play supports speech, motor coordination and social skills in children on all developmental paths.",
+      "Structured music-based play targets speech and language, motor coordination and social skills across all developmental trajectories.",
   },
   {
     icon: Sparkles,
     title: "Regulation & relaxation",
     description:
-      "Live music and guided listening support regulation, lower physiological stress markers and can reduce perceived pain.",
+      "Live music and guided listening support arousal regulation, and are associated with reduced physiological stress markers and lower perceived pain.",
   },
   {
     icon: Music,
     title: "Identity & self-expression",
     description:
-      "Songwriting, improvisation and preferred-music listening help clients explore who they are and who they're becoming.",
+      "Therapeutic songwriting, improvisation and preferred-music listening support identity work, self-efficacy and narrative processing.",
   },
+
 ];
 
 function MusicTherapyPage() {
@@ -82,10 +83,12 @@ function MusicTherapyPage() {
               Evidence-based care, delivered through music.
             </h1>
             <p className="mt-6 text-lg leading-relaxed text-muted-foreground">
-              Music therapy is a clinical, evidence-based practice that uses music to support
-              non-musical therapeutic goals across emotional, cognitive, physical and social
-              domains.
+              Music therapy is a clinical, evidence-based allied health discipline in which a
+              registered therapist uses planned music interventions to address non-musical
+              therapeutic goals across emotional, cognitive, communication, physical and social
+              domains, with progress reviewed against goals over time.
             </p>
+
           </Reveal>
         </div>
 
@@ -111,17 +114,19 @@ function MusicTherapyPage() {
             <div className="mt-4 space-y-4 text-base leading-relaxed text-muted-foreground">
               <p>
                 Sessions can draw on <strong className="text-foreground">active
-                interventions</strong> — improvisation, songwriting, singing and playing
-                instruments — or <strong className="text-foreground">receptive
-                interventions</strong> such as guided listening, lyric analysis and
-                music-assisted relaxation. Most often, they blend both.
+                interventions</strong> — clinical improvisation, therapeutic songwriting, singing
+                and instrument play — or <strong className="text-foreground">receptive
+                interventions</strong> such as guided listening, lyric analysis and music-assisted
+                relaxation. Most treatment plans combine both, selected on the basis of assessment
+                and reviewed as goals shift.
               </p>
               <p>
-                These methods are flexibly adapted to suit diverse populations, including
-                children and adults with disabilities, neuro-developmental conditions, acquired
-                brain injuries and mental health challenges — so outcomes stay accessible,
-                resource-oriented and meaningful for everyone.
+                These methods are flexibly adapted for diverse populations, including children and
+                adults with disability, neuro-developmental conditions, acquired brain injury and
+                mental health presentations — so interventions remain accessible, strengths-based
+                and clinically meaningful.
               </p>
+
             </div>
           </Reveal>
         </div>
@@ -168,16 +173,16 @@ function MusicTherapyPage() {
             </h2>
             <div className="mt-4 space-y-4 text-base leading-relaxed text-muted-foreground">
               <p>
-                Music therapy is for everyone. Most people already use music therapeutically
-                without realising it — listening to something calming after a stressful day,
-                playing upbeat songs to lift motivation, or using music to focus while studying.
+                Music therapy is for everyone. Most people already use music self-therapeutically
+                without labelling it as such — calming music after a stressful day, upbeat music
+                to lift motivation, or background music to sustain attention while studying.
               </p>
               <p>
-                Music therapy builds on that, using music in a more intentional and clinical
-                way. It isn't defined by diagnosis, but by goals, strengths and challenges.
-                People from very different backgrounds often share similar goals, and the
-                inherent creativity of music therapy supports them in ways that draw on their
-                own preferences and abilities.
+                Clinical music therapy builds on those mechanisms and applies them intentionally
+                and systematically. Eligibility isn't defined by diagnosis but by assessed goals,
+                strengths and challenges. Clients with very different presentations often share
+                similar functional goals, and the flexibility of music as a medium allows those
+                goals to be targeted through each person's own preferences and capacities.
               </p>
             </div>
           </Reveal>
@@ -188,11 +193,12 @@ function MusicTherapyPage() {
             </h2>
             <div className="mt-4 space-y-4 text-base leading-relaxed text-muted-foreground">
               <p>
-                A music lesson teaches you to play. Music therapy uses music to help you grow —
-                emotionally, socially, cognitively or physically. You don't need to become a
-                musician, and there's no performance or grading. That said, learning an
-                instrument can itself be therapeutic, supporting selective attention, fine and
-                gross motor movement, executive functioning, regulation and impulse control.
+                A music lesson teaches musical skill; music therapy uses music to work toward
+                emotional, social, cognitive and physical outcomes. There is no requirement to
+                become a musician, and no performance or grading. That said, structured
+                instrumental learning has documented therapeutic value — supporting selective
+                attention, fine and gross motor control, executive functioning, emotional
+                regulation and impulse control.
               </p>
             </div>
           </Reveal>
@@ -203,11 +209,12 @@ function MusicTherapyPage() {
             </h2>
             <div className="mt-4 space-y-4 text-base leading-relaxed text-muted-foreground">
               <p>
-                Meaningful developmental outcomes rarely arrive in a single session. They grow
-                out of trust, consistency and the right foundations — a relationship where a
-                person feels safe enough to try something new. If you're weighing up options,
-                take the time you need. Finding the service that genuinely fits you or your
-                family matters more than starting quickly.
+                Measurable developmental outcomes rarely emerge from a single session. The
+                evidence points consistently to therapeutic alliance and consistent, repeated
+                engagement as key mediators of change — a relationship in which a person feels
+                safe enough to attempt something new. If you're weighing up providers, take the
+                time you need: an appropriate clinical match matters more than starting quickly.
+
               </p>
             </div>
           </Reveal>

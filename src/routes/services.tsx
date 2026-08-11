@@ -32,70 +32,72 @@ export const Route = createFileRoute("/services")({
 const services = [
   {
     title: "Home Visits",
-    who: "Children, adults and families who are most comfortable at home.",
+    who: "Children, adults and families best supported in their own environment.",
     description:
-      "Sessions in your own environment, where skills are most likely to generalise into daily life. All instruments and equipment are provided — there's nothing you need to buy or set up.",
-    format: "Individual or family • Regular or fortnightly • In your home",
+      "Sessions in your natural environment, where newly acquired skills are most likely to generalise into daily routines. All instruments and equipment are provided — nothing to purchase or set up.",
+    format: "Individual or family • Weekly or fortnightly • In your home",
   },
   {
     title: "Home Clinic — Picnic Point",
-    who: "Clients who prefer a dedicated therapy space.",
+    who: "Clients who benefit from a dedicated, low-distraction therapy space.",
     description:
-      "A calm, well-equipped clinic room with a full range of instruments, set up for focused sessions with fewer distractions and easy access to a wider variety of resources.",
-    format: "Individual or family • Regular or fortnightly • Picnic Point",
+      "A calm, purpose-equipped clinic room with a full range of instruments, suited to focused sessions where reduced sensory distraction and access to broader resources support engagement.",
+    format: "Individual or family • Weekly or fortnightly • Picnic Point",
   },
   {
     title: "Telehealth",
-    who: "Older children and adults, including clients in rural areas.",
+    who: "Older children and adults, including clients in rural and remote areas.",
     description:
-      "Online sessions for clients where distance, physical access or social challenges make attending in person harder. Telehealth can be the more suitable option — not just a substitute.",
-    format: "Individual • Regular or fortnightly • Video call",
+      "Online delivery where distance, physical access or social anxiety present barriers to in-person attendance. Telehealth is a clinically appropriate mode of delivery in its own right, not simply a substitute.",
+    format: "Individual • Weekly or fortnightly • Video call",
   },
   {
     title: "Instrumental Learning",
-    who: "Clients working toward cognitive, motor and regulation goals.",
+    who: "Clients with cognitive, motor and self-regulation goals.",
     description:
-      "Learning an instrument can carry real therapeutic value — supporting selective attention, fine and gross motor movement, executive functioning, regulation and impulse control — with instruction adapted to accessibility and sensory needs.",
+      "Therapeutic instrumental instruction with documented benefits for selective attention, fine and gross motor control, executive functioning, emotional regulation and impulse control — with technique and equipment adapted to accessibility and sensory needs.",
     format: "Individual • Weekly • Home, clinic or telehealth",
   },
   {
     title: "Group & Day Programs",
     who: "Day programs, aged care, childcare and school settings.",
     description:
-      "Group music therapy built around social connection, participation and shared goals — with room for performance elements and opportunities for music learning and engagement.",
+      "Group music therapy structured around social participation, peer interaction and shared goals — with scope for performance elements and music-learning opportunities where they serve the group's aims.",
     format: "Custom scope and length • On-site",
   },
   {
     title: "An Initial Conversation",
     who: "Anyone considering music therapy.",
     description:
-      "A no-pressure chat about goals, funding and whether my practice is the right fit. If another service suits you better, I'll happily say so — the right match matters more than filling a spot.",
+      "A no-pressure discussion of goals, funding and clinical suitability. If another service is the better clinical match, I'll say so — appropriate referral matters more than filling a caseload.",
     format: "Around 20 minutes • Phone or video call",
   },
+
 ];
 
 const moreThanMusic = [
   {
     title: "Continuity of care",
     description:
-      "Working directly with one therapist means no handovers, consistent goals and a relationship that deepens over time.",
+      "Working with one clinician means no handovers, consistent goals and a therapeutic relationship that deepens over time — a known contributor to outcomes.",
   },
   {
     title: "Flexible and responsive",
     description:
-      "Flexible scheduling, direct communication and less administrative complexity, so time and funding go further.",
+      "Adaptable scheduling, direct communication and minimal administrative overhead, so clinical time and funding go further.",
   },
   {
     title: "Family at the centre",
     description:
-      "Parents and carers know their loved one best. Your insights shape the work, and we support the wellbeing of everyone involved.",
+      "Parents and carers are key informants. Your observations inform assessment and goal setting, and the wellbeing of everyone involved is part of the picture.",
   },
   {
-    title: "Success, broadly defined",
+    title: "Outcomes, broadly measured",
     description:
-      "Confidence, connection, participation, self-expression and moments of joy — alongside clinical goals, not instead of them.",
+      "Confidence, connection, participation, self-expression and quality of life tracked alongside clinical goals, not instead of them.",
   },
 ];
+
 
 function ServicesPage() {
   return (
@@ -110,10 +112,12 @@ function ServicesPage() {
               Sessions designed around you.
             </h1>
             <p className="mt-6 text-lg leading-relaxed text-muted-foreground">
-              Therapy can happen at home, in the clinic, online or in a group program. If you're
-              not sure which fits, start with a conversation and we'll work it out together —
-              including whether my practice is the right place to begin.
+              Therapy can be delivered at home, in the clinic, via telehealth or in a group
+              program. If you're unsure which mode suits, start with a conversation and we'll
+              work it out together — including whether my practice is the appropriate clinical
+              fit for your goals.
             </p>
+
           </Reveal>
         </div>
 
@@ -177,18 +181,19 @@ function ServicesPage() {
             </h2>
             <div className="mt-6 space-y-4 text-base leading-relaxed text-muted-foreground">
               <p>
-                It's about finding someone whose approach feels right for you and your family.
-                Larger clinics are the best fit for some people; others value a more personal,
-                flexible experience where therapy is tailored to their goals, lifestyle and
-                changing needs.
+                It's about finding a clinician whose approach fits you and your family. Larger
+                multidisciplinary clinics are the right setting for some people; others benefit
+                from a more personal, flexible service where the treatment plan is tailored to
+                their goals, routine and changing needs.
               </p>
               <p>
-                As an independent music therapist, I offer a personalised service built on
-                trust, collaboration and genuine connection. Together we can adapt sessions,
-                explore different approaches, and make the most of your funding and time so that
-                therapy stays meaningful and sustainable.
+                As an independent Registered Music Therapist, I offer a personalised service built
+                on therapeutic alliance, collaboration and shared decision-making. Together we can
+                adapt session structure, trial different interventions, and use your funding and
+                clinical time efficiently so therapy stays meaningful and sustainable.
               </p>
             </div>
+
           </Reveal>
 
           <div className="mt-10 grid grid-cols-1 gap-6 md:grid-cols-2">
@@ -214,12 +219,13 @@ function ServicesPage() {
               Finding the right fit
             </h2>
             <p className="mt-4 text-base leading-relaxed text-muted-foreground">
-              I encourage every family to find the service that feels right for them. There is no
-              one-size-fits-all approach to therapy, and the best outcomes happen when clients
-              feel comfortable, supported and genuinely connected with their therapist. Equally,
-              it often takes time to build the foundations that developmental progress grows
-              from — so give any therapeutic relationship room to establish itself. Either way, I
-              feel privileged to be part of that journey.
+              I encourage every family to find the service that suits them. There is no
+              one-size-fits-all model of therapy, and outcomes are strongest when clients feel
+              comfortable, supported and genuinely connected with their therapist. Equally, the
+              evidence is clear that developmental change relies on consistent engagement over
+              time — so give any therapeutic relationship room to establish itself before judging
+              progress. Either way, I feel privileged to be part of that process.
+
             </p>
           </Reveal>
 

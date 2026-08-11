@@ -50,10 +50,12 @@ function ResourcesPage() {
               Creative tools for musical play.
             </h1>
             <p className="mt-6 text-lg leading-relaxed text-muted-foreground">
-              A collection of free, accessible, and fun music-based websites you can explore at
-              home. These are not therapy sessions — they're invitations to create, listen, and
-              discover music in new ways.
+              A collection of free, accessible music-based websites you can explore at home.
+              These are not therapy and don't replace clinical sessions — they're low-pressure
+              opportunities for creative engagement, active listening and musical play between
+              appointments.
             </p>
+
           </Reveal>
         </div>
 
