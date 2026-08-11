@@ -181,18 +181,19 @@ function ServicesPage() {
             </h2>
             <div className="mt-6 space-y-4 text-base leading-relaxed text-muted-foreground">
               <p>
-                It's about finding someone whose approach feels right for you and your family.
-                Larger clinics are the best fit for some people; others value a more personal,
-                flexible experience where therapy is tailored to their goals, lifestyle and
-                changing needs.
+                It's about finding a clinician whose approach fits you and your family. Larger
+                multidisciplinary clinics are the right setting for some people; others benefit
+                from a more personal, flexible service where the treatment plan is tailored to
+                their goals, routine and changing needs.
               </p>
               <p>
-                As an independent music therapist, I offer a personalised service built on
-                trust, collaboration and genuine connection. Together we can adapt sessions,
-                explore different approaches, and make the most of your funding and time so that
-                therapy stays meaningful and sustainable.
+                As an independent Registered Music Therapist, I offer a personalised service built
+                on therapeutic alliance, collaboration and shared decision-making. Together we can
+                adapt session structure, trial different interventions, and use your funding and
+                clinical time efficiently so therapy stays meaningful and sustainable.
               </p>
             </div>
+
           </Reveal>
 
           <div className="mt-10 grid grid-cols-1 gap-6 md:grid-cols-2">
@@ -218,12 +219,13 @@ function ServicesPage() {
               Finding the right fit
             </h2>
             <p className="mt-4 text-base leading-relaxed text-muted-foreground">
-              I encourage every family to find the service that feels right for them. There is no
-              one-size-fits-all approach to therapy, and the best outcomes happen when clients
-              feel comfortable, supported and genuinely connected with their therapist. Equally,
-              it often takes time to build the foundations that developmental progress grows
-              from — so give any therapeutic relationship room to establish itself. Either way, I
-              feel privileged to be part of that journey.
+              I encourage every family to find the service that suits them. There is no
+              one-size-fits-all model of therapy, and outcomes are strongest when clients feel
+              comfortable, supported and genuinely connected with their therapist. Equally, the
+              evidence is clear that developmental change relies on consistent engagement over
+              time — so give any therapeutic relationship room to establish itself before judging
+              progress. Either way, I feel privileged to be part of that process.
+
             </p>
           </Reveal>
 
