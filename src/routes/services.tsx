@@ -79,24 +79,25 @@ const moreThanMusic = [
   {
     title: "Continuity of care",
     description:
-      "Working directly with one therapist means no handovers, consistent goals and a relationship that deepens over time.",
+      "Working with one clinician means no handovers, consistent goals and a therapeutic relationship that deepens over time — a known contributor to outcomes.",
   },
   {
     title: "Flexible and responsive",
     description:
-      "Flexible scheduling, direct communication and less administrative complexity, so time and funding go further.",
+      "Adaptable scheduling, direct communication and minimal administrative overhead, so clinical time and funding go further.",
   },
   {
     title: "Family at the centre",
     description:
-      "Parents and carers know their loved one best. Your insights shape the work, and we support the wellbeing of everyone involved.",
+      "Parents and carers are key informants. Your observations inform assessment and goal setting, and the wellbeing of everyone involved is part of the picture.",
   },
   {
-    title: "Success, broadly defined",
+    title: "Outcomes, broadly measured",
     description:
-      "Confidence, connection, participation, self-expression and moments of joy — alongside clinical goals, not instead of them.",
+      "Confidence, connection, participation, self-expression and quality of life tracked alongside clinical goals, not instead of them.",
   },
 ];
+
 
 function ServicesPage() {
   return (
@@ -111,10 +112,12 @@ function ServicesPage() {
               Sessions designed around you.
             </h1>
             <p className="mt-6 text-lg leading-relaxed text-muted-foreground">
-              Therapy can happen at home, in the clinic, online or in a group program. If you're
-              not sure which fits, start with a conversation and we'll work it out together —
-              including whether my practice is the right place to begin.
+              Therapy can be delivered at home, in the clinic, via telehealth or in a group
+              program. If you're unsure which mode suits, start with a conversation and we'll
+              work it out together — including whether my practice is the appropriate clinical
+              fit for your goals.
             </p>
+
           </Reveal>
         </div>
 
