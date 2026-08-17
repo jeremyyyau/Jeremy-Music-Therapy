@@ -84,13 +84,13 @@ function Index() {
               <img
                 src={heroImageAsset.url}
                 alt="Close-up of hands playing an acoustic guitar in a warm, intimate music therapy setting"
-                width={1200}
-                height={800}
+                width={1920}
+                height={1280}
                 loading="eager"
                 fetchPriority="high"
                 decoding="async"
                 sizes="(min-width: 1024px) 50vw, 100vw"
-                className="aspect-[4/3] w-full object-cover"
+                className="aspect-[3/2] w-full object-cover"
               />
             </div>
           </Reveal>
