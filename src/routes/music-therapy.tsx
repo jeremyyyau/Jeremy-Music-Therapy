@@ -97,7 +97,7 @@ function MusicTherapyPage() {
               decoding="async"
               width={1600}
               height={889}
-              className="h-64 w-full object-cover object-[65%_50%] opacity-95 saturate-[0.85] contrast-[0.94] md:h-[26rem] md:object-center"
+              className="h-64 w-full object-cover object-[65%_50%] opacity-95 saturate-[0.85] contrast-[0.94] md:h-auto md:aspect-[1600/889] md:object-contain md:object-center"
             />
             <div
               aria-hidden
@@ -157,7 +157,7 @@ function MusicTherapyPage() {
                 decoding="async"
                 width={1600}
                 height={1066}
-                className="h-56 w-full object-cover opacity-90 saturate-[0.85] contrast-[0.92] md:h-72"
+                className="h-56 w-full object-cover opacity-90 saturate-[0.85] contrast-[0.92] md:h-auto md:aspect-[1600/1066] md:object-contain"
               />
               <div
                 aria-hidden
