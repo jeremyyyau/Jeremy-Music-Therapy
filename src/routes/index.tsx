@@ -169,13 +169,13 @@ function Index() {
                 icon: Heart,
                 title: "Active interventions",
                 description:
-                  "Clinical improvisation, therapeutic songwriting, soundtrack creation, singing and instrument play to build confidence, communication and engagement.",
+                  "Clinical improvisation, supported songwriting, soundtrack creation, therapeutic singing and instrument play to build confidence, communication and engagement.",
               },
               {
                 icon: Users,
                 title: "Receptive interventions",
                 description:
-                  "Guided music listening, lyric analysis, playlist creation and music-assisted relaxation to support self-reflection, emotional exploration and sensory regulation.",
+                  "Guided music listening, song lyric analysis, playlist creation and music-assisted relaxation to support self-reflection, emotional exploration and sensory regulation.",
               },
               {
                 icon: Calendar,
