@@ -102,14 +102,15 @@ function Index() {
         <div className="mx-auto grid max-w-7xl grid-cols-1 items-center gap-12 px-6 lg:grid-cols-2">
           <Reveal direction="left" className="relative overflow-hidden rounded-3xl shadow-xl">
             <img
-              src={aboutImage}
-              alt="Close-up of hands holding a wooden ukulele, representing a personal, gentle approach to music therapy"
-              width={800}
-              height={1008}
+              src={aboutImageAsset.url}
+              alt="Jeremy Yau, Registered Music Therapist, playing an acoustic guitar beside a bookshelf"
+              width={1200}
+              height={1545}
               loading="lazy"
               decoding="async"
-              className="aspect-[4/5] w-full object-cover"
+              className="aspect-[3/4] w-full object-cover object-top opacity-90 saturate-[0.85] contrast-[0.92]"
             />
+            <div className="pointer-events-none absolute inset-0 bg-secondary/25 mix-blend-multiply" />
           </Reveal>
           <Reveal direction="right" delay={120}>
             <p className="mb-3 text-sm font-medium uppercase tracking-widest text-primary">About Me</p>
