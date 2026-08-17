@@ -175,7 +175,7 @@ function Index() {
                 icon: Users,
                 title: "Receptive interventions",
                 description:
-                  "Guided listening, lyric analysis, playlist creation and music-assisted relaxation to support self-                           reflection, emotional exploration and sensory regulation.",
+                  "Guided music listening, lyric analysis, playlist creation and music-assisted relaxation to support self-reflection, emotional exploration and sensory regulation.",
               },
               {
                 icon: Calendar,
