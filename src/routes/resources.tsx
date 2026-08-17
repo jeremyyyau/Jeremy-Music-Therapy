@@ -61,7 +61,7 @@ function ResourcesPage() {
 
         <div className="mx-auto mt-14 max-w-5xl px-6">
           <Reveal direction="up" className="overflow-hidden rounded-3xl border border-border/60 shadow-sm">
-            <div className="relative h-64 w-full md:h-96">
+            <div className="relative aspect-[16/9] w-full md:aspect-[16/10]">
               <img
                 src={resourcesHeroAsset.url}
                 alt="Music therapist playing guitar with a child during a relaxed, interactive session"
@@ -69,9 +69,12 @@ function ResourcesPage() {
                 decoding="async"
                 width={1920}
                 height={1280}
-                className="h-full w-full object-cover object-[40%_45%]"
+                className="h-full w-full object-cover object-[58%_38%] md:object-[60%_35%]"
               />
+              <div className="pointer-events-none absolute inset-0 bg-secondary/20 mix-blend-multiply" />
+              <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-background/25 via-transparent to-transparent" />
             </div>
+
           </Reveal>
         </div>
 
