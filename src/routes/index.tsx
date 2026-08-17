@@ -13,7 +13,7 @@ import { Textarea } from "@/components/ui/textarea";
 import { contactFormSchema, type ContactFormValues } from "@/lib/contact.schema";
 import { submitContactForm } from "@/lib/contact.functions";
 import heroImageAsset from "@/assets/hero-music-therapy.webp.asset.json";
-import aboutImageAsset from "@/assets/about-jeremy.webp.asset.json";
+import aboutImage from "@/assets/about-therapist.webp";
 import { SitePage } from "@/components/site-chrome";
 import { Reveal } from "@/components/reveal";
 import { QuoteBand } from "@/components/quote-band";
@@ -90,9 +90,8 @@ function Index() {
                 fetchPriority="high"
                 decoding="async"
                 sizes="(min-width: 1024px) 50vw, 100vw"
-                className="aspect-[3/2] w-full object-cover opacity-90 saturate-[0.85] contrast-[0.92]"
+                className="aspect-[3/2] w-full object-cover"
               />
-              <div className="pointer-events-none absolute inset-0 bg-secondary/25 mix-blend-multiply" />
             </div>
           </Reveal>
         </div>
@@ -103,15 +102,14 @@ function Index() {
         <div className="mx-auto grid max-w-7xl grid-cols-1 items-center gap-12 px-6 lg:grid-cols-2">
           <Reveal direction="left" className="relative overflow-hidden rounded-3xl shadow-xl">
             <img
-              src={aboutImageAsset.url}
-              alt="Jeremy Yau, Registered Music Therapist, playing an acoustic guitar beside a bookshelf"
-              width={1200}
-              height={1545}
+              src={aboutImage}
+              alt="Close-up of hands holding a wooden ukulele, representing a personal, gentle approach to music therapy"
+              width={800}
+              height={1008}
               loading="lazy"
               decoding="async"
-              className="aspect-[3/4] w-full object-cover object-top opacity-90 saturate-[0.85] contrast-[0.92]"
+              className="aspect-[4/5] w-full object-cover"
             />
-            <div className="pointer-events-none absolute inset-0 bg-secondary/25 mix-blend-multiply" />
           </Reveal>
           <Reveal direction="right" delay={120}>
             <p className="mb-3 text-sm font-medium uppercase tracking-widest text-primary">About Me</p>
@@ -133,7 +131,7 @@ function Index() {
               </p>
               <p>
                 In my practice, I draw from a wide repertoire of evidence-informed interventions, so that each session
-                plan can be matched to presentation, capacity and preference -adjusted through ongoing clinical
+                plan can be matched to presentation, capacity and preference - adjusted through ongoing clinical
                 observation and review. Above all, I aim to create a welcoming, safe therapeutic space where people can
                 connect, express themselves and explore new possibilities through music.
               </p>
