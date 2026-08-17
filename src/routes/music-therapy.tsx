@@ -6,7 +6,8 @@ import { Reveal } from "@/components/reveal";
 import { QuoteBand } from "@/components/quote-band";
 
 import mtFamily from "@/assets/mt-family.webp.asset.json";
-import mtListening from "@/assets/mt-listening.webp";
+import mtKeyboard from "@/assets/mt-keyboard.webp.asset.json";
+
 
 export const Route = createFileRoute("/music-therapy")({
   component: MusicTherapyPage,
