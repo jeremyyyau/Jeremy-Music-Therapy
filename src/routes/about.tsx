@@ -187,7 +187,7 @@ function AboutPage() {
                 {instruments.map((inst) => (
                   <li
                     key={inst}
-                    className="rounded-full border border-border/60 bg-secondary/50 px-4 py-1.5 text-sm text-foreground/80"
+                    className="rounded-full border border-border/60 bg-secondary/80 px-4 py-1.5 text-sm text-foreground/80"
                   >
                     {inst}
                   </li>

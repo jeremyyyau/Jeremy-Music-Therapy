@@ -109,7 +109,7 @@ function ResourcesPage() {
         </div>
 
         <div className="mx-auto mt-16 max-w-4xl px-6">
-          <Reveal className="rounded-3xl border border-border/60 bg-secondary/40 p-8 md:p-10">
+          <Reveal className="rounded-3xl border border-border/60 bg-secondary/70 p-8 md:p-10">
             <h2 className="font-heading text-2xl font-semibold text-foreground md:text-3xl">
               Want to add your own?
             </h2>
