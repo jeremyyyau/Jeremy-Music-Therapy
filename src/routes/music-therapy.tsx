@@ -217,9 +217,10 @@ function MusicTherapyPage() {
       </section>
 
       <QuoteBand
-        quote="What we were creating in therapy... was performance... and that performance was of wonderful, developmental, therapeutic value. People were learning how to 'perform' — going back to Vygotsky's language — people were learning to perform beyond themselves.
+        quote="What we were creating in therapy... was performance... and that performance was of wonderful, developmental, therapeutic value. People were learning how to 'perform' — people were learning to perform beyond themselves."
         <br />
-We become who we are by continuously being who we are not"
+      <QuoteBand
+quote="We become who we are by continuously being who we are not"
         author="Fred Newman"
       />
     </SitePage>
