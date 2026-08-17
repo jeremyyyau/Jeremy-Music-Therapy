@@ -287,16 +287,12 @@ function Index() {
                 Choosing a therapist involves more than qualifications and experience. Larger clinics may suit some
                 families, offering consistency and standardized clinical processes across therapists. However, others
                 might value a personal, flexible service where one therapist holds the whole clinical picture and is
-                free to adapt according to each family's circumstance and needs. It is very important that every
-                individual is able to explore and decide what work for them without feeling pressured — there is no
-                single model that will suit everyone.
+                free to adapt according to each family's circumstance and needs.
               </p>
               <p>
-                Evidence-based research shows that outcomes in music therapy are mediated by the therapeutic
-                relationship and by routine, repeated engagement over time. Trust, rapport and a safe space to try new
-                things, are all conditions that allow measurable developmental change to follow. where a person feels
-                safe enough to attempt something new are the conditions that allow measurable developmental change to
-                follow.
+                Finding the right therapeutic fit is personal. Each individual should have the space to explore their
+                options without pressure, while allowing time to recognise where meaningful connection, potential, and
+                growth may emerge.
               </p>
             </div>
           </Reveal>
