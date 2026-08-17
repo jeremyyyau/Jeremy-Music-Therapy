@@ -66,8 +66,8 @@ function Index() {
             </h1>
             <p className="mt-6 max-w-lg text-lg leading-relaxed text-muted-foreground">
               An independent, person-centred practice offering music therapy for children, adults and older people
-              across Sydney — informed by eight years of clinical experience across hospital, education, disability,
-              aged care, mental health and community settings.
+              across Sydney — informed by over eight years of clinical experience across hospital, early education,
+              disability, aged care, mental health and community settings.
             </p>
 
             <div className="mt-8 flex flex-wrap gap-4">
@@ -156,9 +156,10 @@ function Index() {
             </h2>
             <p className="mt-6 text-lg leading-relaxed text-muted-foreground">
               Music therapy is a clinical, evidence-based allied health discipline in which a registered therapist uses
-              music interventions to address non-musical therapeutic goals across emotional, cognitive, communication,
-              physical and social domains. Whilst music can be therapeutic on its own, music therapy makes it
-              intentional, structured, and clinically directed through rapport and connection.
+              music- based interventions to address non-musical therapeutic goals across emotional, cognitive,
+              communication, physical, and social domains. Whilst music holds inherent therapeutic qualities, music
+              therapy harnesses these qualities through intentional, structured, and clinically directed practice,
+              grounded in rapport and therapeutic connection.
             </p>
           </Reveal>
 
@@ -168,19 +169,19 @@ function Index() {
                 icon: Heart,
                 title: "Active interventions",
                 description:
-                  "Clinical improvisation, therapeutic songwriting, singing and instrument play to build expression, communication and engagement.",
+                  "Clinical improvisation, therapeutic songwriting, soundtrack creation, singing and instrument play to build confidence, communication and engagement.",
               },
               {
                 icon: Users,
                 title: "Receptive interventions",
                 description:
-                  "Guided listening, lyric analysis and music-assisted relaxation to support emotional regulation, reflection and stress reduction.",
+                  "Guided listening, lyric analysis, playlist creation and music-assisted relaxation to support self-                           reflection, emotional exploration and sensory regulation.",
               },
               {
                 icon: Calendar,
                 title: "Tailored to individual needs",
                 description:
-                  "Methods adapted for disability, neuro-developmental conditions, acquired brain injury and mental health — accessible, strengths-based and resource-oriented.",
+                  "Methods adapted for disability, neuro-developmental conditions, acquired brain injury and mental health conditions — accessible, strengths-based and resource-oriented.",
               },
             ].map((item, i) => (
               <Reveal
@@ -212,7 +213,7 @@ function Index() {
           <Reveal className="mb-16 max-w-3xl">
             <p className="mb-3 text-sm font-medium uppercase tracking-widest text-primary">Sessions</p>
             <h2 className="font-heading text-3xl font-semibold text-foreground md:text-4xl">
-              Therapy that comes to you.
+              Therapy that meets you where you are.
             </h2>
             <p className="mt-6 text-lg leading-relaxed text-muted-foreground">
               Whether it is at home, in our dedicated clinic space, via telehealth, or in the community — service
@@ -245,12 +246,12 @@ function Index() {
               {
                 title: "Community Sessions",
                 description:
-                  "Individual and group services across childcare, schools, and Supported Independent Living (SIL),                          working collaboratively to integrate therapeutic support into everyday environments to foster social                      capacity and group participation.",
+                  "Individual and group services across childcare, schools, and Supported Independent Living (SIL),                          integrating therapeutic support into everyday environments to foster social capacity and group participation.",
               },
               {
                 title: "Consultation",
                 description:
-                  "Open discussion of goals, funding and suitability — exploring the possibility for music therapy to                        support specific outcomes, as well as introducing transparency around therapeutic processes and                           clinical rationale.",
+                  "Open dialogue of goals, funding and suitability of music therapy in alignment to desired therapeutic                     outcomes, as well as discussions around therapeutic processes and clinical rationale.",
               },
             ].map((service, i) => (
               <Reveal
@@ -279,20 +280,23 @@ function Index() {
           <Reveal className="max-w-3xl">
             <p className="mb-3 text-sm font-medium uppercase tracking-widest text-primary">More Than Music</p>
             <h2 className="font-heading text-3xl font-semibold text-foreground md:text-4xl">
-              Take your time finding the right fit.
+              Taking your time, finding the right fit.
             </h2>
             <div className="mt-6 space-y-4 text-base leading-relaxed text-muted-foreground">
               <p>
-                Choosing a therapist involves more than qualifications. Larger clinics suit some families; others value
-                a personal, flexible service where one clinician holds the whole clinical picture. You're genuinely
-                welcome to explore your options and decide what fits — there is no single model that suits every
-                presentation.
+                Choosing a therapist involves more than qualifications and experience. Larger clinics may suit some
+                families, offering consistency and standardized clinical processes across therapists. However, others
+                might value a personal, flexible service where one therapist holds the whole clinical picture and is
+                free to adapt according to each family's circumstance and needs. It is very important that every
+                individual is able to explore and decide what work for them without feeling pressured — there is no
+                single model that will suit everyone.
               </p>
               <p>
-                What the evidence consistently shows is this: outcomes in music therapy are mediated by the therapeutic
-                relationship and by consistent, repeated engagement over time. Trust, session consistency and a space
-                where a person feels safe enough to attempt something new are the conditions that allow measurable
-                developmental change to follow.
+                Evidence-based research shows that outcomes in music therapy are mediated by the therapeutic
+                relationship and by routine, repeated engagement over time. Trust, rapport and a safe space to try new
+                things, are all conditions that allow measurable developmental change to follow. where a person feels
+                safe enough to attempt something new are the conditions that allow measurable developmental change to
+                follow.
               </p>
             </div>
           </Reveal>
@@ -302,7 +306,7 @@ function Index() {
               {
                 title: "Continuity of care",
                 description:
-                  "One clinician, no handovers — consistent goals and a treatment plan that deepens over time.",
+                  "One therapist, no handovers — consistent goals and a therapy plan that deepens over time.",
               },
               {
                 title: "Flexible & responsive",
@@ -311,10 +315,10 @@ function Index() {
               {
                 title: "Family at the centre",
                 description:
-                  "Parents and carers are key informants; your observations shape assessment and goal setting.",
+                  "Parents and carers are empowered to make observations and decisions that shape assessment and goal setting.",
               },
               {
-                title: "Outcomes, broadly measured",
+                title: "Holistic outcomes",
                 description:
                   "Confidence, connection, participation and quality of life tracked alongside clinical goals.",
               },
