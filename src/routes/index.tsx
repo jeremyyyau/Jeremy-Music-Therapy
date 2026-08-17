@@ -356,7 +356,7 @@ function Index() {
               if another service is clinically the better fit.
             </p>
 
-            <p className="mt-10 max-w-md text-lg italic leading-relaxed text-muted-foreground">
+            <p className="mt-10 max-w-md text-base italic leading-relaxed text-muted-foreground">
               Enquiries from allied health and other healthcare professionals are also welcomed,
               including referral discussions, professional supervision, networking opportunities,
               or requests for additional information regarding music therapy.
