@@ -3,7 +3,7 @@ import { SitePage } from "@/components/site-chrome";
 import { Reveal } from "@/components/reveal";
 import { QuoteBand } from "@/components/quote-band";
 
-import resourcesHero from "@/assets/resources-hero.webp";
+import resourcesHeroAsset from "@/assets/resources-hero.webp.asset.json";
 import resourceThumb from "@/assets/resource-thumb.webp";
 
 export const Route = createFileRoute("/resources")({
@@ -61,15 +61,18 @@ function ResourcesPage() {
 
         <div className="mx-auto mt-14 max-w-5xl px-6">
           <Reveal direction="up" className="overflow-hidden rounded-3xl border border-border/60 shadow-sm">
-            <img
-              src={resourcesHero}
-              alt="Headphones, sheet music, and small instruments arranged on a warm cream background"
-              loading="lazy"
-              decoding="async"
-              width={1024}
-              height={1024}
-              className="h-64 w-full object-cover mix-blend-multiply md:h-96"
-            />
+            <div className="relative h-64 w-full md:h-96">
+              <div className="absolute inset-0 bg-secondary/25" />
+              <img
+                src={resourcesHeroAsset.url}
+                alt="Music therapist playing guitar with a child during a relaxed, interactive session"
+                loading="lazy"
+                decoding="async"
+                width={1280}
+                height={854}
+                className="h-full w-full object-cover object-[40%_45%] mix-blend-multiply saturate-[0.92] contrast-[0.98]"
+              />
+            </div>
           </Reveal>
         </div>
 
