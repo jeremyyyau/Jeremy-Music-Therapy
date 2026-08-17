@@ -86,7 +86,7 @@ function ResourcesPage() {
                   href={r.url}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="block rounded-2xl border border-border/60 bg-card p-3 shadow-sm transition-all duration-300 hover:-translate-y-3 hover:scale-105 hover:border-primary hover:bg-secondary/60 hover:shadow-card-hover"
+                  className="block rounded-2xl border border-border/60 bg-card p-3 shadow-sm transition-all duration-300 hover:scale-105 hover:border-primary hover:bg-secondary/60 hover:shadow-card-hover"
                 >
                   <div className="overflow-hidden rounded-xl bg-background/50 transition-colors duration-300 group-hover:bg-primary/10">
                     <img
