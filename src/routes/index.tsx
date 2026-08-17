@@ -132,7 +132,7 @@ function Index() {
               </p>
               <p>
                 In my practice, I draw from a wide repertoire of evidence-informed interventions, so that each session
-                plan can be matched to presentation, capacity and preference - adjusted through ongoing clinical
+                plan can be matched to presentation, capacity and preference — adjusted through ongoing clinical
                 observation and review. Above all, I aim to create a welcoming, safe therapeutic space where people can
                 connect, express themselves and explore new possibilities through music.
               </p>
