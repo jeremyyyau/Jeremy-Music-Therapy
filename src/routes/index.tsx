@@ -60,7 +60,9 @@ function Index() {
               Registered Music Therapist (RMT) · 8+ Years Experience
             </p>
             <h1 className="font-heading text-4xl font-semibold leading-tight text-foreground md:text-5xl lg:text-6xl">
-              Music gives us a way to connect.<br />Connection gives us a way to grow.
+              Music creates connection.
+              <br />
+              Connection creates growth.
             </h1>
             <p className="mt-6 max-w-lg text-lg leading-relaxed text-muted-foreground">
               An independent, person-centred practice offering evidence-based music therapy for children, adults and
