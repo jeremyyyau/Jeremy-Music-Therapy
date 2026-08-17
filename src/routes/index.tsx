@@ -338,8 +338,8 @@ function Index() {
       </section>
 
       <QuoteBand
-        quote="Music gives a soul to the universe, wings to the mind, flight to the imagination, and life to everything."
-        author="Plato"
+        quote="Music therapy is at once an art, a science, and an interpersonal process."
+        author="Kenneth E. Bruscia"
       />
 
       {/* Contact Section */}
@@ -352,14 +352,13 @@ function Index() {
             </h2>
             <p className="mt-6 max-w-md text-lg leading-relaxed text-muted-foreground">
               Whether you're exploring music therapy for the first time, comparing providers, or ready to discuss goals,
-              referrals and funding, send me a message. I'll respond within 1–2 business days — and I'll say so plainly
-              if another service is clinically the better fit.
+              referrals and funding, send me a message. I'll respond within 1–2 business days.
             </p>
 
             <p className="mt-10 max-w-md text-base italic leading-relaxed text-muted-foreground">
-              Enquiries from allied health and other healthcare professionals are also welcomed,
-              including referral discussions, professional supervision, networking opportunities,
-              or requests for additional information regarding music therapy.
+              Enquiries from allied health and other healthcare professionals are also welcomed, including referral
+              discussions, professional supervision, networking opportunities, or requests for additional information
+              regarding music therapy.
             </p>
           </Reveal>
 
