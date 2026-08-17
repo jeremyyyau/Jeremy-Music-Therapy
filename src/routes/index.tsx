@@ -356,37 +356,11 @@ function Index() {
               if another service is clinically the better fit.
             </p>
 
-            <div className="mt-10 space-y-5">
-              <div className="flex items-start gap-4">
-                <div className="rounded-xl bg-primary/10 p-3">
-                  <Mail className="h-5 w-5 text-primary" />
-                </div>
-                <div>
-                  <p className="font-medium text-foreground">Email</p>
-                  <p className="text-sm text-muted-foreground">hello@yourpractice.com</p>
-                </div>
-              </div>
-              <div className="flex items-start gap-4">
-                <div className="rounded-xl bg-primary/10 p-3">
-                  <Phone className="h-5 w-5 text-primary" />
-                </div>
-                <div>
-                  <p className="font-medium text-foreground">Phone</p>
-                  <p className="text-sm text-muted-foreground">(555) 123-4567</p>
-                </div>
-              </div>
-              <div className="flex items-start gap-4">
-                <div className="rounded-xl bg-primary/10 p-3">
-                  <MapPin className="h-5 w-5 text-primary" />
-                </div>
-                <div>
-                  <p className="font-medium text-foreground">Location</p>
-                  <p className="text-sm text-muted-foreground">
-                    Home visits, clinic space in Picnic Point, or telehealth
-                  </p>
-                </div>
-              </div>
-            </div>
+            <p className="mt-10 max-w-md text-lg italic leading-relaxed text-muted-foreground">
+              Enquiries from allied health and other healthcare professionals are also welcomed,
+              including referral discussions, professional supervision, networking opportunities,
+              or requests for additional information regarding music therapy.
+            </p>
           </Reveal>
 
           <Reveal
