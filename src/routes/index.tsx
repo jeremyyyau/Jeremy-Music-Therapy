@@ -57,15 +57,17 @@ function Index() {
         <div className="mx-auto grid min-h-[calc(100vh-72px)] max-w-7xl grid-cols-1 items-center gap-12 px-6 py-16 lg:grid-cols-2 lg:py-24">
           <Reveal direction="left" className="order-2 flex flex-col justify-center lg:order-1">
             <p className="mb-4 text-sm font-medium uppercase tracking-widest text-primary">
-              Registered Music Therapist (RMT) · 8+ Years Experience
+              Registered Music Therapist (RMT) · Jeremy Yau
             </p>
             <h1 className="font-heading text-4xl font-semibold leading-tight text-foreground md:text-5xl lg:text-6xl">
-              Music gives us a way to connect.<br />Connection gives us a way to grow.
+              Music gives us a way to connect.
+              <br />
+              Connection gives us a way to grow.
             </h1>
             <p className="mt-6 max-w-lg text-lg leading-relaxed text-muted-foreground">
-              An independent, person-centred practice offering evidence-based music therapy for children, adults and
-              older people — informed by eight years of clinical experience across hospital, education, disability, aged
-              care, mental health and community settings, with goals set collaboratively and reviewed as you progress.
+              An independent, person-centred practice offering music therapy for children, adults and older people
+              across Sydney — informed by eight years of clinical experience across hospital, education, disability,
+              aged care, mental health and community settings.
             </p>
 
             <div className="mt-8 flex flex-wrap gap-4">
@@ -112,26 +114,26 @@ function Index() {
           <Reveal direction="right" delay={120}>
             <p className="mb-3 text-sm font-medium uppercase tracking-widest text-primary">About Me</p>
             <h2 className="font-heading text-3xl font-semibold text-foreground md:text-4xl">
-              Clinical breadth, built by saying yes.
+              Broad experience, grounded in clinical expertise.
             </h2>
             <div className="mt-6 space-y-4 text-base leading-relaxed text-muted-foreground">
               <p>
-                I'm a Registered Music Therapist (RMT) with a Master of Music Therapy and a Bachelor of Music
-                (Performance) from the University of Melbourne, and over eight years of clinical practice. I also
-                supervise clinical placements for music therapy students at Western Sydney University and the University
-                of Melbourne.
+                I'm a Registered Music Therapist (RMT) with a Master of Music Therapy from the University of Melbourne,
+                and over eight years of clinical practice. I also supervise clinical placements for music therapy
+                students at Western Sydney University and the University of Melbourne.
               </p>
               <p>
                 Rather than specialising early, I chose to practise across as many clinical areas as I could — hospital
                 mental health teams, multidisciplinary clinic work alongside speech pathology and occupational therapy,
                 disability services, aged care, palliative care and community programs. That transdisciplinary grounding
-                means I work with the whole person, not the diagnosis alone.
+                meant that I was able to establish a resource-oriented approach that integrates perspectives across
+                disciplines to identify strengths, capacities and meaningful opportunities for growth.
               </p>
               <p>
-                Practically, it means a broad repertoire of evidence-informed interventions to draw on, so each session
-                plan can be matched to presentation, capacity and preference — and adjusted through ongoing clinical
+                In my practice, I draw from a wide repertoire of evidence-informed interventions, so that each session
+                plan can be matched to presentation, capacity and preference -adjusted through ongoing clinical
                 observation and review. Above all, I aim to create a welcoming, safe therapeutic space where people can
-                connect, express themselves and discover what's possible through music.
+                connect, express themselves and explore new possibilities through music.
               </p>
             </div>
 
@@ -155,8 +157,8 @@ function Index() {
             <p className="mt-6 text-lg leading-relaxed text-muted-foreground">
               Music therapy is a clinical, evidence-based allied health discipline in which a registered therapist uses
               music interventions to address non-musical therapeutic goals across emotional, cognitive, communication,
-              physical and social domains. Most people already use music self-therapeutically; therapy makes that
-              intentional, structured and measurable — directed by assessed goals, strengths and challenges.
+              physical and social domains. Whilst music can be therapeutic on its own, music therapy makes it
+              intentional, structured, and clinically directed through rapport and connection.
             </p>
           </Reveal>
 
@@ -176,7 +178,7 @@ function Index() {
               },
               {
                 icon: Calendar,
-                title: "Adapted to presentation",
+                title: "Tailored to individual needs",
                 description:
                   "Methods adapted for disability, neuro-developmental conditions, acquired brain injury and mental health — accessible, strengths-based and resource-oriented.",
               },
@@ -198,7 +200,7 @@ function Index() {
 
           <Reveal className="mt-12 text-center">
             <Button asChild variant="outline" className="rounded-full">
-              <Link to="/music-therapy">Learn more about music therapy</Link>
+              <Link to="/music-therapy">Learn more about Music Therapy</Link>
             </Button>
           </Reveal>
         </div>
@@ -213,8 +215,8 @@ function Index() {
               Therapy that comes to you.
             </h2>
             <p className="mt-6 text-lg leading-relaxed text-muted-foreground">
-              At home, in the clinic, via telehealth or in a group program — service delivery is matched to your
-              therapeutic goals, functional needs, daily routine and funding.
+              Whether it is at home, in our dedicated clinic space, via telehealth, or in the community — service
+              delivery is matched according to therapeutic goals, functional needs, daily routine and funding.
             </p>
           </Reveal>
 
@@ -223,12 +225,12 @@ function Index() {
               {
                 title: "Home Visits",
                 description:
-                  "Sessions in your natural environment, where skills are most likely to generalise. All instruments and equipment provided.",
+                  "Sessions in your natural environment, where skills are most likely to generalise. All instruments and equipment are provided.",
               },
               {
-                title: "Home Clinic — Picnic Point",
+                title: "Clinic Visits - Picnic Point",
                 description:
-                  "A calm, purpose-equipped therapy room for focused sessions with a wider range of instruments and fewer distractions.",
+                  "Our calm, purpose-equipped therapy room for focused sessions with a wider range of instruments and fewer distractions.",
               },
               {
                 title: "Telehealth",
@@ -241,14 +243,14 @@ function Index() {
                   "Therapeutic instrumental instruction targeting selective attention, fine and gross motor skills, executive functioning and impulse control.",
               },
               {
-                title: "Group & Day Programs",
+                title: "Community Sessions",
                 description:
-                  "Group programs in day services, aged care, childcare and schools, structured around social participation and shared goals.",
+                  "Individual and group services across childcare, schools, and Supported Independent Living (SIL),                          working collaboratively to integrate therapeutic support into everyday environments to foster social                      capacity and group participation.",
               },
               {
-                title: "An Initial Conversation",
+                title: "Consultation",
                 description:
-                  "A no-pressure discussion of goals, funding and clinical suitability — including an honest view on whether another service fits better.",
+                  "Open discussion of goals, funding and suitability — exploring the possibility for music therapy to                        support specific outcomes, as well as introducing transparency around therapeutic processes and                           clinical rationale.",
               },
             ].map((service, i) => (
               <Reveal
