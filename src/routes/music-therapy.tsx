@@ -157,7 +157,7 @@ function MusicTherapyPage() {
                 decoding="async"
                 width={1600}
                 height={1066}
-                className="h-56 w-full object-cover opacity-90 saturate-[0.85] contrast-[0.92] md:h-auto md:aspect-[1600/720] md:object-cover md:object-[85%_50%]"
+                className="w-full object-cover object-[85%_50%] opacity-90 saturate-[0.85] contrast-[0.92] aspect-[1600/720]"
               />
               <div
                 aria-hidden
