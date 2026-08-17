@@ -5,7 +5,7 @@ import { SitePage } from "@/components/site-chrome";
 import { Reveal } from "@/components/reveal";
 import { QuoteBand } from "@/components/quote-band";
 
-import mtSession from "@/assets/mt-session.webp";
+import mtFamily from "@/assets/mt-family.webp.asset.json";
 import mtListening from "@/assets/mt-listening.webp";
 
 export const Route = createFileRoute("/music-therapy")({
