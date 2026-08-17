@@ -88,15 +88,19 @@ function MusicTherapyPage() {
         </div>
 
         <div className="mx-auto mt-14 max-w-5xl px-6">
-          <Reveal direction="up" className="overflow-hidden rounded-3xl border border-border/60 shadow-sm">
+          <Reveal direction="up" className="relative overflow-hidden rounded-3xl border border-border/60 shadow-sm">
             <img
-              src={mtSession}
-              alt="Hands gently playing an acoustic guitar in warm natural light"
+              src={mtFamily.url}
+              alt="Music therapist playing guitar with a parent and infant during a home-based session"
               loading="lazy"
               decoding="async"
-              width={1024}
-              height={1024}
-              className="h-64 w-full object-cover mix-blend-multiply md:h-96"
+              width={1600}
+              height={889}
+              className="h-64 w-full object-cover object-center opacity-95 saturate-[0.85] contrast-[0.94] md:h-[26rem]"
+            />
+            <div
+              aria-hidden
+              className="pointer-events-none absolute inset-0 bg-secondary/25 mix-blend-multiply"
             />
           </Reveal>
         </div>
