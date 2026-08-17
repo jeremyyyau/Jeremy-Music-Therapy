@@ -4,7 +4,7 @@ import { SitePage } from "@/components/site-chrome";
 import { Reveal } from "@/components/reveal";
 import { QuoteBand } from "@/components/quote-band";
 
-import aboutImage from "@/assets/about-therapist.webp";
+import aboutImageAsset from "@/assets/about-jeremy.webp.asset.json";
 
 export const Route = createFileRoute("/about")({
   component: AboutPage,
@@ -89,16 +89,17 @@ function AboutPage() {
             </p>
           </Reveal>
 
-          <Reveal direction="scale" delay={150} className="mt-12 overflow-hidden rounded-3xl shadow-xl">
+          <Reveal direction="scale" delay={150} className="relative mt-12 overflow-hidden rounded-3xl shadow-xl">
             <img
-              src={aboutImage}
-              alt="Hands holding a wooden ukulele"
+              src={aboutImageAsset.url}
+              alt="Jeremy Yau, Registered Music Therapist, playing an acoustic guitar beside a bookshelf"
               width={1200}
-              height={675}
+              height={1545}
               loading="lazy"
               decoding="async"
-              className="aspect-[16/9] w-full object-cover"
+              className="aspect-[4/3] w-full object-cover object-top opacity-90 saturate-[0.85] contrast-[0.92]"
             />
+            <div className="pointer-events-none absolute inset-0 bg-secondary/25 mix-blend-multiply" />
           </Reveal>
 
           <div className="mt-14 space-y-12">
