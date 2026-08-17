@@ -12,7 +12,7 @@ import { Textarea } from "@/components/ui/textarea";
 
 import { contactFormSchema, type ContactFormValues } from "@/lib/contact.schema";
 import { submitContactForm } from "@/lib/contact.functions";
-import heroImage from "@/assets/hero-music-therapy.webp";
+import heroImageAsset from "@/assets/hero-music-therapy.webp.asset.json";
 import aboutImage from "@/assets/about-therapist.webp";
 import { SitePage } from "@/components/site-chrome";
 import { Reveal } from "@/components/reveal";
@@ -82,8 +82,8 @@ function Index() {
           <Reveal direction="right" delay={150} className="order-1 lg:order-2">
             <div className="relative overflow-hidden rounded-3xl shadow-2xl">
               <img
-                src={heroImage}
-                alt="Warm, inviting music therapy room with guitar, drums, and soft natural light"
+                src={heroImageAsset.url}
+                alt="Close-up of hands playing an acoustic guitar in a warm, intimate music therapy setting"
                 width={1200}
                 height={800}
                 loading="eager"
