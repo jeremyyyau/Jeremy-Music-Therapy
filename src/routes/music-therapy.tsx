@@ -80,8 +80,8 @@ function MusicTherapyPage() {
               What is Music Therapy?
             </p>
             <h1 className="font-heading text-4xl font-semibold text-foreground md:text-5xl">
-              Evidence-based care, 
-              </br>
+              Evidence-based care,
+              <br />
               delivered through music.
             </h1>
             <p className="mt-6 text-lg leading-relaxed text-muted-foreground">
