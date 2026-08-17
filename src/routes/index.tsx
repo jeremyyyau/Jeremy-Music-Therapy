@@ -90,8 +90,9 @@ function Index() {
                 fetchPriority="high"
                 decoding="async"
                 sizes="(min-width: 1024px) 50vw, 100vw"
-                className="aspect-[3/2] w-full object-cover"
+                className="aspect-[3/2] w-full object-cover opacity-90 saturate-[0.8] contrast-[0.9]"
               />
+              <div className="pointer-events-none absolute inset-0 bg-secondary/30 mix-blend-multiply" />
             </div>
           </Reveal>
         </div>
@@ -108,7 +109,7 @@ function Index() {
               height={1545}
               loading="lazy"
               decoding="async"
-              className="aspect-[3/4] w-full object-cover object-top opacity-90 saturate-[0.85] contrast-[0.92]"
+              className="aspect-[4/5] w-full object-cover object-[50%_10%] opacity-90 saturate-[0.85] contrast-[0.92]"
             />
             <div className="pointer-events-none absolute inset-0 bg-secondary/25 mix-blend-multiply" />
           </Reveal>
