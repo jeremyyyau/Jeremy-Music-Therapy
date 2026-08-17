@@ -78,7 +78,7 @@ function AboutPage() {
           <Reveal>
             <p className="mb-3 text-sm font-medium uppercase tracking-widest text-primary">About Me</p>
             <h1 className="font-heading text-4xl font-semibold text-foreground md:text-5xl">
-              Music gives us a way to connect. Connection gives us a way to grow.
+              Music gives us a way to connect.</br>Connection gives us a way to grow.
             </h1>
             <p className="mt-6 text-lg leading-relaxed text-muted-foreground">
               I'm a Registered Music Therapist (RMT) with a Master of Music Therapy from the University of Melbourne.
