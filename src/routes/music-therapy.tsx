@@ -6,7 +6,8 @@ import { Reveal } from "@/components/reveal";
 import { QuoteBand } from "@/components/quote-band";
 
 import mtFamily from "@/assets/mt-family.webp.asset.json";
-import mtListening from "@/assets/mt-listening.webp";
+import mtKeyboard from "@/assets/mt-keyboard.webp.asset.json";
+
 
 export const Route = createFileRoute("/music-therapy")({
   component: MusicTherapyPage,
@@ -148,16 +149,23 @@ function MusicTherapyPage() {
 
         <div className="mx-auto mt-20 max-w-4xl px-6 space-y-12">
           <Reveal direction="up" className="overflow-hidden rounded-3xl border border-border/60 shadow-sm">
-            <img
-              src={mtListening}
-              alt="Small hand drum and mallets on soft woven fabric in warm light"
-              loading="lazy"
-              decoding="async"
-              width={1024}
-              height={1024}
-              className="h-56 w-full object-cover mix-blend-multiply md:h-72"
-            />
+            <div className="relative">
+              <img
+                src={mtKeyboard.url}
+                alt="Music therapist playing keyboard with a client in a home-based session"
+                loading="lazy"
+                decoding="async"
+                width={1600}
+                height={1066}
+                className="h-56 w-full object-cover opacity-90 saturate-[0.85] contrast-[0.92] md:h-72"
+              />
+              <div
+                aria-hidden
+                className="pointer-events-none absolute inset-0 bg-secondary/25 mix-blend-multiply"
+              />
+            </div>
           </Reveal>
+
 
           <Reveal>
             <h2 className="font-heading text-2xl font-semibold text-foreground md:text-3xl">Who is it for?</h2>
