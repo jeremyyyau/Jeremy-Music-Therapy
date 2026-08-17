@@ -382,7 +382,7 @@ function Index() {
                 <div>
                   <p className="font-medium text-foreground">Location</p>
                   <p className="text-sm text-muted-foreground">
-                    Home visits, home clinic in Picnic Point, and telehealth
+                    Home visits, clinic space in Picnic Point, or telehealth
                   </p>
                 </div>
               </div>
@@ -471,7 +471,7 @@ function ContactForm() {
               <FormItem>
                 <FormLabel className="text-foreground">Phone (optional)</FormLabel>
                 <FormControl>
-                  <Input placeholder="(555) 123-4567" {...field} className="rounded-xl" />
+                  <Input placeholder="(+61)123-456-789" {...field} className="rounded-xl" />
                 </FormControl>
                 <FormMessage />
               </FormItem>
