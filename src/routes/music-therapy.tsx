@@ -8,7 +8,6 @@ import { QuoteBand } from "@/components/quote-band";
 import mtFamily from "@/assets/mt-family.webp.asset.json";
 import mtKeyboard from "@/assets/mt-keyboard.webp.asset.json";
 
-
 export const Route = createFileRoute("/music-therapy")({
   component: MusicTherapyPage,
   head: () => ({
@@ -99,10 +98,7 @@ function MusicTherapyPage() {
               height={889}
               className="h-64 w-full object-cover object-[65%_50%] opacity-95 saturate-[0.85] contrast-[0.94] md:h-auto md:aspect-[1600/889] md:object-contain md:object-center"
             />
-            <div
-              aria-hidden
-              className="pointer-events-none absolute inset-0 bg-secondary/25 mix-blend-multiply"
-            />
+            <div aria-hidden className="pointer-events-none absolute inset-0 bg-secondary/25 mix-blend-multiply" />
           </Reveal>
         </div>
 
@@ -159,13 +155,9 @@ function MusicTherapyPage() {
                 height={1066}
                 className="w-full object-cover object-[85%_50%] opacity-90 saturate-[0.85] contrast-[0.92] aspect-[1600/720]"
               />
-              <div
-                aria-hidden
-                className="pointer-events-none absolute inset-0 bg-secondary/25 mix-blend-multiply"
-              />
+              <div aria-hidden className="pointer-events-none absolute inset-0 bg-secondary/25 mix-blend-multiply" />
             </div>
           </Reveal>
-
 
           <Reveal>
             <h2 className="font-heading text-2xl font-semibold text-foreground md:text-3xl">Who is it for?</h2>
@@ -224,7 +216,12 @@ function MusicTherapyPage() {
         </div>
       </section>
 
-      <QuoteBand quote="Music can name the unnameable and communicate the unknowable." author="Leonard Bernstein" />
+      <QuoteBand
+        quote="What we were creating in therapy... was performance... and that performance was of wonderful, developmental, therapeutic value. People were learning how to 'perform' — going back to Vygotsky's language — people were learning to perform beyond themselves.
+        <br />
+We become who we are by continuously being who we are not"
+        author="Fred Newman"
+      />
     </SitePage>
   );
 }
