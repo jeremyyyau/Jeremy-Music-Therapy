@@ -109,7 +109,7 @@ function Index() {
               height={1545}
               loading="lazy"
               decoding="async"
-              className="aspect-[4/5] w-full object-cover object-[50%_10%] opacity-90 saturate-[0.85] contrast-[0.92]"
+              className="aspect-[4/5] w-full object-cover object-[50%_20%] opacity-90 saturate-[0.85] contrast-[0.92]"
             />
             <div className="pointer-events-none absolute inset-0 bg-secondary/25 mix-blend-multiply" />
           </Reveal>
