@@ -201,7 +201,7 @@ function Index() {
 
           <Reveal className="mt-12 text-center">
             <Button asChild variant="outline" className="rounded-full">
-              <Link to="/music-therapy">Learn more about Music Therapy</Link>
+              <Link to="/music-therapy">Learn more about music therapy</Link>
             </Button>
           </Reveal>
         </div>
