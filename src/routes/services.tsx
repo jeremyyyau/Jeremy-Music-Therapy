@@ -4,8 +4,7 @@ import { SitePage } from "@/components/site-chrome";
 import { Reveal } from "@/components/reveal";
 import { QuoteBand } from "@/components/quote-band";
 
-import svcIndividual from "@/assets/svc-individual.webp";
-import svcGroup from "@/assets/svc-group.webp";
+import svcIndividualAsset from "@/assets/svc-individual.webp.asset.json";
 
 export const Route = createFileRoute("/services")({
   component: ServicesPage,
