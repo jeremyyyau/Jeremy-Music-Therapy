@@ -91,15 +91,15 @@ function AboutPage() {
 
           <Reveal direction="scale" delay={150} className="relative mt-12 overflow-hidden rounded-3xl shadow-xl">
             <img
-              src={aboutImageAsset.url}
-              alt="Jeremy Yau, Registered Music Therapist, playing an acoustic guitar beside a bookshelf"
-              width={1200}
-              height={1545}
+              src={aboutHeroAsset.url}
+              alt="Music therapist seated with a client during a warm, indoor session"
+              width={1920}
+              height={1280}
               loading="lazy"
               decoding="async"
-              className="aspect-[4/3] w-full object-cover object-[50%_20%] opacity-90 saturate-[0.85] contrast-[0.92]"
+              className="aspect-[16/10] w-full object-cover object-[55%_55%]"
             />
-            <div className="pointer-events-none absolute inset-0 bg-secondary/25 mix-blend-multiply" />
+            <div aria-hidden className="pointer-events-none absolute inset-0 bg-secondary/20 mix-blend-multiply" />
           </Reveal>
 
           <div className="mt-14 space-y-12">
