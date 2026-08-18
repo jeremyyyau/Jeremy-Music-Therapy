@@ -5,7 +5,7 @@ import { Reveal } from "@/components/reveal";
 import { QuoteBand } from "@/components/quote-band";
 
 import svcIndividualAsset from "@/assets/svc-individual.webp.asset.json";
-import svcGroup from "@/assets/svc-group.webp";
+import svcGroupAsset from "@/assets/svc-group.webp.asset.json";
 
 export const Route = createFileRoute("/services")({
   component: ServicesPage,
