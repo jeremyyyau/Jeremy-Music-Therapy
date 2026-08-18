@@ -122,16 +122,18 @@ function ServicesPage() {
         </div>
 
         <div className="mx-auto mt-14 max-w-5xl px-6">
-          <Reveal direction="up" className="overflow-hidden rounded-3xl border border-border/60 shadow-sm">
+          <Reveal direction="up" className="relative overflow-hidden rounded-3xl border border-border/60 shadow-sm">
             <img
-              src={svcIndividual}
-              alt="Therapist and client sharing a warm moment in a sunlit session room"
+              src={svcIndividualAsset.url}
+              alt="Music therapist playing guitar outdoors with young children during a play-based session"
               loading="lazy"
               decoding="async"
-              width={1024}
-              height={1024}
-              className="h-64 w-full object-cover mix-blend-multiply md:h-96"
+              width={1920}
+              height={1280}
+              className="aspect-[16/9] w-full object-cover object-[50%_45%] md:object-[50%_40%]"
             />
+            <div aria-hidden className="pointer-events-none absolute inset-0 bg-secondary/20 mix-blend-multiply" />
+            <div aria-hidden className="pointer-events-none absolute inset-0 bg-gradient-to-t from-background/20 via-transparent to-transparent" />
           </Reveal>
         </div>
 
