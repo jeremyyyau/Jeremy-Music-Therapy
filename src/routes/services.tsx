@@ -162,7 +162,7 @@ function ServicesPage() {
         </div>
 
         <div className="mx-auto mt-20 max-w-5xl px-6">
-          <Reveal direction="up" className="relative mb-12 overflow-hidden rounded-3xl border border-border/60 shadow-sm">
+          <Reveal direction="up" className="relative mb-8 overflow-hidden rounded-3xl border border-border/60 shadow-sm pb-4">
             <img
               src={svcGroupAsset.url}
               alt="Music therapist playing guitar alongside a client on electronic drums in a bright home clinic space"
