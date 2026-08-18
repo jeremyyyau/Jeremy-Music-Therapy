@@ -99,7 +99,7 @@ function AboutPage() {
               decoding="async"
               className="aspect-[16/10] w-full object-cover object-[55%_55%]"
             />
-            <div aria-hidden className="pointer-events-none absolute inset-0 bg-secondary/20 mix-blend-multiply" />
+            <div aria-hidden className="pointer-events-none absolute inset-0 bg-gradient-to-t from-background/30 via-transparent to-transparent" />
           </Reveal>
 
           <div className="mt-14 space-y-12">
