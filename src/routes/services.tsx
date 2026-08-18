@@ -162,16 +162,18 @@ function ServicesPage() {
         </div>
 
         <div className="mx-auto mt-20 max-w-5xl px-6">
-          <Reveal direction="up" className="mb-12 overflow-hidden rounded-3xl border border-border/60 shadow-sm">
+          <Reveal direction="up" className="relative mb-12 overflow-hidden rounded-3xl border border-border/60 shadow-sm">
             <img
-              src={svcGroup}
-              alt="Small group circle sharing hand percussion in warm afternoon light"
+              src={svcGroupAsset.url}
+              alt="Music therapist playing guitar alongside a client on electronic drums in a bright home clinic space"
               loading="lazy"
               decoding="async"
-              width={1024}
-              height={1024}
-              className="h-56 w-full object-cover mix-blend-multiply md:h-72"
+              width={1920}
+              height={1111}
+              className="aspect-[16/9] w-full object-cover object-[65%_50%] md:object-[60%_50%]"
             />
+            <div aria-hidden className="pointer-events-none absolute inset-0 bg-secondary/20 mix-blend-multiply" />
+            <div aria-hidden className="pointer-events-none absolute inset-0 bg-gradient-to-t from-background/20 via-transparent to-transparent" />
           </Reveal>
 
           <Reveal>
