@@ -13,7 +13,7 @@ import { Textarea } from "@/components/ui/textarea";
 import { contactFormSchema, type ContactFormValues } from "@/lib/contact.schema";
 import { submitContactForm } from "@/lib/contact.functions";
 import heroImageAsset from "@/assets/hero-music-therapy.webp.asset.json";
-import aboutHeroAsset from "@/assets/about-hero.webp.asset.json";
+import aboutImageAsset from "@/assets/about-jeremy.webp.asset.json";
 import { SitePage } from "@/components/site-chrome";
 import { Reveal } from "@/components/reveal";
 import { QuoteBand } from "@/components/quote-band";
