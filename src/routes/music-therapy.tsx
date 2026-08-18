@@ -96,7 +96,7 @@ function MusicTherapyPage() {
               decoding="async"
               width={1600}
               height={889}
-              className="h-64 w-full object-cover object-[65%_50%] opacity-95 saturate-[0.85] contrast-[0.94] md:h-auto md:aspect-[1600/800] md:object-cover md:object-[65%_45%]"
+              className="h-64 w-full object-cover object-[65%_50%] opacity-95 saturate-[0.85] contrast-[0.94] md:h-auto md:aspect-[1600/810] md:object-cover md:object-[65%_45%]"
             />
             <div aria-hidden className="pointer-events-none absolute inset-0 bg-secondary/25 mix-blend-multiply" />
           </Reveal>
