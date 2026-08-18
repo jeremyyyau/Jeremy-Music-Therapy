@@ -13,7 +13,7 @@ import { Textarea } from "@/components/ui/textarea";
 import { contactFormSchema, type ContactFormValues } from "@/lib/contact.schema";
 import { submitContactForm } from "@/lib/contact.functions";
 import heroImageAsset from "@/assets/hero-music-therapy.webp.asset.json";
-import aboutImageAsset from "@/assets/about-jeremy.webp.asset.json";
+import aboutHeroAsset from "@/assets/about-hero.webp.asset.json";
 import { SitePage } from "@/components/site-chrome";
 import { Reveal } from "@/components/reveal";
 import { QuoteBand } from "@/components/quote-band";
@@ -101,15 +101,15 @@ function Index() {
         <div className="mx-auto grid max-w-7xl grid-cols-1 items-center gap-12 px-6 lg:grid-cols-2">
           <Reveal direction="left" className="relative overflow-hidden rounded-3xl shadow-xl">
             <img
-              src={aboutImageAsset.url}
-              alt="Jeremy Yau, Registered Music Therapist, playing an acoustic guitar beside a bookshelf"
-              width={1200}
-              height={1545}
+              src={aboutHeroAsset.url}
+              alt="Music therapist seated with a client during a warm, indoor session"
+              width={1920}
+              height={1280}
               loading="lazy"
               decoding="async"
-              className="aspect-[4/5] w-full object-cover object-[50%_20%] opacity-90 saturate-[0.85] contrast-[0.92]"
+              className="aspect-[4/5] w-full object-cover object-[50%_50%]"
             />
-            <div className="pointer-events-none absolute inset-0 bg-secondary/25 mix-blend-multiply" />
+            <div aria-hidden className="pointer-events-none absolute inset-0 bg-gradient-to-t from-background/30 via-transparent to-transparent" />
           </Reveal>
           <Reveal direction="right" delay={120}>
             <p className="mb-3 text-sm font-medium uppercase tracking-widest text-primary">About Me</p>
