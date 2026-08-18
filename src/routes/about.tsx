@@ -4,7 +4,7 @@ import { SitePage } from "@/components/site-chrome";
 import { Reveal } from "@/components/reveal";
 import { QuoteBand } from "@/components/quote-band";
 
-import aboutImageAsset from "@/assets/about-jeremy.webp.asset.json";
+import aboutHeroAsset from "@/assets/about-hero.webp.asset.json";
 
 export const Route = createFileRoute("/about")({
   component: AboutPage,
