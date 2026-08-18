@@ -130,7 +130,7 @@ function ServicesPage() {
               decoding="async"
               width={1920}
               height={1280}
-              className="aspect-[16/9] w-full object-cover object-[50%_45%] md:object-[50%_40%]"
+              className="aspect-[16/9] w-full object-cover object-[50%_35%] md:object-[50%_30%]"
             />
             <div aria-hidden className="pointer-events-none absolute inset-0 bg-secondary/20 mix-blend-multiply" />
             <div aria-hidden className="pointer-events-none absolute inset-0 bg-gradient-to-t from-background/20 via-transparent to-transparent" />
