@@ -149,7 +149,7 @@ export function SiteFooter() {
 
 export function SitePage({ children }: { children: ReactNode }) {
   return (
-    <div className="relative min-h-screen">
+    <div className="relative min-h-screen overflow-x-hidden">
       <SiteBackground />
       <SiteHeader />
       <main>{children}</main>
