@@ -12,8 +12,7 @@ import { Textarea } from "@/components/ui/textarea";
 
 import { contactFormSchema, type ContactFormValues } from "@/lib/contact.schema";
 import { submitContactForm } from "@/lib/contact.functions";
-import heroImageAsset from "@/assets/hero-music-therapy.webp.asset.json";
-import aboutImageAsset from "@/assets/about-jeremy.webp.asset.json";
+import { homeHeroImage, homeAboutImage, SIZES_HALF } from "@/lib/images";
 import { SitePage } from "@/components/site-chrome";
 import { Reveal } from "@/components/reveal";
 import { QuoteBand } from "@/components/quote-band";
@@ -46,7 +45,18 @@ export const Route = createFileRoute("/")({
           "Independent Registered Music Therapist (RMT) with 8+ years of clinical experience. Home visits, telehealth and home clinic sessions in Picnic Point.",
       },
     ],
+    links: [
+      {
+        rel: "preload",
+        as: "image",
+        href: homeHeroImage.src,
+        imageSrcSet: homeHeroImage.srcSet,
+        imageSizes: SIZES_HALF,
+        fetchPriority: "high",
+      },
+    ],
   }),
+
 });
 
 function Index() {
@@ -80,14 +90,15 @@ function Index() {
           <Reveal direction="right" delay={150} className="order-1 md:order-2">
             <div className="relative overflow-hidden rounded-3xl shadow-2xl">
               <img
-                src={heroImageAsset.url}
+                src={homeHeroImage.src}
+                srcSet={homeHeroImage.srcSet}
                 alt="Close-up of hands playing an acoustic guitar in a warm, intimate music therapy setting"
                 width={1920}
                 height={1280}
                 loading="eager"
                 fetchPriority="high"
                 decoding="async"
-                sizes="(min-width: 1024px) 50vw, 100vw"
+                sizes={SIZES_HALF}
                 className="aspect-[3/2] w-full object-cover opacity-90 saturate-[0.8] contrast-[0.9]"
               />
               <div className="pointer-events-none absolute inset-0 bg-secondary/30 mix-blend-multiply" />
@@ -101,7 +112,9 @@ function Index() {
         <div className="mx-auto grid max-w-7xl grid-cols-1 items-center gap-12 px-6 md:grid-cols-2">
           <Reveal direction="left" className="relative overflow-hidden rounded-3xl shadow-xl">
             <img
-              src={aboutImageAsset.url}
+              src={homeAboutImage.src}
+              srcSet={homeAboutImage.srcSet}
+              sizes={SIZES_HALF}
               alt="Jeremy Yau, Registered Music Therapist, playing an acoustic guitar beside a bookshelf"
               width={1200}
               height={1545}

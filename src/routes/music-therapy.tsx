@@ -5,8 +5,7 @@ import { SitePage } from "@/components/site-chrome";
 import { Reveal } from "@/components/reveal";
 import { QuoteBand } from "@/components/quote-band";
 
-import mtFamily from "@/assets/mt-family.webp.asset.json";
-import mtKeyboard from "@/assets/mt-keyboard.webp.asset.json";
+import { mtFamilyImage, mtKeyboardImage, SIZES_CONTENT } from "@/lib/images";
 
 export const Route = createFileRoute("/music-therapy")({
   component: MusicTherapyPage,
@@ -90,7 +89,9 @@ function MusicTherapyPage() {
         <div className="mx-auto mt-14 max-w-5xl px-6">
           <Reveal direction="up" className="relative overflow-hidden rounded-3xl border border-border/60 shadow-sm">
             <img
-              src={mtFamily.url}
+              src={mtFamilyImage.src}
+              srcSet={mtFamilyImage.srcSet}
+              sizes={SIZES_CONTENT}
               alt="Music therapist playing guitar with a parent and infant during a home-based session"
               loading="lazy"
               decoding="async"
@@ -147,7 +148,9 @@ function MusicTherapyPage() {
           <Reveal direction="up" className="overflow-hidden rounded-3xl border border-border/60 shadow-sm">
             <div className="relative">
               <img
-                src={mtKeyboard.url}
+                src={mtKeyboardImage.src}
+                srcSet={mtKeyboardImage.srcSet}
+                sizes={SIZES_CONTENT}
                 alt="Music therapist playing keyboard with a client in a home-based session"
                 loading="lazy"
                 decoding="async"
