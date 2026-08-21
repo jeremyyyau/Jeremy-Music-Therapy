@@ -98,17 +98,6 @@ export function SiteHeader() {
       {mobileMenuOpen && (
         <div className="border-t border-border/40 bg-background px-6 py-4 md:hidden">
           <nav className="flex flex-col gap-2">
-            <Link
-              to="/"
-              onClick={() => setMobileMenuOpen(false)}
-              className="group flex items-center gap-2 rounded-xl px-3 py-2 transition-all duration-200 hover:bg-primary/10"
-            >
-              <Music className="h-5 w-5 text-primary transition-all duration-200 group-hover:scale-110 group-hover:rotate-6 group-hover:drop-shadow-[0_0_8px_rgba(0,0,0,0.15)]" />
-              <span className="font-heading text-lg font-semibold text-foreground transition-colors duration-200 group-hover:text-primary">
-                Music Therapy
-              </span>
-            </Link>
-            <div className="my-1 border-t border-border/30" />
             {navItems.map((item) => (
               <NavLink
                 key={item.label}
