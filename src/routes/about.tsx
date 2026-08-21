@@ -4,7 +4,7 @@ import { SitePage } from "@/components/site-chrome";
 import { Reveal } from "@/components/reveal";
 import { QuoteBand } from "@/components/quote-band";
 
-import aboutHeroAsset from "@/assets/about-hero.webp.asset.json";
+import { aboutHeroImage, SIZES_CONTENT } from "@/lib/images";
 
 export const Route = createFileRoute("/about")({
   component: AboutPage,
@@ -91,7 +91,9 @@ function AboutPage() {
 
           <Reveal direction="scale" delay={150} className="relative mt-12 overflow-hidden rounded-3xl shadow-xl">
             <img
-              src={aboutHeroAsset.url}
+              src={aboutHeroImage.src}
+              srcSet={aboutHeroImage.srcSet}
+              sizes={SIZES_CONTENT}
               alt="Music therapist seated with a client during a warm, indoor session"
               width={1920}
               height={1280}

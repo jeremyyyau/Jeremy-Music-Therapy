@@ -3,7 +3,7 @@ import { SitePage } from "@/components/site-chrome";
 import { Reveal } from "@/components/reveal";
 import { QuoteBand } from "@/components/quote-band";
 
-import resourcesHeroAsset from "@/assets/resources-hero.webp.asset.json";
+import { resourcesHeroImage, SIZES_CONTENT } from "@/lib/images";
 import resourceThumb from "@/assets/resource-thumb.webp";
 
 export const Route = createFileRoute("/resources")({
@@ -63,7 +63,9 @@ function ResourcesPage() {
           <Reveal direction="up" className="overflow-hidden rounded-3xl border border-border/60 shadow-sm">
             <div className="relative aspect-[16/9] w-full md:aspect-[16/10]">
               <img
-                src={resourcesHeroAsset.url}
+                src={resourcesHeroImage.src}
+                srcSet={resourcesHeroImage.srcSet}
+                sizes={SIZES_CONTENT}
                 alt="Music therapist playing guitar with a child during a relaxed, interactive session"
                 loading="lazy"
                 decoding="async"

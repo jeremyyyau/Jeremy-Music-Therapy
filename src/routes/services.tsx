@@ -4,8 +4,7 @@ import { SitePage } from "@/components/site-chrome";
 import { Reveal } from "@/components/reveal";
 import { QuoteBand } from "@/components/quote-band";
 
-import svcIndividualAsset from "@/assets/svc-individual.webp.asset.json";
-import svcGroupAsset from "@/assets/svc-group.webp.asset.json";
+import { svcIndividualImage, svcGroupImage, SIZES_CONTENT } from "@/lib/images";
 
 export const Route = createFileRoute("/services")({
   component: ServicesPage,
@@ -124,7 +123,9 @@ function ServicesPage() {
         <div className="mx-auto mt-14 max-w-5xl px-6">
           <Reveal direction="up" className="relative overflow-hidden rounded-3xl border border-border/60 shadow-sm">
             <img
-              src={svcIndividualAsset.url}
+              src={svcIndividualImage.src}
+              srcSet={svcIndividualImage.srcSet}
+              sizes={SIZES_CONTENT}
               alt="Music therapist playing guitar outdoors with young children during a play-based session"
               loading="lazy"
               decoding="async"
@@ -164,7 +165,9 @@ function ServicesPage() {
         <div className="mx-auto mt-20 max-w-5xl px-6">
           <Reveal direction="up" className="relative mb-12 overflow-hidden rounded-3xl border border-border/60 shadow-sm">
             <img
-              src={svcGroupAsset.url}
+              src={svcGroupImage.src}
+              srcSet={svcGroupImage.srcSet}
+              sizes={SIZES_CONTENT}
               alt="Music therapist playing guitar alongside a client on electronic drums in a bright home clinic space"
               loading="lazy"
               decoding="async"
