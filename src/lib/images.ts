@@ -47,7 +47,9 @@ import res640 from "@/assets/resources-hero-640.webp.asset.json";
 import res960 from "@/assets/resources-hero-960.webp.asset.json";
 import res1280 from "@/assets/resources-hero-1280.webp.asset.json";
 
-type Pointer = { url: string };
+type Pointer = unknown;
+
+const urlOf = (pointer: Pointer): string => (pointer as { url: string }).url;
 
 function build(
   full: Pointer,
@@ -55,8 +57,11 @@ function build(
   variants: Array<[Pointer, number]>,
 ): { src: string; srcSet: string } {
   return {
-    src: full.url,
-    srcSet: [...variants.map(([p, w]) => `${p.url} ${w}w`), `${full.url} ${fullWidth}w`].join(", "),
+    src: urlOf(full),
+    srcSet: [
+      ...variants.map(([p, w]) => `${urlOf(p)} ${w}w`),
+      `${urlOf(full)} ${fullWidth}w`,
+    ].join(", "),
   };
 }
 
