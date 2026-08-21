@@ -149,11 +149,16 @@ export function SiteFooter() {
 
 export function SitePage({ children }: { children: ReactNode }) {
   return (
-    <div className="relative min-h-screen overflow-x-hidden">
+    <>
+      {/* Background lives outside the clipping wrapper so `position: fixed`
+          is resolved against the viewport (iPad/Safari treat an ancestor with
+          overflow clipping as the scroll container, which made it drift). */}
       <SiteBackground />
-      <SiteHeader />
-      <main>{children}</main>
-      <SiteFooter />
-    </div>
+      <div className="relative min-h-screen overflow-x-clip">
+        <SiteHeader />
+        <main>{children}</main>
+        <SiteFooter />
+      </div>
+    </>
   );
 }
