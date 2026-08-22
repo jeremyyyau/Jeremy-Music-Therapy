@@ -65,7 +65,7 @@ function Index() {
       {/* Hero Section */}
       <section className="relative overflow-hidden">
         <div className="mx-auto grid min-h-[calc(100vh-72px)] max-w-7xl grid-cols-1 items-center gap-12 px-6 py-16 lg:grid-cols-2 lg:py-24">
-          <Reveal direction="left" className="order-2 flex flex-col justify-center md:order-1">
+          <Reveal direction="left" className="order-2 flex flex-col justify-center lg:order-1">
             <p className="mb-4 text-sm font-medium uppercase tracking-widest text-primary">
               Registered Music Therapist (RMT) · Jeremy Yau
             </p>
@@ -87,7 +87,7 @@ function Index() {
               </Button>
             </div>
           </Reveal>
-          <Reveal direction="right" delay={150} className="order-1 md:order-2">
+          <Reveal direction="right" delay={150} className="order-1 lg:order-2">
             <div className="relative overflow-hidden rounded-3xl shadow-2xl">
               <img
                 src={homeHeroImage.src}
@@ -109,7 +109,7 @@ function Index() {
 
       {/* About Section */}
       <section id="about" className="bg-secondary/70 py-20 lg:py-28">
-        <div className="mx-auto grid max-w-7xl grid-cols-1 items-center gap-12 px-6 md:grid-cols-2">
+        <div className="mx-auto grid max-w-7xl grid-cols-1 items-center gap-12 px-6 lg:grid-cols-2">
           <Reveal direction="left" className="relative overflow-hidden rounded-3xl shadow-xl">
             <img
               src={homeAboutImage.src}
@@ -353,7 +353,7 @@ function Index() {
 
       {/* Contact Section */}
       <section id="contact" className="py-20 lg:py-28">
-        <div className="mx-auto grid max-w-7xl grid-cols-1 gap-12 px-6 md:grid-cols-2">
+        <div className="mx-auto grid max-w-7xl grid-cols-1 gap-12 px-6 lg:grid-cols-2">
           <Reveal direction="left">
             <p className="mb-3 text-sm font-medium uppercase tracking-widest text-primary">Get in Touch</p>
             <h2 className="font-heading text-3xl font-semibold text-foreground md:text-4xl">
