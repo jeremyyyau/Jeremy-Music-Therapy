@@ -64,7 +64,7 @@ function Index() {
     <SitePage>
       {/* Hero Section */}
       <section className="relative overflow-hidden">
-        <div className="mx-auto grid min-h-[calc(100vh-72px)] max-w-7xl grid-cols-1 items-center gap-12 px-6 py-16 md:grid-cols-2 md:py-24">
+        <div className="mx-auto grid min-h-[calc(100vh-72px)] max-w-7xl grid-cols-1 items-center gap-12 px-6 py-16 lg:grid-cols-2 lg:py-24">
           <Reveal direction="left" className="order-2 flex flex-col justify-center md:order-1">
             <p className="mb-4 text-sm font-medium uppercase tracking-widest text-primary">
               Registered Music Therapist (RMT) · Jeremy Yau
