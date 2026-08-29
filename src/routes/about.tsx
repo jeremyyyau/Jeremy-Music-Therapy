@@ -1,5 +1,5 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
-import { Check } from "lucide-react";
+import { AudioLines, Check, Drum, Guitar, MicVocal, Music2, Music3, Piano } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { SitePage } from "@/components/site-chrome";
 import { Reveal } from "@/components/reveal";
@@ -69,7 +69,15 @@ const experience = [
   },
 ];
 
-const instruments = ["Voice", "Guitar", "Piano", "Percussion", "Clarinet", "Saxophone", "Traditional Chinese flute"];
+const instruments = [
+  { name: "Voice", icon: MicVocal },
+  { name: "Guitar", icon: Guitar },
+  { name: "Piano", icon: Piano },
+  { name: "Percussion", icon: Drum },
+  { name: "Clarinet", icon: Music3 },
+  { name: "Saxophone", icon: Music2 },
+  { name: "Traditional Chinese flute", icon: AudioLines },
+];
 
 function AboutPage() {
   return (
@@ -209,13 +217,18 @@ function AboutPage() {
                 practice stays current with the evidence base.
               </p>
 
-              <ul className="mt-6 flex flex-wrap gap-2">
+              <ul className="mt-8 grid grid-cols-2 gap-3 sm:grid-cols-3 sm:gap-4 lg:grid-cols-4">
                 {instruments.map((inst) => (
                   <li
-                    key={inst}
-                    className="rounded-full border border-border/60 bg-secondary/80 px-4 py-1.5 text-sm text-foreground/80"
+                    key={inst.name}
+                    className="group flex flex-col items-center gap-2.5 rounded-2xl border border-border/60 bg-secondary/80 px-4 py-5 text-center transition-all duration-300 hover:border-primary hover:bg-secondary hover:shadow-card-hover"
                   >
-                    {inst}
+                    <span className="flex h-11 w-11 items-center justify-center rounded-full bg-primary/10 text-primary transition-all duration-300 group-hover:scale-110 group-hover:bg-primary/20">
+                      <inst.icon className="h-5 w-5" aria-hidden />
+                    </span>
+                    <span className="text-sm font-medium leading-snug text-foreground/80 transition-colors duration-300 group-hover:text-foreground">
+                      {inst.name}
+                    </span>
                   </li>
                 ))}
               </ul>
