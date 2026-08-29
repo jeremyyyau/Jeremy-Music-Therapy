@@ -322,10 +322,18 @@ function Index() {
                 key={item.title}
                 direction="up"
                 delay={i * 100}
-                className="group rounded-2xl border border-border/60 bg-card p-6 shadow-sm transition-all duration-300 hover:border-primary hover:bg-secondary hover:shadow-card-hover"
+                className="group relative overflow-hidden rounded-2xl border border-border/60 bg-card p-6 shadow-sm transition-all duration-300 hover:border-primary hover:bg-secondary hover:shadow-card-hover"
               >
+                <div
+                  aria-hidden
+                  className="absolute right-4 top-4 h-1.5 w-1.5 rounded-full bg-primary/25 transition-colors duration-300 group-hover:bg-primary/60"
+                />
                 <h3 className="font-heading text-lg font-semibold text-card-foreground">{item.title}</h3>
-                <p className="mt-2 text-sm leading-relaxed text-muted-foreground">{item.description}</p>
+                <div
+                  aria-hidden
+                  className="mt-2 h-px w-10 bg-gradient-to-r from-primary/50 to-transparent transition-all duration-300 group-hover:w-16 group-hover:from-primary"
+                />
+                <p className="mt-3 text-sm leading-relaxed text-muted-foreground">{item.description}</p>
               </Reveal>
             ))}
           </div>
