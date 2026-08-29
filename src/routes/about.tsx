@@ -117,12 +117,21 @@ function AboutPage() {
                   principle still underpins how I practise.
                 </p>
                 <p>
-                  Rather than specialising early, I chose to practise across as many clinical populations as I could. I
-                  rarely declined an opportunity, because I wanted to understand people and their presentations, not
-                  diagnoses alone. I was fortunate to work in a wide range of clinical settings alongside experienced
-                  mentors and supervisors who challenged me to reason clinically, adapt interventions in the moment, and
-                  build on the strengths each client brings to music.
+                  Rather than specialising early, I chose to practise across as many clinical populations as I could — 
+                  hospital mental health teams, multidisciplinary clinic work alongside speech pathology and
+                  occupational therapy, disability services, aged care, palliative care and community programs. I rarely
+                  declined an opportunity, because I wanted to understand people and their presentations, not diagnoses
+                  alone.
                 </p>
+                <p>
+                  That transdisciplinary grounding allowed me to establish a resource-oriented approach that integrates
+                  perspectives across disciplines to identify strengths, capacities and meaningful opportunities for
+                  growth. I draw from a wide repertoire of evidence-informed interventions, so each session plan can be
+                  matched to presentation, capacity and preference, then adjusted through ongoing clinical observation
+                  and review. I also supervise clinical placements for music therapy students at Western Sydney
+                  University and the University of Melbourne.
+                </p>
+
               </div>
             </Reveal>
 
