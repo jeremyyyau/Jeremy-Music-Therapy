@@ -155,9 +155,14 @@ function ServicesPage() {
                 as="article"
                 className="group rounded-2xl border border-border/60 bg-card p-8 shadow-sm transition-all duration-300 hover:border-primary hover:bg-secondary hover:shadow-card-hover md:p-10"
               >
-                <h2 className="font-heading text-2xl font-semibold text-card-foreground">
-                  {s.title}
-                </h2>
+                <div className="flex items-center gap-4">
+                  <div className="inline-flex shrink-0 rounded-full border border-primary/20 bg-primary/10 p-2.5 transition-all duration-300 group-hover:bg-primary/25 group-hover:shadow-glow">
+                    <s.icon className="h-4.5 w-4.5 text-primary" />
+                  </div>
+                  <h2 className="font-heading text-2xl font-semibold text-card-foreground">
+                    {s.title}
+                  </h2>
+                </div>
                 <p className="mt-2 text-sm font-medium text-primary">{s.who}</p>
                 <p className="mt-4 text-base leading-relaxed text-muted-foreground">
                   {s.description}
@@ -223,12 +228,20 @@ function ServicesPage() {
                 key={item.title}
                 direction="up"
                 delay={(i % 2) * 120}
-                className="group rounded-2xl border border-border/60 bg-card p-6 shadow-sm transition-all duration-300 hover:border-primary hover:bg-secondary hover:shadow-card-hover"
+                className="group relative overflow-hidden rounded-2xl border border-border/60 bg-card p-6 shadow-sm transition-all duration-300 hover:border-primary hover:bg-secondary hover:shadow-card-hover"
               >
+                <div
+                  aria-hidden
+                  className="absolute right-4 top-4 h-1.5 w-1.5 rounded-full bg-primary/25 transition-colors duration-300 group-hover:bg-primary/60"
+                />
                 <h3 className="font-heading text-lg font-semibold text-card-foreground">
                   {item.title}
                 </h3>
-                <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
+                <div
+                  aria-hidden
+                  className="mt-2 h-px w-10 bg-gradient-to-r from-primary/50 to-transparent transition-all duration-300 group-hover:w-16 group-hover:from-primary"
+                />
+                <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
                   {item.description}
                 </p>
               </Reveal>
