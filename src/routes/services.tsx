@@ -58,19 +58,20 @@ const services = [
     format: "Individual • Weekly • Home, clinic or telehealth",
   },
   {
-    title: "Group & Day Programs",
-    who: "Day programs, aged care, childcare and school settings.",
+    title: "Community & Group Sessions",
+    who: "Childcare, schools, Supported Independent Living (SIL), day programs and aged care.",
     description:
-      "Group music therapy structured around social participation, peer interaction and shared goals — with scope for performance elements and music-learning opportunities where they serve the group's aims.",
+      "Individual and group services delivered in everyday environments, integrating therapeutic support into familiar routines to foster social capacity and group participation — with scope for performance elements and music-learning opportunities where they serve the group's aims.",
     format: "Custom scope and length • On-site",
   },
   {
-    title: "An Initial Conversation",
+    title: "Consultation",
     who: "Anyone considering music therapy.",
     description:
-      "A no-pressure discussion of goals, funding and clinical suitability. If another service is the better clinical match, I'll say so — appropriate referral matters more than filling a caseload.",
+      "An open dialogue about goals, funding and the suitability of music therapy in alignment with desired therapeutic outcomes, including discussion of therapeutic processes and clinical rationale. If another service is the better clinical match, I'll say so — appropriate referral matters more than filling a caseload.",
     format: "Around 20 minutes • Phone or video call",
   },
+
 
 ];
 
