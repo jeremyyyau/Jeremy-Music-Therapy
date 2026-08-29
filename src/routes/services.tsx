@@ -39,6 +39,7 @@ const services = [
     format: "Individual or family • Weekly or fortnightly • In your home",
   },
   {
+    icon: Armchair,
     title: "Home Clinic — Picnic Point",
     who: "Clients who benefit from a dedicated, low-distraction therapy space.",
     description:
@@ -46,6 +47,7 @@ const services = [
     format: "Individual or family • Weekly or fortnightly • Picnic Point",
   },
   {
+    icon: Video,
     title: "Telehealth",
     who: "Older children and adults, including clients in rural and remote areas.",
     description:
@@ -53,6 +55,7 @@ const services = [
     format: "Individual • Weekly or fortnightly • Video call",
   },
   {
+    icon: Guitar,
     title: "Instrumental Learning",
     who: "Clients with cognitive, motor and self-regulation goals.",
     description:
@@ -60,6 +63,7 @@ const services = [
     format: "Individual • Weekly • Home, clinic or telehealth",
   },
   {
+    icon: Users,
     title: "Community & Group Sessions",
     who: "Childcare, schools, Supported Independent Living (SIL), day programs and aged care.",
     description:
@@ -67,6 +71,7 @@ const services = [
     format: "Custom scope and length • On-site",
   },
   {
+    icon: MessagesSquare,
     title: "Consultation",
     who: "Anyone considering music therapy.",
     description:
