@@ -219,8 +219,8 @@ function Index() {
               Therapy that meets you where you are.
             </h2>
             <p className="mt-6 text-lg leading-relaxed text-muted-foreground">
-              Whether it is at home, in our dedicated clinic space, via telehealth, or in the community — service
-              delivery is matched according to therapeutic goals, functional needs, daily routine and funding.
+              At home, in the clinic, via telehealth or in the community — delivery is matched to goals, routine and
+              funding.
             </p>
           </Reveal>
 
@@ -228,34 +228,29 @@ function Index() {
             {[
               {
                 title: "Home Visits",
-                description:
-                  "Sessions in your natural environment, where skills are most likely to generalise. All instruments and equipment are provided.",
+                description: "Sessions in your own environment, with all instruments and equipment provided.",
               },
               {
-                title: "Clinic Visits - Picnic Point",
-                description:
-                  "Our calm, purpose-equipped therapy room for focused sessions with a wider range of instruments and fewer distractions.",
+                title: "Clinic Visits — Picnic Point",
+                description: "A calm, purpose-equipped therapy room with fewer distractions.",
               },
               {
                 title: "Telehealth",
-                description:
-                  "Evidence-supported online delivery for older children and adults, including rural clients and those for whom in-person attendance is a barrier.",
+                description: "Online sessions for older children and adults, including rural clients.",
               },
               {
                 title: "Instrumental Learning",
-                description:
-                  "Therapeutic instrumental instruction targeting selective attention, fine and gross motor skills, executive functioning and impulse control.",
+                description: "Therapeutic instruction supporting attention, motor skills and self-regulation.",
               },
               {
                 title: "Community Sessions",
-                description:
-                  "Individual and group services across childcare, schools, and Supported Independent Living (SIL),                          integrating therapeutic support into everyday environments to foster social capacity and group participation.",
+                description: "Individual and group work in childcare, schools and SIL settings.",
               },
               {
                 title: "Consultation",
-                description:
-                  "Open dialogue of goals, funding and suitability of music therapy in alignment to desired therapeutic                     outcomes, as well as discussions around therapeutic processes and clinical rationale.",
+                description: "A no-pressure conversation about goals, funding and clinical fit.",
               },
+
             ].map((service, i) => (
               <Reveal
                 key={service.title}
