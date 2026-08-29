@@ -1,5 +1,5 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
-import { AudioLines, Check, Drum, Guitar, MicVocal, Music2, Music3, Piano } from "lucide-react";
+import { AudioLines, Check, Drum, Guitar, MicVocal, Music2, Music3, Piano, Wind } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { SitePage } from "@/components/site-chrome";
 import { Reveal } from "@/components/reveal";
@@ -73,10 +73,11 @@ const instruments = [
   { name: "Voice", icon: MicVocal },
   { name: "Guitar", icon: Guitar },
   { name: "Piano", icon: Piano },
-  { name: "Percussion", icon: Drum },
+  { name: "Drumkit", icon: Drum },
   { name: "Clarinet", icon: Music3 },
   { name: "Saxophone", icon: Music2 },
-  { name: "Traditional Chinese flute", icon: AudioLines },
+  { name: "Percussion", icon: AudioLines },
+  { name: "Traditional Chinese flute", icon: Wind },
 ];
 
 function AboutPage() {
@@ -217,7 +218,7 @@ function AboutPage() {
                 practice stays current with the evidence base.
               </p>
 
-              <ul className="mt-8 grid grid-cols-2 gap-3 sm:grid-cols-3 sm:gap-4 lg:grid-cols-4">
+              <ul className="mt-8 grid grid-cols-2 gap-3 sm:gap-4 md:grid-cols-4">
                 {instruments.map((inst) => (
                   <li
                     key={inst.name}
