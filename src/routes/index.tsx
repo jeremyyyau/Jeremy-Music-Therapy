@@ -320,6 +320,13 @@ function Index() {
               </Reveal>
             ))}
           </div>
+
+          <Reveal className="mt-12">
+            <Button asChild variant="outline" className="rounded-full">
+              <Link to="/services">Why the right fit matters</Link>
+            </Button>
+          </Reveal>
+
         </div>
       </section>
 
