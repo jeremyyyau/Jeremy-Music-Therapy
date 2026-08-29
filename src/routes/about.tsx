@@ -1,4 +1,5 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
+import { Check } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { SitePage } from "@/components/site-chrome";
 import { Reveal } from "@/components/reveal";
@@ -139,7 +140,10 @@ function AboutPage() {
               <h2 className="font-heading text-2xl font-semibold text-foreground md:text-3xl">Qualifications</h2>
               <ul className="mt-4 space-y-3 text-base leading-relaxed text-muted-foreground">
                 {credentials.map((c) => (
-                  <li key={c}>• {c}</li>
+                  <li key={c} className="flex items-start gap-3">
+                    <Check className="mt-1 h-4 w-4 shrink-0 text-primary/70" aria-hidden />
+                    <span>{c}</span>
+                  </li>
                 ))}
               </ul>
             </Reveal>
