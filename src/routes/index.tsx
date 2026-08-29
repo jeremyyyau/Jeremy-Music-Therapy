@@ -131,24 +131,16 @@ function Index() {
             </h2>
             <div className="mt-6 space-y-4 text-base leading-relaxed text-muted-foreground">
               <p>
-                I'm a Registered Music Therapist (RMT) with a Master of Music Therapy from the University of Melbourne,
-                and over eight years of clinical practice. I also supervise clinical placements for music therapy
-                students at Western Sydney University and the University of Melbourne.
+                I'm a Registered Music Therapist (RMT) with a Master of Music Therapy from the University of Melbourne
+                and over eight years of clinical practice across hospital, education, disability, aged care and
+                community settings.
               </p>
               <p>
-                Rather than specialising early, I chose to practise across as many clinical areas as I could — hospital
-                mental health teams, multidisciplinary clinic work alongside speech pathology and occupational therapy,
-                disability services, aged care, palliative care and community programs. That transdisciplinary grounding
-                meant that I was able to establish a resource-oriented approach that integrates perspectives across
-                disciplines to identify strengths, capacities and meaningful opportunities for growth.
-              </p>
-              <p>
-                In my practice, I draw from a wide repertoire of evidence-informed interventions, so that each session
-                plan can be matched to presentation, capacity and preference — adjusted through ongoing clinical
-                observation and review. Above all, I aim to create a welcoming, safe therapeutic space where people can
-                connect, express themselves and explore new possibilities through music.
+                That breadth shaped a resource-oriented approach: sessions are matched to presentation, capacity and
+                preference, in a space where people feel safe to connect and explore.
               </p>
             </div>
+
 
             <div className="mt-8">
               <Button asChild variant="outline" className="rounded-full">
