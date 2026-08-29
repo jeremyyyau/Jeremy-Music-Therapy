@@ -74,7 +74,9 @@ function Index() {
             </h1>
             <p className="mt-6 max-w-lg text-lg leading-relaxed text-muted-foreground">
               An independent, person-centred music therapy practice for children, adults and older people across Sydney
-              — grounded in more than eight years of clinical experience.
+              — grounded in more than eight years of clinical experience. Sessions are tailored to each client’s goals,
+              whether that means building communication, supporting emotional expression, or finding meaningful ways to
+              connect through music.
             </p>
 
 
