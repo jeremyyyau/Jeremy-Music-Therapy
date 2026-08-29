@@ -280,19 +280,11 @@ function Index() {
             <h2 className="font-heading text-3xl font-semibold text-foreground md:text-4xl">
               Taking your time, finding the right fit.
             </h2>
-            <div className="mt-6 space-y-4 text-base leading-relaxed text-muted-foreground">
-              <p>
-                Choosing a therapist involves more than qualifications and experience. Larger clinics may suit some
-                families, offering consistency and standardized clinical processes across therapists. However, others
-                might value a personal, flexible service where one therapist holds the whole clinical picture and is
-                free to adapt according to each family's circumstance and needs.
-              </p>
-              <p>
-                Finding the right therapeutic fit is personal. Each individual should have the space to explore their
-                options without pressure, while allowing time to recognise where meaningful connection, potential, and
-                growth may emerge.
-              </p>
-            </div>
+            <p className="mt-6 text-lg leading-relaxed text-muted-foreground">
+              Choosing a therapist involves more than qualifications. Some families prefer a large clinic; others value
+              a personal, flexible service where one therapist holds the whole clinical picture.
+            </p>
+
           </Reveal>
 
           <div className="mt-12 grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-4">
