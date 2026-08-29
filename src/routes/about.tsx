@@ -44,7 +44,7 @@ const experience = [
       "Holistic mental health teams in hospital settings, including transdisciplinary learning and collaborative care planning.",
   },
   {
-    title: "Clinic & multidisciplinary teams",
+    title: "Multidisciplinary teams",
     description:
       "Working alongside speech pathology and occupational therapy so goals are shared, reinforced and genuinely integrated.",
   },
