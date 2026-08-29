@@ -73,10 +73,10 @@ function Index() {
               Where music meets connection.
             </h1>
             <p className="mt-6 max-w-lg text-lg leading-relaxed text-muted-foreground">
-              An independent, person-centred practice offering music therapy for children, adults and older people
-              across Sydney — informed by over eight years of clinical experience across hospital, early education,
-              disability, aged care, mental health and community settings.
+              An independent, person-centred music therapy practice for children, adults and older people across Sydney
+              — grounded in more than eight years of clinical experience.
             </p>
+
 
             <div className="mt-8 flex flex-wrap gap-4">
               <Button asChild size="lg" className="rounded-full px-8">
@@ -131,24 +131,16 @@ function Index() {
             </h2>
             <div className="mt-6 space-y-4 text-base leading-relaxed text-muted-foreground">
               <p>
-                I'm a Registered Music Therapist (RMT) with a Master of Music Therapy from the University of Melbourne,
-                and over eight years of clinical practice. I also supervise clinical placements for music therapy
-                students at Western Sydney University and the University of Melbourne.
+                I'm a Registered Music Therapist (RMT) with a Master of Music Therapy from the University of Melbourne
+                and over eight years of clinical practice across hospital, education, disability, aged care and
+                community settings.
               </p>
               <p>
-                Rather than specialising early, I chose to practise across as many clinical areas as I could — hospital
-                mental health teams, multidisciplinary clinic work alongside speech pathology and occupational therapy,
-                disability services, aged care, palliative care and community programs. That transdisciplinary grounding
-                meant that I was able to establish a resource-oriented approach that integrates perspectives across
-                disciplines to identify strengths, capacities and meaningful opportunities for growth.
-              </p>
-              <p>
-                In my practice, I draw from a wide repertoire of evidence-informed interventions, so that each session
-                plan can be matched to presentation, capacity and preference — adjusted through ongoing clinical
-                observation and review. Above all, I aim to create a welcoming, safe therapeutic space where people can
-                connect, express themselves and explore new possibilities through music.
+                That breadth shaped a resource-oriented approach: sessions are matched to presentation, capacity and
+                preference, in a space where people feel safe to connect and explore.
               </p>
             </div>
+
 
             <div className="mt-8">
               <Button asChild variant="outline" className="rounded-full">
@@ -168,11 +160,8 @@ function Index() {
               Goal-directed, not diagnosis-defined.
             </h2>
             <p className="mt-6 text-lg leading-relaxed text-muted-foreground">
-              Music therapy is a clinical, evidence-based allied health discipline in which a registered therapist uses
-              music- based interventions to address non-musical therapeutic goals across emotional, cognitive,
-              communication, physical, and social domains. Whilst music holds inherent therapeutic qualities, music
-              therapy harnesses these qualities through intentional, structured, and clinically directed practice,
-              grounded in rapport and therapeutic connection.
+              A clinical, evidence-based allied health discipline that uses music-based interventions to work toward
+              non-musical goals — emotional, cognitive, communication, physical and social.
             </p>
           </Reveal>
 
@@ -182,20 +171,21 @@ function Index() {
                 icon: Heart,
                 title: "Active interventions",
                 description:
-                  "Clinical improvisation, supported songwriting, soundtrack creation, therapeutic singing and instrument play to build confidence, communication and engagement.",
+                  "Improvisation, songwriting, singing and instrument play to build confidence and communication.",
               },
               {
                 icon: Users,
                 title: "Receptive interventions",
                 description:
-                  "Guided music listening, song lyric analysis, playlist creation and music-assisted relaxation to support self-reflection, emotional exploration and sensory regulation.",
+                  "Guided listening, lyric analysis and music-assisted relaxation to support reflection and regulation.",
               },
               {
                 icon: Calendar,
-                title: "Tailored to individual needs",
+                title: "Tailored to you",
                 description:
-                  "Methods adapted for disability, neuro-developmental conditions, acquired brain injury and mental health conditions — accessible, strengths-based and resource-oriented.",
+                  "Methods adapted to each person — accessible, strengths-based and resource-oriented.",
               },
+
             ].map((item, i) => (
               <Reveal
                 key={item.title}
@@ -229,8 +219,8 @@ function Index() {
               Therapy that meets you where you are.
             </h2>
             <p className="mt-6 text-lg leading-relaxed text-muted-foreground">
-              Whether it is at home, in our dedicated clinic space, via telehealth, or in the community — service
-              delivery is matched according to therapeutic goals, functional needs, daily routine and funding.
+              At home, in the clinic, via telehealth or in the community — delivery is matched to goals, routine and
+              funding.
             </p>
           </Reveal>
 
@@ -238,34 +228,29 @@ function Index() {
             {[
               {
                 title: "Home Visits",
-                description:
-                  "Sessions in your natural environment, where skills are most likely to generalise. All instruments and equipment are provided.",
+                description: "Sessions in your own environment, with all instruments and equipment provided.",
               },
               {
-                title: "Clinic Visits - Picnic Point",
-                description:
-                  "Our calm, purpose-equipped therapy room for focused sessions with a wider range of instruments and fewer distractions.",
+                title: "Clinic Visits — Picnic Point",
+                description: "A calm, purpose-equipped therapy room with fewer distractions.",
               },
               {
                 title: "Telehealth",
-                description:
-                  "Evidence-supported online delivery for older children and adults, including rural clients and those for whom in-person attendance is a barrier.",
+                description: "Online sessions for older children and adults, including rural clients.",
               },
               {
                 title: "Instrumental Learning",
-                description:
-                  "Therapeutic instrumental instruction targeting selective attention, fine and gross motor skills, executive functioning and impulse control.",
+                description: "Therapeutic instruction supporting attention, motor skills and self-regulation.",
               },
               {
                 title: "Community Sessions",
-                description:
-                  "Individual and group services across childcare, schools, and Supported Independent Living (SIL),                          integrating therapeutic support into everyday environments to foster social capacity and group participation.",
+                description: "Individual and group work in childcare, schools and SIL settings.",
               },
               {
                 title: "Consultation",
-                description:
-                  "Open dialogue of goals, funding and suitability of music therapy in alignment to desired therapeutic                     outcomes, as well as discussions around therapeutic processes and clinical rationale.",
+                description: "A no-pressure conversation about goals, funding and clinical fit.",
               },
+
             ].map((service, i) => (
               <Reveal
                 key={service.title}
@@ -295,19 +280,11 @@ function Index() {
             <h2 className="font-heading text-3xl font-semibold text-foreground md:text-4xl">
               Taking your time, finding the right fit.
             </h2>
-            <div className="mt-6 space-y-4 text-base leading-relaxed text-muted-foreground">
-              <p>
-                Choosing a therapist involves more than qualifications and experience. Larger clinics may suit some
-                families, offering consistency and standardized clinical processes across therapists. However, others
-                might value a personal, flexible service where one therapist holds the whole clinical picture and is
-                free to adapt according to each family's circumstance and needs.
-              </p>
-              <p>
-                Finding the right therapeutic fit is personal. Each individual should have the space to explore their
-                options without pressure, while allowing time to recognise where meaningful connection, potential, and
-                growth may emerge.
-              </p>
-            </div>
+            <p className="mt-6 text-lg leading-relaxed text-muted-foreground">
+              Choosing a therapist involves more than qualifications. Some families prefer a large clinic; others value
+              a personal, flexible service where one therapist holds the whole clinical picture.
+            </p>
+
           </Reveal>
 
           <div className="mt-12 grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-4">
@@ -343,6 +320,13 @@ function Index() {
               </Reveal>
             ))}
           </div>
+
+          <Reveal className="mt-12">
+            <Button asChild variant="outline" className="rounded-full">
+              <Link to="/services">Why the right fit matters</Link>
+            </Button>
+          </Reveal>
+
         </div>
       </section>
 

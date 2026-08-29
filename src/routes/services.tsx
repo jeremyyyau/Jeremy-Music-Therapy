@@ -58,19 +58,20 @@ const services = [
     format: "Individual • Weekly • Home, clinic or telehealth",
   },
   {
-    title: "Group & Day Programs",
-    who: "Day programs, aged care, childcare and school settings.",
+    title: "Community & Group Sessions",
+    who: "Childcare, schools, Supported Independent Living (SIL), day programs and aged care.",
     description:
-      "Group music therapy structured around social participation, peer interaction and shared goals — with scope for performance elements and music-learning opportunities where they serve the group's aims.",
+      "Individual and group services delivered in everyday environments, integrating therapeutic support into familiar routines to foster social capacity and group participation — with scope for performance elements and music-learning opportunities where they serve the group's aims.",
     format: "Custom scope and length • On-site",
   },
   {
-    title: "An Initial Conversation",
+    title: "Consultation",
     who: "Anyone considering music therapy.",
     description:
-      "A no-pressure discussion of goals, funding and clinical suitability. If another service is the better clinical match, I'll say so — appropriate referral matters more than filling a caseload.",
+      "An open dialogue about goals, funding and the suitability of music therapy in alignment with desired therapeutic outcomes, including discussion of therapeutic processes and clinical rationale. If another service is the better clinical match, I'll say so — appropriate referral matters more than filling a caseload.",
     format: "Around 20 minutes • Phone or video call",
   },
+
 
 ];
 
@@ -188,18 +189,24 @@ function ServicesPage() {
             </h2>
             <div className="mt-6 space-y-4 text-base leading-relaxed text-muted-foreground">
               <p>
-                It's about finding a clinician whose approach fits you and your family. Larger
-                multidisciplinary clinics are the right setting for some people; others benefit
-                from a more personal, flexible service where the treatment plan is tailored to
-                their goals, routine and changing needs.
+                It's about finding a clinician whose approach fits you and your family. Larger clinics may suit some
+                families, offering consistency and standardised clinical processes across therapists. Others value a
+                personal, flexible service where one therapist holds the whole clinical picture and is free to adapt
+                according to each family's circumstance and needs.
               </p>
               <p>
-                As an independent Registered Music Therapist, I offer a personalised service built
-                on therapeutic alliance, collaboration and shared decision-making. Together we can
-                adapt session structure, trial different interventions, and use your funding and
-                clinical time efficiently so therapy stays meaningful and sustainable.
+                As an independent Registered Music Therapist, I offer a personalised service built on therapeutic
+                alliance, collaboration and shared decision-making. Together we can adapt session structure, trial
+                different interventions, and use your funding and clinical time efficiently so therapy stays meaningful
+                and sustainable.
+              </p>
+              <p>
+                Finding the right therapeutic fit is personal. Each individual should have the space to explore their
+                options without pressure, while allowing time to recognise where meaningful connection, potential and
+                growth may emerge.
               </p>
             </div>
+
 
           </Reveal>
 

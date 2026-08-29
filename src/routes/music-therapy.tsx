@@ -80,9 +80,12 @@ function MusicTherapyPage() {
             </h1>
             <p className="mt-6 text-lg leading-relaxed text-muted-foreground">
               Music therapy is a clinical, evidence-based allied health discipline in which a registered therapist uses
-              planned music interventions to address non-musical therapeutic goals across emotional, cognitive,
-              communication, physical and social domains, with progress reviewed against goals over time.
+              music-based interventions to address non-musical therapeutic goals across emotional, cognitive,
+              communication, physical and social domains. Whilst music holds inherent therapeutic qualities, music
+              therapy harnesses these qualities through intentional, structured and clinically directed practice,
+              grounded in rapport and therapeutic connection — with progress reviewed against goals over time.
             </p>
+
           </Reveal>
         </div>
 
@@ -111,19 +114,22 @@ function MusicTherapyPage() {
             <div className="mt-4 space-y-4 text-base leading-relaxed text-muted-foreground">
               <p>
                 Sessions can draw on <strong className="text-foreground">active interventions</strong> — clinical
-                improvisation, therapeutic songwriting, singing and instrument play — or{" "}
-                <strong className="text-foreground">receptive interventions</strong> such as guided listening, lyric
-                analysis and music-assisted relaxation. Most treatment plans combine both, selected on the basis of
-                assessment and reviewed as goals shift.
+                improvisation, supported songwriting, soundtrack creation, therapeutic singing and instrument play to
+                build confidence, communication and engagement — or{" "}
+                <strong className="text-foreground">receptive interventions</strong> such as guided music listening,
+                song lyric analysis, playlist creation and music-assisted relaxation, which support self-reflection,
+                emotional exploration and sensory regulation. Most treatment plans combine both, selected on the basis
+                of assessment and reviewed as goals shift.
               </p>
               <p>
                 These methods are flexibly adapted for diverse populations, including children and adults with
                 disability, neuro-developmental conditions, acquired brain injury and mental health presentations — so
-                interventions remain accessible, strengths-based and clinically meaningful.
+                interventions remain accessible, strengths-based, resource-oriented and clinically meaningful.
               </p>
             </div>
           </Reveal>
         </div>
+
 
         <div className="mx-auto mt-16 max-w-6xl px-6">
           <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
