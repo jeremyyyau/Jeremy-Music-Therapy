@@ -373,8 +373,7 @@ function Index() {
             </h2>
             <p className="mt-6 max-w-md text-lg leading-relaxed text-muted-foreground">
               Whether you're exploring music therapy for the first time, comparing providers, or ready to discuss goals,
-              referrals and funding, send me a message. I'll respond within 1–2 business days, and there is no pressure
-              to commit — just a chance to ask questions and find out whether this is the right fit.
+              referrals and funding, send me a message and I'll reply within 1-2 business days.&nbsp;
             </p>
 
             <p className="mt-10 max-w-md text-sm italic leading-relaxed text-muted-foreground">
