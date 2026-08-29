@@ -160,11 +160,8 @@ function Index() {
               Goal-directed, not diagnosis-defined.
             </h2>
             <p className="mt-6 text-lg leading-relaxed text-muted-foreground">
-              Music therapy is a clinical, evidence-based allied health discipline in which a registered therapist uses
-              music- based interventions to address non-musical therapeutic goals across emotional, cognitive,
-              communication, physical, and social domains. Whilst music holds inherent therapeutic qualities, music
-              therapy harnesses these qualities through intentional, structured, and clinically directed practice,
-              grounded in rapport and therapeutic connection.
+              A clinical, evidence-based allied health discipline that uses music-based interventions to work toward
+              non-musical goals — emotional, cognitive, communication, physical and social.
             </p>
           </Reveal>
 
@@ -174,20 +171,21 @@ function Index() {
                 icon: Heart,
                 title: "Active interventions",
                 description:
-                  "Clinical improvisation, supported songwriting, soundtrack creation, therapeutic singing and instrument play to build confidence, communication and engagement.",
+                  "Improvisation, songwriting, singing and instrument play to build confidence and communication.",
               },
               {
                 icon: Users,
                 title: "Receptive interventions",
                 description:
-                  "Guided music listening, song lyric analysis, playlist creation and music-assisted relaxation to support self-reflection, emotional exploration and sensory regulation.",
+                  "Guided listening, lyric analysis and music-assisted relaxation to support reflection and regulation.",
               },
               {
                 icon: Calendar,
-                title: "Tailored to individual needs",
+                title: "Tailored to you",
                 description:
-                  "Methods adapted for disability, neuro-developmental conditions, acquired brain injury and mental health conditions — accessible, strengths-based and resource-oriented.",
+                  "Methods adapted to each person — accessible, strengths-based and resource-oriented.",
               },
+
             ].map((item, i) => (
               <Reveal
                 key={item.title}
