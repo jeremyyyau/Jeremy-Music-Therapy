@@ -266,7 +266,7 @@ function Index() {
               >
                 <div className="mb-4 flex items-center gap-3">
                   <h3 className="font-heading text-xl font-semibold text-foreground">{service.title}</h3>
-                  <div className="inline-flex shrink-0 rounded-full border border-primary/20 bg-primary/10 p-2.5 transition-all duration-300 group-hover:bg-primary/25 group-hover:shadow-glow">
+                  <div className="ml-auto inline-flex shrink-0 rounded-full border border-primary/20 bg-primary/10 p-2.5 transition-all duration-300 group-hover:bg-primary/25 group-hover:shadow-glow">
                     <service.icon className="h-4.5 w-4.5 text-primary" />
                   </div>
                 </div>
