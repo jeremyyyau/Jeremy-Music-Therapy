@@ -129,7 +129,7 @@ export function SiteFooter() {
               Music Therapy
             </span>
           </div>
-          <p className="text-sm italic text-muted-foreground/70">
+          <p className="text-sm italic text-muted-foreground/50">
             We support privately funded and NDIS clients
           </p>
           <div className="flex flex-wrap justify-center gap-2 md:gap-1">
