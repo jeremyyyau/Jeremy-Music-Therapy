@@ -3,7 +3,7 @@ import { useState } from "react";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { Link } from "@tanstack/react-router";
-import { Heart, Users, Calendar } from "lucide-react";
+import { Heart, Users, Calendar, Home, Armchair, Video, Guitar, MessagesSquare } from "lucide-react";
 
 import { Button } from "@/components/ui/button";
 import { Form, FormControl, FormField, FormItem, FormLabel, FormMessage } from "@/components/ui/form";
@@ -227,26 +227,32 @@ function Index() {
           <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
             {[
               {
+                icon: Home,
                 title: "Home Visits",
                 description: "Sessions in your own environment, with all instruments and equipment provided.",
               },
               {
+                icon: Armchair,
                 title: "Clinic Visits — Picnic Point",
                 description: "A calm, purpose-equipped therapy room with fewer distractions.",
               },
               {
+                icon: Video,
                 title: "Telehealth",
                 description: "Online sessions for older children and adults, including rural clients.",
               },
               {
+                icon: Guitar,
                 title: "Instrumental Learning",
                 description: "Therapeutic instruction supporting attention, motor skills and self-regulation.",
               },
               {
+                icon: Users,
                 title: "Community Sessions",
                 description: "Individual and group work in childcare, schools and SIL settings.",
               },
               {
+                icon: MessagesSquare,
                 title: "Consultation",
                 description: "A no-pressure conversation about goals, funding and clinical fit.",
               },
@@ -258,6 +264,9 @@ function Index() {
                 delay={(i % 3) * 120}
                 className="group rounded-2xl border border-border/60 bg-background p-8 shadow-sm transition-all duration-300 hover:border-primary hover:bg-secondary hover:shadow-card-hover"
               >
+                <div className="mb-4 inline-flex rounded-full border border-primary/20 bg-primary/10 p-2.5 transition-all duration-300 group-hover:bg-primary/25 group-hover:shadow-glow">
+                  <service.icon className="h-4.5 w-4.5 text-primary" />
+                </div>
                 <h3 className="font-heading text-xl font-semibold text-foreground">{service.title}</h3>
                 <p className="mt-3 text-sm leading-relaxed text-muted-foreground">{service.description}</p>
               </Reveal>
