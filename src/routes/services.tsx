@@ -1,5 +1,5 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
-import { Home, Armchair, Video, Guitar, Users, MessagesSquare, Compass } from "lucide-react";
+import { Home, Armchair, Video, Guitar, Users, MessagesSquare } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { SitePage } from "@/components/site-chrome";
 import { Reveal } from "@/components/reveal";
