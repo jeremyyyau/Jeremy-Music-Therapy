@@ -249,9 +249,12 @@ function ServicesPage() {
           </div>
 
           <Reveal className="mt-12 rounded-3xl border border-border/60 bg-secondary/70 p-8 md:p-10">
-            <h2 className="font-heading text-2xl font-semibold text-foreground md:text-3xl">
-              Finding the right fit
-            </h2>
+            <div className="flex items-center gap-3">
+              <Compass className="h-6 w-6 text-primary/60" aria-hidden />
+              <h2 className="font-heading text-2xl font-semibold text-foreground md:text-3xl">
+                Finding the right fit
+              </h2>
+            </div>
             <p className="mt-4 text-base leading-relaxed text-muted-foreground">
               I encourage every family to find the service that suits them. There is no
               one-size-fits-all model of therapy, and outcomes are strongest when clients feel

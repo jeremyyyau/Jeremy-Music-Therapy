@@ -158,10 +158,20 @@ function AboutPage() {
                     key={item.title}
                     direction="up"
                     delay={(i % 2) * 120}
-                    className="group rounded-2xl border border-border/60 bg-card p-6 shadow-sm transition-all duration-300 hover:border-primary hover:bg-secondary hover:shadow-card-hover"
+                    className="group relative overflow-hidden rounded-2xl border border-border/60 bg-card p-6 shadow-sm transition-all duration-300 hover:border-primary hover:bg-secondary hover:shadow-card-hover"
                   >
+                    <span
+                      aria-hidden
+                      className="absolute right-5 top-4 font-heading text-2xl font-semibold text-primary/15 transition-colors duration-300 group-hover:text-primary/40"
+                    >
+                      {String(i + 1).padStart(2, "0")}
+                    </span>
                     <h3 className="font-heading text-lg font-semibold text-card-foreground">{item.title}</h3>
-                    <p className="mt-2 text-sm leading-relaxed text-muted-foreground">{item.description}</p>
+                    <div
+                      aria-hidden
+                      className="mt-2 h-px w-10 bg-gradient-to-r from-primary/50 to-transparent transition-all duration-300 group-hover:w-16 group-hover:from-primary"
+                    />
+                    <p className="mt-3 text-sm leading-relaxed text-muted-foreground">{item.description}</p>
                   </Reveal>
                 ))}
               </div>
