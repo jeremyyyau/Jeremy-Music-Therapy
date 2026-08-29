@@ -74,7 +74,9 @@ function Index() {
             </h1>
             <p className="mt-6 max-w-lg text-lg leading-relaxed text-muted-foreground">
               An independent, person-centred music therapy practice for children, adults and older people across Sydney
-              — grounded in more than eight years of clinical experience.
+              — grounded in more than eight years of clinical experience. Sessions are tailored to each client’s goals,
+              whether that means building communication, supporting emotional expression, or finding meaningful ways to
+              connect through music.
             </p>
 
 
@@ -133,11 +135,13 @@ function Index() {
               <p>
                 I'm a Registered Music Therapist (RMT) with a Master of Music Therapy from the University of Melbourne
                 and over eight years of clinical practice across hospital, education, disability, aged care and
-                community settings.
+                community settings. This range of experience has taught me how to adapt quickly, listen deeply, and
+                meet people where they are — clinically, emotionally and creatively.
               </p>
               <p>
                 That breadth shaped a resource-oriented approach: sessions are matched to presentation, capacity and
-                preference, in a space where people feel safe to connect and explore.
+                preference, in a space where people feel safe to connect and explore. My role is to support each client
+                in discovering what music can do for them, not to impose a one-size-fits-all method.
               </p>
             </div>
 
@@ -161,7 +165,9 @@ function Index() {
             </h2>
             <p className="mt-6 text-lg leading-relaxed text-muted-foreground">
               A clinical, evidence-based allied health discipline that uses music-based interventions to work toward
-              non-musical goals — emotional, cognitive, communication, physical and social.
+              non-musical goals — emotional, cognitive, communication, physical and social. It is not about musical
+              performance or talent; it is about using the therapeutic qualities of music to create opportunities for
+              growth, regulation and connection.
             </p>
           </Reveal>
 
@@ -220,7 +226,8 @@ function Index() {
             </h2>
             <p className="mt-6 text-lg leading-relaxed text-muted-foreground">
               At home, in the clinic, via telehealth or in the community — delivery is matched to goals, routine and
-              funding.
+              funding. Every session is planned around what will be most useful for the client and their support network,
+              with flexibility built in as needs change over time.
             </p>
           </Reveal>
 
@@ -293,7 +300,9 @@ function Index() {
             </h2>
             <p className="mt-6 text-lg leading-relaxed text-muted-foreground">
               Choosing a therapist involves more than qualifications. Some families prefer a large clinic; others value
-              a personal, flexible service where one therapist holds the whole clinical picture.
+              a personal, flexible service where one therapist holds the whole clinical picture. I offer direct
+              communication, consistent contact and the time to build a genuine therapeutic relationship — so the work
+              can deepen naturally over weeks and months.
             </p>
 
           </Reveal>
@@ -364,7 +373,8 @@ function Index() {
             </h2>
             <p className="mt-6 max-w-md text-lg leading-relaxed text-muted-foreground">
               Whether you're exploring music therapy for the first time, comparing providers, or ready to discuss goals,
-              referrals and funding, send me a message. I'll respond within 1–2 business days.
+              referrals and funding, send me a message. I'll respond within 1–2 business days, and there is no pressure
+              to commit — just a chance to ask questions and find out whether this is the right fit.
             </p>
 
             <p className="mt-10 max-w-md text-sm italic leading-relaxed text-muted-foreground">
