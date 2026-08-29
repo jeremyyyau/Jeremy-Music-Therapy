@@ -130,7 +130,7 @@ export function SiteFooter() {
             </span>
           </div>
           <p className="text-sm text-muted-foreground">
-            © {new Date().getFullYear()} Music Therapy Practice. All rights reserved.
+            We support privately funded and NDIS clients
           </p>
           <div className="flex flex-wrap justify-center gap-2 md:gap-1">
             {navItems.map((item) => (
