@@ -73,10 +73,10 @@ function Index() {
               Where music meets connection.
             </h1>
             <p className="mt-6 max-w-lg text-lg leading-relaxed text-muted-foreground">
-              An independent, person-centred practice offering music therapy for children, adults and older people
-              across Sydney — informed by over eight years of clinical experience across hospital, early education,
-              disability, aged care, mental health and community settings.
+              An independent, person-centred music therapy practice for children, adults and older people across Sydney
+              — grounded in more than eight years of clinical experience.
             </p>
+
 
             <div className="mt-8 flex flex-wrap gap-4">
               <Button asChild size="lg" className="rounded-full px-8">
