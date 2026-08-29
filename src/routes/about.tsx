@@ -1,4 +1,5 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
+import { Check } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { SitePage } from "@/components/site-chrome";
 import { Reveal } from "@/components/reveal";
@@ -139,7 +140,10 @@ function AboutPage() {
               <h2 className="font-heading text-2xl font-semibold text-foreground md:text-3xl">Qualifications</h2>
               <ul className="mt-4 space-y-3 text-base leading-relaxed text-muted-foreground">
                 {credentials.map((c) => (
-                  <li key={c}>• {c}</li>
+                  <li key={c} className="flex items-start gap-3">
+                    <Check className="mt-1 h-4 w-4 shrink-0 text-primary/70" aria-hidden />
+                    <span>{c}</span>
+                  </li>
                 ))}
               </ul>
             </Reveal>
@@ -158,10 +162,20 @@ function AboutPage() {
                     key={item.title}
                     direction="up"
                     delay={(i % 2) * 120}
-                    className="group rounded-2xl border border-border/60 bg-card p-6 shadow-sm transition-all duration-300 hover:border-primary hover:bg-secondary hover:shadow-card-hover"
+                    className="group relative overflow-hidden rounded-2xl border border-border/60 bg-card p-6 shadow-sm transition-all duration-300 hover:border-primary hover:bg-secondary hover:shadow-card-hover"
                   >
+                    <span
+                      aria-hidden
+                      className="absolute right-5 top-4 font-heading text-2xl font-semibold text-primary/15 transition-colors duration-300 group-hover:text-primary/40"
+                    >
+                      {String(i + 1).padStart(2, "0")}
+                    </span>
                     <h3 className="font-heading text-lg font-semibold text-card-foreground">{item.title}</h3>
-                    <p className="mt-2 text-sm leading-relaxed text-muted-foreground">{item.description}</p>
+                    <div
+                      aria-hidden
+                      className="mt-2 h-px w-10 bg-gradient-to-r from-primary/50 to-transparent transition-all duration-300 group-hover:w-16 group-hover:from-primary"
+                    />
+                    <p className="mt-3 text-sm leading-relaxed text-muted-foreground">{item.description}</p>
                   </Reveal>
                 ))}
               </div>
