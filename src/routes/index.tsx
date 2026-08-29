@@ -264,10 +264,12 @@ function Index() {
                 delay={(i % 3) * 120}
                 className="group rounded-2xl border border-border/60 bg-background p-8 shadow-sm transition-all duration-300 hover:border-primary hover:bg-secondary hover:shadow-card-hover"
               >
-                <div className="mb-4 inline-flex rounded-full border border-primary/20 bg-primary/10 p-2.5 transition-all duration-300 group-hover:bg-primary/25 group-hover:shadow-glow">
-                  <service.icon className="h-4.5 w-4.5 text-primary" />
+                <div className="mb-4 flex items-center gap-3">
+                  <h3 className="font-heading text-xl font-semibold text-foreground">{service.title}</h3>
+                  <div className="inline-flex shrink-0 rounded-full border border-primary/20 bg-primary/10 p-2.5 transition-all duration-300 group-hover:bg-primary/25 group-hover:shadow-glow">
+                    <service.icon className="h-4.5 w-4.5 text-primary" />
+                  </div>
                 </div>
-                <h3 className="font-heading text-xl font-semibold text-foreground">{service.title}</h3>
                 <p className="mt-3 text-sm leading-relaxed text-muted-foreground">{service.description}</p>
               </Reveal>
             ))}

@@ -156,12 +156,12 @@ function ServicesPage() {
                 className="group rounded-2xl border border-border/60 bg-card p-8 shadow-sm transition-all duration-300 hover:border-primary hover:bg-secondary hover:shadow-card-hover md:p-10"
               >
                 <div className="flex items-center gap-4">
-                  <div className="inline-flex shrink-0 rounded-full border border-primary/20 bg-primary/10 p-2.5 transition-all duration-300 group-hover:bg-primary/25 group-hover:shadow-glow">
-                    <s.icon className="h-4.5 w-4.5 text-primary" />
-                  </div>
                   <h2 className="font-heading text-2xl font-semibold text-card-foreground">
                     {s.title}
                   </h2>
+                  <div className="inline-flex shrink-0 rounded-full border border-primary/20 bg-primary/10 p-2.5 transition-all duration-300 group-hover:bg-primary/25 group-hover:shadow-glow">
+                    <s.icon className="h-4.5 w-4.5 text-primary" />
+                  </div>
                 </div>
                 <p className="mt-2 text-sm font-medium text-primary">{s.who}</p>
                 <p className="mt-4 text-base leading-relaxed text-muted-foreground">
