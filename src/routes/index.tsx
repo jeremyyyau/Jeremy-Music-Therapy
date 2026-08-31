@@ -256,13 +256,13 @@ function Index() {
                 icon: Users,
                 title: "Community Sessions",
                 description:
-                  "Individual and group work within childcare, schools and SIL settings to generalize skills in familiar settings",
+                  "Individual and group work in childcare, schools and SIL settings to generalize skills in familiar settings",
               },
               {
                 icon: MessagesSquare,
                 title: "Consultation",
                 description:
-                  "A casual conversation about goals, funding, clinical structure, and suitability of music therapy for the client.",
+                  "An initial conversation about goals, funding, clinical structure, and suitability for music therapy.",
               },
             ].map((service, i) => (
               <Reveal
