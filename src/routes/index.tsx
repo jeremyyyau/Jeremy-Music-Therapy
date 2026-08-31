@@ -250,19 +250,19 @@ function Index() {
                 icon: Guitar,
                 title: "Instrumental Learning",
                 description:
-                  "Therapeutic music-based instruction supporting attention, resilience and self-regulation approaches.",
+                  "Therapeutic music-based instruction supporting attention, resilience and self-regulation.",
               },
               {
                 icon: Users,
                 title: "Community Sessions",
                 description:
-                  "Individual and group work within childcare, schools and SIL settings - for generalizing skills in familiar environments",
+                  "Individual and group work within childcare, schools and SIL settings to generalize skills in familiar settings",
               },
               {
                 icon: MessagesSquare,
                 title: "Consultation",
                 description:
-                  "A casual conversation about goals, funding, clinical structure, and other queries regarding music therapy.",
+                  "A casual conversation about goals, funding, clinical structure, and suitability of music therapy for the client.",
               },
             ].map((service, i) => (
               <Reveal
