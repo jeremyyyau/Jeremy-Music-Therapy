@@ -162,7 +162,7 @@ function Index() {
               Goal-directed, not diagnosis-defined.
             </h2>
             <p className="mt-6 text-lg leading-relaxed text-muted-foreground">
-              A clinical, evidence-based allied health discipline that uses music-based interventions to work toward
+              A clinical, evidence-based allied health discipline that uses music-based interventions to work towards
               non-musical goals — emotional, cognitive, communication, physical and social. It is not about musical
               performance or talent; it is about using the therapeutic qualities of music to create opportunities for
               growth, regulation and connection.

@@ -85,7 +85,6 @@ function MusicTherapyPage() {
               therapy harnesses these qualities through intentional, structured and clinically directed practice,
               grounded in rapport and therapeutic connection — with progress reviewed against goals over time.
             </p>
-
           </Reveal>
         </div>
 
@@ -129,7 +128,6 @@ function MusicTherapyPage() {
             </div>
           </Reveal>
         </div>
-
 
         <div className="mx-auto mt-16 max-w-6xl px-6">
           <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
@@ -191,7 +189,7 @@ function MusicTherapyPage() {
             </h2>
             <div className="mt-4 space-y-4 text-base leading-relaxed text-muted-foreground">
               <p>
-                A music lesson teaches musical skill; music therapy uses music to work toward emotional, social,
+                A music lesson teaches musical skill; music therapy uses music to work towards emotional, social,
                 cognitive and physical outcomes. There is no requirement to become a musician, and no performance or
                 grading. That said, structured instrumental learning has documented therapeutic value — supporting
                 selective attention, fine and gross motor control, executive functioning, emotional regulation and
