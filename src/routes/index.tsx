@@ -56,7 +56,6 @@ export const Route = createFileRoute("/")({
       },
     ],
   }),
-
 });
 
 function Index() {
@@ -78,7 +77,6 @@ function Index() {
               whether that means building communication, supporting emotional expression, or finding meaningful ways to
               connect through music.
             </p>
-
 
             <div className="mt-8 flex flex-wrap gap-4">
               <Button asChild size="lg" className="rounded-full px-8">
@@ -135,8 +133,8 @@ function Index() {
               <p>
                 I'm a Registered Music Therapist (RMT) with a Master of Music Therapy from the University of Melbourne
                 and over eight years of clinical practice across hospital, education, disability, aged care and
-                community settings. This range of experience has taught me how to adapt quickly, listen deeply, and
-                meet people where they are — clinically, emotionally and creatively.
+                community settings. This range of experience has taught me how to adapt quickly, listen deeply, and meet
+                people where they are — clinically, emotionally and creatively.
               </p>
               <p>
                 That breadth shaped a resource-oriented approach: sessions are matched to presentation, capacity and
@@ -144,7 +142,6 @@ function Index() {
                 in discovering what music can do for them, not to impose a one-size-fits-all method.
               </p>
             </div>
-
 
             <div className="mt-8">
               <Button asChild variant="outline" className="rounded-full">
@@ -188,10 +185,8 @@ function Index() {
               {
                 icon: Calendar,
                 title: "Tailored to you",
-                description:
-                  "Methods adapted to each person — accessible, strengths-based and resource-oriented.",
+                description: "Methods adapted to each person — accessible, strengths-based and resource-oriented.",
               },
-
             ].map((item, i) => (
               <Reveal
                 key={item.title}
@@ -226,8 +221,8 @@ function Index() {
             </h2>
             <p className="mt-6 text-lg leading-relaxed text-muted-foreground">
               At home, in the clinic, via telehealth or in the community — delivery is matched to goals, routine and
-              funding. Every session is planned around what will be most useful for the client and their support network,
-              with flexibility built in as needs change over time.
+              funding. Every session is planned around what will be most useful for the client and their support
+              network, with flexibility built in as needs change over time.
             </p>
           </Reveal>
 
@@ -263,7 +258,6 @@ function Index() {
                 title: "Consultation",
                 description: "A no-pressure conversation about goals, funding and clinical fit.",
               },
-
             ].map((service, i) => (
               <Reveal
                 key={service.title}
@@ -304,7 +298,6 @@ function Index() {
               communication, consistent contact and the time to build a genuine therapeutic relationship — so the work
               can deepen naturally over weeks and months.
             </p>
-
           </Reveal>
 
           <div className="mt-12 grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-4">
@@ -354,7 +347,6 @@ function Index() {
               <Link to="/services">Why the right fit matters</Link>
             </Button>
           </Reveal>
-
         </div>
       </section>
 
@@ -377,7 +369,7 @@ function Index() {
             </p>
 
             <p className="mt-10 max-w-md text-sm italic leading-relaxed text-muted-foreground">
-              Enquiries from allied health and other healthcare professionals are also welcomed, including referral
+              Enquiries from allied health and healthcare professionals are also welcomed, including referral
               discussions, professional supervision, networking opportunities, or additional information regarding music
               therapy.
             </p>
@@ -465,7 +457,7 @@ function ContactForm() {
               <FormItem>
                 <FormLabel className="text-foreground">Phone (optional)</FormLabel>
                 <FormControl>
-                  <Input placeholder="(+61)123-456-789" {...field} className="rounded-xl" />
+                  <Input placeholder="0412-345-678" {...field} className="rounded-xl" />
                 </FormControl>
                 <FormMessage />
               </FormItem>
