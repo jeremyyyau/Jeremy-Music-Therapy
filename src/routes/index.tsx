@@ -299,10 +299,10 @@ function Index() {
               Taking your time, finding the right fit.
             </h2>
             <p className="mt-6 text-lg leading-relaxed text-muted-foreground">
-              Choosing a therapist involves more than qualifications. Some families prefer a large clinic; others value
-              a personal, flexible service where one therapist holds the whole clinical picture. I offer direct
-              communication, consistent contact and the time to build a genuine therapeutic relationship — so the work
-              can deepen naturally over weeks and months.
+              Choosing a therapist involves more than qualifications. Some families prefer a large clinic; others might
+              value a more personal, flexible service where one therapist holds the whole clinical picture. I prioritize
+              direct communication, consistent contact and time to build a genuine therapeutic relationship with the
+              family — so that successes and outcomes become a shared family-centred experience.
             </p>
           </Reveal>
 
@@ -315,17 +315,17 @@ function Index() {
               },
               {
                 title: "Flexible & responsive",
-                description: "Direct communication, adaptable scheduling and minimal administrative overhead.",
+                description: "Direct communication, adaptable scheduling and reduced administrative overhead.",
               },
               {
                 title: "Family at the centre",
                 description:
-                  "Parents and carers are empowered to make observations and decisions that shape assessment and goal setting.",
+                  "Parents and carers empowered to observe and make decisions, shaping assessment and goal setting.",
               },
               {
                 title: "Holistic outcomes",
                 description:
-                  "Confidence, connection, participation and quality of life tracked alongside clinical goals.",
+                  "Confidence, connection, motivation and improved quality of life tracked alongside clinical goals.",
               },
             ].map((item, i) => (
               <Reveal
