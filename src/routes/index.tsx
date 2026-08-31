@@ -233,32 +233,36 @@ function Index() {
               {
                 icon: Home,
                 title: "Home Visits",
-                description: "Sessions in your own environment, with all instruments and equipment provided.",
+                description: "Sessions in your own home environment, with all instruments and equipment provided.",
               },
               {
                 icon: Armchair,
                 title: "Clinic Visits — Picnic Point",
-                description: "A calm, purpose-equipped therapy room with fewer distractions.",
+                description:
+                  "A calm, purpose-equipped therapy room with fewer distractions and wider array of instruments.",
               },
               {
                 icon: Video,
                 title: "Telehealth",
-                description: "Online sessions for older children and adults, including rural clients.",
+                description: "Online sessions for older children and adults, including rural and overseas clients.",
               },
               {
                 icon: Guitar,
                 title: "Instrumental Learning",
-                description: "Therapeutic instruction supporting attention, motor skills and self-regulation.",
+                description:
+                  "Therapeutic music-based instruction supporting attention, resilience and self-regulation approaches.",
               },
               {
                 icon: Users,
                 title: "Community Sessions",
-                description: "Individual and group work in childcare, schools and SIL settings.",
+                description:
+                  "Individual and group work within childcare, schools and SIL settings - for generalizing skills in familiar environments",
               },
               {
                 icon: MessagesSquare,
                 title: "Consultation",
-                description: "A no-pressure conversation about goals, funding and clinical fit.",
+                description:
+                  "A casual conversation about goals, funding, clinical structure, and other queries regarding music therapy.",
               },
             ].map((service, i) => (
               <Reveal
