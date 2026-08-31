@@ -302,7 +302,7 @@ function Index() {
               Choosing a therapist involves more than qualifications. Some families prefer a large clinic; others might
               value a more personal, flexible service where one therapist holds the whole clinical picture. I prioritize
               direct communication, consistent contact and time to build a genuine therapeutic relationship with the
-              family — so that successes and outcomes become a shared family-centred experience.
+              family — so that successes and outcomes during sessions become a shared family-centred experience.
             </p>
           </Reveal>
 
@@ -315,7 +315,8 @@ function Index() {
               },
               {
                 title: "Flexible & responsive",
-                description: "Direct communication, adaptable scheduling and reduced administrative overhead.",
+                description:
+                  "Direct communication, adaptable scheduling and  minimal administrative and strict policies.",
               },
               {
                 title: "Family at the centre",
@@ -350,7 +351,7 @@ function Index() {
 
           <Reveal className="mt-12">
             <Button asChild variant="outline" className="rounded-full">
-              <Link to="/services">Why the right fit matters</Link>
+              <Link to="/services">What we offer</Link>
             </Button>
           </Reveal>
         </div>
