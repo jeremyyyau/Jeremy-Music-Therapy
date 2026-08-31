@@ -376,9 +376,8 @@ function Index() {
             </p>
 
             <p className="mt-10 max-w-md text-sm italic leading-relaxed text-muted-foreground">
-              Enquiries from allied health and healthcare professionals are also welcomed, including referral
-              discussions, professional supervision, networking opportunities, or additional information regarding music
-              therapy.
+              Enquiries from allied health and healthcare professionals are welcomed, including referral discussions,
+              professional supervision, networking opportunities, or additional information regarding music therapy.
             </p>
           </Reveal>
 
