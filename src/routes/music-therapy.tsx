@@ -113,7 +113,7 @@ function MusicTherapyPage() {
             <div className="mt-4 space-y-4 text-base leading-relaxed text-muted-foreground">
               <p>
                 Sessions can draw on <strong className="text-foreground">active interventions</strong> — clinical
-                improvisation, supported songwriting, soundtrack creation, therapeutic singing and instrument play to
+                improvisation, supported songwriting, soundtrack creation, therapeutic singing and instrumental play to
                 build confidence, communication and engagement — or{" "}
                 <strong className="text-foreground">receptive interventions</strong> such as guided music listening,
                 song lyric analysis, playlist creation and music-assisted relaxation, which support self-reflection,

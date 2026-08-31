@@ -175,18 +175,19 @@ function Index() {
                 icon: Heart,
                 title: "Active interventions",
                 description:
-                  "Improvisation, songwriting, singing and instrument play to build confidence and communication.",
+                  "Improvisation, songwriting, singing and instrumental play - building confidence, communication and social interaction through natural opportunities for creativity.",
               },
               {
                 icon: Users,
                 title: "Receptive interventions",
                 description:
-                  "Guided listening, lyric analysis and music-assisted relaxation to support reflection and regulation.",
+                  "Guided listening, lyric analysis and music-assisted relaxation to encourage reflection and regulation, as well as support emotional awareness and identity formation.",
               },
               {
                 icon: Calendar,
                 title: "Tailored to you",
-                description: "Methods adapted to each person — accessible, strengths-based and resource-oriented.",
+                description:
+                  "Methods adapted to each individual to inspire and motivate — ensuring accessibility, strengths-based and resource-oriented processes.",
               },
             ].map((item, i) => (
               <Reveal
