@@ -137,9 +137,10 @@ function Index() {
                 people where they are — clinically, emotionally and creatively.
               </p>
               <p>
-                That breadth shaped a resource-oriented approach: sessions are matched to presentation, capacity and
-                preference, in a space where people feel safe to connect and explore. My role is to support each client
-                in discovering what music can do for them, not to impose a one-size-fits-all method.
+                That breadth has shaped a resource-oriented approach where sessions are matched to presentation,
+                capacity and preference, in a space where people feel safe to connect and explore. My role is to support
+                each client in discovering what music can do for them, creating a therapeutic approach that is uniquely
+                shaped around who they are.
               </p>
             </div>
 
