@@ -196,12 +196,15 @@ function MusicTherapyPage() {
                 conventional therapeutic approaches — those who need additional support to engage, require activities to
                 be adapted in specific ways, feel anxious or unmotivated in unfamiliar environments, or find direct
                 social interaction challenging. It can offer a different point of entry: connection can begin through a
-                shared song, rhythm, instrument or musical interest rather than conversation alone. This can be
-                especially valuable for people who are hesitant to engage with unfamiliar people, have experienced
-                repeated difficulty with traditional approaches, become overwhelmed by expectations or demands, or
-                engage more readily when activities are creative, predictable and aligned with their interests. By
-                meeting people within their existing strengths and interests, music can reduce the pressure of
-                participation while creating genuine opportunities for connection, communication, confidence and growth.
+                shared song, rhythm, instrument or musical interest rather than conversation alone.
+              </p>
+              <p>
+                This can be especially valuable for people who are hesitant to engage with unfamiliar people, have
+                experienced repeated difficulty with traditional approaches, become overwhelmed by expectations or
+                demands, or engage more readily when activities are creative, predictable and aligned with their
+                interests. By meeting people within their existing strengths and interests, music can reduce the
+                pressure of participation while creating genuine opportunities for connection, communication, confidence
+                and growth.
               </p>
             </div>
           </Reveal>
