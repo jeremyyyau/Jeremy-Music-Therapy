@@ -215,11 +215,17 @@ function MusicTherapyPage() {
             </h2>
             <div className="mt-4 space-y-4 text-base leading-relaxed text-muted-foreground">
               <p>
-                A music lesson teaches musical skill; music therapy uses music to work towards emotional, social,
-                cognitive and physical outcomes. There is no requirement to become a musician, and no performance or
-                grading. That said, structured instrumental learning has documented therapeutic value — supporting
-                selective attention, fine and gross motor control, executive functioning, emotional regulation and
-                impulse control.
+                A music lesson teaches musical skills. Music therapy uses music as a way of supporting broader goals —
+                including communication, confidence, emotional regulation, attention, physical skills and social
+                connection. There is no expectation to become a musician, perform or be graded.
+              </p>
+              <p>
+                Music can still be taught as part of therapy when learning an instrument supports a person's goals.
+                Learning to play can build attention, coordination, planning, impulse control and emotional regulation,
+                while also providing a sense of achievement and motivation. The focus, however, is not on becoming a
+                better musician, but on what music can help make possible. For one person, that might mean developing
+                fine motor skills through playing piano; for another, building confidence through mastering a new song;
+                or simply finding a motivating and enjoyable way to practise skills that might otherwise feel difficult.
               </p>
             </div>
           </Reveal>
