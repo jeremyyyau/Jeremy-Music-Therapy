@@ -236,7 +236,7 @@ function MusicTherapyPage() {
               <p>
                 Measurable developmental outcomes rarely emerge from a single session. Meaningful therapeutic change
                 usually develops through a strong therapeutic relationship, consistent engagement and repeated
-                opportunities to practise and build skills. A client being able to do something in their first session
+                opportunities to practice and build skills. A client being able to do something in their first session
                 is encouraging, but it is not necessarily a therapeutic outcome in itself — it may simply indicate that
                 they respond well to this type of approach. What matters is whether that initial engagement can be built
                 upon over time.
