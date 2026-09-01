@@ -316,7 +316,7 @@ function Index() {
               {
                 title: "Flexible & responsive",
                 description:
-                  "Direct communication, adaptable scheduling and  minimal administrative and strict policies.",
+                  "Direct communication, adaptable scheduling and  minimal administrative or strict policies.",
               },
               {
                 title: "Family at the centre",
