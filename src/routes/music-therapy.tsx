@@ -234,10 +234,24 @@ function MusicTherapyPage() {
             <h2 className="font-heading text-2xl font-semibold text-foreground md:text-3xl">Progress takes time</h2>
             <div className="mt-4 space-y-4 text-base leading-relaxed text-muted-foreground">
               <p>
-                Measurable developmental outcomes rarely emerge from a single session. The evidence points consistently
-                to therapeutic alliance and consistent, repeated engagement as key mediators of change — a relationship
-                in which a person feels safe enough to attempt something new. If you're weighing up providers, take the
-                time you need: an appropriate clinical match matters more than starting quickly.
+                Measurable developmental outcomes rarely emerge from a single session. Meaningful therapeutic change
+                usually develops through a strong therapeutic relationship, consistent engagement and repeated
+                opportunities to practise and build skills. A client being able to do something in their first session
+                is encouraging, but it is not necessarily a therapeutic outcome in itself — it may simply indicate that
+                they respond well to this type of approach. What matters is whether that initial engagement can be built
+                upon over time.
+              </p>
+              <p>
+                For parents and carers, progress may not always look like a clear achievement from one session to the
+                next. It may be seen in small, incremental changes: becoming more comfortable with the therapist,
+                developing trust and rapport, being more willing to engage, tolerating new experiences, sustaining
+                participation for longer, or gradually working towards specific therapeutic goals. These changes can
+                take time, and giving a therapeutic relationship the opportunity to develop is an important part of the
+                process.
+              </p>
+              <p>
+                If you're weighing up providers, take the time you need: an appropriate clinical match matters more than
+                starting quickly.
               </p>
             </div>
           </Reveal>
