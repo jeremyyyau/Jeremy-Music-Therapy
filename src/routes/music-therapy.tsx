@@ -181,8 +181,8 @@ function MusicTherapyPage() {
             <h2 className="font-heading text-2xl font-semibold text-foreground md:text-3xl">Who is it for?</h2>
             <div className="mt-4 space-y-4 text-base leading-relaxed text-muted-foreground">
               <p>
-                Music therapy is for everyone. Most people already use music self-therapeutically without labelling it
-                as such — calming music after a stressful day, upbeat music to lift motivation, or background music to
+                Music therapy is for everyone. Most people already use music self-therapeutically to some extent without
+                realizing — calming music after a stressful day, upbeat music during exercise, or background music to
                 sustain attention while studying.
               </p>
               <p>
@@ -190,6 +190,18 @@ function MusicTherapyPage() {
                 Eligibility isn't defined by diagnosis but by assessed goals, strengths and challenges. Clients with
                 very different presentations often share similar functional goals, and the flexibility of music as a
                 medium allows those goals to be targeted through each person's own preferences and capacities.
+              </p>
+              <p>
+                Music therapy can be particularly well suited to people who do not always fit comfortably within
+                conventional therapeutic approaches — those who need additional support to engage, require activities to
+                be adapted in specific ways, feel anxious or unmotivated in unfamiliar environments, or find direct
+                social interaction challenging. It can offer a different point of entry: connection can begin through a
+                shared song, rhythm, instrument or musical interest rather than conversation alone. This can be
+                especially valuable for people who are hesitant to engage with unfamiliar people, have experienced
+                repeated difficulty with traditional approaches, become overwhelmed by expectations or demands, or
+                engage more readily when activities are creative, predictable and aligned with their interests. By
+                meeting people within their existing strengths and interests, music can reduce the pressure of
+                participation while creating genuine opportunities for connection, communication, confidence and growth.
               </p>
             </div>
           </Reveal>
