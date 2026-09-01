@@ -79,8 +79,8 @@ function MusicTherapyPage() {
               Evidence-based care, delivered through music.
             </h1>
             <p className="mt-6 text-lg leading-relaxed text-muted-foreground">
-              Music therapy is a clinical, evidence-based allied health discipline in which a registered therapist uses
-              music-based interventions to address non-musical therapeutic goals across emotional, cognitive,
+              Music therapy is a clinical, evidence-based allied health discipline in which a Registered Music Therapist
+              (RMT) uses music-based interventions to address non-musical therapeutic goals across emotional, cognitive,
               communication, physical and social domains. Whilst music holds inherent therapeutic qualities, music
               therapy harnesses these qualities through intentional, structured and clinically directed practice,
               grounded in rapport and therapeutic connection — with progress reviewed against goals over time.
@@ -117,13 +117,24 @@ function MusicTherapyPage() {
                 build confidence, communication and engagement — or{" "}
                 <strong className="text-foreground">receptive interventions</strong> such as guided music listening,
                 song lyric analysis, playlist creation and music-assisted relaxation, which support self-reflection,
-                emotional exploration and sensory regulation. Most treatment plans combine both, selected on the basis
-                of assessment and reviewed as goals shift.
+                emotional exploration and sensory regulation. Most therapy plans combine both, selected on the basis of
+                assessment and reviewed periodically as goals shift.
+              </p>
+              <p>
+                Music therapy can incorporate strategies informed by speech pathology, occupational therapy, psychology
+                and other allied health disciplines, where these approaches align with assessed goals, and can
+                complement or be delivered collaboratively alongside other professional supports. What distinguishes
+                music therapy is the unique motivational potential of music itself — its ability to capture attention,
+                evoke emotion, create anticipation and make participation feel inherently rewarding. Often without
+                conscious effort, music can transform tasks that may otherwise feel difficult, repetitive or challenging
+                into experiences that are engaging, enjoyable and meaningful. This motivation can support greater
+                willingness to participate, sustained practice and opportunities for skill development within a
+                therapeutic context.
               </p>
               <p>
                 These methods are flexibly adapted for diverse populations, including children and adults with
                 disability, neuro-developmental conditions, acquired brain injury and mental health presentations — so
-                interventions remain accessible, strengths-based, resource-oriented and clinically meaningful.
+                interventions remain accessible, strengths-based, resource-oriented and clinically relevant.
               </p>
             </div>
           </Reveal>
