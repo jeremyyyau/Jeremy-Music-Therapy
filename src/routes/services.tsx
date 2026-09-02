@@ -246,10 +246,12 @@ function ServicesPage() {
               Finding the right therapist matters. Every person and family is different, and the best therapeutic
               relationship is one where you feel understood, respected and comfortable with the clinician you choose.
               There is no single approach that will suit everyone, so I encourage families to take the time to explore
-              their options and consider not only the service, but the person providing it. A strong therapeutic fit
-              takes time to establish, and meaningful progress can grow from the trust and connection that develops
-              along the way. I am privileged to be trusted with the opportunity to work with my clients and to be part
-              of that relationship.
+              their options and consider not only the service, but the person providing it.
+            </p>
+            <p>
+              A strong therapeutic fit takes time to establish, and meaningful progress can grow from the trust and
+              connection that develops along the way. I am privileged to be trusted with the opportunity to work with my
+              clients and to be part of that relationship.
             </p>
           </Reveal>
 
