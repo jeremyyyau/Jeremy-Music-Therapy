@@ -243,11 +243,13 @@ function ServicesPage() {
           <Reveal className="mt-12 rounded-3xl border border-border/60 bg-secondary/70 p-8 md:p-10">
             <h2 className="font-heading text-2xl font-semibold text-foreground md:text-3xl">Finding the right fit</h2>
             <p className="mt-4 text-base leading-relaxed text-muted-foreground">
-              I encourage every family to find the service that suits them. There is no one-size-fits-all model of
-              therapy, and outcomes are strongest when clients feel comfortable, supported and genuinely connected with
-              their therapist. Equally, the evidence is clear that developmental change relies on consistent engagement
-              over time — so give any therapeutic relationship room to establish itself before judging progress. Either
-              way, I feel privileged to be part of that process.
+              Finding the right therapist matters. Every person and family is different, and the best therapeutic
+              relationship is one where you feel understood, respected and comfortable with the clinician you choose.
+              There is no single approach that will suit everyone, so I encourage families to take the time to explore
+              their options and consider not only the service, but the person providing it. A strong therapeutic fit
+              takes time to establish, and meaningful progress can grow from the trust and connection that develops
+              along the way. I am privileged to be trusted with the opportunity to work with my clients and to be part
+              of that relationship.
             </p>
           </Reveal>
 
