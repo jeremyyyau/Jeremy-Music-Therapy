@@ -78,8 +78,6 @@ const services = [
       "An open dialogue about goals, funding and the suitability of music therapy in alignment with desired therapeutic outcomes, including discussion of therapeutic processes and clinical rationale. If another service is the better clinical match, I'll say so — appropriate referral matters more than filling a caseload.",
     format: "Around 20 minutes • Phone or video call",
   },
-
-
 ];
 
 const moreThanMusic = [
@@ -105,26 +103,23 @@ const moreThanMusic = [
   },
 ];
 
-
 function ServicesPage() {
   return (
     <SitePage>
       <section className="py-20 lg:py-28">
         <div className="mx-auto max-w-4xl px-6">
           <Reveal>
-            <p className="mb-3 text-sm font-medium uppercase tracking-widest text-primary">
-              Sessions & Services
-            </p>
+            <p className="mb-3 text-sm font-medium uppercase tracking-widest text-primary">Sessions & Services</p>
             <h1 className="font-heading text-4xl font-semibold text-foreground md:text-5xl">
               Sessions designed around you.
             </h1>
             <p className="mt-6 text-lg leading-relaxed text-muted-foreground">
-              Therapy can be delivered at home, in the clinic, via telehealth or in a group
-              program. If you're unsure which mode suits, start with a conversation and we'll
-              work it out together — including whether my practice is the appropriate clinical
-              fit for your goals.
+              Every person engages with therapy differently, and sessions can be shaped around what feels comfortable,
+              accessible and meaningful for you. Therapy may take place at home, in the clinic, via telehealth or within
+              a group program, depending on your needs and goals. If you're unsure where to begin, start with a
+              conversation — together, we can explore what approach feels right and whether my practice is the
+              appropriate clinical fit for you.
             </p>
-
           </Reveal>
         </div>
 
@@ -142,7 +137,10 @@ function ServicesPage() {
               className="aspect-[16/9] w-full object-cover object-[50%_35%] md:object-[50%_30%]"
             />
             <div aria-hidden className="pointer-events-none absolute inset-0 bg-secondary/20 mix-blend-multiply" />
-            <div aria-hidden className="pointer-events-none absolute inset-0 bg-gradient-to-t from-background/20 via-transparent to-transparent" />
+            <div
+              aria-hidden
+              className="pointer-events-none absolute inset-0 bg-gradient-to-t from-background/20 via-transparent to-transparent"
+            />
           </Reveal>
         </div>
 
@@ -156,17 +154,13 @@ function ServicesPage() {
                 className="group rounded-2xl border border-border/60 bg-card p-8 shadow-sm transition-all duration-300 hover:border-primary hover:bg-secondary hover:shadow-card-hover md:p-10"
               >
                 <div className="flex items-center gap-4">
-                  <h2 className="font-heading text-2xl font-semibold text-card-foreground">
-                    {s.title}
-                  </h2>
+                  <h2 className="font-heading text-2xl font-semibold text-card-foreground">{s.title}</h2>
                   <div className="inline-flex shrink-0 rounded-full border border-primary/20 bg-primary/10 p-2.5 transition-all duration-300 group-hover:bg-primary/25 group-hover:shadow-glow">
                     <s.icon className="h-4.5 w-4.5 text-primary" />
                   </div>
                 </div>
                 <p className="mt-2 text-sm font-medium text-primary">{s.who}</p>
-                <p className="mt-4 text-base leading-relaxed text-muted-foreground">
-                  {s.description}
-                </p>
+                <p className="mt-4 text-base leading-relaxed text-muted-foreground">{s.description}</p>
                 <p className="mt-4 text-sm text-muted-foreground">
                   <span className="font-medium text-foreground">Format:</span> {s.format}
                 </p>
@@ -176,7 +170,10 @@ function ServicesPage() {
         </div>
 
         <div className="mx-auto mt-20 max-w-5xl px-6">
-          <Reveal direction="up" className="relative mb-12 overflow-hidden rounded-3xl border border-border/60 shadow-sm">
+          <Reveal
+            direction="up"
+            className="relative mb-12 overflow-hidden rounded-3xl border border-border/60 shadow-sm"
+          >
             <img
               src={svcGroupImage.src}
               srcSet={svcGroupImage.srcSet}
@@ -189,13 +186,14 @@ function ServicesPage() {
               className="aspect-[16/9.25] w-full object-cover object-[65%_100%] md:object-[60%_100%]"
             />
             <div aria-hidden className="pointer-events-none absolute inset-0 bg-secondary/20 mix-blend-multiply" />
-            <div aria-hidden className="pointer-events-none absolute inset-0 bg-gradient-to-t from-background/20 via-transparent to-transparent" />
+            <div
+              aria-hidden
+              className="pointer-events-none absolute inset-0 bg-gradient-to-t from-background/20 via-transparent to-transparent"
+            />
           </Reveal>
 
           <Reveal>
-            <p className="mb-3 text-sm font-medium uppercase tracking-widest text-primary">
-              More Than Music
-            </p>
+            <p className="mb-3 text-sm font-medium uppercase tracking-widest text-primary">More Than Music</p>
             <h2 className="font-heading text-3xl font-semibold text-foreground md:text-4xl">
               Choosing the right therapist is about more than qualifications.
             </h2>
@@ -218,8 +216,6 @@ function ServicesPage() {
                 growth may emerge.
               </p>
             </div>
-
-
           </Reveal>
 
           <div className="mt-10 grid grid-cols-1 gap-6 md:grid-cols-2">
@@ -234,38 +230,32 @@ function ServicesPage() {
                   aria-hidden
                   className="absolute right-4 top-4 h-1.5 w-1.5 rounded-full bg-primary/25 transition-colors duration-300 group-hover:bg-primary/60"
                 />
-                <h3 className="font-heading text-lg font-semibold text-card-foreground">
-                  {item.title}
-                </h3>
+                <h3 className="font-heading text-lg font-semibold text-card-foreground">{item.title}</h3>
                 <div
                   aria-hidden
                   className="mt-2 h-px w-10 bg-gradient-to-r from-primary/50 to-transparent transition-all duration-300 group-hover:w-16 group-hover:from-primary"
                 />
-                <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
-                  {item.description}
-                </p>
+                <p className="mt-3 text-sm leading-relaxed text-muted-foreground">{item.description}</p>
               </Reveal>
             ))}
           </div>
 
           <Reveal className="mt-12 rounded-3xl border border-border/60 bg-secondary/70 p-8 md:p-10">
-            <h2 className="font-heading text-2xl font-semibold text-foreground md:text-3xl">
-              Finding the right fit
-            </h2>
+            <h2 className="font-heading text-2xl font-semibold text-foreground md:text-3xl">Finding the right fit</h2>
             <p className="mt-4 text-base leading-relaxed text-muted-foreground">
-              I encourage every family to find the service that suits them. There is no
-              one-size-fits-all model of therapy, and outcomes are strongest when clients feel
-              comfortable, supported and genuinely connected with their therapist. Equally, the
-              evidence is clear that developmental change relies on consistent engagement over
-              time — so give any therapeutic relationship room to establish itself before judging
-              progress. Either way, I feel privileged to be part of that process.
-
+              I encourage every family to find the service that suits them. There is no one-size-fits-all model of
+              therapy, and outcomes are strongest when clients feel comfortable, supported and genuinely connected with
+              their therapist. Equally, the evidence is clear that developmental change relies on consistent engagement
+              over time — so give any therapeutic relationship room to establish itself before judging progress. Either
+              way, I feel privileged to be part of that process.
             </p>
           </Reveal>
 
           <Reveal className="mt-12 flex flex-wrap gap-4">
             <Button asChild size="lg" className="rounded-full px-8">
-              <Link to="/" hash="contact">Start a conversation</Link>
+              <Link to="/" hash="contact">
+                Start a conversation
+              </Link>
             </Button>
             <Button asChild variant="outline" size="lg" className="rounded-full px-8">
               <Link to="/music-therapy">Learn about music therapy</Link>
@@ -274,10 +264,7 @@ function ServicesPage() {
         </div>
       </section>
 
-      <QuoteBand
-        quote="Music is the shorthand of emotion."
-        author="Leo Tolstoy"
-      />
+      <QuoteBand quote="Music is the shorthand of emotion." author="Leo Tolstoy" />
     </SitePage>
   );
 }
