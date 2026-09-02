@@ -32,9 +32,9 @@ const resources = [
   { label: "BandLab", url: "#" },
   { label: "Blob Opera", url: "#" },
   { label: "Incredibox", url: "#" },
-  { label: "Soundtrap", url: "#" },
+  { label: "PBS Kids Music", url: "#" },
   { label: "Radio Garden", url: "#" },
-  { label: "Loopimal", url: "#" },
+  { label: "My Way Together", url: "#" },
 ];
 
 function ResourcesPage() {
@@ -43,19 +43,15 @@ function ResourcesPage() {
       <section className="py-20 lg:py-28">
         <div className="mx-auto max-w-4xl px-6">
           <Reveal>
-            <p className="mb-3 text-sm font-medium uppercase tracking-widest text-primary">
-              Resources
-            </p>
+            <p className="mb-3 text-sm font-medium uppercase tracking-widest text-primary">Resources</p>
             <h1 className="font-heading text-4xl font-semibold text-foreground md:text-5xl">
               Creative tools for musical play.
             </h1>
             <p className="mt-6 text-lg leading-relaxed text-muted-foreground">
-              A collection of free, accessible music-based websites you can explore at home.
-              These are not therapy and don't replace clinical sessions — they're low-pressure
-              opportunities for creative engagement, active listening and musical play between
-              appointments.
+              A collection of free, accessible music-based websites you can explore at home. These are not therapy and
+              don't replace clinical sessions — they're low-pressure opportunities for creative engagement, active
+              listening and musical play between appointments.
             </p>
-
           </Reveal>
         </div>
 
@@ -76,19 +72,13 @@ function ResourcesPage() {
               <div className="pointer-events-none absolute inset-0 bg-secondary/20 mix-blend-multiply" />
               <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-background/25 via-transparent to-transparent" />
             </div>
-
           </Reveal>
         </div>
 
         <div className="mx-auto mt-16 max-w-5xl px-6">
           <div className="grid grid-cols-2 gap-6 sm:grid-cols-3 md:grid-cols-4">
             {resources.map((r, i) => (
-              <Reveal
-                key={r.label}
-                direction="up"
-                delay={i * 100}
-                className="group"
-              >
+              <Reveal key={r.label} direction="up" delay={i * 100} className="group">
                 <a
                   href={r.url}
                   target="_blank"
@@ -117,13 +107,11 @@ function ResourcesPage() {
 
         <div className="mx-auto mt-16 max-w-4xl px-6">
           <Reveal className="rounded-3xl border border-border/60 bg-secondary/70 p-8 md:p-10">
-            <h2 className="font-heading text-2xl font-semibold text-foreground md:text-3xl">
-              Want to add your own?
-            </h2>
+            <h2 className="font-heading text-2xl font-semibold text-foreground md:text-3xl">Want to add your own?</h2>
             <p className="mt-4 text-base leading-relaxed text-muted-foreground">
-              These placeholders are easy to swap — just replace the label and link in the
-              resources list, and drop in your own thumbnail images when you're ready. If you
-              find a favorite that belongs here, I'd love to hear about it.
+              These placeholders are easy to swap — just replace the label and link in the resources list, and drop in
+              your own thumbnail images when you're ready. If you find a favorite that belongs here, I'd love to hear
+              about it.
             </p>
           </Reveal>
         </div>
@@ -134,6 +122,5 @@ function ResourcesPage() {
         author="A note on creative exploration"
       />
     </SitePage>
-
   );
 }
