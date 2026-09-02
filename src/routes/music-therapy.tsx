@@ -263,24 +263,17 @@ function MusicTherapyPage() {
             </div>
           </Reveal>
 
-          <div className="mt-16 grid grid-cols-1 gap-8 lg:grid-cols-2">
+          <div className="mt-16 grid grid-cols-1 gap-8">
             <Reveal>
-              <div className="rounded-2xl border border-border/60 bg-card p-6 shadow-sm md:p-8">
-                <div className="mb-4 flex items-center gap-3">
-                  <div className="inline-flex rounded-xl bg-primary/10 p-3">
-                    <GraduationCap className="h-5 w-5 text-primary" />
-                  </div>
-                  <h2 className="font-heading text-xl font-semibold text-foreground md:text-2xl">
-                    How is it different from a music lesson?
-                  </h2>
-                </div>
-                <p className="text-base leading-relaxed text-muted-foreground">
-                  A music lesson teaches musical skills, technique, performance and repertoire. Music therapy uses music as a way of supporting broader goals, and there is no expectation to become a musician, perform or be graded.
-                </p>
-                <p className="mt-4 text-base leading-relaxed text-muted-foreground">
-                  Music can still be taught as part of therapy when learning an instrument supports a person's goals — building attention, coordination, planning, impulse control and emotional regulation. The focus, however, is not on becoming a better musician, but on what music can help make possible.
-                </p>
-              </div>
+              <h2 className="font-heading text-xl font-semibold text-foreground md:text-2xl">
+                How is it different from a music lesson?
+              </h2>
+              <p className="mt-4 text-base leading-relaxed text-muted-foreground">
+                A music lesson teaches musical skills, technique, performance and repertoire. Music therapy uses music as a way of supporting broader goals, and there is no expectation to become a musician, perform or be graded.
+              </p>
+              <p className="mt-4 text-base leading-relaxed text-muted-foreground">
+                Music can still be taught as part of therapy when learning an instrument supports a person's goals — building attention, coordination, planning, impulse control and emotional regulation. The focus, however, is not on becoming a better musician, but on what music can help make possible.
+              </p>
             </Reveal>
 
             <Reveal>
