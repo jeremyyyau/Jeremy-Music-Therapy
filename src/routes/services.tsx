@@ -199,16 +199,21 @@ function ServicesPage() {
             </h2>
             <div className="mt-6 space-y-4 text-base leading-relaxed text-muted-foreground">
               <p>
-                It's about finding a clinician whose approach fits you and your family. Larger clinics may suit some
-                families, offering consistency and standardised clinical processes across therapists. Others value a
-                personal, flexible service where one therapist holds the whole clinical picture and is free to adapt
-                according to each family's circumstance and needs.
+                Finding the right clinician is about finding an approach that fits you and your family. Larger clinics
+                can suit some families, offering consistency and established clinical processes across therapists.
+                Others value the continuity and flexibility of working with one clinician who can hold the broader
+                clinical picture and adapt care around their circumstances and needs.
               </p>
               <p>
-                As an independent Registered Music Therapist, I offer a personalised service built on therapeutic
-                alliance, collaboration and shared decision-making. Together we can adapt session structure, trial
-                different interventions, and use your funding and clinical time efficiently so therapy stays meaningful
-                and sustainable.
+                As an independent Registered Music Therapist, I offer personalised care built on therapeutic alliance,
+                collaboration and shared decision-making. Working directly with one clinician allows sessions to be
+                adapted responsively, different approaches to be explored, and clinical time and funding used
+                thoughtfully so therapy remains meaningful and sustainable.
+              </p>
+              <p>
+                Finding the right therapeutic fit is personal. Every individual should have the space to explore their
+                options without pressure, while allowing time to recognise where meaningful connection, potential and
+                growth may emerge.
               </p>
               <p>
                 Finding the right therapeutic fit is personal. Each individual should have the space to explore their
