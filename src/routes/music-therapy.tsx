@@ -96,13 +96,6 @@ const receptiveInterventions = [
   "Music-assisted relaxation",
 ];
 
-const whoItsFor = [
-  "People who already use music self-therapeutically — calming music after stress, upbeat music for exercise, or background music to sustain attention.",
-  "Clients with very different presentations who share similar functional goals, where the flexibility of music can be matched to individual preferences and capacities.",
-  "People who do not always fit comfortably within conventional therapeutic approaches and need additional support to engage.",
-  "Those who require activities to be adapted, feel anxious or unmotivated in unfamiliar environments, or find direct social interaction challenging.",
-  "People who have experienced difficulty with traditional approaches, become overwhelmed by expectations, or engage more readily when activities are creative, predictable and aligned with their interests.",
-];
 
 const progressSigns = [
   "Becoming more comfortable with the therapist",
@@ -275,25 +268,17 @@ function MusicTherapyPage() {
               <div className="rounded-2xl border border-border/60 bg-card p-6 shadow-sm md:p-8">
                 <div className="mb-4 flex items-center gap-3">
                   <div className="inline-flex rounded-xl bg-primary/10 p-3">
-                    <Users className="h-5 w-5 text-primary" />
+                    <GraduationCap className="h-5 w-5 text-primary" />
                   </div>
-                  <h2 className="font-heading text-xl font-semibold text-foreground md:text-2xl">Who is it for?</h2>
+                  <h2 className="font-heading text-xl font-semibold text-foreground md:text-2xl">
+                    How is it different from a music lesson?
+                  </h2>
                 </div>
                 <p className="text-base leading-relaxed text-muted-foreground">
-                  Music therapy is for everyone. Eligibility is not defined by diagnosis, but by assessed goals,
-                  strengths and challenges.
+                  A music lesson teaches musical skills, technique, performance and repertoire. Music therapy uses music as a way of supporting broader goals, and there is no expectation to become a musician, perform or be graded.
                 </p>
-                <ul className="mt-5 space-y-3">
-                  {whoItsFor.map((item, i) => (
-                    <li key={i} className="flex items-start gap-3 text-sm leading-relaxed text-muted-foreground">
-                      <CheckCircle2 className="mt-0.5 h-4 w-4 shrink-0 text-primary/80" />
-                      {item}
-                    </li>
-                  ))}
-                </ul>
-                <p className="mt-5 text-base leading-relaxed text-muted-foreground">
-                  By meeting people within their existing strengths and interests, music can reduce the pressure of
-                  participation while creating genuine opportunities for connection, communication, confidence and growth.
+                <p className="mt-4 text-base leading-relaxed text-muted-foreground">
+                  Music can still be taught as part of therapy when learning an instrument supports a person's goals — building attention, coordination, planning, impulse control and emotional regulation. The focus, however, is not on becoming a better musician, but on what music can help make possible.
                 </p>
               </div>
             </Reveal>
@@ -302,42 +287,36 @@ function MusicTherapyPage() {
               <div className="rounded-2xl border border-border/60 bg-card p-6 shadow-sm md:p-8">
                 <div className="mb-4 flex items-center gap-3">
                   <div className="inline-flex rounded-xl bg-primary/10 p-3">
-                    <GraduationCap className="h-5 w-5 text-primary" />
+                    <Users className="h-5 w-5 text-primary" />
                   </div>
-                  <h2 className="font-heading text-xl font-semibold text-foreground md:text-2xl">
-                    How is it different from a music lesson?
-                  </h2>
+                  <h2 className="font-heading text-xl font-semibold text-foreground md:text-2xl">Who is it for?</h2>
                 </div>
                 <p className="text-base leading-relaxed text-muted-foreground">
-                  A music lesson teaches musical skills. Music therapy uses music as a way of supporting broader goals.
-                  There is no expectation to become a musician, perform or be graded.
+                  Music therapy is for everyone. Eligibility is not defined by diagnosis, but by assessed goals, strengths and challenges.
                 </p>
                 <div className="mt-5 space-y-4">
                   <div className="rounded-xl bg-secondary/40 p-4">
-                    <h3 className="font-heading text-sm font-semibold text-foreground">Music lesson</h3>
+                    <h3 className="font-heading text-sm font-semibold text-foreground">For people who connect through music</h3>
                     <p className="mt-1 text-sm text-muted-foreground">
-                      Teaches musical skills, technique, performance and repertoire.
+                      People who already use music self-therapeutically — calming music after stress, upbeat music for exercise, or background music to sustain attention. Also clients with different presentations who share similar functional goals, where the flexibility of music can be matched to individual preferences and capacities.
                     </p>
                   </div>
                   <div className="rounded-xl bg-primary/5 p-4">
-                    <h3 className="font-heading text-sm font-semibold text-foreground">Music therapy</h3>
+                    <h3 className="font-heading text-sm font-semibold text-foreground">For people who need adapted support</h3>
                     <p className="mt-1 text-sm text-muted-foreground">
-                      Uses music to support communication, confidence, emotional regulation, attention, physical skills and
-                      social connection.
+                      People who do not always fit comfortably within conventional therapeutic approaches, require activities to be adapted, feel anxious or unmotivated in unfamiliar environments, or find direct social interaction challenging. Also those who have experienced difficulty with traditional approaches, become overwhelmed by expectations, or engage more readily when activities are creative, predictable and aligned with their interests.
                     </p>
                   </div>
                 </div>
                 <p className="mt-5 text-base leading-relaxed text-muted-foreground">
-                  Music can still be taught as part of therapy when learning an instrument supports a person's goals —
-                  building attention, coordination, planning, impulse control and emotional regulation. The focus, however,
-                  is not on becoming a better musician, but on what music can help make possible.
+                  By meeting people within their existing strengths and interests, music can reduce the pressure of participation while creating genuine opportunities for connection, communication, confidence and growth.
                 </p>
               </div>
             </Reveal>
           </div>
 
           <Reveal>
-            <div className="mt-8 rounded-2xl border border-border/60 bg-card p-6 shadow-sm md:p-8">
+            <div className="mt-8 rounded-2xl border border-border/60 bg-secondary/40 p-6 shadow-sm md:p-8">
               <div className="mb-4 flex items-center gap-3">
                 <div className="inline-flex rounded-xl bg-primary/10 p-3">
                   <Clock className="h-5 w-5 text-primary" />
