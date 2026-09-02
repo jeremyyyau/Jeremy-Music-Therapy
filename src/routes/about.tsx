@@ -88,7 +88,9 @@ function AboutPage() {
           <Reveal>
             <p className="mb-3 text-sm font-medium uppercase tracking-widest text-primary">About Me</p>
             <h1 className="font-heading text-4xl font-semibold text-foreground md:text-5xl">
-              Music gives us a way to connect.<br />Connection gives us a way to grow.
+              Music gives us a way to connect.
+              <br />
+              Connection gives us a way to grow.
             </h1>
             <p className="mt-6 text-lg leading-relaxed text-muted-foreground">
               I'm a Registered Music Therapist (RMT) with a Master of Music Therapy from the University of Melbourne.
@@ -111,7 +113,10 @@ function AboutPage() {
               decoding="async"
               className="aspect-[16/10] w-full object-cover object-[55%_55%]"
             />
-            <div aria-hidden className="pointer-events-none absolute inset-0 bg-gradient-to-t from-background/30 via-transparent to-transparent" />
+            <div
+              aria-hidden
+              className="pointer-events-none absolute inset-0 bg-gradient-to-t from-background/30 via-transparent to-transparent"
+            />
           </Reveal>
 
           <div className="mt-14 space-y-12">
@@ -127,7 +132,7 @@ function AboutPage() {
                   principle still underpins how I practise.
                 </p>
                 <p>
-                  Rather than specialising early, I chose to practise across as many clinical populations as I could — 
+                  Rather than specialising early, I chose to practise across as many clinical populations as I could —
                   hospital mental health teams, multidisciplinary clinic work alongside speech pathology and
                   occupational therapy, disability services, aged care, palliative care and community programs. I rarely
                   declined an opportunity, because I wanted to understand people and their presentations, not diagnoses
@@ -141,7 +146,6 @@ function AboutPage() {
                   and review. I also supervise clinical placements for music therapy students at Western Sydney
                   University and the University of Melbourne.
                 </p>
-
               </div>
             </Reveal>
 
@@ -196,16 +200,30 @@ function AboutPage() {
               </h2>
               <div className="mt-4 space-y-4 text-base leading-relaxed text-muted-foreground">
                 <p>
-                  The most beautiful singing isn't always technically perfect — it's authentic. My wife might never
-                  receive a standing ovation on karaoke night, yet I'll always think her voice is the most beautiful
-                  I'll ever hear. I've also watched parents moved to tears hearing their child sing in a way they never
-                  thought possible. Those moments of connection, confidence and joy are why I love this work.
+                  Over the years, I've had the privilege of witnessing moments that have changed the way I understand
+                  music. I've supported a non-speaking client to sing at an end-of-year concert, where his one-word
+                  contribution of “be” in 'Let It Be' was met with tears and thunderous applause. I've guided a client
+                  with cancer through songwriting about a grandchild he would never meet - a wonderful parting gift to
+                  his pregnant daughter. I've worked with a child who was introduced by his parents as “non-verbal”, and
+                  had the privilege of witnessing communication develop into full sentences in two years.
                 </p>
                 <p>
-                  Whether we're targeting communication skills, emotional regulation, grief processing, functional
-                  independence or simply a safe space for self-expression, the most durable outcomes emerge when people
-                  feel seen, supported and believed in — which is why therapeutic rapport is treated as clinical work,
-                  not a preliminary to it.
+                  These experiences have gradually changed my relationship with music. I have become less interested in
+                  music as a relationship between performer and audience, and more interested in music as something that
+                  belongs to all of us - whether that be a made-up lullaby between a mother and her child, an inspiring
+                  rap song blasting in a teenagers headphones, or a shaky duet of 'Fly Me To The Moon' sung between a
+                  husband and wife in their golden years.
+                </p>
+                <p>
+                  Music doesn't have to be perfect to be meaningful. It doesn't have to be performed for an audience to
+                  matter. Sometimes a single word, a shared melody, or a song written for a loved one, can hold more
+                  significance than a polished performance in front of thousands.
+                </p>
+                <p>
+                  That is what ultimately drew me to music therapy: the belief that there is music in every person, and
+                  that everyone deserves the opportunity to discover what it can mean for them. I want to bring music
+                  beyond the stage and into the places where it can create connection, express what words cannot, build
+                  confidence, preserve identity, and offer moments of joy and meaning to those who need it most.
                 </p>
               </div>
             </Reveal>
