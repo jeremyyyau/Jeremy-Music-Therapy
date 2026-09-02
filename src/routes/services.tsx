@@ -242,7 +242,7 @@ function ServicesPage() {
 
           <Reveal className="mt-12 rounded-3xl border border-border/60 bg-secondary/70 p-8 md:p-10">
             <h2 className="font-heading text-2xl font-semibold text-foreground md:text-3xl">Finding the right fit</h2>
-            <p className="mt-4 text-base leading-relaxed text-muted-foreground">
+            <p className="mt-4 text-base italic leading-relaxed text-muted-foreground">
               Finding the right therapist matters. Every person and family is different, and the best therapeutic
               relationship is one where you feel understood, respected and comfortable with the clinician you choose.
               There is no single approach that will suit everyone, so I encourage families to take the time to explore
