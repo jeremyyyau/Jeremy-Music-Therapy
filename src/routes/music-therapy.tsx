@@ -8,7 +8,6 @@ import {
   Music,
   Mic2,
   Ear,
-  GraduationCap,
   Target,
   Clock,
   CheckCircle2,
