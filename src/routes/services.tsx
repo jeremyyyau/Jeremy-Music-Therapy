@@ -248,7 +248,7 @@ function ServicesPage() {
               There is no single approach that will suit everyone, so I encourage families to take the time to explore
               their options and consider not only the service, but the person providing it.
             </p>
-            <p>
+            <p className="mt-4 text-base italic leading-relaxed text-muted-foreground">
               A strong therapeutic fit takes time to establish, and meaningful progress can grow from the trust and
               connection that develops along the way. I am privileged to be trusted with the opportunity to work with my
               clients and to be part of that relationship.
