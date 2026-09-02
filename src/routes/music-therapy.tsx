@@ -122,14 +122,12 @@ function MusicTherapyPage() {
               </p>
               <p>
                 Music therapy can incorporate strategies informed by speech pathology, occupational therapy, psychology
-                and other allied health disciplines, where these approaches align with assessed goals, and can
-                complement or be delivered collaboratively alongside other professional supports. What distinguishes
-                music therapy is the unique motivational potential of music itself — its ability to capture attention,
-                evoke emotion, create anticipation and make participation feel inherently rewarding. Often without
-                conscious effort, music can transform tasks that may otherwise feel difficult, repetitive or challenging
-                into experiences that are engaging, enjoyable and meaningful. This motivation can support greater
-                willingness to participate, sustained practice and opportunities for skill development within a
-                therapeutic context.
+                and other allied health disciplines where these align with assessed goals, complementing or working
+                alongside other professional supports. What distinguishes music therapy is the unique motivational
+                potential of music — its ability to capture attention, evoke emotion, create anticipation and make
+                participation inherently rewarding. Music can transform tasks that may otherwise feel difficult,
+                repetitive or challenging into experiences that are engaging and meaningful, supporting willingness to
+                participate, sustained practice and skill development within a therapeutic context.
               </p>
               <p>
                 These methods are flexibly adapted for diverse populations, including children and adults with
