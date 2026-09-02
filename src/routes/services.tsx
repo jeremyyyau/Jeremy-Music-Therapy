@@ -215,11 +215,6 @@ function ServicesPage() {
                 options without pressure, while allowing time to recognise where meaningful connection, potential and
                 growth may emerge.
               </p>
-              <p>
-                Finding the right therapeutic fit is personal. Each individual should have the space to explore their
-                options without pressure, while allowing time to recognise where meaningful connection, potential and
-                growth may emerge.
-              </p>
             </div>
           </Reveal>
 
