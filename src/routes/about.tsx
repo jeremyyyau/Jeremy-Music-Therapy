@@ -216,9 +216,8 @@ function AboutPage() {
             <Reveal>
               <h2 className="font-heading text-2xl font-semibold text-foreground md:text-3xl">In the session room</h2>
               <p className="mt-4 text-base leading-relaxed text-muted-foreground">
-                As a multi-instrumentalist I can adapt the musical medium to each client's preferences, sensory profile
-                and physical access needs — and I maintain ongoing professional development and clinical supervision so
-                practice stays current with the evidence base.
+                As a multi-instrumentalist I adapt the musical medium to each client's preferences, sensory profile and
+                access needs.
               </p>
 
               <ul className="mt-8 grid grid-cols-2 gap-3 sm:gap-4 md:grid-cols-4">
