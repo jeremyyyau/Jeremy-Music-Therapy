@@ -51,7 +51,7 @@ const services = [
     title: "Telehealth",
     who: "Older children and adults, including clients in rural and remote areas.",
     description:
-      "Online delivery where distance, physical access or social anxiety present barriers to in-person attendance. Telehealth is a clinically appropriate mode of delivery in its own right, not simply a substitute.",
+      "Online delivery where distance, physical access or social anxiety make in-person attendance difficult — a clinically appropriate mode of delivery in its own right.",
     format: "Individual • Weekly or fortnightly • Video call",
   },
   {
@@ -67,7 +67,7 @@ const services = [
     title: "Community & Group Sessions",
     who: "Childcare, schools, Supported Independent Living (SIL), day programs and aged care.",
     description:
-      "Individual and group services delivered in everyday environments, integrating therapeutic support into familiar routines to foster social capacity and group participation — with scope for performance elements and music-learning opportunities where they serve the group's aims.",
+      "Individual and group services delivered in everyday environments, integrating therapeutic support into familiar routines to foster social capacity and group participation.",
     format: "Custom scope and length • On-site",
   },
   {
@@ -75,7 +75,7 @@ const services = [
     title: "Consultation",
     who: "Anyone considering music therapy.",
     description:
-      "An open dialogue about goals, funding and the suitability of music therapy in alignment with desired therapeutic outcomes, including discussion of therapeutic processes and clinical rationale. If another service is the better clinical match, I'll say so — appropriate referral matters more than filling a caseload.",
+      "An open conversation about goals, funding and whether music therapy is the right fit. If another service would suit you better, I'll say so — appropriate referral matters more than filling a caseload.",
     format: "Around 20 minutes • Phone or video call",
   },
 ];
@@ -114,11 +114,8 @@ function ServicesPage() {
               Sessions designed around you.
             </h1>
             <p className="mt-6 text-lg leading-relaxed text-muted-foreground">
-              Every person engages with therapy differently, and sessions can be shaped around what feels comfortable,
-              accessible and meaningful for you. Therapy may take place at home, in the clinic, via telehealth or within
-              a group program, depending on your needs and goals. If you're unsure where to begin, start with a
-              conversation — together, we can explore what approach feels right and whether my practice is the
-              appropriate clinical fit for you.
+              Sessions are shaped around what feels comfortable, accessible and meaningful for you — at home, in the
+              clinic, via telehealth or in a group program. Not sure where to begin? Start with a conversation.
             </p>
           </Reveal>
         </div>
@@ -199,21 +196,10 @@ function ServicesPage() {
             </h2>
             <div className="mt-6 space-y-4 text-base leading-relaxed text-muted-foreground">
               <p>
-                Finding the right clinician is about finding an approach that fits you and your family. Larger clinics
-                can suit some families, offering consistency and established clinical processes across therapists.
-                Others value the continuity and flexibility of working with one clinician who can hold the broader
-                clinical picture and adapt care around their circumstances and needs.
-              </p>
-              <p>
-                As an independent Registered Music Therapist, I offer personalised care built on therapeutic alliance,
-                collaboration and shared decision-making. Working directly with one clinician allows sessions to be
-                adapted responsively, different approaches to be explored, and clinical time and funding used
-                thoughtfully so therapy remains meaningful and sustainable.
-              </p>
-              <p>
-                Finding the right therapeutic fit is personal. Every individual should have the space to explore their
-                options without pressure, while allowing time to recognise where meaningful connection, potential and
-                growth may emerge.
+                Larger clinics suit some families; others value the continuity and flexibility of one clinician who
+                holds the whole clinical picture. As an independent Registered Music Therapist, I offer personalised
+                care built on therapeutic alliance, collaboration and shared decision-making — so clinical time and
+                funding are used thoughtfully and therapy stays meaningful and sustainable.
               </p>
             </div>
           </Reveal>
@@ -243,15 +229,9 @@ function ServicesPage() {
           <Reveal className="mt-12 rounded-3xl border border-border/60 bg-secondary/70 p-8 md:p-10">
             <h2 className="font-heading text-2xl font-semibold text-foreground md:text-3xl">Finding the right fit</h2>
             <p className="mt-4 text-base italic leading-relaxed text-muted-foreground">
-              Finding the right therapist matters. Every person and family is different, and the best therapeutic
-              relationship is one where you feel understood, respected and comfortable with the clinician you choose.
-              There is no single approach that will suit everyone, so I encourage families to take the time to explore
-              their options and consider not only the service, but the person providing it.
-            </p>
-            <p className="mt-4 text-base italic leading-relaxed text-muted-foreground">
-              A strong therapeutic fit takes time to establish, and meaningful progress can grow from the trust and
-              connection that develops along the way. I am privileged to be trusted with the opportunity to work with my
-              clients and to be part of that relationship.
+              There is no single approach that suits everyone. Take the time to explore your options — not only the
+              service, but the person providing it. A strong therapeutic fit grows from trust and connection, and I am
+              privileged to be trusted with that opportunity.
             </p>
           </Reveal>
 

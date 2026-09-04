@@ -93,11 +93,10 @@ function AboutPage() {
               Connection gives us a way to grow.
             </h1>
             <p className="mt-6 text-lg leading-relaxed text-muted-foreground">
-              I'm a Registered Music Therapist (RMT) with a Master of Music Therapy from the University of Melbourne.
-              Over more than eight years of clinical practice I've supported children, adults and older people across
-              hospital, education, disability, aged care, mental health, palliative care and community settings. Working
-              within multidisciplinary teams has shaped the flexible, person-centred and evidence-based approach I bring
-              to every therapeutic relationship.
+              I'm a Registered Music Therapist (RMT) with a Master of Music Therapy from the University of Melbourne and
+              over eight years of clinical practice across hospital, education, disability, aged care, mental health,
+              palliative care and community settings — experience that shaped the flexible, person-centred,
+              evidence-based approach I bring to every therapeutic relationship.
             </p>
           </Reveal>
 
@@ -126,25 +125,15 @@ function AboutPage() {
               </h2>
               <div className="mt-4 space-y-4 text-base leading-relaxed text-muted-foreground">
                 <p>
-                  My path into music therapy began long before university. As a child and aspiring musician, I was
-                  deeply influenced by my godfather, a music therapy lecturer at New York University, who taught me that
-                  music belongs to everyone — that nobody should feel judged for expressing themselves through it. That
-                  principle still underpins how I practise.
+                  My path into music therapy began long before university. My godfather, a music therapy lecturer at
+                  New York University, taught me that music belongs to everyone — that nobody should feel judged for
+                  expressing themselves through it. That principle still underpins how I practise.
                 </p>
                 <p>
-                  Rather than specialising early, I chose to practise across as many clinical populations as I could —
-                  hospital mental health teams, multidisciplinary clinic work alongside speech pathology and
-                  occupational therapy, disability services, aged care, palliative care and community programs. I rarely
-                  declined an opportunity, because I wanted to understand people and their presentations, not diagnoses
-                  alone.
-                </p>
-                <p>
-                  That transdisciplinary grounding allowed me to establish a resource-oriented approach that integrates
-                  perspectives across disciplines to identify strengths, capacities and meaningful opportunities for
-                  growth. I draw from a wide repertoire of evidence-informed interventions, so each session plan can be
-                  matched to presentation, capacity and preference, then adjusted through ongoing clinical observation
-                  and review. I also supervise clinical placements for music therapy students at Western Sydney
-                  University and the University of Melbourne.
+                  Rather than specialising early, I practised across as many clinical populations as I could. That
+                  transdisciplinary grounding shaped a resource-oriented approach: a wide repertoire of evidence-informed
+                  interventions, matched to each person's presentation, capacity and preference, and adjusted through
+                  ongoing clinical review.
                 </p>
               </div>
             </Reveal>
@@ -164,9 +153,8 @@ function AboutPage() {
             <Reveal>
               <h2 className="font-heading text-2xl font-semibold text-foreground md:text-3xl">Breadth of experience</h2>
               <p className="mt-4 text-base leading-relaxed text-muted-foreground">
-                A wide range of clinical settings means a wide range of evidence-informed approaches to draw on — so
-                interventions can be selected for the person in front of me rather than applied from a single fixed
-                method.
+                A wide range of settings means interventions are chosen for the person in front of me, not applied from
+                a single fixed method.
               </p>
 
               <div className="mt-8 grid grid-cols-1 gap-6 md:grid-cols-2">
@@ -198,32 +186,29 @@ function AboutPage() {
               <h2 className="font-heading text-2xl font-semibold text-foreground md:text-3xl">
                 What keeps me inspired
               </h2>
-              <div className="mt-4 space-y-4 text-base leading-relaxed text-muted-foreground">
+              <div className="mt-6 space-y-3">
+                {[
+                  "A non-speaking client sang his one word — “be” — in 'Let It Be' at an end-of-year concert, met with tears and thunderous applause.",
+                  "A client with cancer wrote a song for the grandchild he would never meet — a parting gift to his pregnant daughter.",
+                  "A child introduced by his parents as “non-verbal” grew into communicating in full sentences over two years.",
+                ].map((vignette) => (
+                  <p
+                    key={vignette}
+                    className="rounded-xl border-l-2 border-primary/40 bg-secondary/40 px-5 py-4 text-sm italic leading-relaxed text-muted-foreground"
+                  >
+                    {vignette}
+                  </p>
+                ))}
+              </div>
+              <div className="mt-6 space-y-4 text-base leading-relaxed text-muted-foreground">
                 <p>
-                  Over the years, I've had the privilege of witnessing moments that have changed the way I understand
-                  music. I've supported a non-speaking client to sing at an end-of-year concert, where his one-word
-                  contribution of “be” in 'Let It Be' was met with tears and thunderous applause. I've guided a client
-                  with cancer through songwriting about a grandchild he would never meet - a wonderful parting gift to
-                  his pregnant daughter. I've worked with a child who was introduced by his parents as “non-verbal”, and
-                  had the privilege of witnessing communication develop into full sentences in two years.
+                  These moments changed my relationship with music — less about performer and audience, more about
+                  something that belongs to all of us: a made-up lullaby between mother and child, a rap song in a
+                  teenager's headphones, a shaky duet of 'Fly Me To The Moon' between husband and wife.
                 </p>
                 <p>
-                  These experiences have gradually changed my relationship with music. I have become less interested in
-                  music as a relationship between performer and audience, and more interested in music as something that
-                  belongs to all of us - whether that be a made-up lullaby between a mother and her child, an inspiring
-                  rap song blasting in a teenagers headphones, or a shaky duet of 'Fly Me To The Moon' sung between a
-                  husband and wife in their golden years.
-                </p>
-                <p>
-                  Music doesn't have to be perfect to be meaningful. It doesn't have to be performed for an audience to
-                  matter. Sometimes a single word, a shared melody, or a song written for a loved one, can hold more
-                  significance than a polished performance in front of thousands.
-                </p>
-                <p>
-                  That is what ultimately drew me to music therapy: the belief that there is music in every person, and
-                  that everyone deserves the opportunity to discover what it can mean for them. I want to bring music
-                  beyond the stage and into the places where it can create connection, express what words cannot, build
-                  confidence, preserve identity, and offer moments of joy and meaning to those who need it most.
+                  Music doesn't have to be perfect to be meaningful. That belief is what drew me to music therapy: there
+                  is music in every person, and everyone deserves the chance to discover what it can mean for them.
                 </p>
               </div>
             </Reveal>
@@ -231,9 +216,8 @@ function AboutPage() {
             <Reveal>
               <h2 className="font-heading text-2xl font-semibold text-foreground md:text-3xl">In the session room</h2>
               <p className="mt-4 text-base leading-relaxed text-muted-foreground">
-                As a multi-instrumentalist I can adapt the musical medium to each client's preferences, sensory profile
-                and physical access needs — and I maintain ongoing professional development and clinical supervision so
-                practice stays current with the evidence base.
+                As a multi-instrumentalist I adapt the musical medium to each client's preferences, sensory profile and
+                access needs.
               </p>
 
               <ul className="mt-8 grid grid-cols-2 gap-3 sm:gap-4 md:grid-cols-4">
