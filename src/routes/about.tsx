@@ -93,11 +93,10 @@ function AboutPage() {
               Connection gives us a way to grow.
             </h1>
             <p className="mt-6 text-lg leading-relaxed text-muted-foreground">
-              I'm a Registered Music Therapist (RMT) with a Master of Music Therapy from the University of Melbourne.
-              Over more than eight years of clinical practice I've supported children, adults and older people across
-              hospital, education, disability, aged care, mental health, palliative care and community settings. Working
-              within multidisciplinary teams has shaped the flexible, person-centred and evidence-based approach I bring
-              to every therapeutic relationship.
+              I'm a Registered Music Therapist (RMT) with a Master of Music Therapy from the University of Melbourne and
+              over eight years of clinical practice across hospital, education, disability, aged care, mental health,
+              palliative care and community settings — experience that shaped the flexible, person-centred,
+              evidence-based approach I bring to every therapeutic relationship.
             </p>
           </Reveal>
 
@@ -154,9 +153,8 @@ function AboutPage() {
             <Reveal>
               <h2 className="font-heading text-2xl font-semibold text-foreground md:text-3xl">Breadth of experience</h2>
               <p className="mt-4 text-base leading-relaxed text-muted-foreground">
-                A wide range of clinical settings means a wide range of evidence-informed approaches to draw on — so
-                interventions can be selected for the person in front of me rather than applied from a single fixed
-                method.
+                A wide range of settings means interventions are chosen for the person in front of me, not applied from
+                a single fixed method.
               </p>
 
               <div className="mt-8 grid grid-cols-1 gap-6 md:grid-cols-2">
