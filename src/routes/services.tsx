@@ -51,7 +51,7 @@ const services = [
     title: "Telehealth",
     who: "Older children and adults, including clients in rural and remote areas.",
     description:
-      "Online delivery where distance, physical access or social anxiety present barriers to in-person attendance. Telehealth is a clinically appropriate mode of delivery in its own right, not simply a substitute.",
+      "Online delivery where distance, physical access or social anxiety make in-person attendance difficult — a clinically appropriate mode of delivery in its own right.",
     format: "Individual • Weekly or fortnightly • Video call",
   },
   {
@@ -67,7 +67,7 @@ const services = [
     title: "Community & Group Sessions",
     who: "Childcare, schools, Supported Independent Living (SIL), day programs and aged care.",
     description:
-      "Individual and group services delivered in everyday environments, integrating therapeutic support into familiar routines to foster social capacity and group participation — with scope for performance elements and music-learning opportunities where they serve the group's aims.",
+      "Individual and group services delivered in everyday environments, integrating therapeutic support into familiar routines to foster social capacity and group participation.",
     format: "Custom scope and length • On-site",
   },
   {
@@ -75,7 +75,7 @@ const services = [
     title: "Consultation",
     who: "Anyone considering music therapy.",
     description:
-      "An open dialogue about goals, funding and the suitability of music therapy in alignment with desired therapeutic outcomes, including discussion of therapeutic processes and clinical rationale. If another service is the better clinical match, I'll say so — appropriate referral matters more than filling a caseload.",
+      "An open conversation about goals, funding and whether music therapy is the right fit. If another service would suit you better, I'll say so — appropriate referral matters more than filling a caseload.",
     format: "Around 20 minutes • Phone or video call",
   },
 ];
@@ -114,11 +114,8 @@ function ServicesPage() {
               Sessions designed around you.
             </h1>
             <p className="mt-6 text-lg leading-relaxed text-muted-foreground">
-              Every person engages with therapy differently, and sessions can be shaped around what feels comfortable,
-              accessible and meaningful for you. Therapy may take place at home, in the clinic, via telehealth or within
-              a group program, depending on your needs and goals. If you're unsure where to begin, start with a
-              conversation — together, we can explore what approach feels right and whether my practice is the
-              appropriate clinical fit for you.
+              Sessions are shaped around what feels comfortable, accessible and meaningful for you — at home, in the
+              clinic, via telehealth or in a group program. Not sure where to begin? Start with a conversation.
             </p>
           </Reveal>
         </div>
