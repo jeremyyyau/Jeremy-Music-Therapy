@@ -117,10 +117,8 @@ function MusicTherapyPage() {
             </h1>
             <p className="mt-6 text-lg leading-relaxed text-muted-foreground">
               Music therapy is a clinical, evidence-based allied health discipline in which a Registered Music Therapist
-              (RMT) uses music-based interventions to address non-musical therapeutic goals across emotional, cognitive,
-              communication, physical and social domains. Whilst music holds inherent therapeutic qualities, music
-              therapy harnesses these qualities through intentional, structured and clinically directed practice,
-              grounded in rapport and therapeutic connection — with progress reviewed against goals over time.
+              (RMT) uses music-based interventions to address non-musical goals — emotional, cognitive, communication,
+              physical and social — through structured, intentional practice grounded in therapeutic connection.
             </p>
           </Reveal>
         </div>
@@ -205,22 +203,20 @@ function MusicTherapyPage() {
                 <div>
                   <h3 className="font-heading text-lg font-semibold text-foreground">What makes music therapy distinct?</h3>
                   <p className="mt-2 text-base leading-relaxed text-muted-foreground">
-                    Music therapy can incorporate strategies informed by speech pathology, occupational therapy, psychology
-                    and other allied health disciplines where these align with assessed goals, complementing or working
-                    alongside other professional supports. What distinguishes music therapy is the unique motivational
-                    potential of music — its ability to capture attention, evoke emotion, create anticipation and make
-                    participation inherently rewarding. Music can transform tasks that may otherwise feel difficult,
-                    repetitive or challenging into experiences that are engaging and meaningful, supporting willingness to
-                    participate, sustained practice and skill development within a therapeutic context.
+                    Music therapy can complement other allied health supports, incorporating strategies informed by
+                    speech pathology, occupational therapy and psychology where they align with assessed goals. What
+                    distinguishes it is music's unique motivational pull — its ability to capture attention, evoke
+                    emotion and make participation inherently rewarding, turning difficult or repetitive tasks into
+                    engaging, meaningful experiences.
                   </p>
                 </div>
               </div>
             </div>
 
             <p className="mx-auto mt-8 max-w-4xl text-base leading-relaxed text-muted-foreground">
-              These methods are flexibly adapted for diverse populations, including children and adults with disability,
-              neuro-developmental conditions, acquired brain injury and mental health presentations — so interventions
-              remain accessible, strengths-based, resource-oriented and clinically relevant.
+              Methods are flexibly adapted for children and adults with disability, neuro-developmental conditions,
+              acquired brain injury and mental health presentations — keeping interventions accessible, strengths-based
+              and clinically relevant.
             </p>
           </Reveal>
         </div>
