@@ -324,12 +324,9 @@ function MusicTherapyPage() {
                 <h2 className="font-heading text-xl font-semibold text-foreground md:text-2xl">Progress takes time</h2>
               </div>
               <p className="text-base leading-relaxed text-muted-foreground">
-                Measurable developmental outcomes rarely emerge from a single session. Meaningful therapeutic change
-                usually develops through a strong therapeutic relationship, consistent engagement and repeated
-                opportunities to practice and build skills. A client being able to do something in their first session is
-                encouraging, but it is not necessarily a therapeutic outcome in itself — it may simply indicate that they
-                respond well to this type of approach. What matters is whether that initial engagement can be built upon
-                over time.
+                Meaningful change rarely emerges from a single session — it develops through a strong therapeutic
+                relationship, consistent engagement and repeated practice. A first-session success is encouraging, but
+                what matters is whether that engagement can be built upon over time.
               </p>
               <p className="mt-4 text-base leading-relaxed text-muted-foreground">
                 For parents and carers, progress may be seen in small, incremental changes:
