@@ -162,10 +162,9 @@ function Index() {
               Goal-directed, not diagnosis-defined.
             </h2>
             <p className="mt-6 text-lg leading-relaxed text-muted-foreground">
-              A clinical, evidence-based allied health discipline that uses music-based interventions to work towards
-              non-musical goals — emotional, cognitive, communication, physical and social. It is not about musical
-              performance or talent; it is about using the therapeutic qualities of music to create opportunities for
-              growth, regulation and connection.
+              A clinical, evidence-based allied health discipline that uses music to work towards non-musical goals —
+              emotional, cognitive, communication, physical and social. It's not about talent or performance; it's
+              about growth, regulation and connection.
             </p>
           </Reveal>
 
@@ -223,8 +222,7 @@ function Index() {
             </h2>
             <p className="mt-6 text-lg leading-relaxed text-muted-foreground">
               At home, in the clinic, via telehealth or in the community — delivery is matched to goals, routine and
-              funding. Every session is planned around what will be most useful for the client and their support
-              network, with flexibility built in as needs change over time.
+              funding, with flexibility built in as needs change over time.
             </p>
           </Reveal>
 
@@ -299,10 +297,9 @@ function Index() {
               Taking your time, finding the right fit.
             </h2>
             <p className="mt-6 text-lg leading-relaxed text-muted-foreground">
-              Choosing a therapist involves more than qualifications. Some families prefer a large clinic; others might
-              value a more personal, flexible service where one therapist holds the whole clinical picture. I prioritize
-              direct communication, consistent contact and time to build a genuine therapeutic relationship with the
-              family — so that successes and outcomes during sessions become a shared family-centred experience.
+              Some families prefer a large clinic; others value a personal, flexible service where one therapist holds
+              the whole clinical picture. I prioritise direct communication and time to build a genuine therapeutic
+              relationship — so progress becomes a shared, family-centred experience.
             </p>
           </Reveal>
 
