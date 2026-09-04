@@ -186,18 +186,42 @@ function AboutPage() {
               <h2 className="font-heading text-2xl font-semibold text-foreground md:text-3xl">
                 What keeps me inspired
               </h2>
-              <div className="mt-6 space-y-3">
+              <div className="mt-6 space-y-4">
                 {[
-                  "A non-speaking client sang his one word — “be” — in 'Let It Be' at an end-of-year concert, met with tears and thunderous applause.",
-                  "A client with cancer wrote a song for the grandchild he would never meet — a parting gift to his pregnant daughter.",
-                  "A child introduced by his parents as “non-verbal” grew into communicating in full sentences over two years.",
+                  {
+                    story:
+                      "A non-speaking client sang his one word — “be” — in 'Let It Be' at an end-of-year concert, met with tears and thunderous applause.",
+                    quote: "I never knew he could sing like that!",
+                    attribution: "Support worker / Staff",
+                  },
+                  {
+                    story:
+                      "A client with cancer wrote a song for the grandchild he would never meet — a parting gift to his pregnant daughter.",
+                    quote: "That song is something our family will keep forever.",
+                    attribution: "Family member / Carer",
+                  },
+                  {
+                    story:
+                      "A child introduced by his parents as “non-verbal” grew into communicating in full sentences over two years.",
+                    quote: "We never imagined we would have full conversations together.",
+                    attribution: "Parent / Carer",
+                  },
                 ].map((vignette) => (
-                  <p
-                    key={vignette}
-                    className="rounded-xl border-l-2 border-primary/40 bg-secondary/40 px-5 py-4 text-sm italic leading-relaxed text-muted-foreground"
+                  <div
+                    key={vignette.story}
+                    className="rounded-xl border-l-2 border-primary/40 bg-secondary/40 px-5 py-4"
                   >
-                    {vignette}
-                  </p>
+                    <p className="text-sm italic leading-relaxed text-muted-foreground">{vignette.story}</p>
+                    <div className="mt-3 flex items-center gap-2 border-t border-border/40 pt-3">
+                      <span aria-hidden className="text-lg leading-none text-primary/60">
+                        “
+                      </span>
+                      <p className="text-sm font-medium text-foreground/90">{vignette.quote}</p>
+                    </div>
+                    <p className="mt-1 pl-4 text-xs uppercase tracking-wider text-muted-foreground/70">
+                      — {vignette.attribution}
+                    </p>
+                  </div>
                 ))}
               </div>
               <div className="mt-6 space-y-4 text-base leading-relaxed text-muted-foreground">
