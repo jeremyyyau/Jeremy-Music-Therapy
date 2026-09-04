@@ -280,30 +280,36 @@ function MusicTherapyPage() {
                   <h2 className="font-heading text-xl font-semibold text-foreground md:text-2xl">Who is it for?</h2>
                 </div>
                 <p className="text-base leading-relaxed text-muted-foreground">
-                  Music therapy is for everyone. Eligibility is not defined by diagnosis, but by assessed goals, strengths and challenges.
+                  Music therapy is for everyone. Eligibility is defined not by diagnosis, but by goals, strengths and
+                  challenges.
                 </p>
                 <div className="mt-5 space-y-4">
                   <div className="rounded-xl bg-secondary/40 p-4">
                     <h3 className="font-heading text-sm font-semibold text-foreground">For people who connect through music</h3>
                     <p className="mt-1 text-sm text-muted-foreground">
-                      People who already use music self-therapeutically — calming music after stress, upbeat music for exercise, or background music to sustain attention. Also clients with different presentations who share similar functional goals, where the flexibility of music can be matched to individual preferences and capacities.
+                      People who already use music self-therapeutically — calming music after stress, upbeat music for
+                      exercise, background music to sustain attention.
                     </p>
                   </div>
                   <div className="rounded-xl bg-primary/5 p-4">
                     <h3 className="font-heading text-sm font-semibold text-foreground">For people who need adapted support</h3>
                     <p className="mt-1 text-sm text-muted-foreground">
-                      People who do not always fit comfortably within conventional therapeutic approaches, require activities to be adapted, feel anxious or unmotivated in unfamiliar environments, or find direct social interaction challenging. Also those who have experienced difficulty with traditional approaches, become overwhelmed by expectations, or engage more readily when activities are creative, predictable and aligned with their interests.
+                      People who don't fit comfortably within conventional approaches, feel anxious or unmotivated in
+                      unfamiliar environments, or engage more readily when activities are creative, predictable and
+                      aligned with their interests.
                     </p>
                   </div>
                   <div className="rounded-xl bg-muted p-4">
                     <h3 className="font-heading text-sm font-semibold text-foreground">For anyone with goals or areas to work on</h3>
                     <p className="mt-1 text-sm text-muted-foreground">
-                      Music therapy can be for everyone who has goals or areas they want to work on. There is no need for a formal diagnosis or musical background — the focus is on using music to support what matters to you, in a way that is personal, respectful and goal-focused.
+                      No formal diagnosis or musical background needed — the focus is on using music to support what
+                      matters to you.
                     </p>
                   </div>
                 </div>
                 <p className="mt-5 text-base leading-relaxed text-muted-foreground">
-                  By meeting people within their existing strengths and interests, music can reduce the pressure of participation while creating genuine opportunities for connection, communication, confidence and growth.
+                  Meeting people within their existing strengths and interests reduces the pressure of participation —
+                  and opens genuine opportunities for connection, confidence and growth.
                 </p>
               </div>
             </Reveal>
