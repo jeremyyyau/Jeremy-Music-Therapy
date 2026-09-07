@@ -35,21 +35,36 @@ export const Route = createFileRoute("/resources")({
 });
 
 const resources = [
-  { label: "Suno", url: "https://suno.com", image: imgSuno.url, description: "Generate songs from simple text prompts." },
+  {
+    label: "Suno",
+    url: "https://suno.com",
+    image: imgSuno.url,
+    description: "Generate songs from simple text prompts.",
+  },
   {
     label: "Chrome Music Lab",
     url: "https://musiclab.chromeexperiments.com",
     image: imgChromeMusicLab.url,
     description: "Playful experiments in rhythm, melody and sound.",
   },
-  { label: "BandLab", url: "https://www.bandlab.com", image: imgBandLab.url, description: "Create and share music in a free online studio." },
+  {
+    label: "BandLab",
+    url: "https://www.bandlab.com",
+    image: imgBandLab.url,
+    description: "Create and share music in a free online studio.",
+  },
   {
     label: "Blob Opera",
     url: "https://artsandculture.google.com/experiment/blob-opera/AAHWrq360NcGbw",
     image: imgBlobOpera.url,
     description: "Guide singing blobs through harmonies and melodies.",
   },
-  { label: "Incredibox", url: "https://www.incredibox.com", image: imgIncredibox.url, description: "Build layered beats by dressing up a beatbox crew." },
+  {
+    label: "Incredibox",
+    url: "https://www.incredibox.com",
+    image: imgIncredibox.url,
+    description: "Build layered beats by dressing up a beatbox crew.",
+  },
   {
     label: "PBS Kids Music",
     url: "https://pbskids.org/games/music",
@@ -81,9 +96,10 @@ function ResourcesPage() {
               Creative tools for musical play.
             </h1>
             <p className="mt-6 text-lg leading-relaxed text-muted-foreground">
-              A collection of free, accessible music-based websites you can explore at home. These are not therapy and
-              don't replace clinical sessions — they're low-pressure opportunities for creative engagement, active
-              listening and musical play between appointments.
+              A collection of accessible, music-based websites you can explore at home. In addition to clinical
+              sessions, these resources offer fun and interactive opportunities for musical engagement between
+              appointments. They can encourage active listening, creativity, and enjoyment of music, whether explored
+              independently or together with family and friends.
             </p>
           </Reveal>
         </div>
