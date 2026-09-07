@@ -27,14 +27,14 @@ export const Route = createFileRoute("/resources")({
 });
 
 const resources = [
-  { label: "Suno", url: "#" },
-  { label: "Chrome Music Lab", url: "#" },
-  { label: "BandLab", url: "#" },
-  { label: "Blob Opera", url: "#" },
-  { label: "Incredibox", url: "#" },
-  { label: "PBS Kids Music", url: "#" },
-  { label: "Radio Garden", url: "#" },
-  { label: "My Way Together", url: "#" },
+  { label: "Suno", url: "#", description: "Generate songs from simple text prompts." },
+  { label: "Chrome Music Lab", url: "#", description: "Playful experiments in rhythm, melody and sound." },
+  { label: "BandLab", url: "#", description: "Create and share music in a free online studio." },
+  { label: "Blob Opera", url: "#", description: "Guide singing blobs through harmonies and melodies." },
+  { label: "Incredibox", url: "#", description: "Build layered beats by dressing up a beatbox crew." },
+  { label: "PBS Kids Music", url: "#", description: "Music games and songs designed for young learners." },
+  { label: "Radio Garden", url: "#", description: "Spin the globe and listen to live radio everywhere." },
+  { label: "My Way Together", url: "#", description: "Explore music-making tools for inclusive participation." },
 ];
 
 function ResourcesPage() {
