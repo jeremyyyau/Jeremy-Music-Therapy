@@ -179,10 +179,7 @@ function ResourcesPage() {
         </div>
       </section>
 
-      <QuoteBand
-        quote="Play is the highest form of research — and music is play you can feel."
-        author="A note on creative exploration"
-      />
+      <QuoteBand quote="Play gives children a chance to practice what they are learning." author="Fred Rogers" />
     </SitePage>
   );
 }
