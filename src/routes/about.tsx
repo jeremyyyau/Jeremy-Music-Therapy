@@ -163,7 +163,7 @@ function AboutPage() {
                     key={item.title}
                     direction="up"
                     delay={(i % 2) * 120}
-                    className="group relative overflow-hidden rounded-2xl border border-border/60 bg-card p-6 shadow-sm transition-all duration-300 hover:border-primary hover:bg-secondary hover:shadow-card-hover"
+                    className="group relative overflow-hidden rounded-2xl border border-border/60 bg-card p-6 shadow-sm transition-all duration-300 hover:border-primary hover:shadow-card-hover"
                   >
                     <span
                       aria-hidden

@@ -148,7 +148,7 @@ function ServicesPage() {
                 key={s.title}
                 direction={i % 2 === 0 ? "left" : "right"}
                 as="article"
-                className="group rounded-2xl border border-border/60 bg-card p-8 shadow-sm transition-all duration-300 hover:border-primary hover:bg-secondary hover:shadow-card-hover md:p-10"
+                className="group rounded-2xl border border-border/60 bg-card p-8 shadow-sm transition-all duration-300 hover:border-primary hover:shadow-card-hover md:p-10"
               >
                 <div className="flex items-center gap-4">
                   <h2 className="font-heading text-2xl font-semibold text-card-foreground">{s.title}</h2>
@@ -264,7 +264,7 @@ function ServicesPage() {
                 key={item.title}
                 direction="up"
                 delay={(i % 2) * 120}
-                className="group relative overflow-hidden rounded-2xl border border-border/60 bg-card p-6 shadow-sm transition-all duration-300 hover:border-primary hover:bg-secondary hover:shadow-card-hover"
+                className="group relative overflow-hidden rounded-2xl border border-border/60 bg-card p-6 shadow-sm transition-all duration-300 hover:border-primary hover:shadow-card-hover"
               >
                 <div
                   aria-hidden
