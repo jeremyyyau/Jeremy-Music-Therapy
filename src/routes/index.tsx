@@ -73,7 +73,7 @@ function Index() {
             </h1>
             <p className="mt-6 max-w-lg text-lg leading-relaxed text-muted-foreground">
               An independent, person-centred music therapy practice for children, adults and older people across Sydney
-              — grounded in more than eight years of clinical experience. Sessions are tailored to each client’s goals,
+              — grounded in over eight years of clinical experience. Sessions are tailored to each client’s goals,
               whether that means building communication, supporting emotional expression, or finding meaningful ways to
               connect through music.
             </p>
@@ -163,8 +163,8 @@ function Index() {
             </h2>
             <p className="mt-6 text-lg leading-relaxed text-muted-foreground">
               A clinical, evidence-based allied health discipline that uses music to work towards non-musical goals —
-              emotional, cognitive, communication, physical and social. It's not about talent or performance; it's
-              about growth, regulation and connection.
+              emotional, cognitive, communication, physical and social. It's not about talent or performance; it's about
+              growth, regulation and connection.
             </p>
           </Reveal>
 
