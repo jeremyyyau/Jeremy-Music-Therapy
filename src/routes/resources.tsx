@@ -83,7 +83,7 @@ function ResourcesPage() {
                   href={r.url}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex h-full flex-col rounded-2xl border border-border/60 bg-card p-3 shadow-sm transition-all duration-300 hover:scale-105 hover:border-primary hover:bg-secondary/75 hover:shadow-card-hover"
+                  className="flex h-full flex-col rounded-2xl border border-border/60 bg-card p-2 shadow-sm transition-all duration-300 hover:scale-105 hover:border-primary hover:bg-secondary/75 hover:shadow-card-hover sm:p-3"
                 >
                   <div className="overflow-hidden rounded-xl bg-background/50 transition-colors duration-300 group-hover:bg-primary/10">
                     <img
@@ -96,10 +96,10 @@ function ResourcesPage() {
                       className="aspect-square w-full object-cover mix-blend-multiply transition-all duration-500 group-hover:scale-110 group-hover:brightness-110 group-hover:contrast-105"
                     />
                   </div>
-                  <p className="mt-3 line-clamp-2 min-h-10 text-center text-sm font-medium text-foreground transition-all duration-300 group-hover:scale-105 group-hover:text-primary">
+                  <p className="mt-2 sm:mt-3 text-center text-xs font-medium text-foreground transition-all duration-300 group-hover:scale-105 group-hover:text-primary sm:text-sm">
                     {r.label}
                   </p>
-                  <p className="mt-1 line-clamp-2 min-h-9 text-center text-xs leading-snug text-muted-foreground/70 transition-colors duration-300 group-hover:text-muted-foreground">
+                  <p className="mt-1 text-center text-[10px] leading-snug text-muted-foreground/70 transition-colors duration-300 group-hover:text-muted-foreground sm:text-xs">
                     {r.description}
                   </p>
                 </a>
