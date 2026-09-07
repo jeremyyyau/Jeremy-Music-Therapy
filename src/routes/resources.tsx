@@ -83,7 +83,7 @@ function ResourcesPage() {
                   href={r.url}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="block rounded-2xl border border-border/60 bg-card p-3 shadow-sm transition-all duration-300 hover:scale-105 hover:border-primary hover:bg-secondary/60 hover:shadow-card-hover"
+                  className="block rounded-2xl border border-border/60 bg-card p-3 shadow-sm transition-all duration-300 hover:scale-105 hover:border-primary hover:bg-secondary/75 hover:shadow-card-hover"
                 >
                   <div className="overflow-hidden rounded-xl bg-background/50 transition-colors duration-300 group-hover:bg-primary/10">
                     <img
@@ -109,7 +109,7 @@ function ResourcesPage() {
         </div>
 
         <div className="mx-auto mt-16 max-w-4xl px-6">
-          <Reveal className="rounded-3xl border border-border/60 bg-secondary/70 p-8 md:p-10">
+          <Reveal className="rounded-3xl border border-border/60 bg-secondary/85 p-8 md:p-10">
             <h2 className="font-heading text-2xl font-semibold text-foreground md:text-3xl">Want to add your own?</h2>
             <p className="mt-4 text-base leading-relaxed text-muted-foreground">
               These placeholders are easy to swap — just replace the label and link in the resources list, and drop in
