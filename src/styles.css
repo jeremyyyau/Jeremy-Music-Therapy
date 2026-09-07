@@ -171,6 +171,43 @@
   animation-play-state: paused;
 }
 
+/* Fade only the scrolling cards at the edges, leaving the backdrop untouched */
+.mask-edge-fade {
+  mask-image: linear-gradient(
+    to right,
+    transparent,
+    black 3rem,
+    black calc(100% - 3rem),
+    transparent
+  );
+  -webkit-mask-image: linear-gradient(
+    to right,
+    transparent,
+    black 3rem,
+    black calc(100% - 3rem),
+    transparent
+  );
+}
+
+@media (min-width: 768px) {
+  .mask-edge-fade {
+    mask-image: linear-gradient(
+      to right,
+      transparent,
+      black 6rem,
+      black calc(100% - 6rem),
+      transparent
+    );
+    -webkit-mask-image: linear-gradient(
+      to right,
+      transparent,
+      black 6rem,
+      black calc(100% - 6rem),
+      transparent
+    );
+  }
+}
+
 @media (prefers-reduced-motion: reduce) {
   .animate-marquee {
     animation: none;
