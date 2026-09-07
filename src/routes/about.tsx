@@ -220,6 +220,15 @@ function AboutPage() {
                 What keeps me inspired
               </h2>
               <div className="relative -mx-6 overflow-hidden py-6 md:-mx-12">
+                {/* Soft edge fades so cards don’t disappear behind a hard line */}
+                <div
+                  aria-hidden
+                  className="pointer-events-none absolute inset-y-0 left-0 z-10 w-12 bg-gradient-to-r from-background to-transparent md:w-24"
+                />
+                <div
+                  aria-hidden
+                  className="pointer-events-none absolute inset-y-0 right-0 z-10 w-12 bg-gradient-to-r from-transparent to-background md:w-24"
+                />
                 <div className="animate-marquee flex w-max gap-6 px-6 md:px-12">
                   {[...vignettes, ...vignettes].map((vignette, i) => (
                     <div
