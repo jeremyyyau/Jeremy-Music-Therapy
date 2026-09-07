@@ -99,6 +99,9 @@ function ResourcesPage() {
                   <p className="mt-3 text-center text-sm font-medium text-foreground transition-all duration-300 group-hover:scale-105 group-hover:text-primary">
                     {r.label}
                   </p>
+                  <p className="mt-1 text-center text-xs leading-snug text-muted-foreground/70 transition-colors duration-300 group-hover:text-muted-foreground">
+                    {r.description}
+                  </p>
                 </a>
               </Reveal>
             ))}
