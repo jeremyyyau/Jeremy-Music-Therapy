@@ -110,8 +110,8 @@ function ResourcesPage() {
                 >
                   <div className="overflow-hidden rounded-xl bg-background/50 transition-colors duration-300 group-hover:bg-primary/10">
                     <img
-                      src={resourceThumb}
-                      alt={`${r.label} resource thumbnail`}
+                      src={r.image}
+                      alt={`${r.label} logo`}
                       loading="lazy"
                       decoding="async"
                       width={512}
