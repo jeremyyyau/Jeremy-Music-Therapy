@@ -80,6 +80,39 @@ const instruments = [
   { name: "Traditional Chinese flute", icon: Wind },
 ];
 
+const vignettes = [
+  {
+    story:
+      "A non-speaking client sang his one word — “be” — in 'Let It Be' at an end-of-year concert, met with tears and thunderous applause.",
+    quote: "I never knew he could sing like that!",
+    attribution: "Support worker / Staff",
+  },
+  {
+    story:
+      "A client with cancer wrote a song for the grandchild he would never meet — a parting gift to his pregnant daughter.",
+    quote: "That song is something our family will keep forever.",
+    attribution: "Family member / Carer",
+  },
+  {
+    story:
+      "A child introduced by his parents as “non-verbal” grew into communicating in full sentences over two years.",
+    quote: "We never imagined we would have full conversations together.",
+    attribution: "Parent / Carer",
+  },
+  {
+    story:
+      "A young adult in a mental health unit began writing lyrics as a way to name feelings that had always felt too big to say out loud.",
+    quote: "For the first time, I feel like I have a voice that matters.",
+    attribution: "Client / Mental health",
+  },
+  {
+    story:
+      "An older adult living with dementia joined a group drumming circle and started humming the melody of a song she hadn't heard in decades.",
+    quote: "She lit up like her old self again.",
+    attribution: "Family member / Carer",
+  },
+];
+
 function AboutPage() {
   return (
     <SitePage>
