@@ -78,12 +78,12 @@ function ResourcesPage() {
         <div className="mx-auto mt-16 max-w-5xl px-6">
           <div className="grid grid-cols-2 gap-6 sm:grid-cols-3 md:grid-cols-4">
             {resources.map((r, i) => (
-              <Reveal key={r.label} direction="up" delay={i * 100} className="group">
+              <Reveal key={r.label} direction="up" delay={i * 100} className="group h-full">
                 <a
                   href={r.url}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="block rounded-2xl border border-border/60 bg-card p-3 shadow-sm transition-all duration-300 hover:scale-105 hover:border-primary hover:bg-secondary/75 hover:shadow-card-hover"
+                  className="flex h-full flex-col rounded-2xl border border-border/60 bg-card p-3 shadow-sm transition-all duration-300 hover:scale-105 hover:border-primary hover:bg-secondary/75 hover:shadow-card-hover"
                 >
                   <div className="overflow-hidden rounded-xl bg-background/50 transition-colors duration-300 group-hover:bg-primary/10">
                     <img
@@ -96,10 +96,10 @@ function ResourcesPage() {
                       className="aspect-square w-full object-cover mix-blend-multiply transition-all duration-500 group-hover:scale-110 group-hover:brightness-110 group-hover:contrast-105"
                     />
                   </div>
-                  <p className="mt-3 text-center text-sm font-medium text-foreground transition-all duration-300 group-hover:scale-105 group-hover:text-primary">
+                  <p className="mt-3 line-clamp-2 min-h-10 text-center text-sm font-medium text-foreground transition-all duration-300 group-hover:scale-105 group-hover:text-primary">
                     {r.label}
                   </p>
-                  <p className="mt-1 text-center text-xs leading-snug text-muted-foreground/70 transition-colors duration-300 group-hover:text-muted-foreground">
+                  <p className="mt-1 line-clamp-2 min-h-9 text-center text-xs leading-snug text-muted-foreground/70 transition-colors duration-300 group-hover:text-muted-foreground">
                     {r.description}
                   </p>
                 </a>
