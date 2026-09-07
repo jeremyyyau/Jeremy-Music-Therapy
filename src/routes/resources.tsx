@@ -5,7 +5,14 @@ import { Reveal } from "@/components/reveal";
 import { QuoteBand } from "@/components/quote-band";
 
 import { resourcesHeroImage, SIZES_CONTENT } from "@/lib/images";
-import resourceThumb from "@/assets/resource-thumb.webp";
+import imgSuno from "@/assets/res-suno.webp.asset.json";
+import imgChromeMusicLab from "@/assets/res-chromemusiclab.webp.asset.json";
+import imgBandLab from "@/assets/res-bandlab.webp.asset.json";
+import imgBlobOpera from "@/assets/res-blobopera.webp.asset.json";
+import imgIncredibox from "@/assets/res-incredibox.webp.asset.json";
+import imgPbsKids from "@/assets/res-pbskids.webp.asset.json";
+import imgRadioGarden from "@/assets/res-radiogarden.webp.asset.json";
+import imgMyWayTogether from "@/assets/res-mywaytogether.webp.asset.json";
 
 export const Route = createFileRoute("/resources")({
   component: ResourcesPage,
