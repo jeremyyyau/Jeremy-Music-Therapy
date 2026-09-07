@@ -150,8 +150,16 @@
 
   h1, h2, h3, h4, h5, h6 {
     font-family: var(--font-heading);
+    /* Even line lengths — stops a single word dangling on its own line */
+    text-wrap: balance;
+  }
+
+  p, li, blockquote, figcaption {
+    /* Avoids one-word last lines (orphans) at every screen size */
+    text-wrap: pretty;
   }
 }
+
 
 /* Infinite horizontal marquee for testimonials */
 @keyframes marquee {
