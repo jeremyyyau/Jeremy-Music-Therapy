@@ -1,5 +1,5 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
-import { Home, Armchair, Video, Guitar, Users, MessagesSquare } from "lucide-react";
+import { Home, Armchair, Video, Guitar, Users, MessagesSquare, Calendar, Clock, Phone, Receipt } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { SitePage } from "@/components/site-chrome";
 import { Reveal } from "@/components/reveal";
@@ -164,6 +164,51 @@ function ServicesPage() {
               </Reveal>
             ))}
           </div>
+        </div>
+
+        <div className="mx-auto mt-16 max-w-5xl px-6">
+          <Reveal>
+            <p className="mb-3 text-sm font-medium uppercase tracking-widest text-primary">Practical Details</p>
+            <h2 className="font-heading text-3xl font-semibold text-foreground md:text-4xl">What to expect</h2>
+          </Reveal>
+
+          <Reveal direction="up" className="mt-8 rounded-2xl border border-border/60 bg-card p-8 shadow-sm md:p-10">
+            <ul className="space-y-6">
+              <li className="flex items-start gap-4">
+                <div className="inline-flex shrink-0 rounded-full border border-primary/20 bg-primary/10 p-2.5">
+                  <Calendar className="h-4.5 w-4.5 text-primary" />
+                </div>
+                <div>
+                  <p className="font-heading text-base font-semibold text-card-foreground">Weekly or fortnightly sessions</p>
+                  <p className="mt-1 text-sm leading-relaxed text-muted-foreground">
+                    Regular one-hour sessions, scheduled at a time that fits your routine.
+                  </p>
+                </div>
+              </li>
+              <li className="flex items-start gap-4">
+                <div className="inline-flex shrink-0 rounded-full border border-primary/20 bg-primary/10 p-2.5">
+                  <Phone className="h-4.5 w-4.5 text-primary" />
+                </div>
+                <div>
+                  <p className="font-heading text-base font-semibold text-card-foreground">Cancellations</p>
+                  <p className="mt-1 text-sm leading-relaxed text-muted-foreground">
+                    Generally 24 hours notice is appreciated, though flexibility is offered depending on circumstances.
+                  </p>
+                </div>
+              </li>
+              <li className="flex items-start gap-4">
+                <div className="inline-flex shrink-0 rounded-full border border-primary/20 bg-primary/10 p-2.5">
+                  <Receipt className="h-4.5 w-4.5 text-primary" />
+                </div>
+                <div>
+                  <p className="font-heading text-base font-semibold text-card-foreground">Fees</p>
+                  <p className="mt-1 text-sm leading-relaxed text-muted-foreground">
+                    Charged in line with the most current NDIS price guide and rates.
+                  </p>
+                </div>
+              </li>
+            </ul>
+          </Reveal>
         </div>
 
         <div className="mx-auto mt-20 max-w-5xl px-6">
