@@ -110,11 +110,12 @@ function ResourcesPage() {
 
         <div className="mx-auto mt-16 max-w-4xl px-6">
           <Reveal className="rounded-3xl border border-border/60 bg-secondary/85 p-8 md:p-10">
-            <h2 className="font-heading text-2xl font-semibold text-foreground md:text-3xl">Want to add your own?</h2>
+            <h2 className="font-heading text-2xl font-semibold text-foreground md:text-3xl">Have a resource to share?</h2>
             <p className="mt-4 text-base leading-relaxed text-muted-foreground">
-              These placeholders are easy to swap — just replace the label and link in the resources list, and drop in
-              your own thumbnail images when you're ready. If you find a favorite that belongs here, I'd love to hear
-              about it.
+              Therapists are always on the lookout for thoughtful, accessible tools that can support the people we walk
+              alongside. If you know an app, website or creative resource that has made a difference for you or someone
+              you care for, I'd love to hear about it. Your suggestion might become a meaningful bridge for another
+              client, another family, or another moment of connection.
             </p>
           </Reveal>
         </div>
