@@ -99,7 +99,7 @@ function ResourcesPage() {
                   <p className="mt-2 sm:mt-3 text-center text-xs font-medium text-foreground transition-all duration-300 group-hover:scale-105 group-hover:text-primary sm:text-sm">
                     {r.label}
                   </p>
-                  <p className="mt-1 text-center text-[10px] leading-snug text-muted-foreground/70 transition-colors duration-300 group-hover:text-muted-foreground sm:text-xs">
+                  <p className="mt-1 text-center text-[10px] italic leading-snug text-muted-foreground/70 transition-colors duration-300 group-hover:text-muted-foreground sm:text-xs">
                     {r.description}
                   </p>
                 </a>
