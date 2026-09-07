@@ -209,7 +209,7 @@ function AboutPage() {
                 ].map((vignette, i) => (
                   <div
                     key={vignette.story}
-                    className="group relative overflow-hidden rounded-2xl border border-border/60 bg-secondary/60 px-5 py-5 shadow-sm transition-all duration-300 hover:border-primary hover:bg-card/95 hover:shadow-card-hover sm:px-6"
+                    className="group relative overflow-hidden rounded-2xl border border-border/60 bg-secondary/85 px-5 py-5 shadow-sm transition-all duration-300 hover:border-primary hover:bg-card/95 hover:shadow-card-hover sm:px-6"
                   >
                     <span
                       aria-hidden

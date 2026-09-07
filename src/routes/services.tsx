@@ -174,7 +174,7 @@ function ServicesPage() {
 
           <Reveal
             direction="up"
-            className="mt-8 overflow-hidden rounded-3xl border border-border/60 bg-secondary/65 shadow-sm"
+            className="mt-8 overflow-hidden rounded-3xl border border-border/60 bg-secondary/85 shadow-sm"
           >
             <ol className="divide-y divide-border/50 md:grid md:grid-cols-3 md:divide-x md:divide-y-0">
               {[
