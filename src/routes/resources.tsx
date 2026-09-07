@@ -12,7 +12,7 @@ import imgBlobOpera from "@/assets/res-blobopera.webp.asset.json";
 import imgIncredibox from "@/assets/res-incredibox.webp.asset.json";
 import imgPbsKids from "@/assets/res-pbskids.webp.asset.json";
 import imgRadioGarden from "@/assets/res-radiogarden.webp.asset.json";
-import imgMyWayTogether from "@/assets/res-mywaytogether.webp.asset.json";
+import imgMyWayTogether from "@/assets/res-mywaytogether-v2.webp.asset.json";
 
 export const Route = createFileRoute("/resources")({
   component: ResourcesPage,
@@ -57,7 +57,12 @@ const resources = [
     description: "Music games and songs designed for young learners.",
   },
   { label: "Radio Garden", url: "https://radio.garden", image: imgRadioGarden.url, description: "Spin the globe and listen to live radio everywhere." },
-  { label: "My Way Together", url: "#", image: imgMyWayTogether.url, description: "Explore music-making tools for inclusive participation." },
+  {
+    label: "My Way Together",
+    url: "https://apps.apple.com/us/app/my-way-together/id6796318818",
+    image: imgMyWayTogether.url,
+    description: "Calm, simple tools that support communication and choice.",
+  },
 ];
 
 function ResourcesPage() {
