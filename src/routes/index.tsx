@@ -131,7 +131,7 @@ function Index() {
             </h2>
             <div className="mt-6 space-y-4 text-base leading-relaxed text-muted-foreground">
               <p>
-                I'm a Registered Music Therapist (RMT) with a Master of Music Therapy from the University of Melbourne
+                I’m a Registered Music Therapist (RMT) with a Master of Music Therapy from the University of Melbourne
                 and over eight years of clinical practice across hospital, education, disability, aged care and
                 community settings. This range of experience has taught me how to adapt quickly, listen deeply, and meet
                 people where they are — clinically, emotionally and creatively.
@@ -163,7 +163,7 @@ function Index() {
             </h2>
             <p className="mt-6 text-lg leading-relaxed text-muted-foreground">
               A clinical, evidence-based allied health discipline that uses music to work towards non-musical goals —
-              emotional, cognitive, communication, physical and social. It's not about talent or performance; it's about
+              emotional, cognitive, communication, physical and social. It’s not about talent or performance; it’s about
               growth, regulation and connection.
             </p>
           </Reveal>
@@ -174,7 +174,7 @@ function Index() {
                 icon: Heart,
                 title: "Active interventions",
                 description:
-                  "Improvisation, songwriting, singing and instrumental play - building confidence, communication and social interaction through natural opportunities for creativity.",
+                  "Improvisation, songwriting, singing and instrumental play — building confidence, communication and social interaction through natural opportunities for creativity.",
               },
               {
                 icon: Users,
@@ -235,7 +235,7 @@ function Index() {
               },
               {
                 icon: Armchair,
-                title: "Clinic Visits — Picnic Point",
+                title: "Home Clinic — Picnic Point",
                 description:
                   "A calm, purpose-equipped therapy room with fewer distractions and wider array of instruments.",
               },
@@ -254,7 +254,7 @@ function Index() {
                 icon: Users,
                 title: "Community Sessions",
                 description:
-                  "Individual and group work in childcare, schools and SIL settings to generalize skills in familiar settings",
+                  "Individual and group work in childcare, schools and SIL settings to generalise skills in familiar settings.",
               },
               {
                 icon: MessagesSquare,
@@ -311,9 +311,9 @@ function Index() {
                   "One therapist, no handovers — consistent goals and a therapy plan that deepens over time.",
               },
               {
-                title: "Flexible & responsive",
+                title: "Flexible and responsive",
                 description:
-                  "Direct communication, adaptable scheduling and  minimal administrative or strict policies.",
+                  "Direct communication, adaptable scheduling and minimal administrative or policy overhead.",
               },
               {
                 title: "Family at the centre",
@@ -365,11 +365,11 @@ function Index() {
           <Reveal direction="left">
             <p className="mb-3 text-sm font-medium uppercase tracking-widest text-primary">Get in Touch</p>
             <h2 className="font-heading text-3xl font-semibold text-foreground md:text-4xl">
-              I'd love to hear from you.
+              I’d love to hear from you.
             </h2>
             <p className="mt-6 max-w-md text-lg leading-relaxed text-muted-foreground">
-              Whether you're exploring music therapy for the first time, comparing providers, or ready to discuss goals,
-              referrals and funding, send me a message and I'll reply within 1-2 business days.&nbsp;
+              Whether you’re exploring music therapy for the first time, comparing providers, or ready to discuss goals,
+              referrals and funding, send me a message and I’ll reply within 1–2 business days.
             </p>
 
             <p className="mt-10 max-w-md text-sm italic leading-relaxed text-muted-foreground">
@@ -489,7 +489,7 @@ function ContactForm() {
               <FormLabel className="text-foreground">Message</FormLabel>
               <FormControl>
                 <Textarea
-                  placeholder="Tell me a little about what you're looking for..."
+                  placeholder="Tell me a little about what you’re looking for..."
                   rows={5}
                   {...field}
                   className="rounded-xl"
@@ -502,7 +502,7 @@ function ContactForm() {
 
         {status === "success" && (
           <div className="rounded-xl bg-primary/10 p-4 text-sm text-primary">
-            Thank you for reaching out. I've received your message and will be in touch soon.
+            Thank you for reaching out. I’ve received your message and will be in touch soon.
           </div>
         )}
 

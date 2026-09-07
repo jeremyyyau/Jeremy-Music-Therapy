@@ -22,13 +22,13 @@ export const Route = createFileRoute("/resources")({
       {
         name: "description",
         content:
-          "A curated collection of free, creative, and accessible music-based websites and tools for exploration, learning, and play.",
+          "A curated collection of free, creative and accessible music-based websites and tools for exploration, learning and play.",
       },
       { property: "og:title", content: "Resources | Music Therapy Practice" },
       {
         property: "og:description",
         content:
-          "A curated collection of free, creative, and accessible music-based websites and tools for exploration, learning, and play.",
+          "A curated collection of free, creative and accessible music-based websites and tools for exploration, learning and play.",
       },
     ],
   }),
@@ -98,7 +98,7 @@ function ResourcesPage() {
             <p className="mt-6 text-lg leading-relaxed text-muted-foreground">
               A collection of accessible, music-based websites you can explore at home. In addition to clinical
               sessions, these resources offer fun and interactive opportunities for musical engagement between
-              appointments. They can encourage active listening, creativity, and enjoyment of music, whether explored
+              appointments. They can encourage active listening, creativity and enjoyment of music, whether explored
               independently or together with family and friends.
             </p>
           </Reveal>
@@ -165,7 +165,7 @@ function ResourcesPage() {
             <p className="mt-4 text-base leading-relaxed text-muted-foreground">
               Therapists are always on the lookout for thoughtful, accessible tools that can support the people we walk
               alongside. If you know an app, website or creative resource that has made a difference for you or someone
-              you care for, I'd love to hear about it. Your suggestion might become a meaningful bridge for another
+              you care for, I’d love to hear about it. Your suggestion might become a meaningful bridge for another
               client, another family, or another moment of connection.
             </p>
             <div className="mt-6">
