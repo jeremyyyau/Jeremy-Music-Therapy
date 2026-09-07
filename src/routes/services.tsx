@@ -198,7 +198,10 @@ function ServicesPage() {
                   description: "Charged in line with the most current NDIS price guide and rates.",
                 },
               ].map((item, i) => (
-                <li key={item.title} className="group relative p-6 transition-colors duration-300 hover:bg-card/85 md:p-8">
+                <li
+                  key={item.title}
+                  className="group relative p-6 transition-colors duration-300 hover:bg-card/85 md:p-8"
+                >
                   <div className="mb-5 flex items-center justify-between gap-4">
                     <span className="text-xs font-medium uppercase tracking-widest text-primary/80">{item.label}</span>
                     <span className="font-heading text-3xl font-semibold text-primary/15 transition-colors duration-300 group-hover:text-primary/35">
@@ -302,7 +305,10 @@ function ServicesPage() {
         </div>
       </section>
 
-      <QuoteBand quote="Music is the shorthand of emotion." author="Leo Tolstoy" />
+      <QuoteBand
+        quote="I would teach children music, physics and philosophy; but most importantly music, for the patterns in music and all the arts are the keys to learning."
+        author="Plato"
+      />
     </SitePage>
   );
 }
