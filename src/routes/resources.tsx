@@ -11,7 +11,7 @@ import imgBandLab from "@/assets/res-bandlab.webp.asset.json";
 import imgBlobOpera from "@/assets/res-blobopera.webp.asset.json";
 import imgIncredibox from "@/assets/res-incredibox.webp.asset.json";
 import imgPbsKids from "@/assets/res-pbskids.webp.asset.json";
-import imgRadioGarden from "@/assets/res-radiogarden.webp.asset.json";
+import imgLevelUpMusicianship from "@/assets/res-levelupmusicianship.webp.asset.json";
 import imgMyWayTogether from "@/assets/res-mywaytogether-v2.webp.asset.json";
 
 export const Route = createFileRoute("/resources")({
@@ -56,7 +56,12 @@ const resources = [
     image: imgPbsKids.url,
     description: "Music games and songs designed for young learners.",
   },
-  { label: "Radio Garden", url: "https://radio.garden", image: imgRadioGarden.url, description: "Spin the globe and listen to live radio everywhere." },
+  {
+    label: "Level Up Musicianship",
+    url: "https://levelupmusicianship.com/games",
+    image: imgLevelUpMusicianship.url,
+    description: "Playful music theory games that build listening and reading skills.",
+  },
   {
     label: "My Way Together",
     url: "https://apps.apple.com/us/app/my-way-together/id6796318818",
