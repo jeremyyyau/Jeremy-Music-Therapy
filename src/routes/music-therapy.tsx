@@ -46,7 +46,7 @@ const benefits = [
     icon: Heart,
     title: "Emotional wellbeing",
     description:
-      "Music can access affect that language can't reach — grief, anxiety, anger, joy — providing a contained, safe channel for expression and processing.",
+      "Music can access affect that language can’t reach — grief, anxiety, anger, joy — providing a contained, safe channel for expression and processing.",
   },
   {
     icon: Users,
@@ -208,7 +208,7 @@ function MusicTherapyPage() {
                 <p className="p-6 text-base leading-relaxed text-muted-foreground md:p-8">
                   Music therapy can complement other allied health supports, incorporating strategies informed by speech
                   pathology, occupational therapy and psychology where they align with assessed goals. What distinguishes
-                  it is music's unique motivational pull — its ability to capture attention, evoke emotion and make
+                  it is music’s unique motivational pull — its ability to capture attention, evoke emotion and make
                   participation inherently rewarding, turning difficult or repetitive tasks into engaging, meaningful
                   experiences.
                 </p>
@@ -269,7 +269,7 @@ function MusicTherapyPage() {
                 A music lesson teaches musical skills, technique, performance and repertoire. Music therapy uses music as a way of supporting broader goals, and there is no expectation to become a musician, perform or be graded.
               </p>
               <p className="mt-4 text-base leading-relaxed text-muted-foreground">
-                Music can still be taught as part of therapy when learning an instrument supports a person's goals — building attention, coordination, planning, impulse control and emotional regulation. The focus, however, is not on becoming a better musician, but on what music can help make possible.
+                Music can still be taught as part of therapy when learning an instrument supports a person’s goals — building attention, coordination, planning, impulse control and emotional regulation. The focus, however, is not on becoming a better musician, but on what music can help make possible.
               </p>
             </Reveal>
 
@@ -299,7 +299,7 @@ function MusicTherapyPage() {
                       {
                         title: "For people who need adapted support",
                         description:
-                          "People who don't fit comfortably within conventional approaches, feel anxious or unmotivated in unfamiliar environments, or engage more readily when activities are creative, predictable and aligned with their interests.",
+                          "People who don’t fit comfortably within conventional approaches, feel anxious or unmotivated in unfamiliar environments, or engage more readily when activities are creative, predictable and aligned with their interests.",
                       },
                       {
                         title: "For anyone with goals or areas to work on",
@@ -344,7 +344,7 @@ function MusicTherapyPage() {
                     but what matters is whether that engagement can be built upon over time.
                   </p>
                   <p className="mt-5 text-base leading-relaxed text-muted-foreground">
-                    If you're weighing up providers, take the time you need: an appropriate clinical match matters more
+                    If you’re weighing up providers, take the time you need: an appropriate clinical match matters more
                     than starting quickly.
                   </p>
                 </div>
@@ -381,7 +381,7 @@ function MusicTherapyPage() {
       <QuoteBand
         quote={`What we were creating in therapy... was performance... and that performance was of wonderful, developmental, therapeutic value.
 
-People were learning how to 'perform' — people were learning to perform beyond themselves.
+People were learning how to ‘perform’ — people were learning to perform beyond themselves.
 
 We become who we are by continuously being who we are not.`}
         author="Fred Newman"

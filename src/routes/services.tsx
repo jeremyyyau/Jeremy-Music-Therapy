@@ -75,7 +75,7 @@ const services = [
     title: "Consultation",
     who: "Anyone considering music therapy.",
     description:
-      "An open conversation about goals, funding and whether music therapy is the right fit. If another service would suit you better, I'll say so — appropriate referral matters more than filling a caseload.",
+      "An open conversation about goals, funding and whether music therapy is the right fit. If another service would suit you better, I’ll say so — appropriate referral matters more than filling a caseload.",
     format: "Around 20 minutes • Phone or video call",
   },
 ];

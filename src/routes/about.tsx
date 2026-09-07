@@ -83,7 +83,7 @@ const instruments = [
 const vignettes = [
   {
     story:
-      "A non-speaking client sang his one word — “be” — in 'Let It Be' at an end-of-year concert, met with tears and thunderous applause.",
+      "A non-speaking client sang his one word — “be” — in “Let It Be” at an end-of-year concert, met with tears and thunderous applause.",
     quote: "I never knew he could sing like that!",
     attribution: "Support worker / Staff",
   },
@@ -107,7 +107,7 @@ const vignettes = [
   },
   {
     story:
-      "An older adult living with dementia joined a group drumming circle and started humming the melody of a song she hadn't heard in decades.",
+      "An older adult living with dementia joined a group drumming circle and started humming the melody of a song she hadn’t heard in decades.",
     quote: "She lit up like her old self again.",
     attribution: "Family member / Carer",
   },
@@ -126,7 +126,7 @@ function AboutPage() {
               Connection gives us a way to grow.
             </h1>
             <p className="mt-6 text-lg leading-relaxed text-muted-foreground">
-              I'm a Registered Music Therapist (RMT) with a Master of Music Therapy from the University of Melbourne and
+              I’m a Registered Music Therapist (RMT) with a Master of Music Therapy from the University of Melbourne and
               over eight years of clinical practice across hospital, education, disability, aged care, mental health,
               palliative care and community settings — experience that shaped the flexible, person-centred,
               evidence-based approach I bring to every therapeutic relationship.
@@ -165,7 +165,7 @@ function AboutPage() {
                 <p>
                   Rather than specialising early, I practised across as many clinical populations as I could. That
                   transdisciplinary grounding shaped a resource-oriented approach: a wide repertoire of
-                  evidence-informed interventions, matched to each person's presentation, capacity and preference, and
+                  evidence-informed interventions, matched to each person’s presentation, capacity and preference, and
                   adjusted through ongoing clinical review.
                 </p>
               </div>
@@ -257,10 +257,10 @@ function AboutPage() {
                 <p>
                   These moments changed my relationship with music — less about performer and audience, more about
                   something that belongs to all of us: a made-up lullaby between mother and child, a rap song in a
-                  teenager's headphones, a shaky duet of 'Fly Me To The Moon' between husband and wife.
+                  teenager’s headphones, a shaky duet of “Fly Me To The Moon” between husband and wife.
                 </p>
                 <p>
-                  Music doesn't have to be perfect to be meaningful. That belief is what drew me to music therapy: there
+                  Music doesn’t have to be perfect to be meaningful. That belief is what drew me to music therapy: there
                   is music in every person, and everyone deserves the chance to discover what it can mean for them.
                 </p>
               </div>
@@ -269,7 +269,7 @@ function AboutPage() {
             <Reveal>
               <h2 className="font-heading text-2xl font-semibold text-foreground md:text-3xl">In the session room</h2>
               <p className="mt-4 text-base leading-relaxed text-muted-foreground">
-                As a multi-instrumentalist I adapt the musical medium to each client's preferences, sensory profile and
+                As a multi-instrumentalist I adapt the musical medium to each client’s preferences, sensory profile and
                 access needs.
               </p>
 
@@ -290,7 +290,7 @@ function AboutPage() {
               </ul>
               <p className="mt-6 text-base leading-relaxed text-muted-foreground">
                 Above all, I aim to create a welcoming space where people feel safe to connect, express themselves, and
-                discover what's possible through music.
+                discover what’s possible through music.
               </p>
             </Reveal>
           </div>
