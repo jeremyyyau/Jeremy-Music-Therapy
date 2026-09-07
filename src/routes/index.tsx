@@ -174,7 +174,7 @@ function Index() {
                 icon: Heart,
                 title: "Active interventions",
                 description:
-                  "Improvisation, songwriting, singing and instrumental play - building confidence, communication and social interaction through natural opportunities for creativity.",
+                  "Improvisation, songwriting, singing and instrumental play — building confidence, communication and social interaction through natural opportunities for creativity.",
               },
               {
                 icon: Users,
@@ -254,7 +254,7 @@ function Index() {
                 icon: Users,
                 title: "Community Sessions",
                 description:
-                  "Individual and group work in childcare, schools and SIL settings to generalize skills in familiar settings",
+                  "Individual and group work in childcare, schools and SIL settings to generalise skills in familiar settings.",
               },
               {
                 icon: MessagesSquare,
@@ -313,7 +313,7 @@ function Index() {
               {
                 title: "Flexible & responsive",
                 description:
-                  "Direct communication, adaptable scheduling and  minimal administrative or strict policies.",
+                  "Direct communication, adaptable scheduling and minimal administrative or strict policies.",
               },
               {
                 title: "Family at the centre",
@@ -369,7 +369,7 @@ function Index() {
             </h2>
             <p className="mt-6 max-w-md text-lg leading-relaxed text-muted-foreground">
               Whether you’re exploring music therapy for the first time, comparing providers, or ready to discuss goals,
-              referrals and funding, send me a message and I’ll reply within 1-2 business days.&nbsp;
+              referrals and funding, send me a message and I’ll reply within 1–2 business days.
             </p>
 
             <p className="mt-10 max-w-md text-sm italic leading-relaxed text-muted-foreground">

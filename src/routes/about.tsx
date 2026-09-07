@@ -15,13 +15,13 @@ export const Route = createFileRoute("/about")({
       {
         name: "description",
         content:
-          "Registered Music Therapist with a Masters of Music Therapy (University of Melbourne) and 8+ years of clinical experience across hospitals, schools, disability, aged care and community settings.",
+          "Registered Music Therapist with a Master of Music Therapy (University of Melbourne) and 8+ years of clinical experience across hospitals, schools, disability, aged care and community settings.",
       },
       { property: "og:title", content: "About | Registered Music Therapist (RMT)" },
       {
         property: "og:description",
         content:
-          "Registered Music Therapist with a Masters of Music Therapy (University of Melbourne) and 8+ years across hospitals, schools, disability, aged care and community settings.",
+          "Registered Music Therapist with a Master of Music Therapy (University of Melbourne) and 8+ years across hospitals, schools, disability, aged care and community settings.",
       },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
@@ -30,7 +30,7 @@ export const Route = createFileRoute("/about")({
 });
 
 const credentials = [
-  "Masters of Music Therapy — University of Melbourne",
+  "Master of Music Therapy — University of Melbourne",
   "Bachelor of Music (Performance) — University of Melbourne",
   "Registered Music Therapist (RMT)",
   "Over 8 years of clinical experience",
@@ -83,7 +83,7 @@ const instruments = [
 const vignettes = [
   {
     story:
-      "A non-speaking client sang his one word — “be” — in “Let It Be” at an end-of-year concert, met with tears and thunderous applause.",
+      "A non-speaking client sang his one word — ‘be’ — in “Let It Be” at an end-of-year concert, met with tears and thunderous applause.",
     quote: "I never knew he could sing like that!",
     attribution: "Support worker / Staff",
   },
