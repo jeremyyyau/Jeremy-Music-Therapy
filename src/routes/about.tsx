@@ -209,18 +209,29 @@ function AboutPage() {
                 ].map((vignette, i) => (
                   <div
                     key={vignette.story}
-                    className="group relative overflow-hidden rounded-2xl border border-border/60 bg-secondary/85 px-5 py-5 shadow-sm transition-all duration-300 hover:border-primary hover:bg-card/95 hover:shadow-card-hover sm:px-6"
+                    className="group relative rounded-2xl border border-border/30 bg-card/55 px-6 py-6 shadow-[0_20px_45px_-14px_rgba(0,0,0,0.06)] backdrop-blur-md transition-all duration-300 hover:border-primary/40 hover:bg-card/75 hover:shadow-[0_28px_60px_-16px_rgba(0,0,0,0.1)] sm:px-8 sm:py-7"
                   >
+                    {/* Decorative floating quote mark */}
                     <span
                       aria-hidden
-                      className="absolute right-5 top-4 font-heading text-4xl font-semibold text-primary/10 transition-colors duration-300 group-hover:text-primary/25"
+                      className="absolute -left-2 -top-5 font-heading text-7xl leading-none text-primary/10 select-none transition-colors duration-300 group-hover:text-primary/20 sm:-left-4 sm:-top-7 sm:text-8xl"
+                    >
+                      “
+                    </span>
+
+                    {/* Subtle ambient glow */}
+                    <div className="absolute -bottom-4 -right-4 h-24 w-24 rounded-full bg-primary/10 blur-2xl -z-10 transition-opacity duration-300 group-hover:opacity-70" />
+
+                    <span
+                      aria-hidden
+                      className="absolute right-4 top-3 font-heading text-3xl font-semibold text-primary/10 transition-colors duration-300 group-hover:text-primary/20 sm:right-6 sm:top-4 sm:text-4xl"
                     >
                       {String(i + 1).padStart(2, "0")}
                     </span>
                     <div className="relative max-w-3xl">
                       <p className="text-sm italic leading-relaxed text-muted-foreground">{vignette.story}</p>
                     </div>
-                    <div className="mt-3 flex items-center gap-2 border-t border-border/40 pt-3">
+                    <div className="mt-4 flex items-center gap-2 border-t border-border/30 pt-3">
                       <span aria-hidden className="text-lg leading-none text-primary/60">
                         “
                       </span>
