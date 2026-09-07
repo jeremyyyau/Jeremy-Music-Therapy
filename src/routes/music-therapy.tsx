@@ -154,10 +154,10 @@ function MusicTherapyPage() {
             </div>
 
             <div className="mt-8 grid grid-cols-1 gap-5 md:grid-cols-2">
-              <div className="rounded-2xl border border-border/60 bg-card p-6 shadow-sm">
+              <div className="group rounded-2xl border border-border/60 bg-card p-6 shadow-sm transition-all duration-300 hover:border-primary hover:shadow-card-hover">
                 <div className="mb-4 flex items-center gap-3">
-                  <div className="inline-flex rounded-xl bg-primary/10 p-3">
-                    <Mic2 className="h-5 w-5 text-primary" />
+                  <div className="inline-flex rounded-xl bg-primary/10 p-3 transition-all duration-300 group-hover:scale-120 group-hover:bg-primary/30 group-hover:shadow-glow">
+                    <Mic2 className="h-5 w-5 text-primary transition-transform duration-300 group-hover:scale-120" />
                   </div>
                   <h3 className="font-heading text-lg font-semibold text-card-foreground">Active interventions</h3>
                 </div>
@@ -174,10 +174,10 @@ function MusicTherapyPage() {
                 </ul>
               </div>
 
-              <div className="rounded-2xl border border-border/60 bg-card p-6 shadow-sm">
+              <div className="group rounded-2xl border border-border/60 bg-card p-6 shadow-sm transition-all duration-300 hover:border-primary hover:shadow-card-hover">
                 <div className="mb-4 flex items-center gap-3">
-                  <div className="inline-flex rounded-xl bg-primary/10 p-3">
-                    <Ear className="h-5 w-5 text-primary" />
+                  <div className="inline-flex rounded-xl bg-primary/10 p-3 transition-all duration-300 group-hover:scale-120 group-hover:bg-primary/30 group-hover:shadow-glow">
+                    <Ear className="h-5 w-5 text-primary transition-transform duration-300 group-hover:scale-120" />
                   </div>
                   <h3 className="font-heading text-lg font-semibold text-card-foreground">Receptive interventions</h3>
                 </div>
