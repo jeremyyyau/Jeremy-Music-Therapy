@@ -12,7 +12,7 @@ import imgBlobOpera from "@/assets/res-blobopera.webp.asset.json";
 import imgIncredibox from "@/assets/res-incredibox.webp.asset.json";
 import imgPbsKids from "@/assets/res-pbskids.webp.asset.json";
 import imgLevelUpMusicianship from "@/assets/res-levelupmusicianship.webp.asset.json";
-import imgMyWayTogether from "@/assets/res-mywaytogether-v3.webp.asset.json";
+import imgMyWayTogether from "@/assets/res-mywaytogether-v4.webp.asset.json";
 
 export const Route = createFileRoute("/resources")({
   component: ResourcesPage,
