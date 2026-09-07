@@ -186,62 +186,39 @@ function AboutPage() {
               <h2 className="font-heading text-2xl font-semibold text-foreground md:text-3xl">
                 What keeps me inspired
               </h2>
-              <div className="mt-6 space-y-4">
-                {[
-                  {
-                    story:
-                      "A non-speaking client sang his one word — “be” — in 'Let It Be' at an end-of-year concert, met with tears and thunderous applause.",
-                    quote: "I never knew he could sing like that!",
-                    attribution: "Support worker / Staff",
-                  },
-                  {
-                    story:
-                      "A client with cancer wrote a song for the grandchild he would never meet — a parting gift to his pregnant daughter.",
-                    quote: "That song is something our family will keep forever.",
-                    attribution: "Family member / Carer",
-                  },
-                  {
-                    story:
-                      "A child introduced by his parents as “non-verbal” grew into communicating in full sentences over two years.",
-                    quote: "We never imagined we would have full conversations together.",
-                    attribution: "Parent / Carer",
-                  },
-                ].map((vignette, i) => (
-                  <div
-                    key={vignette.story}
-                    className="group relative rounded-2xl border border-border/30 bg-card/55 px-6 py-6 shadow-[0_20px_45px_-14px_rgba(0,0,0,0.06)] backdrop-blur-md transition-all duration-300 hover:border-primary/40 hover:bg-card/75 hover:shadow-[0_28px_60px_-16px_rgba(0,0,0,0.1)] sm:px-8 sm:py-7"
-                  >
-                    {/* Decorative floating quote mark */}
-                    <span
-                      aria-hidden
-                      className="absolute -left-2 -top-5 font-heading text-7xl leading-none text-primary/10 select-none transition-colors duration-300 group-hover:text-primary/20 sm:-left-4 sm:-top-7 sm:text-8xl"
+              <div className="relative -mx-6 overflow-hidden py-6 md:-mx-12">
+                <div className="animate-marquee flex w-max gap-6 px-6 md:px-12">
+                  {[...vignettes, ...vignettes].map((vignette, i) => (
+                    <div
+                      key={`${vignette.story}-${i}`}
+                      className="group relative w-[82vw] max-w-[340px] shrink-0 rounded-2xl border border-border/30 bg-card/55 px-6 py-6 shadow-[0_20px_45px_-14px_rgba(0,0,0,0.06)] backdrop-blur-md transition-all duration-300 hover:border-primary/40 hover:bg-card/75 hover:shadow-[0_28px_60px_-16px_rgba(0,0,0,0.1)] sm:max-w-[380px] sm:px-8 sm:py-7 md:max-w-[420px]"
                     >
-                      “
-                    </span>
-
-                    {/* Subtle ambient glow */}
-                    <div className="absolute -bottom-4 -right-4 h-24 w-24 rounded-full bg-primary/10 blur-2xl -z-10 transition-opacity duration-300 group-hover:opacity-70" />
-
-                    <span
-                      aria-hidden
-                      className="absolute right-4 top-3 font-heading text-3xl font-semibold text-primary/10 transition-colors duration-300 group-hover:text-primary/20 sm:right-6 sm:top-4 sm:text-4xl"
-                    >
-                      {String(i + 1).padStart(2, "0")}
-                    </span>
-                    <div className="relative max-w-3xl">
-                      <p className="text-sm italic leading-relaxed text-muted-foreground">{vignette.story}</p>
-                    </div>
-                    <div className="mt-4 flex items-center gap-2 border-t border-border/30 pt-3">
-                      <span aria-hidden className="text-lg leading-none text-primary/60">
+                      {/* Decorative floating quote mark */}
+                      <span
+                        aria-hidden
+                        className="absolute -left-2 -top-5 font-heading text-7xl leading-none text-primary/10 select-none transition-colors duration-300 group-hover:text-primary/20 sm:-left-4 sm:-top-7 sm:text-8xl"
+                      >
                         “
                       </span>
-                      <p className="text-sm font-medium text-foreground/90">{vignette.quote}</p>
+
+                      {/* Subtle ambient glow */}
+                      <div className="absolute -bottom-4 -right-4 -z-10 h-24 w-24 rounded-full bg-primary/10 blur-2xl transition-opacity duration-300 group-hover:opacity-70" />
+
+                      <div className="relative max-w-3xl">
+                        <p className="text-sm italic leading-relaxed text-muted-foreground">{vignette.story}</p>
+                      </div>
+                      <div className="mt-4 flex items-center gap-2 border-t border-border/30 pt-3">
+                        <span aria-hidden className="text-lg leading-none text-primary/60">
+                          “
+                        </span>
+                        <p className="text-sm font-medium text-foreground/90">{vignette.quote}</p>
+                      </div>
+                      <p className="mt-1 pl-4 text-xs uppercase tracking-wider text-muted-foreground/70">
+                        — {vignette.attribution}
+                      </p>
                     </div>
-                    <p className="mt-1 pl-4 text-xs uppercase tracking-wider text-muted-foreground/70">
-                      — {vignette.attribution}
-                    </p>
-                  </div>
-                ))}
+                  ))}
+                </div>
               </div>
               <div className="mt-6 space-y-4 text-base leading-relaxed text-muted-foreground">
                 <p>
