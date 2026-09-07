@@ -11,7 +11,7 @@ export function QuoteBand({ quote, author, className }: QuoteBandProps) {
   const paragraphs = quote.split(/\n\s*\n/).filter(Boolean);
   return (
     <section
-      className={`border-y border-border/50 bg-secondary/75 py-20 lg:py-28 ${className ?? ""}`}
+      className={`border-y border-border/50 bg-secondary/85 py-20 lg:py-28 ${className ?? ""}`}
     >
       <div className="mx-auto max-w-3xl px-6 text-center">
         <Reveal direction="up">

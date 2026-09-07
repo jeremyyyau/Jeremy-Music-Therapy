@@ -195,7 +195,7 @@ function MusicTherapyPage() {
               </div>
             </div>
 
-            <div className="mt-8 overflow-hidden rounded-3xl border border-border/60 bg-secondary/60 shadow-sm">
+            <div className="mt-8 overflow-hidden rounded-3xl border border-border/60 bg-secondary/85 shadow-sm">
               <div className="grid grid-cols-1 md:grid-cols-[0.34fr_0.66fr]">
                 <div className="flex items-center gap-3 border-b border-border/50 p-6 md:border-b-0 md:border-r md:p-8">
                   <div className="rounded-full bg-primary/10 p-2.5">
@@ -331,7 +331,7 @@ function MusicTherapyPage() {
           </div>
 
           <Reveal>
-            <div className="mt-8 overflow-hidden rounded-3xl border border-border/60 bg-secondary/60 shadow-sm">
+            <div className="mt-8 overflow-hidden rounded-3xl border border-border/60 bg-secondary/85 shadow-sm">
               <div className="grid grid-cols-1 lg:grid-cols-[0.42fr_0.58fr]">
                 <div className="border-b border-border/50 p-6 md:p-8 lg:border-b-0 lg:border-r">
                   <div className="mb-4 inline-flex rounded-full bg-primary/10 p-3">
