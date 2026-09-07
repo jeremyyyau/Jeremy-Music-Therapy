@@ -11,7 +11,7 @@ import imgBandLab from "@/assets/res-bandlab.webp.asset.json";
 import imgBlobOpera from "@/assets/res-blobopera.webp.asset.json";
 import imgIncredibox from "@/assets/res-incredibox.webp.asset.json";
 import imgPbsKids from "@/assets/res-pbskids.webp.asset.json";
-import imgRadioGarden from "@/assets/res-radiogarden.webp.asset.json";
+import imgLevelUpMusicianship from "@/assets/res-levelupmusicianship.webp.asset.json";
 import imgMyWayTogether from "@/assets/res-mywaytogether-v2.webp.asset.json";
 
 export const Route = createFileRoute("/resources")({
