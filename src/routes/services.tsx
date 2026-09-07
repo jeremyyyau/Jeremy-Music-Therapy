@@ -172,42 +172,51 @@ function ServicesPage() {
             <h2 className="font-heading text-3xl font-semibold text-foreground md:text-4xl">What to expect</h2>
           </Reveal>
 
-          <Reveal direction="up" className="mt-8 rounded-2xl border border-border/60 bg-card p-8 shadow-sm md:p-10">
-            <ul className="space-y-6">
-              <li className="flex items-start gap-4">
-                <div className="inline-flex shrink-0 rounded-full border border-primary/20 bg-primary/10 p-2.5">
-                  <Calendar className="h-4.5 w-4.5 text-primary" />
-                </div>
-                <div>
-                  <p className="font-heading text-base font-semibold text-card-foreground">Weekly or fortnightly sessions</p>
-                  <p className="mt-1 text-sm leading-relaxed text-muted-foreground">
-                    Regular one-hour sessions, scheduled at a time that fits your routine.
-                  </p>
-                </div>
-              </li>
-              <li className="flex items-start gap-4">
-                <div className="inline-flex shrink-0 rounded-full border border-primary/20 bg-primary/10 p-2.5">
-                  <Phone className="h-4.5 w-4.5 text-primary" />
-                </div>
-                <div>
-                  <p className="font-heading text-base font-semibold text-card-foreground">Cancellations</p>
-                  <p className="mt-1 text-sm leading-relaxed text-muted-foreground">
-                    Generally 24 hours notice is appreciated, though flexibility is offered depending on circumstances.
-                  </p>
-                </div>
-              </li>
-              <li className="flex items-start gap-4">
-                <div className="inline-flex shrink-0 rounded-full border border-primary/20 bg-primary/10 p-2.5">
-                  <Receipt className="h-4.5 w-4.5 text-primary" />
-                </div>
-                <div>
-                  <p className="font-heading text-base font-semibold text-card-foreground">Fees</p>
-                  <p className="mt-1 text-sm leading-relaxed text-muted-foreground">
-                    Charged in line with the most current NDIS price guide and rates.
-                  </p>
-                </div>
-              </li>
-            </ul>
+          <Reveal
+            direction="up"
+            className="mt-8 overflow-hidden rounded-3xl border border-border/60 bg-secondary/50 shadow-sm"
+          >
+            <ol className="divide-y divide-border/50 md:grid md:grid-cols-3 md:divide-x md:divide-y-0">
+              {[
+                {
+                  icon: Calendar,
+                  label: "Session rhythm",
+                  title: "Weekly or fortnightly sessions",
+                  description: "Regular one-hour sessions, scheduled at a time that fits your routine.",
+                },
+                {
+                  icon: Phone,
+                  label: "Notice & flexibility",
+                  title: "Cancellations",
+                  description:
+                    "Generally 24 hours notice is appreciated, though flexibility is offered depending on circumstances.",
+                },
+                {
+                  icon: Receipt,
+                  label: "Funding",
+                  title: "Fees",
+                  description: "Charged in line with the most current NDIS price guide and rates.",
+                },
+              ].map((item, i) => (
+                <li key={item.title} className="group relative p-6 transition-colors duration-300 hover:bg-card/70 md:p-8">
+                  <div className="mb-5 flex items-center justify-between gap-4">
+                    <span className="text-xs font-medium uppercase tracking-widest text-primary/80">{item.label}</span>
+                    <span className="font-heading text-3xl font-semibold text-primary/15 transition-colors duration-300 group-hover:text-primary/35">
+                      {String(i + 1).padStart(2, "0")}
+                    </span>
+                  </div>
+                  <div className="flex items-start gap-4">
+                    <div className="inline-flex shrink-0 rounded-full border border-primary/20 bg-primary/10 p-2.5 transition-all duration-300 group-hover:bg-primary/25 group-hover:shadow-glow">
+                      <item.icon className="h-4.5 w-4.5 text-primary" />
+                    </div>
+                    <div>
+                      <p className="font-heading text-base font-semibold text-card-foreground">{item.title}</p>
+                      <p className="mt-1 text-sm leading-relaxed text-muted-foreground">{item.description}</p>
+                    </div>
+                  </div>
+                </li>
+              ))}
+            </ol>
           </Reveal>
         </div>
 

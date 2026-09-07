@@ -195,21 +195,23 @@ function MusicTherapyPage() {
               </div>
             </div>
 
-            <div className="mt-8 rounded-2xl border border-border/60 bg-secondary/40 p-6">
-              <div className="flex items-start gap-4">
-                <div className="mt-0.5 hidden rounded-full bg-primary/10 p-2.5 sm:block">
-                  <Target className="h-5 w-5 text-primary" />
+            <div className="mt-8 overflow-hidden rounded-3xl border border-border/60 bg-secondary/40 shadow-sm">
+              <div className="grid grid-cols-1 md:grid-cols-[0.34fr_0.66fr]">
+                <div className="flex items-center gap-3 border-b border-border/50 p-6 md:border-b-0 md:border-r md:p-8">
+                  <div className="rounded-full bg-primary/10 p-2.5">
+                    <Target className="h-5 w-5 text-primary" />
+                  </div>
+                  <h3 className="font-heading text-lg font-semibold text-foreground">
+                    What makes music therapy distinct?
+                  </h3>
                 </div>
-                <div>
-                  <h3 className="font-heading text-lg font-semibold text-foreground">What makes music therapy distinct?</h3>
-                  <p className="mt-2 text-base leading-relaxed text-muted-foreground">
-                    Music therapy can complement other allied health supports, incorporating strategies informed by
-                    speech pathology, occupational therapy and psychology where they align with assessed goals. What
-                    distinguishes it is music's unique motivational pull — its ability to capture attention, evoke
-                    emotion and make participation inherently rewarding, turning difficult or repetitive tasks into
-                    engaging, meaningful experiences.
-                  </p>
-                </div>
+                <p className="p-6 text-base leading-relaxed text-muted-foreground md:p-8">
+                  Music therapy can complement other allied health supports, incorporating strategies informed by speech
+                  pathology, occupational therapy and psychology where they align with assessed goals. What distinguishes
+                  it is music's unique motivational pull — its ability to capture attention, evoke emotion and make
+                  participation inherently rewarding, turning difficult or repetitive tasks into engaging, meaningful
+                  experiences.
+                </p>
               </div>
             </div>
 
@@ -272,77 +274,94 @@ function MusicTherapyPage() {
             </Reveal>
 
             <Reveal>
-              <div className="rounded-2xl border border-border/60 bg-card p-6 shadow-sm md:p-8">
-                <div className="mb-4 flex items-center gap-3">
-                  <div className="inline-flex rounded-xl bg-primary/10 p-3">
+              <div className="overflow-hidden rounded-3xl border border-border/60 bg-card shadow-sm">
+                <div className="flex flex-col gap-4 bg-secondary/40 p-6 md:flex-row md:items-center md:justify-between md:p-8">
+                  <div>
+                    <p className="mb-2 text-xs font-medium uppercase tracking-widest text-primary">Inclusive care</p>
+                    <h2 className="font-heading text-xl font-semibold text-foreground md:text-2xl">Who is it for?</h2>
+                  </div>
+                  <div className="inline-flex w-fit rounded-full border border-primary/20 bg-primary/10 p-3">
                     <Users className="h-5 w-5 text-primary" />
                   </div>
-                  <h2 className="font-heading text-xl font-semibold text-foreground md:text-2xl">Who is it for?</h2>
                 </div>
-                <p className="text-base leading-relaxed text-muted-foreground">
-                  Music therapy is for everyone. Eligibility is defined not by diagnosis, but by goals, strengths and
-                  challenges.
-                </p>
-                <div className="mt-5 space-y-4">
-                  <div className="rounded-xl bg-secondary/40 p-4">
-                    <h3 className="font-heading text-sm font-semibold text-foreground">For people who connect through music</h3>
-                    <p className="mt-1 text-sm text-muted-foreground">
-                      People who already use music self-therapeutically — calming music after stress, upbeat music for
-                      exercise, background music to sustain attention.
-                    </p>
+                <div className="p-6 md:p-8">
+                  <p className="text-base leading-relaxed text-muted-foreground">
+                    Music therapy is for everyone. Eligibility is defined not by diagnosis, but by goals, strengths and
+                    challenges.
+                  </p>
+                  <div className="mt-6 space-y-5">
+                    {[
+                      {
+                        title: "For people who connect through music",
+                        description:
+                          "People who already use music self-therapeutically — calming music after stress, upbeat music for exercise, background music to sustain attention.",
+                      },
+                      {
+                        title: "For people who need adapted support",
+                        description:
+                          "People who don't fit comfortably within conventional approaches, feel anxious or unmotivated in unfamiliar environments, or engage more readily when activities are creative, predictable and aligned with their interests.",
+                      },
+                      {
+                        title: "For anyone with goals or areas to work on",
+                        description:
+                          "No formal diagnosis or musical background needed — the focus is on using music to support what matters to you.",
+                      },
+                    ].map((item, i) => (
+                      <div key={item.title} className="grid grid-cols-[auto_1fr] gap-4">
+                        <div className="flex flex-col items-center">
+                          <span className="flex h-8 w-8 items-center justify-center rounded-full bg-primary/10 font-heading text-sm font-semibold text-primary">
+                            {i + 1}
+                          </span>
+                          {i < 2 ? <span className="mt-2 h-full min-h-10 w-px bg-border/70" aria-hidden /> : null}
+                        </div>
+                        <div className="pb-2">
+                          <h3 className="font-heading text-sm font-semibold text-foreground">{item.title}</h3>
+                          <p className="mt-1 text-sm leading-relaxed text-muted-foreground">{item.description}</p>
+                        </div>
+                      </div>
+                    ))}
                   </div>
-                  <div className="rounded-xl bg-primary/5 p-4">
-                    <h3 className="font-heading text-sm font-semibold text-foreground">For people who need adapted support</h3>
-                    <p className="mt-1 text-sm text-muted-foreground">
-                      People who don't fit comfortably within conventional approaches, feel anxious or unmotivated in
-                      unfamiliar environments, or engage more readily when activities are creative, predictable and
-                      aligned with their interests.
-                    </p>
-                  </div>
-                  <div className="rounded-xl bg-muted p-4">
-                    <h3 className="font-heading text-sm font-semibold text-foreground">For anyone with goals or areas to work on</h3>
-                    <p className="mt-1 text-sm text-muted-foreground">
-                      No formal diagnosis or musical background needed — the focus is on using music to support what
-                      matters to you.
-                    </p>
-                  </div>
+                  <p className="mt-5 border-t border-border/50 pt-5 text-base leading-relaxed text-muted-foreground">
+                    Meeting people within their existing strengths and interests reduces the pressure of participation —
+                    and opens genuine opportunities for connection, confidence and growth.
+                  </p>
                 </div>
-                <p className="mt-5 text-base leading-relaxed text-muted-foreground">
-                  Meeting people within their existing strengths and interests reduces the pressure of participation —
-                  and opens genuine opportunities for connection, confidence and growth.
-                </p>
               </div>
             </Reveal>
           </div>
 
           <Reveal>
-            <div className="mt-8 rounded-2xl border border-border/60 bg-secondary/40 p-6 shadow-sm md:p-8">
-              <div className="mb-4 flex items-center gap-3">
-                <div className="inline-flex rounded-xl bg-primary/10 p-3">
-                  <Clock className="h-5 w-5 text-primary" />
+            <div className="mt-8 overflow-hidden rounded-3xl border border-border/60 bg-secondary/40 shadow-sm">
+              <div className="grid grid-cols-1 lg:grid-cols-[0.42fr_0.58fr]">
+                <div className="border-b border-border/50 p-6 md:p-8 lg:border-b-0 lg:border-r">
+                  <div className="mb-4 inline-flex rounded-full bg-primary/10 p-3">
+                    <Clock className="h-5 w-5 text-primary" />
+                  </div>
+                  <h2 className="font-heading text-xl font-semibold text-foreground md:text-2xl">Progress takes time</h2>
+                  <p className="mt-4 text-base leading-relaxed text-muted-foreground">
+                    Meaningful change rarely emerges from a single session — it develops through a strong therapeutic
+                    relationship, consistent engagement and repeated practice. A first-session success is encouraging,
+                    but what matters is whether that engagement can be built upon over time.
+                  </p>
+                  <p className="mt-5 text-base leading-relaxed text-muted-foreground">
+                    If you're weighing up providers, take the time you need: an appropriate clinical match matters more
+                    than starting quickly.
+                  </p>
                 </div>
-                <h2 className="font-heading text-xl font-semibold text-foreground md:text-2xl">Progress takes time</h2>
+                <div className="p-6 md:p-8">
+                  <p className="text-sm font-medium uppercase tracking-widest text-primary/80">
+                    Small signs of progress
+                  </p>
+                  <ul className="mt-5 space-y-4">
+                    {progressSigns.map((item, i) => (
+                      <li key={i} className="flex items-start gap-3 text-sm leading-relaxed text-muted-foreground">
+                        <CheckCircle2 className="mt-0.5 h-4 w-4 shrink-0 text-primary/80" />
+                        {item}
+                      </li>
+                    ))}
+                  </ul>
+                </div>
               </div>
-              <p className="text-base leading-relaxed text-muted-foreground">
-                Meaningful change rarely emerges from a single session — it develops through a strong therapeutic
-                relationship, consistent engagement and repeated practice. A first-session success is encouraging, but
-                what matters is whether that engagement can be built upon over time.
-              </p>
-              <p className="mt-4 text-base leading-relaxed text-muted-foreground">
-                For parents and carers, progress may be seen in small, incremental changes:
-              </p>
-              <ul className="mt-4 grid grid-cols-1 gap-3 sm:grid-cols-2">
-                {progressSigns.map((item, i) => (
-                  <li key={i} className="flex items-start gap-3 text-sm leading-relaxed text-muted-foreground">
-                    <CheckCircle2 className="mt-0.5 h-4 w-4 shrink-0 text-primary/80" />
-                    {item}
-                  </li>
-                ))}
-              </ul>
-              <p className="mt-5 text-base leading-relaxed text-muted-foreground">
-                If you're weighing up providers, take the time you need: an appropriate clinical match matters more than
-                starting quickly.
-              </p>
             </div>
           </Reveal>
 

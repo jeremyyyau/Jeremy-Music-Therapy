@@ -206,12 +206,20 @@ function AboutPage() {
                     quote: "We never imagined we would have full conversations together.",
                     attribution: "Parent / Carer",
                   },
-                ].map((vignette) => (
+                ].map((vignette, i) => (
                   <div
                     key={vignette.story}
-                    className="rounded-xl border-l-2 border-primary/40 bg-secondary/40 px-5 py-4"
+                    className="group relative overflow-hidden rounded-2xl border border-border/60 bg-secondary/40 px-5 py-5 shadow-sm transition-all duration-300 hover:border-primary hover:bg-card/80 hover:shadow-card-hover sm:px-6"
                   >
-                    <p className="text-sm italic leading-relaxed text-muted-foreground">{vignette.story}</p>
+                    <span
+                      aria-hidden
+                      className="absolute right-5 top-4 font-heading text-4xl font-semibold text-primary/10 transition-colors duration-300 group-hover:text-primary/25"
+                    >
+                      {String(i + 1).padStart(2, "0")}
+                    </span>
+                    <div className="relative max-w-3xl">
+                      <p className="text-sm italic leading-relaxed text-muted-foreground">{vignette.story}</p>
+                    </div>
                     <div className="mt-3 flex items-center gap-2 border-t border-border/40 pt-3">
                       <span aria-hidden className="text-lg leading-none text-primary/60">
                         “
