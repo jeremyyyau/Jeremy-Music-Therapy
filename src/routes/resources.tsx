@@ -28,7 +28,7 @@ export const Route = createFileRoute("/resources")({
 });
 
 const resources = [
-  { label: "Suno", url: "#", description: "Generate songs from simple text prompts." },
+  { label: "Suno", url: "www.suno.com", description: "Generate songs from simple text prompts." },
   { label: "Chrome Music Lab", url: "#", description: "Playful experiments in rhythm, melody and sound." },
   { label: "BandLab", url: "#", description: "Create and share music in a free online studio." },
   { label: "Blob Opera", url: "#", description: "Guide singing blobs through harmonies and melodies." },
