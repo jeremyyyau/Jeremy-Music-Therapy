@@ -235,7 +235,7 @@ function Index() {
               },
               {
                 icon: Armchair,
-                title: "Clinic Visits — Picnic Point",
+                title: "Home Clinic — Picnic Point",
                 description:
                   "A calm, purpose-equipped therapy room with fewer distractions and wider array of instruments.",
               },
@@ -311,9 +311,9 @@ function Index() {
                   "One therapist, no handovers — consistent goals and a therapy plan that deepens over time.",
               },
               {
-                title: "Flexible & responsive",
+                title: "Flexible and responsive",
                 description:
-                  "Direct communication, adaptable scheduling and minimal administrative or strict policies.",
+                  "Direct communication, adaptable scheduling and minimal administrative or policy overhead.",
               },
               {
                 title: "Family at the centre",
