@@ -118,6 +118,13 @@ function ResourcesPage() {
               you care for, I'd love to hear about it. Your suggestion might become a meaningful bridge for another
               client, another family, or another moment of connection.
             </p>
+            <div className="mt-6">
+              <Button asChild variant="outline" className="rounded-full">
+                <Link to="/" hash="contact">
+                  Send me a resource
+                </Link>
+              </Button>
+            </div>
           </Reveal>
         </div>
       </section>
