@@ -174,7 +174,7 @@ function ServicesPage() {
 
           <Reveal
             direction="up"
-            className="mt-8 overflow-hidden rounded-3xl border border-border/60 bg-secondary/50 shadow-sm"
+            className="mt-8 overflow-hidden rounded-3xl border border-border/60 bg-secondary/65 shadow-sm"
           >
             <ol className="divide-y divide-border/50 md:grid md:grid-cols-3 md:divide-x md:divide-y-0">
               {[
@@ -198,7 +198,7 @@ function ServicesPage() {
                   description: "Charged in line with the most current NDIS price guide and rates.",
                 },
               ].map((item, i) => (
-                <li key={item.title} className="group relative p-6 transition-colors duration-300 hover:bg-card/70 md:p-8">
+                <li key={item.title} className="group relative p-6 transition-colors duration-300 hover:bg-card/85 md:p-8">
                   <div className="mb-5 flex items-center justify-between gap-4">
                     <span className="text-xs font-medium uppercase tracking-widest text-primary/80">{item.label}</span>
                     <span className="font-heading text-3xl font-semibold text-primary/15 transition-colors duration-300 group-hover:text-primary/35">
@@ -280,7 +280,7 @@ function ServicesPage() {
             ))}
           </div>
 
-          <Reveal className="mt-12 rounded-3xl border border-border/60 bg-secondary/70 p-8 md:p-10">
+          <Reveal className="mt-12 rounded-3xl border border-border/60 bg-secondary/85 p-8 md:p-10">
             <h2 className="font-heading text-2xl font-semibold text-foreground md:text-3xl">Finding the right fit</h2>
             <p className="mt-4 text-base italic leading-relaxed text-muted-foreground">
               There is no single approach that suits everyone. Take the time to explore your options — not only the

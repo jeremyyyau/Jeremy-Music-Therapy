@@ -209,7 +209,7 @@ function AboutPage() {
                 ].map((vignette, i) => (
                   <div
                     key={vignette.story}
-                    className="group relative overflow-hidden rounded-2xl border border-border/60 bg-secondary/40 px-5 py-5 shadow-sm transition-all duration-300 hover:border-primary hover:bg-card/80 hover:shadow-card-hover sm:px-6"
+                    className="group relative overflow-hidden rounded-2xl border border-border/60 bg-secondary/60 px-5 py-5 shadow-sm transition-all duration-300 hover:border-primary hover:bg-card/95 hover:shadow-card-hover sm:px-6"
                   >
                     <span
                       aria-hidden
@@ -256,7 +256,7 @@ function AboutPage() {
                 {instruments.map((inst) => (
                   <li
                     key={inst.name}
-                    className="group flex flex-col items-center gap-2.5 rounded-2xl border border-border/60 bg-secondary/80 px-4 py-5 text-center transition-all duration-300 hover:border-primary hover:bg-secondary hover:shadow-card-hover"
+                    className="group flex flex-col items-center gap-2.5 rounded-2xl border border-border/60 bg-secondary/95 px-4 py-5 text-center transition-all duration-300 hover:border-primary hover:bg-secondary hover:shadow-card-hover"
                   >
                     <span className="flex h-11 w-11 items-center justify-center rounded-full bg-primary/10 text-primary transition-all duration-300 group-hover:scale-110 group-hover:bg-primary/20">
                       <inst.icon className="h-5 w-5" aria-hidden />
