@@ -125,15 +125,15 @@ function AboutPage() {
               </h2>
               <div className="mt-4 space-y-4 text-base leading-relaxed text-muted-foreground">
                 <p>
-                  My path into music therapy began long before university. My godfather, a music therapy lecturer at
-                  New York University, taught me that music belongs to everyone — that nobody should feel judged for
+                  My path into music therapy began long before university. My godfather, a music therapy lecturer at New
+                  York University, taught me that music belongs to everyone — that nobody should feel judged for
                   expressing themselves through it. That principle still underpins how I practise.
                 </p>
                 <p>
                   Rather than specialising early, I practised across as many clinical populations as I could. That
-                  transdisciplinary grounding shaped a resource-oriented approach: a wide repertoire of evidence-informed
-                  interventions, matched to each person's presentation, capacity and preference, and adjusted through
-                  ongoing clinical review.
+                  transdisciplinary grounding shaped a resource-oriented approach: a wide repertoire of
+                  evidence-informed interventions, matched to each person's presentation, capacity and preference, and
+                  adjusted through ongoing clinical review.
                 </p>
               </div>
             </Reveal>
@@ -287,7 +287,10 @@ function AboutPage() {
         </div>
       </section>
 
-      <QuoteBand quote="Where words fail, music speaks." author="Hans Christian Andersen" />
+      <QuoteBand
+        quote="Music therapy, to me, is music performance without the ego. It’s not about entertainment as much as it’s about empathizing."
+        author="Jodi Picoult"
+      />
     </SitePage>
   );
 }
