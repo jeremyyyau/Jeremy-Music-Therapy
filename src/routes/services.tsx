@@ -195,7 +195,7 @@ function ServicesPage() {
                   icon: Receipt,
                   label: "Funding",
                   title: "Fees",
-                  description: "Charged in line with the most current NDIS price guide and rates.",
+                  description: "Sessions are charged in line with the most current NDIS price guide and rates.",
                 },
               ].map((item, i) => (
                 <li
