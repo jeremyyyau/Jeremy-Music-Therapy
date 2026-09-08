@@ -301,14 +301,7 @@ function MusicTherapyPage() {
                           "Regardless of diagnosis or musical background — the focus is on exploring music to foster important skills and outcomes to improve quality of life.",
                       },
                     ].map((item, i) => (
-                      <div
-                        key={item.title}
-                        className={cn(
-                          "flex flex-col",
-                          i === 1 && "lg:mt-8",
-                          i === 2 && "lg:mt-16"
-                        )}
-                      >
+                      <div key={item.title} className="flex flex-col">
                         <div className="flex items-start gap-3">
                           <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-primary/10 font-heading text-sm font-semibold text-primary">
                             {i + 1}
