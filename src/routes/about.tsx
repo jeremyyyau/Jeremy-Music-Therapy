@@ -34,7 +34,7 @@ const credentials = [
   "Bachelor of Music (Performance) — University of Melbourne",
   "Registered Music Therapist (RMT)",
   "Over 8 years of clinical experience",
-  "Clinical placement supervisor for music therapy students at Western Sydney University and the University of Melbourne",
+  "Clinical placement supervisor for students",
 ];
 
 const experience = [
