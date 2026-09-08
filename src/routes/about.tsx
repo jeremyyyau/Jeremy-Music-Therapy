@@ -163,7 +163,7 @@ function AboutPage() {
                   expressing themselves through it. That principle still underpins how I practise.
                 </p>
                 <p>
-                  Rather than specialising early, I practised across as many clinical populations as I could. That
+                  Rather than specialising early, I worked across as many clinical populations as I could. That
                   transdisciplinary grounding shaped a resource-oriented approach: a wide repertoire of
                   evidence-informed interventions, matched to each person’s presentation, capacity and preference, and
                   adjusted through ongoing clinical review.
