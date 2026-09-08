@@ -105,7 +105,7 @@ function MusicTherapyPage() {
             <p className="mt-6 text-lg leading-relaxed text-muted-foreground">
               Music therapy is a clinical, evidence-based allied health discipline in which a Registered Music Therapist
               (RMT) uses music-based interventions to address non-musical goals — emotional, cognitive, communication,
-              physical and social — through structured, intentional therapy practice grounded in therapeutic connection.
+              physical and social — through structured, intentional approaches grounded in therapeutic connection.
             </p>
           </Reveal>
         </div>
