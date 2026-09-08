@@ -51,7 +51,7 @@ const services = [
     title: "Telehealth",
     who: "Older children and adults, including clients in rural and remote areas.",
     description:
-      "Online delivery where distance, physical access or social anxiety make in-person attendance difficult — a clinically appropriate mode of delivery in its own right.",
+      "Online delivery where distance, physical access or social anxiety make in-person attendance difficult — a clinically appropriate mode of delivery that utilizes technology collaboratively with music.",
     format: "Individual • Weekly or fortnightly • Video call",
   },
   {
