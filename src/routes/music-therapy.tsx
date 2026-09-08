@@ -46,7 +46,8 @@ const benefits = [
     icon: Brain,
     title: "Cognition & memory",
     description:
-      "Familiar and preferred music engages widely distributed memory networks, supporting attention, orientation and autobiographical recall in dementia care.",
+      "Familiar and preferred music can support memory, attention and learning by engaging multiple areas of the brain. 
+      Through meaningful musical experiences, music therapy can help strengthen cognitive skills such as concentration, recall, processing and problem-solving.",
   },
   {
     icon: Calendar,
