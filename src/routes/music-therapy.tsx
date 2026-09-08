@@ -211,8 +211,10 @@ function MusicTherapyPage() {
                 </div>
                 <p className="p-6 text-base leading-relaxed text-muted-foreground md:p-8">
                   Music therapy can complement other allied health supports, incorporating strategies informed by speech
-                  pathology, occupational therapy and psychology where they align with assessed goals. What
-                  distinguishes it is music’s unique motivational pull — its ability to capture attention, evoke emotion
+                  pathology, occupational therapy and psychology where they align with assessed goals. 
+                   </p>
+                    <p
+                What distinguishes it is music’s unique motivational pull — its ability to capture attention, evoke emotion
                   and make participation inherently rewarding, turning difficult or repetitive tasks into engaging,
                   meaningful experiences.
                 </p>
