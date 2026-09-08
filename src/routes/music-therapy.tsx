@@ -310,7 +310,7 @@ function MusicTherapyPage() {
                       {
                         title: "For anyone with goals or areas to work on",
                         description:
-                          "Regardless of diagnosis or musical background — the focus is to explore music in an enjoyable, accessible, and meaningful way to foster important skills, support individual goals, build confidence and connection, and create opportunities for positive change that can enhance everyday participation and quality of life.",
+                          "Regardless of diagnosis or musical background — the focus is to explore music in an enjoyable, accessible, and meaningful way to foster important skills, support individual goals, and create opportunities for positive change that can enhance everyday participation and quality of life.",
                       },
                     ].map((item, i) => (
                       <div key={item.title} className="flex flex-col">
@@ -360,7 +360,8 @@ function MusicTherapyPage() {
                     Small signs of progress
                   </h2>
                   <p className="mt-4 text-base leading-relaxed text-muted-foreground">
-                    Progress in music therapy is often gradual and shows up first in small, everyday moments — a little more engagement, a little more trust, a little more willingness to try.
+                    Progress in music therapy is often gradual and shows up first in small, everyday moments — a little
+                    more engagement, a little more trust, a little more willingness to try.
                   </p>
                   <ul className="mt-5 space-y-4">
                     {progressSigns.map((item, i) => (
