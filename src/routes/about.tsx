@@ -188,8 +188,9 @@ function AboutPage() {
             <Reveal>
               <h2 className="font-heading text-2xl font-semibold text-foreground md:text-3xl">Breadth of experience</h2>
               <p className="mt-4 text-base leading-relaxed text-muted-foreground">
-                A wide range of settings means interventions are chosen for the person in front of me, not applied from
-                a single fixed method.
+                My experience across diverse settings allows me to work with a wide range of clients and therapeutic
+                goals. I draw on a broad range of skills and approaches to create personalised music therapy that is
+                responsive to each person’s unique needs, strengths and interests.
               </p>
 
               <div className="mt-8 grid grid-cols-1 gap-6 md:grid-cols-2">
