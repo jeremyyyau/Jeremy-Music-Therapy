@@ -356,8 +356,11 @@ function MusicTherapyPage() {
                   <div className="mb-4 inline-flex rounded-full bg-primary/10 p-3">
                     <TrendingUp className="h-5 w-5 text-primary" />
                   </div>
-                  <p className="text-sm font-medium uppercase tracking-widest text-primary/80">
+                  <h2 className="font-heading text-xl font-semibold text-foreground md:text-2xl">
                     Small signs of progress
+                  </h2>
+                  <p className="mt-4 text-base leading-relaxed text-muted-foreground">
+                    Progress in music therapy is often gradual and shows up first in small, everyday moments — a little more engagement, a little more trust, a little more willingness to try.
                   </p>
                   <ul className="mt-5 space-y-4">
                     {progressSigns.map((item, i) => (
