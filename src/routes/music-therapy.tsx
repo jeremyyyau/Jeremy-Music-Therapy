@@ -104,6 +104,8 @@ const progressSigns = [
   "Being more willing to engage",
   "Tolerating new experiences",
   "Sustaining participation for longer",
+  "Trying new ways to communicate or interact",
+  "Showing more confidence in musical choices",
   "Gradually working towards specific therapeutic goals",
 ];
 
@@ -356,14 +358,10 @@ function MusicTherapyPage() {
                   <div className="mb-4 inline-flex rounded-full bg-primary/10 p-3">
                     <TrendingUp className="h-5 w-5 text-primary" />
                   </div>
-                  <h2 className="font-heading text-xl font-semibold text-foreground md:text-2xl">
+                  <p className="text-sm font-medium uppercase tracking-widest text-primary/80">
                     Small signs of progress
-                  </h2>
-                  <p className="mt-4 text-base leading-relaxed text-muted-foreground">
-                    Progress in music therapy is often gradual and shows up first in small, everyday moments — a little
-                    more engagement, a little more trust, a little more willingness to try.
                   </p>
-                  <ul className="mt-5 space-y-4">
+                  <ul className="mt-5 space-y-5">
                     {progressSigns.map((item, i) => (
                       <li key={i} className="flex items-start gap-3 text-sm leading-relaxed text-muted-foreground">
                         <CheckCircle2 className="mt-0.5 h-4 w-4 shrink-0 text-primary/80" />
