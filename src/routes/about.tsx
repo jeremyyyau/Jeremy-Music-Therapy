@@ -43,17 +43,17 @@ const experience = [
   {
     title: "Hospital & mental health",
     description:
-      "Holistic mental health teams in hospital settings, including transdisciplinary learning and collaborative care planning.",
+      "Holistic mental health teams in hospital settings, including transdisciplinary learning and collaborative care planning with psychiatrists, psychologists, counsellors, nurses, and other hospital staff.",
   },
   {
     title: "Multidisciplinary teams",
     description:
-      "Working alongside speech pathology and occupational therapy so goals are shared, reinforced and genuinely integrated.",
+      "Working alongside speech pathology and occupational therapy, ensuring goals are shared, reinforced and genuinely integrated.",
   },
   {
     title: "Community & disability",
     description:
-      "Extensive community practice with children and adults with disability, neuro-developmental conditions and acquired brain injuries.",
+      "Extensive community practice with children and adults with disability, neuro-developmental conditions and acquired brain injuries — adapted to home and daily environments to target real-world outcomes.",
   },
   {
     title: "Telehealth",
@@ -63,11 +63,12 @@ const experience = [
   {
     title: "Group programs",
     description:
-      "Day programs, aged care and childcare settings — including performance elements and opportunities for music learning and engagement.",
+      "Day programs, aged care and childcare settings — including performance elements and opportunities for music learning and social skill development.",
   },
   {
     title: "Across the lifespan",
-    description: "Children, adults and older people in schools, aged care, palliative care and community services.",
+    description:
+      "Working with children, adults and older people across a range of settings, including schools, aged care, palliative care and community services.",
   },
 ];
 
