@@ -282,7 +282,7 @@ function MusicTherapyPage() {
                     Music therapy is for everyone. Eligibility is defined not by diagnosis, but by goals, strengths and
                     challenges.
                   </p>
-                  <div className="mt-6 space-y-5">
+                  <div className="mt-6 grid grid-cols-1 gap-6 md:gap-8 lg:grid-cols-3 lg:gap-6">
                     {[
                       {
                         title: "For people who connect through music",
@@ -300,17 +300,14 @@ function MusicTherapyPage() {
                           "Regardless of diagnosis or musical background — the focus is on exploring music to foster important skills and outcomes to improve quality of life.",
                       },
                     ].map((item, i) => (
-                      <div key={item.title} className="grid grid-cols-[auto_1fr] gap-4">
-                        <div className="flex flex-col items-center">
-                          <span className="flex h-8 w-8 items-center justify-center rounded-full bg-primary/10 font-heading text-sm font-semibold text-primary">
+                      <div key={item.title} className="flex flex-col">
+                        <div className="flex items-start gap-3">
+                          <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-primary/10 font-heading text-sm font-semibold text-primary">
                             {i + 1}
                           </span>
-                          {i < 2 ? <span className="mt-2 h-full min-h-10 w-px bg-border/70" aria-hidden /> : null}
+                          <h3 className="font-heading text-sm font-semibold leading-tight text-foreground">{item.title}</h3>
                         </div>
-                        <div className="pb-2">
-                          <h3 className="font-heading text-sm font-semibold text-foreground">{item.title}</h3>
-                          <p className="mt-1 text-sm leading-relaxed text-muted-foreground">{item.description}</p>
-                        </div>
+                        <p className="mt-3 text-sm leading-relaxed text-muted-foreground">{item.description}</p>
                       </div>
                     ))}
                   </div>
