@@ -1,5 +1,18 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
-import { Heart, Users, Calendar, Brain, Sparkles, Music, Mic2, Ear, Target, Clock, CheckCircle2, TrendingUp } from "lucide-react";
+import {
+  Heart,
+  Users,
+  Calendar,
+  Brain,
+  Sparkles,
+  Music,
+  Mic2,
+  Ear,
+  Target,
+  Clock,
+  CheckCircle2,
+  TrendingUp,
+} from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { SitePage } from "@/components/site-chrome";
 import { Reveal } from "@/components/reveal";
@@ -297,7 +310,7 @@ function MusicTherapyPage() {
                       {
                         title: "For anyone with goals or areas to work on",
                         description:
-                          "Regardless of diagnosis or musical background — the focus is on exploring music to foster important skills and outcomes to improve quality of life.",
+                          "Regardless of diagnosis or musical background — the focus is to explore music in an enjoyable, accessible, and meaningful way to foster important skills, support individual goals, build confidence and connection, and create opportunities for positive change that can enhance everyday participation and quality of life.",
                       },
                     ].map((item, i) => (
                       <div key={item.title} className="flex flex-col">
@@ -305,7 +318,9 @@ function MusicTherapyPage() {
                           <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-primary/10 font-heading text-sm font-semibold text-primary">
                             {i + 1}
                           </span>
-                          <h3 className="font-heading text-sm font-semibold leading-tight text-foreground">{item.title}</h3>
+                          <h3 className="font-heading text-sm font-semibold leading-tight text-foreground">
+                            {item.title}
+                          </h3>
                         </div>
                         <p className="mt-3 text-sm leading-relaxed text-muted-foreground">{item.description}</p>
                       </div>
