@@ -59,7 +59,7 @@ const benefits = [
     icon: Brain,
     title: "Cognition & memory",
     description:
-      "Familiar and preferred music can support memory, attention and learning by engaging multiple areas of the brain, as well as strengthen cognitive skills such as concentration, recall, processing and problem-solving.",
+      "Familiar and structured tunes can support memory, attention and learning by engaging multiple areas of the brain, as well as strengthen  skills such as information processing and problem-solving.",
   },
   {
     icon: Calendar,
@@ -221,7 +221,6 @@ function MusicTherapyPage() {
                   </p>
                 </div>
               </div>
-
             </div>
 
             <p className="mx-auto mt-8 max-w-4xl text-base leading-relaxed text-muted-foreground">
