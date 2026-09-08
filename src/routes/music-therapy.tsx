@@ -209,16 +209,19 @@ function MusicTherapyPage() {
                     What makes music therapy distinct?
                   </h3>
                 </div>
-                <p className="p-6 text-base leading-relaxed text-muted-foreground md:p-8">
-                  Music therapy can complement other allied health supports, incorporating strategies informed by speech
-                  pathology, occupational therapy and psychology where they align with assessed goals. 
-                   </p>
-                    <p
-                What distinguishes it is music’s unique motivational pull — its ability to capture attention, evoke emotion
-                  and make participation inherently rewarding, turning difficult or repetitive tasks into engaging,
-                  meaningful experiences.
-                </p>
+                <div className="p-6 md:p-8">
+                  <p className="text-base leading-relaxed text-muted-foreground">
+                    Music therapy can complement other allied health supports, incorporating strategies informed by
+                    speech pathology, occupational therapy and psychology where they align with assessed goals.
+                  </p>
+                  <p className="mt-4 text-base leading-relaxed text-muted-foreground">
+                    What distinguishes it is music’s unique motivational pull — its ability to capture attention, evoke
+                    emotion and make participation inherently rewarding, turning difficult or repetitive tasks into
+                    engaging, meaningful experiences.
+                  </p>
+                </div>
               </div>
+
             </div>
 
             <p className="mx-auto mt-8 max-w-4xl text-base leading-relaxed text-muted-foreground">
