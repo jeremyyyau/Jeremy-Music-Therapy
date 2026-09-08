@@ -74,6 +74,7 @@ const activeInterventions = [
   "Soundtrack creation",
   "Therapeutic singing",
   "Instrumental play",
+  "And more…",
 ];
 
 const receptiveInterventions = [
@@ -81,6 +82,7 @@ const receptiveInterventions = [
   "Song lyric analysis",
   "Playlist creation",
   "Music-assisted relaxation",
+  "And more…",
 ];
 
 const progressSigns = [
