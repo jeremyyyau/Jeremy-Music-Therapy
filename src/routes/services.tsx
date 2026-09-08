@@ -84,7 +84,7 @@ const moreThanMusic = [
   {
     title: "Continuity of care",
     description:
-      "Working with one clinician means no handovers, consistent goals and a therapeutic relationship that deepens over time — a known contributor to outcomes.",
+      "Working with one clinician means no handovers, consistent goals and a therapeutic relationship that deepens over time — a crucial aspect of achieving positive outcomes.",
   },
   {
     title: "Flexible and responsive",
@@ -94,12 +94,12 @@ const moreThanMusic = [
   {
     title: "Family at the centre",
     description:
-      "Parents and carers are key informants. Your observations inform assessment and goal setting, and the wellbeing of everyone involved is part of the picture.",
+      "Parents and carers are key informants, with observations informing assessment and goal setting, and the wellbeing of everyone involved is part of the picture.",
   },
   {
     title: "Outcomes, broadly measured",
     description:
-      "Confidence, connection, participation, self-expression and quality of life tracked alongside clinical goals, not instead of them.",
+      "Confidence, connection, participation, self-expression and enjoyment tracked alongside clinical goals, promoting a holistic growth that supports each individual as a whole.",
   },
 ];
 
