@@ -56,7 +56,7 @@ const experience = [
   {
     title: "Telehealth",
     description:
-      "Sessions for rural areas, adults with disability, and clients for whom physical or social challenges make telehealth the better fit.",
+      "Running sessions on a virtual medium, developing approaches to maximise engagement, as well as online resources to enhance therapeutic approaches both on and off screen",
   },
   {
     title: "Group programs",
