@@ -294,7 +294,7 @@ function AboutPage() {
               </ul>
               <p className="mt-6 text-base leading-relaxed text-muted-foreground">
                 Above all, I aim to create a welcoming space where people feel safe to connect, express themselves, and
-                discover what’s possible through music.
+                discover what’s possible through the power of music.
               </p>
             </Reveal>
           </div>
