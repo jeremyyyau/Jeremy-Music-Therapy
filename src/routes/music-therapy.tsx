@@ -1,5 +1,5 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
-import { Heart, Users, Calendar, Brain, Sparkles, Music, Mic2, Ear, Target, Clock, CheckCircle2 } from "lucide-react";
+import { Heart, Users, Calendar, Brain, Sparkles, Music, Mic2, Ear, Target, Clock, CheckCircle2, TrendingUp } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { SitePage } from "@/components/site-chrome";
 import { Reveal } from "@/components/reveal";
@@ -342,6 +342,9 @@ function MusicTherapyPage() {
                   </p>
                 </div>
                 <div className="p-6 md:p-8">
+                  <div className="mb-4 inline-flex rounded-full bg-primary/10 p-3">
+                    <TrendingUp className="h-5 w-5 text-primary" />
+                  </div>
                   <p className="text-sm font-medium uppercase tracking-widest text-primary/80">
                     Small signs of progress
                   </p>
