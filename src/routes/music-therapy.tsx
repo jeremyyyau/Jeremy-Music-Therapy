@@ -1,17 +1,5 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
-import {
-  Heart,
-  Users,
-  Calendar,
-  Brain,
-  Sparkles,
-  Music,
-  Mic2,
-  Ear,
-  Target,
-  Clock,
-  CheckCircle2,
-} from "lucide-react";
+import { Heart, Users, Calendar, Brain, Sparkles, Music, Mic2, Ear, Target, Clock, CheckCircle2 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { SitePage } from "@/components/site-chrome";
 import { Reveal } from "@/components/reveal";
@@ -95,7 +83,6 @@ const receptiveInterventions = [
   "Music-assisted relaxation",
 ];
 
-
 const progressSigns = [
   "Becoming more comfortable with the therapist",
   "Developing trust and rapport",
@@ -118,7 +105,7 @@ function MusicTherapyPage() {
             <p className="mt-6 text-lg leading-relaxed text-muted-foreground">
               Music therapy is a clinical, evidence-based allied health discipline in which a Registered Music Therapist
               (RMT) uses music-based interventions to address non-musical goals — emotional, cognitive, communication,
-              physical and social — through structured, intentional practice grounded in therapeutic connection.
+              physical and social — through structured, intentional therapy practice grounded in therapeutic connection.
             </p>
           </Reveal>
         </div>
@@ -207,10 +194,10 @@ function MusicTherapyPage() {
                 </div>
                 <p className="p-6 text-base leading-relaxed text-muted-foreground md:p-8">
                   Music therapy can complement other allied health supports, incorporating strategies informed by speech
-                  pathology, occupational therapy and psychology where they align with assessed goals. What distinguishes
-                  it is music’s unique motivational pull — its ability to capture attention, evoke emotion and make
-                  participation inherently rewarding, turning difficult or repetitive tasks into engaging, meaningful
-                  experiences.
+                  pathology, occupational therapy and psychology where they align with assessed goals. What
+                  distinguishes it is music’s unique motivational pull — its ability to capture attention, evoke emotion
+                  and make participation inherently rewarding, turning difficult or repetitive tasks into engaging,
+                  meaningful experiences.
                 </p>
               </div>
             </div>
@@ -266,10 +253,14 @@ function MusicTherapyPage() {
                 How is it different from a music lesson?
               </h2>
               <p className="mt-4 text-base leading-relaxed text-muted-foreground">
-                A music lesson teaches musical skills, technique, performance and repertoire. Music therapy uses music as a way of supporting broader goals, and there is no expectation to become a musician, perform or be graded.
+                A music lesson teaches musical skills, technique, performance and repertoire. Music therapy uses music
+                as a way of supporting broader goals, and there is no expectation to become a musician, perform or be
+                graded.
               </p>
               <p className="mt-4 text-base leading-relaxed text-muted-foreground">
-                Music can still be taught as part of therapy when learning an instrument supports a person’s goals — building attention, coordination, planning, impulse control and emotional regulation. The focus, however, is not on becoming a better musician, but on what music can help make possible.
+                Music can still be taught as part of therapy when learning an instrument supports a person’s goals —
+                building attention, coordination, planning, impulse control and emotional regulation. The focus,
+                however, is not on becoming a better musician, but on what music can help make possible.
               </p>
             </Reveal>
 
@@ -337,7 +328,9 @@ function MusicTherapyPage() {
                   <div className="mb-4 inline-flex rounded-full bg-primary/10 p-3">
                     <Clock className="h-5 w-5 text-primary" />
                   </div>
-                  <h2 className="font-heading text-xl font-semibold text-foreground md:text-2xl">Progress takes time</h2>
+                  <h2 className="font-heading text-xl font-semibold text-foreground md:text-2xl">
+                    Progress takes time
+                  </h2>
                   <p className="mt-4 text-base leading-relaxed text-muted-foreground">
                     Meaningful change rarely emerges from a single session — it develops through a strong therapeutic
                     relationship, consistent engagement and repeated practice. A first-session success is encouraging,
