@@ -4,6 +4,7 @@ import { Button } from "@/components/ui/button";
 import { SitePage } from "@/components/site-chrome";
 import { Reveal } from "@/components/reveal";
 import { QuoteBand } from "@/components/quote-band";
+import { cn } from "@/lib/utils";
 
 import { mtFamilyImage, mtKeyboardImage, SIZES_CONTENT } from "@/lib/images";
 
