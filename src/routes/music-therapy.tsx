@@ -311,10 +311,6 @@ function MusicTherapyPage() {
                       </div>
                     ))}
                   </div>
-                  <p className="mt-5 border-t border-border/50 pt-5 text-base leading-relaxed text-muted-foreground">
-                    Meeting people within their existing strengths and interests reduces the pressure of participation —
-                    and opens genuine opportunities for connection, confidence and growth.
-                  </p>
                 </div>
               </div>
             </Reveal>
