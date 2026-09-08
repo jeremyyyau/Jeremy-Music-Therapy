@@ -35,6 +35,8 @@ const credentials = [
   "Registered Music Therapist (RMT)",
   "Over 8 years of clinical experience",
   "Clinical placement supervisor for students",
+  "Therapy Assistant contributing to a research project focused on developing an accessible music program",
+  "Songwriter for a music-based early learning app",
 ];
 
 const experience = [
