@@ -287,17 +287,17 @@ function MusicTherapyPage() {
                       {
                         title: "For people who connect through music",
                         description:
-                          "People who already use music self-therapeutically — calming music after stress, upbeat music for exercise, background music to sustain attention.",
+                          "People of all ages who are motivated by music — including children who enjoy singing, dancing, playing instruments, or listening to their favourite songs, as well as older children and adults who may use music to support their mood, relaxation, exercise, focus, or everyday wellbeing.",
                       },
                       {
-                        title: "For people who need adapted support",
+                        title: "For people who want adapted support",
                         description:
-                          "People who don’t fit comfortably within conventional approaches, feel anxious or unmotivated in unfamiliar environments, or engage more readily when activities are creative, predictable and aligned with their interests.",
+                          "People who don’t fit comfortably within conventional approaches and are looking for support that feels more personalised, engaging, and suited to the way they learn and participate, or who respond more readily to creative yet predictable processes.",
                       },
                       {
                         title: "For anyone with goals or areas to work on",
                         description:
-                          "No formal diagnosis or musical background needed — the focus is on using music to support what matters to you.",
+                          "Regardless of diagnosis or musical background — the focus is on exploring music to foster important skills and outcomes to improve quality of life.",
                       },
                     ].map((item, i) => (
                       <div key={item.title} className="grid grid-cols-[auto_1fr] gap-4">
@@ -339,8 +339,9 @@ function MusicTherapyPage() {
                     but what matters is whether that engagement can be built upon over time.
                   </p>
                   <p className="mt-5 text-base leading-relaxed text-muted-foreground">
-                    If you’re weighing up providers, take the time you need: an appropriate clinical match matters more
-                    than starting quickly.
+                    If you’re weighing up providers, take the time you need to look for consistent, concrete signs of
+                    progress over several weeks — finding the right clinical fit is key to supporting meaningful
+                    progress.
                   </p>
                 </div>
                 <div className="p-6 md:p-8">
