@@ -98,7 +98,7 @@ const vignettes = [
   },
   {
     story:
-      "A child introduced to me by his parents as “non-verbal” but loved animal sounds and songs, developed communication in full sentences over two years.",
+      "A child was introduced to me by his parents as “non-verbal” but loved making animal sounds. After two years, his communication progressed to full sentences.",
     quote: "We used to cry and pray he would be able to talk, now sometimes we just wish he would stop talking!",
     attribution: "Parent / Carer",
   },
