@@ -137,7 +137,7 @@ function AboutPage() {
         scrollPosRef.current += speed;
         const half = container.scrollWidth / 2;
         if (scrollPosRef.current >= half) {
-          scrollPosRef.current = 0;
+          scrollPosRef.current -= half;
         }
         container.scrollLeft = scrollPosRef.current;
       }
@@ -157,6 +157,12 @@ function AboutPage() {
       isTouchedRef.current = false;
     };
     const onScroll = () => {
+      const half = container.scrollWidth / 2;
+      if (container.scrollLeft >= half) {
+        container.scrollLeft -= half;
+      } else if (container.scrollLeft <= 0 && half > 0) {
+        container.scrollLeft += half;
+      }
       scrollPosRef.current = container.scrollLeft;
     };
 
