@@ -41,6 +41,7 @@ export const Route = createFileRoute("/")({
       },
     ],
     links: [
+      { rel: "canonical", href: "https://harmony-connect-folio.lovable.app/" },
       {
         rel: "preload",
         as: "image",
