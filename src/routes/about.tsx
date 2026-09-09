@@ -207,8 +207,7 @@ function AboutPage() {
             <p className="mt-6 text-lg leading-relaxed text-muted-foreground">
               I’m a Registered Music Therapist (RMT) with a Master of Music Therapy from the University of Melbourne and
               over eight years of clinical practice across hospital, education, disability, aged care, mental health,
-              palliative care and community settings — experience that shaped the flexible, person-centred,
-              evidence-based approach I bring to every therapeutic relationship.
+              palliative care and community settings.
             </p>
           </Reveal>
 
