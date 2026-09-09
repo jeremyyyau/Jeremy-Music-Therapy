@@ -215,7 +215,7 @@ function ServicesPage() {
                   className="group relative flex h-full flex-col p-6 transition-colors duration-300 hover:bg-card/85 md:p-8"
                 >
                   <div className="mb-5 flex items-center justify-between gap-4">
-                    <span className="text-xs font-medium uppercase tracking-widest text-primary/80">{item.label}</span>
+                    <span className="whitespace-nowrap text-xs font-medium uppercase tracking-widest text-primary/80">{item.label}</span>
                     <span className="font-heading text-3xl font-semibold text-primary/15 transition-colors duration-300 group-hover:text-primary/35">
                       {String(i + 1).padStart(2, "0")}
                     </span>
