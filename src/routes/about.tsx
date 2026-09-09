@@ -104,9 +104,9 @@ const vignettes = [
   },
   {
     story:
-      "A young adult in a mental health unit began writing lyrics as a way to name feelings that had always felt too big to say out loud.",
+      "I was able to have a meaningful conversation with an adolescent boy after years of sessions in school, where he committed to pursuing rap and music as a career",
     quote: "For the first time, I feel like I have a voice that matters.",
-    attribution: "Client / Mental health",
+    attribution: "CLIENT",
   },
   {
     story:
