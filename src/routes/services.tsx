@@ -51,7 +51,7 @@ const services = [
     title: "Telehealth",
     who: "Older children and adults, including clients in rural and remote areas.",
     description:
-      "Online delivery where distance, physical access or social anxiety make in-person attendance difficult — a clinically appropriate mode of delivery that utilizes technology collaboratively with music.",
+      "Online delivery where distance, physical access or social anxiety make in-person attendance difficult — a clinically appropriate format that uses technology and music collaboratively.",
     format: "Individual • Weekly or fortnightly • Video call",
   },
   {
@@ -99,7 +99,7 @@ const moreThanMusic = [
   {
     title: "Outcomes, broadly measured",
     description:
-      "Confidence, connection, participation, self-expression and enjoyment tracked alongside clinical goals, promoting a holistic growth that supports each individual as a whole.",
+      "Confidence, connection, participation, self-expression and enjoyment are tracked alongside clinical goals, supporting each individual’s holistic growth.",
   },
 ];
 
@@ -254,7 +254,7 @@ function ServicesPage() {
             </h2>
             <div className="mt-6 space-y-4 text-base leading-relaxed text-muted-foreground">
               <p>
-                Larger clinics suit some families; while others value the continuity and flexibility of one clinician
+                Larger clinics suit some families, while others value the continuity and flexibility of one clinician
                 who holds the whole clinical picture. As an independent Registered Music Therapist, I offer personalised
                 care built on therapeutic alliance, collaboration and shared decision-making — so clinical time and
                 funding are used thoughtfully and therapy stays meaningful and sustainable.

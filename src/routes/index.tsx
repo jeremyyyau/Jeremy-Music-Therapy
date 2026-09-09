@@ -83,7 +83,7 @@ function Index() {
                 <a href="#contact">Start a conversation</a>
               </Button>
               <Button asChild variant="outline" size="lg" className="rounded-full px-8">
-                <a href="#about">Learn More</a>
+                <a href="#about">Learn more</a>
               </Button>
             </div>
           </Reveal>
@@ -186,7 +186,7 @@ function Index() {
                 icon: Calendar,
                 title: "Tailored to you",
                 description:
-                  "Methods adapted to each individual to inspire and motivate — ensuring accessibility, strengths-based and resource-oriented processes.",
+                  "Methods adapted to each individual to inspire and motivate — ensuring accessible, strengths-based and resource-oriented processes.",
               },
             ].map((item, i) => (
               <Reveal
@@ -237,7 +237,7 @@ function Index() {
                 icon: Armchair,
                 title: "Home Clinic — Picnic Point",
                 description:
-                  "A calm, purpose-equipped therapy room with fewer distractions and wider array of instruments.",
+                  "A calm, purpose-equipped therapy room with fewer distractions and a wider array of instruments.",
               },
               {
                 icon: Video,
@@ -254,13 +254,13 @@ function Index() {
                 icon: Users,
                 title: "Community Sessions",
                 description:
-                  "Individual and group work in childcare, schools and SIL settings to generalise skills in familiar settings.",
+                  "Individual and group work in childcare, schools and SIL settings to generalise skills in familiar environments.",
               },
               {
                 icon: MessagesSquare,
                 title: "Consultation",
                 description:
-                  "An initial conversation about goals, funding, clinical structure, and suitability for music therapy.",
+                  "An initial conversation about goals, funding, clinical structure and suitability for music therapy.",
               },
             ].map((service, i) => (
               <Reveal
@@ -460,7 +460,7 @@ function ContactForm() {
               <FormItem>
                 <FormLabel className="text-foreground">Phone (optional)</FormLabel>
                 <FormControl>
-                  <Input placeholder="0412-345-678" {...field} className="rounded-xl" />
+                  <Input placeholder="0412 345 678" {...field} className="rounded-xl" />
                 </FormControl>
                 <FormMessage />
               </FormItem>
@@ -489,7 +489,7 @@ function ContactForm() {
               <FormLabel className="text-foreground">Message</FormLabel>
               <FormControl>
                 <Textarea
-                  placeholder="Tell me a little about what you’re looking for..."
+                  placeholder="Tell me a little about what you’re looking for…"
                   rows={5}
                   {...field}
                   className="rounded-xl"
@@ -511,7 +511,7 @@ function ContactForm() {
         )}
 
         <Button type="submit" disabled={status === "submitting"} className="w-full rounded-full" size="lg">
-          {status === "submitting" ? "Sending..." : "Send Message"}
+          {status === "submitting" ? "Sending…" : "Send message"}
         </Button>
       </form>
     </Form>

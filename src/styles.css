@@ -154,9 +154,10 @@
     text-wrap: balance;
   }
 
-  p, li, blockquote, figcaption {
+  p, li, blockquote, figcaption, label {
     /* Avoids one-word last lines (orphans) at every screen size */
     text-wrap: pretty;
+    hanging-punctuation: first last;
   }
 }
 

@@ -30,6 +30,8 @@ export const Route = createFileRoute("/resources")({
         content:
           "A curated collection of free, creative and accessible music-based websites and tools for exploration, learning and play.",
       },
+      { property: "og:type", content: "website" },
+      { name: "twitter:card", content: "summary_large_image" },
     ],
   }),
 });
@@ -163,8 +165,8 @@ function ResourcesPage() {
               Have a resource to share?
             </h2>
             <p className="mt-4 text-base leading-relaxed text-muted-foreground">
-              Therapists are always on the lookout for thoughtful, accessible tools that can support the people we walk
-              alongside. If you know an app, website or creative resource that has made a difference for you or someone
+              Therapists are always looking for thoughtful, accessible tools that can support the people we walk
+              alongside. If you know of an app, website or creative resource that has made a difference for you or someone
               you care for, I’d love to hear about it. Your suggestion might become a meaningful bridge for another
               client, another family, or another moment of connection.
             </p>

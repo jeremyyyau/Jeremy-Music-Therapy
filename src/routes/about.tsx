@@ -36,15 +36,15 @@ const credentials = [
   "Registered Music Therapist (RMT)",
   "Over 8 years of clinical experience",
   "Clinical placement supervisor for students",
-  "Therapy assistant to large-scale research project focused on developing accessible music program in aged care facilities",
-  "Songwriter for music-based early learning app for parents and teachers",
+  "Therapy assistant on a large-scale research project focused on developing an accessible music program for aged care facilities",
+  "Songwriter for a music-based early learning app for parents and teachers",
 ];
 
 const experience = [
   {
     title: "Hospital & mental health",
     description:
-      "Holistic mental health teams in hospital settings, including transdisciplinary learning and collaborative care planning with psychiatrists, psychologists, counsellors, nurses, and other hospital staff.",
+      "Work within holistic mental health teams in hospital settings, including transdisciplinary learning and collaborative care planning with psychiatrists, psychologists, counsellors, nurses and other hospital staff.",
   },
   {
     title: "Multidisciplinary teams",
@@ -59,7 +59,7 @@ const experience = [
   {
     title: "Telehealth",
     description:
-      "Running sessions on a virtual medium, developing approaches to maximise engagement, as well as online resources to enhance therapeutic approaches both on and off screen",
+      "Delivering sessions online, with approaches designed to maximise engagement and resources that enhance therapy both on and off screen.",
   },
   {
     title: "Group programs",
@@ -87,7 +87,7 @@ const instruments = [
 const vignettes = [
   {
     story:
-      "After a year of sessions, a non-speaking client sang one word — \"be\" — in the song 'Let It Be' for an end-of-year performance, met with tears and thunderous applause from family and staff.",
+      "After a year of sessions, a non-speaking client sang one word — “be” — in the song ‘Let It Be’ for an end-of-year performance, met with tears and thunderous applause from family and staff.",
     quote: "I've known her for years and have never heard her voice, that was so beautiful!",
     attribution: "Support worker / Staff",
   },
@@ -99,13 +99,13 @@ const vignettes = [
   },
   {
     story:
-      "A child was introduced to me by his parents as “non-verbal” but loved making animal sounds during 'Old Macdonald'. After two years, his communication progressed to full sentences.",
+      "A child was introduced to me by his parents as “non-verbal” but loved making animal sounds during ‘Old MacDonald’. After two years, his communication progressed to full sentences.",
     quote: "We used to cry and pray he would be able to talk, now sometimes we just wish he would stop talking!",
     attribution: "Parent / Carer",
   },
   {
     story:
-      "I was able to have a meaningful conversation with an adolescent boy after years of school sessions, where he committed to pursuing rap and music as a career",
+      "After years of school sessions, I was able to have a meaningful conversation with an adolescent boy in which he committed to pursuing rap and music as a career.",
     quote:
       "I'm not trying to be like my parents and waste my life, after I graduate I'm gonna write songs about my life that people like me can actually relate to.",
     attribution: "CLIENT",
@@ -318,9 +318,9 @@ function AboutPage() {
               </div>
               <div className="mt-6 space-y-4 text-base leading-relaxed text-muted-foreground">
                 <p>
-                  These moments in my work changed the way I view music — made it less about performer and audience, and
-                  more about music that belongs to everyone: whether it's a made-up lullaby between mother and child, a
-                  rap song blaring in a teenager’s headphones, or a shaky duet of “Fly Me To The Moon” between husband
+                  These moments in my work changed the way I view music. They made it less about performer and audience,
+                  and more about music that belongs to everyone: whether it’s a made-up lullaby between mother and child,
+                  a rap song blaring in a teenager’s headphones, or a shaky duet of “Fly Me to the Moon” between husband
                   and wife.
                 </p>
                 <p>
