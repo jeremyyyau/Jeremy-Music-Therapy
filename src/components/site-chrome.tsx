@@ -173,9 +173,15 @@ export function SitePage({ children }: { children: ReactNode }) {
           is resolved against the viewport (iPad/Safari treat an ancestor with
           overflow clipping as the scroll container, which made it drift). */}
       <SiteBackground />
+      <a
+        href="#main-content"
+        className="sr-only rounded-full bg-primary px-4 py-2 text-sm font-medium text-primary-foreground focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-[60]"
+      >
+        Skip to content
+      </a>
       <div className="relative min-h-screen overflow-x-clip">
         <SiteHeader />
-        <main>{children}</main>
+        <main id="main-content">{children}</main>
         <SiteFooter />
       </div>
     </>
