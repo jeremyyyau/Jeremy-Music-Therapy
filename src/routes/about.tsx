@@ -284,8 +284,11 @@ function AboutPage() {
               <h2 className="font-heading text-2xl font-semibold text-foreground md:text-3xl">
                 What keeps me inspired
               </h2>
-              <div className="mask-edge-fade relative -mx-6 overflow-hidden py-6 md:-mx-12">
-                <div className="animate-marquee flex w-max gap-6 px-6 md:px-12">
+              <div
+                ref={marqueeRef}
+                className="mask-edge-fade relative -mx-6 cursor-grab overflow-x-auto py-6 active:cursor-grabbing md:-mx-12 scrollbar-hide"
+              >
+                <div className="flex w-max gap-6 px-6 md:px-12">
                   {[...vignettes, ...vignettes].map((vignette, i) => (
                     <div
                       key={`${vignette.story}-${i}`}
