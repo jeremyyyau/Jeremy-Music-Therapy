@@ -105,7 +105,7 @@ const vignettes = [
   {
     story:
       "I was able to have a meaningful conversation with an adolescent boy after years of sessions in school, where he committed to pursuing rap and music as a career",
-    quote: "For the first time, I feel like I have a voice that matters.",
+    quote: "I'm not trying to be like my parents, all addicted and stuff, I want to make songs about my life that people will relate to and feel understood.",
     attribution: "CLIENT",
   },
   {
