@@ -281,7 +281,7 @@ function AboutPage() {
               </h2>
               <div
                 ref={marqueeRef}
-                className="mask-edge-fade relative -mx-6 cursor-grab overflow-x-auto py-6 active:cursor-grabbing md:-mx-12 scrollbar-hide"
+                className="mask-edge-fade marquee-touch-scroll relative -mx-6 py-6 md:-mx-12 scrollbar-hide"
               >
                 <div className="flex w-max gap-6 px-6 md:px-12">
                   {[...vignettes, ...vignettes].map((vignette, i) => (
