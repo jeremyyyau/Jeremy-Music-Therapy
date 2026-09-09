@@ -271,8 +271,9 @@ function AboutPage() {
                   move through different stages of life.
                 </p>
                 <p>
-                  Music doesn’t have to be perfect to be meaningful. That belief is what drew me to music therapy: there
-                  is music in every person, and everyone deserves the chance to discover what it can mean for them.
+                  Above all else, music doesn’t have to be perfect to be meaningful. That belief is what drew me to
+                  music therapy: there is music in every person, and everyone deserves the chance to discover what it
+                  can mean for them.
                 </p>
               </div>
             </Reveal>
