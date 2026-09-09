@@ -86,8 +86,8 @@ const instruments = [
 const vignettes = [
   {
     story:
-      "A non-speaking client sang his one word — ‘be’ — in “Let It Be” at an end-of-year concert, met with tears and thunderous applause.",
-    quote: "I never knew he could sing like that!",
+      "After a year of therapy, a non-speaking client sang one word — \"be\" — in the song 'Let It Be' for an end-of-year performance, met with tears and thunderous applause from family and staff.",
+    quote: "I've known him for years and have never heard his voice, that was so beautiful!",
     attribution: "Support worker / Staff",
   },
   {
