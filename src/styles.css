@@ -230,3 +230,17 @@
 .scrollbar-hide::-webkit-scrollbar {
   display: none;
 }
+
+/* Testimonial marquee: manual scroll only on touch devices */
+.marquee-touch-scroll {
+  overflow: hidden;
+}
+@media (pointer: coarse) {
+  .marquee-touch-scroll {
+    overflow-x: auto;
+    cursor: grab;
+  }
+  .marquee-touch-scroll:active {
+    cursor: grabbing;
+  }
+}
