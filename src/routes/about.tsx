@@ -161,8 +161,6 @@ function AboutPage() {
 
     container.addEventListener("mouseenter", onMouseEnter);
     container.addEventListener("mouseleave", onMouseLeave);
-    container.addEventListener("touchstart", onTouchStart, { passive: true });
-    container.addEventListener("touchend", onTouchEnd);
     container.addEventListener("scroll", onScroll, { passive: true });
 
     rafId = requestAnimationFrame(step);
@@ -171,8 +169,6 @@ function AboutPage() {
       cancelAnimationFrame(rafId);
       container.removeEventListener("mouseenter", onMouseEnter);
       container.removeEventListener("mouseleave", onMouseLeave);
-      container.removeEventListener("touchstart", onTouchStart);
-      container.removeEventListener("touchend", onTouchEnd);
       container.removeEventListener("scroll", onScroll);
     };
   }, []);
