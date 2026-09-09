@@ -33,6 +33,16 @@ export const Route = createFileRoute("/resources")({
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
     ],
+    links: [
+      {
+        rel: "preload",
+        as: "image",
+        href: resourcesHeroImage.src,
+        imageSrcSet: resourcesHeroImage.srcSet,
+        imageSizes: SIZES_CONTENT,
+        fetchPriority: "high",
+      },
+    ],
   }),
 });
 
@@ -114,7 +124,8 @@ function ResourcesPage() {
                 srcSet={resourcesHeroImage.srcSet}
                 sizes={SIZES_CONTENT}
                 alt="Music therapist playing guitar with a child during a relaxed, interactive session"
-                loading="lazy"
+                loading="eager"
+                fetchPriority="high"
                 decoding="async"
                 width={1920}
                 height={1280}
@@ -141,6 +152,7 @@ function ResourcesPage() {
                       src={r.image}
                       alt={`${r.label} logo`}
                       loading="lazy"
+                      fetchPriority="low"
                       decoding="async"
                       width={512}
                       height={512}

@@ -22,10 +22,16 @@ export function SiteBackground() {
   return (
     <>
       <div aria-hidden className="pointer-events-none fixed inset-0 -z-20 bg-background" />
-      <div
+      <img
         aria-hidden
-        className="pointer-events-none fixed inset-0 -z-10 bg-cover bg-center bg-no-repeat opacity-30 mix-blend-multiply"
-        style={{ backgroundImage: `url(${instrumentsBg})` }}
+        src={instrumentsBg}
+        alt=""
+        width={1280}
+        height={856}
+        loading="eager"
+        fetchPriority="low"
+        decoding="async"
+        className="pointer-events-none fixed inset-0 -z-10 h-full w-full object-cover object-center opacity-30 mix-blend-multiply"
       />
       <div
         aria-hidden
