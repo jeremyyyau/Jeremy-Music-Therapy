@@ -212,7 +212,7 @@ function ServicesPage() {
               ].map((item, i) => (
                 <li
                   key={item.title}
-                  className="group relative p-6 transition-colors duration-300 hover:bg-card/85 md:p-8"
+                  className="group relative flex h-full flex-col p-6 transition-colors duration-300 hover:bg-card/85 md:p-8"
                 >
                   <div className="mb-5 flex items-center justify-between gap-4">
                     <span className="text-xs font-medium uppercase tracking-widest text-primary/80">{item.label}</span>
@@ -220,13 +220,13 @@ function ServicesPage() {
                       {String(i + 1).padStart(2, "0")}
                     </span>
                   </div>
-                  <div className="flex items-start gap-4">
+                  <div className="flex flex-grow items-start gap-4">
                     <div className="inline-flex shrink-0 rounded-full border border-primary/20 bg-primary/10 p-2.5 transition-all duration-300 group-hover:bg-primary/25 group-hover:shadow-glow">
                       <item.icon className="h-4.5 w-4.5 text-primary" />
                     </div>
                     <div>
-                      <p className="font-heading text-base font-semibold text-card-foreground">{item.title}</p>
-                      <p className="mt-1 text-sm leading-relaxed text-muted-foreground">{item.description}</p>
+                      <p className="font-heading text-base font-semibold text-card-foreground text-balance md:leading-snug">{item.title}</p>
+                      <p className="mt-1 text-sm leading-relaxed text-muted-foreground text-balance">{item.description}</p>
                     </div>
                   </div>
                 </li>
