@@ -31,6 +31,7 @@ export const Route = createFileRoute("/")({
           "Independent Registered Music Therapist (RMT) with 8+ years of clinical experience. Home visits, telehealth and home clinic sessions in Picnic Point.",
       },
       { property: "og:type", content: "website" },
+      { property: "og:url", content: "https://harmony-connect-folio.lovable.app/" },
       { name: "twitter:card", content: "summary_large_image" },
       { name: "twitter:title", content: "Registered Music Therapist | Personalised Music Therapy" },
       {
