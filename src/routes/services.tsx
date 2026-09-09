@@ -201,7 +201,7 @@ function ServicesPage() {
                   label: "Notice & flexibility",
                   title: "Cancellations",
                   description:
-                    "Generally 24 hours’ notice is appreciated, though flexibility is offered depending on circumstances.",
+                    "24 hour notice is appreciated, though flexibility is offered depending on circumstances.",
                 },
                 {
                   icon: Receipt,
