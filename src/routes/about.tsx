@@ -106,7 +106,7 @@ const vignettes = [
     story:
       "I was able to have a meaningful conversation with an adolescent boy after years of school sessions, where he committed to pursuing rap and music as a career",
     quote:
-      "I'm not trying to be like my parents and waste my life, after I graduate I'm gonna write songs about my life that people like me can relate to",
+      "I'm not trying to be like my parents and waste my life, after I graduate I'm gonna write songs about my life that people like me can actually relate to.",
     attribution: "CLIENT",
   },
   {
