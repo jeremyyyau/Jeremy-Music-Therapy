@@ -202,13 +202,13 @@ function ServicesPage() {
                   title: "Cancellations",
                   description: (
                     <>
-                      24 hour notice is appreciated,
+                      24 hour notice is
                       <br />
-                      though flexibility is offered
+                      appreciated, though
                       <br />
-                      depending on
+                      flexibility offered
                       <br />
-                      circumstances.
+                      as circumstances allow.
                     </>
                   ),
                 },
