@@ -1,21 +1,15 @@
 import { createFileRoute } from "@tanstack/react-router";
-import { useState } from "react";
-import { useForm } from "react-hook-form";
-import { zodResolver } from "@hookform/resolvers/zod";
+import { lazy, Suspense, useEffect, useRef, useState } from "react";
 import { Link } from "@tanstack/react-router";
 import { Heart, Users, Calendar, Home, Armchair, Video, Guitar, MessagesSquare } from "lucide-react";
 
 import { Button } from "@/components/ui/button";
-import { Form, FormControl, FormField, FormItem, FormLabel, FormMessage } from "@/components/ui/form";
-import { Input } from "@/components/ui/input";
-import { Textarea } from "@/components/ui/textarea";
-
-import { contactFormSchema, type ContactFormValues } from "@/lib/contact.schema";
-import { submitContactForm } from "@/lib/contact.functions";
 import { homeHeroImage, homeAboutImage, SIZES_HALF } from "@/lib/images";
 import { SitePage } from "@/components/site-chrome";
 import { Reveal } from "@/components/reveal";
 import { QuoteBand } from "@/components/quote-band";
+
+const ContactForm = lazy(() => import("@/components/contact-form"));
 
 export const Route = createFileRoute("/")({
   component: Index,
@@ -383,7 +377,7 @@ function Index() {
             delay={150}
             className="rounded-3xl border border-border/60 bg-card p-8 shadow-lg md:p-10"
           >
-            <ContactForm />
+            <DeferredContactForm />
           </Reveal>
         </div>
       </section>
@@ -391,129 +385,40 @@ function Index() {
   );
 }
 
-function ContactForm() {
-  const [status, setStatus] = useState<"idle" | "submitting" | "success" | "error">("idle");
-  const [errorMessage, setErrorMessage] = useState("");
+function DeferredContactForm() {
+  const boundaryRef = useRef<HTMLDivElement>(null);
+  const [shouldLoad, setShouldLoad] = useState(false);
 
-  const form = useForm<ContactFormValues>({
-    resolver: zodResolver(contactFormSchema),
-    defaultValues: {
-      name: "",
-      email: "",
-      phone: "",
-      subject: "",
-      message: "",
-    },
-  });
+  useEffect(() => {
+    const boundary = boundaryRef.current;
+    if (!boundary || shouldLoad) return;
 
-  async function onSubmit(values: ContactFormValues) {
-    setStatus("submitting");
-    setErrorMessage("");
-
-    try {
-      await submitContactForm({ data: values });
-      setStatus("success");
-      form.reset();
-    } catch (error) {
-      setStatus("error");
-      setErrorMessage(error instanceof Error ? error.message : "Something went wrong. Please try again.");
-    }
-  }
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry?.isIntersecting) {
+          setShouldLoad(true);
+          observer.disconnect();
+        }
+      },
+      { rootMargin: "600px 0px" },
+    );
+    observer.observe(boundary);
+    return () => observer.disconnect();
+  }, [shouldLoad]);
 
   return (
-    <Form {...form}>
-      <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-6">
-        <div className="grid grid-cols-1 gap-6 md:grid-cols-2">
-          <FormField
-            control={form.control}
-            name="name"
-            render={({ field }) => (
-              <FormItem>
-                <FormLabel className="text-foreground">Name</FormLabel>
-                <FormControl>
-                  <Input placeholder="Your name" {...field} className="rounded-xl" />
-                </FormControl>
-                <FormMessage />
-              </FormItem>
-            )}
-          />
-          <FormField
-            control={form.control}
-            name="email"
-            render={({ field }) => (
-              <FormItem>
-                <FormLabel className="text-foreground">Email</FormLabel>
-                <FormControl>
-                  <Input placeholder="you@example.com" type="email" {...field} className="rounded-xl" />
-                </FormControl>
-                <FormMessage />
-              </FormItem>
-            )}
-          />
-        </div>
-
-        <div className="grid grid-cols-1 gap-6 md:grid-cols-2">
-          <FormField
-            control={form.control}
-            name="phone"
-            render={({ field }) => (
-              <FormItem>
-                <FormLabel className="text-foreground">Phone (optional)</FormLabel>
-                <FormControl>
-                  <Input placeholder="0412 345 678" {...field} className="rounded-xl" />
-                </FormControl>
-                <FormMessage />
-              </FormItem>
-            )}
-          />
-          <FormField
-            control={form.control}
-            name="subject"
-            render={({ field }) => (
-              <FormItem>
-                <FormLabel className="text-foreground">Subject (optional)</FormLabel>
-                <FormControl>
-                  <Input placeholder="e.g. Individual sessions" {...field} className="rounded-xl" />
-                </FormControl>
-                <FormMessage />
-              </FormItem>
-            )}
-          />
-        </div>
-
-        <FormField
-          control={form.control}
-          name="message"
-          render={({ field }) => (
-            <FormItem>
-              <FormLabel className="text-foreground">Message</FormLabel>
-              <FormControl>
-                <Textarea
-                  placeholder="Tell me a little about what you’re looking for…"
-                  rows={5}
-                  {...field}
-                  className="rounded-xl"
-                />
-              </FormControl>
-              <FormMessage />
-            </FormItem>
-          )}
-        />
-
-        {status === "success" && (
-          <div className="rounded-xl bg-primary/10 p-4 text-sm text-primary">
-            Thank you for reaching out. I’ve received your message and will be in touch soon.
-          </div>
-        )}
-
-        {status === "error" && (
-          <div className="rounded-xl bg-destructive/10 p-4 text-sm text-destructive">{errorMessage}</div>
-        )}
-
-        <Button type="submit" disabled={status === "submitting"} className="w-full rounded-full" size="lg">
-          {status === "submitting" ? "Sending…" : "Send message"}
-        </Button>
-      </form>
-    </Form>
+    <div ref={boundaryRef} className="min-h-[500px]">
+      {shouldLoad ? (
+        <Suspense fallback={<ContactFormPlaceholder />}>
+          <ContactForm />
+        </Suspense>
+      ) : (
+        <ContactFormPlaceholder />
+      )}
+    </div>
   );
+}
+
+function ContactFormPlaceholder() {
+  return <div aria-hidden className="h-[500px] animate-pulse rounded-2xl bg-secondary/40 motion-reduce:animate-none" />;
 }
