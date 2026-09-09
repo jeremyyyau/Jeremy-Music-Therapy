@@ -149,7 +149,7 @@ export function SiteFooter() {
             </span>
           </div>
           <p className="shrink-0 whitespace-nowrap text-sm italic text-muted-foreground/50">
-            Privately funded and NDIS clients are welcome
+            Private & NDIS clients welcome
           </p>
           <div className="flex shrink-0 flex-nowrap justify-center gap-2 md:gap-1">
             {navItems.map((item) => (
