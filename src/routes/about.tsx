@@ -1,5 +1,6 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { AudioLines, Check, Drum, Guitar, MicVocal, Music2, Music3, Piano, Wind } from "lucide-react";
+import { useEffect, useRef } from "react";
 import { Button } from "@/components/ui/button";
 import { SitePage } from "@/components/site-chrome";
 import { Reveal } from "@/components/reveal";
@@ -119,6 +120,64 @@ const vignettes = [
 ];
 
 function AboutPage() {
+  const marqueeRef = useRef<HTMLDivElement>(null);
+  const isHoveredRef = useRef(false);
+  const isTouchedRef = useRef(false);
+  const scrollPosRef = useRef(0);
+
+  useEffect(() => {
+    const container = marqueeRef.current;
+    if (!container) return;
+
+    const speed = 0.6;
+    let rafId: number;
+
+    const step = () => {
+      if (!isHoveredRef.current && !isTouchedRef.current) {
+        scrollPosRef.current += speed;
+        const half = container.scrollWidth / 2;
+        if (scrollPosRef.current >= half) {
+          scrollPosRef.current = 0;
+        }
+        container.scrollLeft = scrollPosRef.current;
+      }
+      rafId = requestAnimationFrame(step);
+    };
+
+    const onMouseEnter = () => {
+      isHoveredRef.current = true;
+    };
+    const onMouseLeave = () => {
+      isHoveredRef.current = false;
+    };
+    const onTouchStart = () => {
+      isTouchedRef.current = true;
+    };
+    const onTouchEnd = () => {
+      isTouchedRef.current = false;
+    };
+    const onScroll = () => {
+      scrollPosRef.current = container.scrollLeft;
+    };
+
+    container.addEventListener("mouseenter", onMouseEnter);
+    container.addEventListener("mouseleave", onMouseLeave);
+    container.addEventListener("touchstart", onTouchStart, { passive: true });
+    container.addEventListener("touchend", onTouchEnd);
+    container.addEventListener("scroll", onScroll, { passive: true });
+
+    rafId = requestAnimationFrame(step);
+
+    return () => {
+      cancelAnimationFrame(rafId);
+      container.removeEventListener("mouseenter", onMouseEnter);
+      container.removeEventListener("mouseleave", onMouseLeave);
+      container.removeEventListener("touchstart", onTouchStart);
+      container.removeEventListener("touchend", onTouchEnd);
+      container.removeEventListener("scroll", onScroll);
+    };
+  }, []);
+
   return (
     <SitePage>
       <section className="py-20 lg:py-28">
@@ -225,8 +284,11 @@ function AboutPage() {
               <h2 className="font-heading text-2xl font-semibold text-foreground md:text-3xl">
                 What keeps me inspired
               </h2>
-              <div className="mask-edge-fade relative -mx-6 overflow-hidden py-6 md:-mx-12">
-                <div className="animate-marquee flex w-max gap-6 px-6 md:px-12">
+              <div
+                ref={marqueeRef}
+                className="mask-edge-fade relative -mx-6 cursor-grab overflow-x-auto py-6 active:cursor-grabbing md:-mx-12 scrollbar-hide"
+              >
+                <div className="flex w-max gap-6 px-6 md:px-12">
                   {[...vignettes, ...vignettes].map((vignette, i) => (
                     <div
                       key={`${vignette.story}-${i}`}
