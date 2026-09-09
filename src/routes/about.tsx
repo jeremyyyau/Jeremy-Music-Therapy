@@ -111,7 +111,7 @@ const vignettes = [
   },
   {
     story:
-      "During a childcare group formed to support a child with selective mutism, she was able to make a "sss" sound with the group, which after several weeks progressed to her first word in public."
+      "During a childcare group formed to support a child with selective mutism, she was able to make a “sss” sound with the group, which after several weeks progressed to her first word in public.",
     quote: "It's like something clicked and she's ready to join in now, I see the other children starting to play with her, and I've even heard her laugh a few times!",
     attribution: "Educator / Staff",
   },
