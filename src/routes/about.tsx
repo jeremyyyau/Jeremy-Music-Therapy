@@ -87,7 +87,7 @@ const vignettes = [
   {
     story:
       "After a year of therapy, a non-speaking client sang one word — \"be\" — in the song 'Let It Be' for an end-of-year performance, met with tears and thunderous applause from family and staff.",
-    quote: "I've known him for years and have never heard his voice, that was so beautiful!",
+    quote: "I've known her for years and have never heard her voice, that was so beautiful!",
     attribution: "Support worker / Staff",
   },
   {
@@ -104,8 +104,9 @@ const vignettes = [
   },
   {
     story:
-      "I was able to have a meaningful conversation with an adolescent boy after years of sessions in school, where he committed to pursuing rap and music as a career",
-    quote: "I'm not trying to be like my parents, all addicted and stuff, I want to make songs about my life that people will relate to and feel understood.",
+      "I was able to have a meaningful conversation with an adolescent boy after years of school sessions, where he committed to pursuing rap and music as a career",
+    quote:
+      "I'm not trying to be like my parents and waste my life, I want to make songs about my life that people like me can relate to",
     attribution: "CLIENT",
   },
   {
