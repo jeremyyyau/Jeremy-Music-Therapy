@@ -366,7 +366,7 @@ function AboutPage() {
               <ul className="mt-8 grid grid-cols-2 gap-3 sm:gap-4 md:grid-cols-4">
                 {instruments.map((inst, i) => (
                   <Reveal key={inst.name} direction="up" delay={i * 100}>
-                    <li className="group flex flex-col items-center gap-2.5 rounded-2xl border border-border/60 bg-secondary/95 px-4 py-5 text-center transition-all duration-300 hover:border-primary hover:bg-secondary hover:shadow-card-hover">
+                    <li className="group flex h-full min-h-[136px] flex-col items-center justify-center gap-2.5 rounded-2xl border border-border/60 bg-secondary/95 px-4 py-5 text-center transition-all duration-300 hover:border-primary hover:bg-secondary hover:shadow-card-hover">
                       <span className="flex h-11 w-11 items-center justify-center rounded-full bg-primary/10 text-primary transition-all duration-300 group-hover:scale-110 group-hover:bg-primary/20">
                         <inst.icon className="h-5 w-5" aria-hidden />
                       </span>
