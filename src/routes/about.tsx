@@ -93,7 +93,7 @@ const vignettes = [
   {
     story:
       "I worked collaboratively with a client in the palliative unit to write a song for the grandchild he would never meet — a parting gift to his pregnant daughter.",
-    quote: "At least in this way, even if I can't see him, he'll grow up knowing his grandad loved him very much.",
+    quote: "At least this way, even if I can't see him, he'll grow up knowing his grandad loved him very much.",
     attribution: "CLIENT",
   },
   {
