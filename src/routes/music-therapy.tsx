@@ -336,7 +336,7 @@ function MusicTherapyPage() {
                           "Regardless of diagnosis or musical background, the focus is on exploring music in an enjoyable, accessible and meaningful way to foster important skills, support individual goals and create opportunities for positive change that can enhance everyday participation and quality of life.",
                       },
                     ].map((item, i) => (
-                      <div key={item.title} className="flex flex-col">
+                      <div key={i} className="flex flex-col">
                         <div className="flex items-start gap-3">
                           <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-primary/10 font-heading text-sm font-semibold text-primary">
                             {i + 1}
