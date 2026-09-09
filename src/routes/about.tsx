@@ -378,8 +378,8 @@ function AboutPage() {
                 ))}
               </ul>
               <p className="mt-6 text-base leading-relaxed text-muted-foreground">
-                Above all else, music should never have to feel perfect to be meaningful. That belief is what drew me to
-                music therapy: that there is music in every person, and everyone deserves the chance to discover what it
+                Above all else, music shouldn't need to feel perfect to be meaningful. That belief is what drew me to music
+                therapy: that there is musicality in every person, and everyone deserves the chance to discover what it
                 can mean for them.
               </p>
             </Reveal>
