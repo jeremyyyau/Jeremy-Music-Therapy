@@ -83,7 +83,7 @@ function Index() {
                 <a href="#contact">Start a conversation</a>
               </Button>
               <Button asChild variant="outline" size="lg" className="rounded-full px-8">
-                <a href="#about">Learn More</a>
+                <a href="#about">Learn more</a>
               </Button>
             </div>
           </Reveal>
@@ -237,7 +237,7 @@ function Index() {
                 icon: Armchair,
                 title: "Home Clinic — Picnic Point",
                 description:
-                  "A calm, purpose-equipped therapy room with fewer distractions and wider array of instruments.",
+                  "A calm, purpose-equipped therapy room with fewer distractions and a wider array of instruments.",
               },
               {
                 icon: Video,
@@ -260,7 +260,7 @@ function Index() {
                 icon: MessagesSquare,
                 title: "Consultation",
                 description:
-                  "An initial conversation about goals, funding, clinical structure, and suitability for music therapy.",
+                  "An initial conversation about goals, funding, clinical structure and suitability for music therapy.",
               },
             ].map((service, i) => (
               <Reveal
@@ -511,7 +511,7 @@ function ContactForm() {
         )}
 
         <Button type="submit" disabled={status === "submitting"} className="w-full rounded-full" size="lg">
-          {status === "submitting" ? "Sending..." : "Send Message"}
+          {status === "submitting" ? "Sending…" : "Send message"}
         </Button>
       </form>
     </Form>
