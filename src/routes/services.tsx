@@ -159,7 +159,8 @@ function ServicesPage() {
                 <p className="mt-2 text-sm font-medium text-primary">{s.who}</p>
                 <p className="mt-4 text-base leading-relaxed text-muted-foreground">{s.description}</p>
                 <p className="mt-4 text-sm text-muted-foreground">
-                  <span className="font-medium text-foreground">Format:</span> {s.format}
+                  <span className="block font-medium text-foreground sm:inline">Format:</span>{" "}
+                  <span className="block sm:inline">{s.format}</span>
                 </p>
               </Reveal>
             ))}
