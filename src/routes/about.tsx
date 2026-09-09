@@ -133,7 +133,7 @@ function AboutPage() {
     let rafId: number;
 
     const step = () => {
-      if (!isHoveredRef.current && !isTouchedRef.current) {
+      if (!isHoveredRef.current) {
         scrollPosRef.current += speed;
         const half = container.scrollWidth / 2;
         if (scrollPosRef.current >= half) {
