@@ -72,7 +72,7 @@ export function Reveal({
     transitionDelay: `${delay}ms`,
     opacity: visible ? 1 : 0,
     transform: visible ? "none" : OFFSETS[direction],
-    willChange: "opacity, transform",
+    willChange: visible ? "auto" : "opacity, transform",
     ...style,
   };
 

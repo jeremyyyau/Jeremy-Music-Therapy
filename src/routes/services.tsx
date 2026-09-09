@@ -26,6 +26,16 @@ export const Route = createFileRoute("/services")({
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
     ],
+    links: [
+      {
+        rel: "preload",
+        as: "image",
+        href: svcIndividualImage.src,
+        imageSrcSet: svcIndividualImage.srcSet,
+        imageSizes: SIZES_CONTENT,
+        fetchPriority: "high",
+      },
+    ],
   }),
 });
 
@@ -127,7 +137,8 @@ function ServicesPage() {
               srcSet={svcIndividualImage.srcSet}
               sizes={SIZES_CONTENT}
               alt="Music therapist playing guitar outdoors with young children during a play-based session"
-              loading="lazy"
+              loading="eager"
+              fetchPriority="high"
               decoding="async"
               width={1920}
               height={1280}

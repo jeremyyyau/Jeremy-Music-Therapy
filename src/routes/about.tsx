@@ -27,6 +27,16 @@ export const Route = createFileRoute("/about")({
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
     ],
+    links: [
+      {
+        rel: "preload",
+        as: "image",
+        href: aboutHeroImage.src,
+        imageSrcSet: aboutHeroImage.srcSet,
+        imageSizes: SIZES_CONTENT,
+        fetchPriority: "high",
+      },
+    ],
   }),
 });
 
@@ -130,9 +140,10 @@ function AboutPage() {
 
     const speed = 0.6;
     let rafId: number;
+    let isInView = false;
 
     const step = () => {
-      if (!isHoveredRef.current) {
+      if (!isHoveredRef.current && isInView && !document.hidden) {
         scrollPosRef.current += speed;
         const half = container.scrollWidth / 2;
         if (scrollPosRef.current >= half) {
@@ -163,6 +174,14 @@ function AboutPage() {
     container.addEventListener("mouseleave", onMouseLeave);
     container.addEventListener("scroll", onScroll, { passive: true });
 
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        isInView = entry?.isIntersecting ?? false;
+      },
+      { rootMargin: "200px 0px" },
+    );
+    observer.observe(container);
+
     rafId = requestAnimationFrame(step);
 
     return () => {
@@ -170,6 +189,7 @@ function AboutPage() {
       container.removeEventListener("mouseenter", onMouseEnter);
       container.removeEventListener("mouseleave", onMouseLeave);
       container.removeEventListener("scroll", onScroll);
+      observer.disconnect();
     };
   }, []);
 
@@ -200,7 +220,8 @@ function AboutPage() {
               alt="Music therapist seated with a client during a warm, indoor session"
               width={1920}
               height={1280}
-              loading="lazy"
+              loading="eager"
+              fetchPriority="high"
               decoding="async"
               className="aspect-[16/10] w-full object-cover object-[55%_55%]"
             />

@@ -39,6 +39,16 @@ export const Route = createFileRoute("/music-therapy")({
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
     ],
+    links: [
+      {
+        rel: "preload",
+        as: "image",
+        href: mtFamilyImage.src,
+        imageSrcSet: mtFamilyImage.srcSet,
+        imageSizes: SIZES_CONTENT,
+        fetchPriority: "high",
+      },
+    ],
   }),
 });
 
@@ -134,7 +144,8 @@ function MusicTherapyPage() {
               srcSet={mtFamilyImage.srcSet}
               sizes={SIZES_CONTENT}
               alt="Music therapist playing guitar with a parent and infant during a home-based session"
-              loading="lazy"
+              loading="eager"
+              fetchPriority="high"
               decoding="async"
               width={1600}
               height={889}

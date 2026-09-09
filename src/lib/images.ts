@@ -66,9 +66,9 @@ function build(
 }
 
 /** Half-width columns on desktop, full width on smaller screens. */
-export const SIZES_HALF = "(min-width: 768px) 50vw, 100vw";
+export const SIZES_HALF = "(min-width: 1280px) 616px, (min-width: 1024px) calc(50vw - 48px), calc(100vw - 48px)";
 /** Centred content images capped by a max-w-5xl / max-w-4xl container. */
-export const SIZES_CONTENT = "(min-width: 1024px) 1024px, 100vw";
+export const SIZES_CONTENT = "(min-width: 1024px) 976px, calc(100vw - 48px)";
 
 export const homeHeroImage = build(heroFull, 1920, [
   [hero640, 640],
