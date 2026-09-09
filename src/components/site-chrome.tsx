@@ -29,7 +29,7 @@ export function SiteBackground() {
         width={1280}
         height={856}
         loading="eager"
-        fetchPriority="low"
+        fetchPriority="high"
         decoding="async"
         className="pointer-events-none fixed inset-0 -z-10 h-full w-full object-cover object-center opacity-30 mix-blend-multiply"
       />
