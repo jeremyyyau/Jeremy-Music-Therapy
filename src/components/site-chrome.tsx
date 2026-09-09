@@ -26,8 +26,8 @@ export function SiteBackground() {
         aria-hidden
         src={instrumentsBg}
         alt=""
-        width={1536}
-        height={1024}
+        width={1280}
+        height={856}
         loading="eager"
         fetchPriority="low"
         decoding="async"
