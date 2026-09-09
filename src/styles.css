@@ -154,8 +154,14 @@
     text-wrap: balance;
   }
 
-  p, li, blockquote, figcaption, label {
-    /* Avoids one-word last lines (orphans) at every screen size */
+  p, blockquote, figcaption {
+    /* Balance prose so short connector words do not dangle at line edges. */
+    text-wrap: balance;
+    hanging-punctuation: first last;
+  }
+
+  li, label {
+    /* Keep list and form copy natural while preventing one-word last lines. */
     text-wrap: pretty;
     hanging-punctuation: first last;
   }
