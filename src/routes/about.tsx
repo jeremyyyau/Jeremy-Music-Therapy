@@ -30,8 +30,8 @@ export const Route = createFileRoute("/about")({
 });
 
 const credentials = [
-  "Master of Music Therapy — University of Melbourne",
-  "Bachelor of Music (Performance) — University of Melbourne",
+  "Master of Music Therapy — University\u00A0of\u00A0Melbourne",
+  "Bachelor of Music (Performance) — University\u00A0of\u00A0Melbourne",
   "Registered Music Therapist (RMT)",
   "Over 8 years of clinical experience",
   "Clinical placement supervisor for students",
