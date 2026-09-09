@@ -156,7 +156,7 @@ export function SiteFooter() {
               <NavLink
                 key={item.label}
                 item={item}
-                className="whitespace-nowrap rounded-full px-3 py-1 text-sm text-muted-foreground transition-all duration-200 hover:bg-primary/20 hover:text-primary"
+                className="whitespace-nowrap rounded-full px-3 py-1 text-sm text-muted-foreground transition-all duration-200 hover:bg-primary/20 hover:text-primary md:px-2 lg:px-3"
               />
             ))}
           </div>
