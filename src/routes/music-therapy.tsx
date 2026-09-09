@@ -320,13 +320,7 @@ function MusicTherapyPage() {
                           "People of all ages who are motivated by music — including children who enjoy singing, dancing, playing instruments or listening to their favourite songs, as well as older children and adults who may use music to support their mood, relaxation, exercise, focus or everyday wellbeing.",
                       },
                       {
-                        title: (
-                          <>
-                            For people who want
-                            <br />
-                            adapted support
-                          </>
-                        ),
+                        title: "For people who want adapted support",
                         description:
                           "People who don’t fit comfortably within conventional approaches and are looking for support that feels more personalised, engaging and suited to the way they learn and participate, or who respond more readily to creative yet predictable processes.",
                       },
