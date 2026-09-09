@@ -122,7 +122,6 @@ const vignettes = [
 function AboutPage() {
   const marqueeRef = useRef<HTMLDivElement>(null);
   const isHoveredRef = useRef(false);
-  const isTouchedRef = useRef(false);
   const scrollPosRef = useRef(0);
 
   useEffect(() => {
@@ -149,12 +148,6 @@ function AboutPage() {
     };
     const onMouseLeave = () => {
       isHoveredRef.current = false;
-    };
-    const onTouchStart = () => {
-      isTouchedRef.current = true;
-    };
-    const onTouchEnd = () => {
-      isTouchedRef.current = false;
     };
     const onScroll = () => {
       const half = container.scrollWidth / 2;
