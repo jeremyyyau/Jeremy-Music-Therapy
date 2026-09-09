@@ -94,7 +94,7 @@ const moreThanMusic = [
   {
     title: "Continuity of care",
     description:
-      "Working with one clinician means no handovers, consistent goals and a therapeutic relationship that deepens over time — a crucial aspect of achieving positive outcomes.",
+      "Working with one clinician means no handovers, consistent goals and a therapeutic relationship that deepens over time — a\u00A0crucial aspect of achieving positive outcomes.",
   },
   {
     title: "Flexible and responsive",
