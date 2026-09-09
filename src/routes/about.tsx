@@ -259,9 +259,16 @@ function AboutPage() {
               </div>
               <div className="mt-6 space-y-4 text-base leading-relaxed text-muted-foreground">
                 <p>
-                  These moments changed my relationship with music — less about performer and audience, more about
-                  something that belongs to all of us: a made-up lullaby between mother and child, a rap song in a
-                  teenager’s headphones, a shaky duet of “Fly Me To The Moon” between husband and wife.
+                  These moments changed my relationship with music — made it less about performer and audience, and more
+                  about music that belongs to everyone: whether it's a made-up lullaby between mother and child, a rap
+                  song in a teenager’s headphones, a shaky duet of “Fly Me To The Moon” between husband and wife.
+                </p>
+                <p>
+                  We each develop a personal relationship with music, shaped by our experiences, relationships, culture
+                  and changing preferences across the lifespan. The way we describe songs as “my music” reflects how
+                  closely music can become connected to our sense of identity and self-expression. Music can remain
+                  present across both significant and everyday moments, evolving alongside us as we grow, develop and
+                  move through different stages of life.
                 </p>
                 <p>
                   Music doesn’t have to be perfect to be meaningful. That belief is what drew me to music therapy: there
@@ -273,7 +280,7 @@ function AboutPage() {
             <Reveal>
               <h2 className="font-heading text-2xl font-semibold text-foreground md:text-3xl">In the session room</h2>
               <p className="mt-4 text-base leading-relaxed text-muted-foreground">
-                As a multi-instrumentalist I adapt the musical medium to each client’s preferences, sensory profile and
+                As a multi-instrumentalist, I adapt the musical medium to each client’s preferences, sensory profile and
                 access needs.
               </p>
 
