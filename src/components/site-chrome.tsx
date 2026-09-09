@@ -149,14 +149,14 @@ export function SiteFooter() {
             </span>
           </div>
           <p className="shrink-0 whitespace-nowrap text-sm italic text-muted-foreground/50">
-            Privately funded and NDIS clients are welcome
+            Private & NDIS clients welcome
           </p>
           <div className="flex shrink-0 flex-nowrap justify-center gap-2 md:gap-1">
             {navItems.map((item) => (
               <NavLink
                 key={item.label}
                 item={item}
-                className="whitespace-nowrap rounded-full px-3 py-1 text-sm text-muted-foreground transition-all duration-200 hover:bg-primary/20 hover:text-primary"
+                className="whitespace-nowrap rounded-full px-3 py-1 text-sm text-muted-foreground transition-all duration-200 hover:bg-primary/20 hover:text-primary md:px-2 lg:px-3"
               />
             ))}
           </div>
