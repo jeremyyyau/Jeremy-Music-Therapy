@@ -120,6 +120,64 @@ const vignettes = [
 ];
 
 function AboutPage() {
+  const marqueeRef = useRef<HTMLDivElement>(null);
+  const isHoveredRef = useRef(false);
+  const isTouchedRef = useRef(false);
+  const scrollPosRef = useRef(0);
+
+  useEffect(() => {
+    const container = marqueeRef.current;
+    if (!container) return;
+
+    const speed = 0.6;
+    let rafId: number;
+
+    const step = () => {
+      if (!isHoveredRef.current && !isTouchedRef.current) {
+        scrollPosRef.current += speed;
+        const half = container.scrollWidth / 2;
+        if (scrollPosRef.current >= half) {
+          scrollPosRef.current = 0;
+        }
+        container.scrollLeft = scrollPosRef.current;
+      }
+      rafId = requestAnimationFrame(step);
+    };
+
+    const onMouseEnter = () => {
+      isHoveredRef.current = true;
+    };
+    const onMouseLeave = () => {
+      isHoveredRef.current = false;
+    };
+    const onTouchStart = () => {
+      isTouchedRef.current = true;
+    };
+    const onTouchEnd = () => {
+      isTouchedRef.current = false;
+    };
+    const onScroll = () => {
+      scrollPosRef.current = container.scrollLeft;
+    };
+
+    container.addEventListener("mouseenter", onMouseEnter);
+    container.addEventListener("mouseleave", onMouseLeave);
+    container.addEventListener("touchstart", onTouchStart, { passive: true });
+    container.addEventListener("touchend", onTouchEnd);
+    container.addEventListener("scroll", onScroll, { passive: true });
+
+    rafId = requestAnimationFrame(step);
+
+    return () => {
+      cancelAnimationFrame(rafId);
+      container.removeEventListener("mouseenter", onMouseEnter);
+      container.removeEventListener("mouseleave", onMouseLeave);
+      container.removeEventListener("touchstart", onTouchStart);
+      container.removeEventListener("touchend", onTouchEnd);
+      container.removeEventListener("scroll", onScroll);
+    };
+  }, []);
+
   return (
     <SitePage>
       <section className="py-20 lg:py-28">
