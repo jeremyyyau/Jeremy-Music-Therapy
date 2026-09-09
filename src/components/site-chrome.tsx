@@ -142,9 +142,9 @@ export function SiteFooter() {
     <footer className="border-t border-border/60 bg-secondary/40 py-12">
       <div className="mx-auto max-w-7xl px-6">
         <div className="flex flex-col items-center justify-between gap-6 md:flex-row">
-          <div className="flex items-center gap-2">
-            <Music className="h-5 w-5 text-primary" />
-            <span className="font-heading text-lg font-semibold text-foreground">
+          <div className="flex shrink-0 items-center gap-2">
+            <Music className="h-5 w-5 text-primary md:h-6 md:w-6" />
+            <span className="shrink-0 whitespace-nowrap font-heading text-lg font-semibold text-foreground md:text-xl">
               Music Therapy
             </span>
           </div>
