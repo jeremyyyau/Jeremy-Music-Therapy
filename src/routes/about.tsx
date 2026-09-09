@@ -112,7 +112,7 @@ const vignettes = [
   },
   {
     story:
-      "During a childcare group formed to support a child with selective mutism, she was able to make a “sss” sound with the group, which after several weeks progressed to her first word in public.",
+      "During a childcare group formed to support a client with selective mutism, she was able to make a “sss” sound with the group, which after several weeks progressed to her first word in public.",
     quote:
       "It's like something clicked and she's ready to join in now, I see the other children starting to play with her, and I've even heard her laugh a few times!",
     attribution: "Educator / Staff",
@@ -122,69 +122,54 @@ const vignettes = [
 function AboutPage() {
   const marqueeRef = useRef<HTMLDivElement>(null);
   const isHoveredRef = useRef(false);
+  const scrollPosRef = useRef(0);
 
   useEffect(() => {
     const container = marqueeRef.current;
     if (!container) return;
 
-    const track = container.firstElementChild;
-    const firstGroup = track?.firstElementChild;
-    const secondGroup = firstGroup?.nextElementSibling;
-    if (!(firstGroup instanceof HTMLElement) || !(secondGroup instanceof HTMLElement)) return;
-
-    const speed = 36;
+    const speed = 0.6;
     let rafId: number;
-    let previousTime = performance.now();
 
-    const getLoopWidth = () => secondGroup.offsetLeft - firstGroup.offsetLeft;
-
-    const keepInLoop = () => {
-      const loopWidth = getLoopWidth();
-      if (loopWidth <= 0) return;
-
-      while (container.scrollLeft >= loopWidth * 2) {
-        container.scrollLeft -= loopWidth;
-      }
-      while (container.scrollLeft < loopWidth * 0.5) {
-        container.scrollLeft += loopWidth;
-      }
-    };
-
-    const positionAtMiddleCopy = () => {
-      const loopWidth = getLoopWidth();
-      if (loopWidth > 0) container.scrollLeft = loopWidth;
-    };
-
-    const step = (time: number) => {
-      const elapsed = Math.min(time - previousTime, 50);
-      previousTime = time;
+    const step = () => {
       if (!isHoveredRef.current) {
-        container.scrollLeft += (speed * elapsed) / 1000;
-        keepInLoop();
+        scrollPosRef.current += speed;
+        const half = container.scrollWidth / 2;
+        if (scrollPosRef.current >= half) {
+          scrollPosRef.current -= half;
+        }
+        container.scrollLeft = scrollPosRef.current;
       }
       rafId = requestAnimationFrame(step);
     };
 
-    const onPointerEnter = (event: PointerEvent) => {
-      if (event.pointerType === "mouse") isHoveredRef.current = true;
+    const onMouseEnter = () => {
+      isHoveredRef.current = true;
     };
-    const onPointerLeave = (event: PointerEvent) => {
-      if (event.pointerType === "mouse") isHoveredRef.current = false;
+    const onMouseLeave = () => {
+      isHoveredRef.current = false;
+    };
+    const onScroll = () => {
+      const half = container.scrollWidth / 2;
+      if (container.scrollLeft >= half) {
+        container.scrollLeft -= half;
+      } else if (container.scrollLeft <= 0 && half > 0) {
+        container.scrollLeft += half;
+      }
+      scrollPosRef.current = container.scrollLeft;
     };
 
-    positionAtMiddleCopy();
-    const resizeObserver = new ResizeObserver(positionAtMiddleCopy);
-    resizeObserver.observe(container);
-    container.addEventListener("pointerenter", onPointerEnter);
-    container.addEventListener("pointerleave", onPointerLeave);
+    container.addEventListener("mouseenter", onMouseEnter);
+    container.addEventListener("mouseleave", onMouseLeave);
+    container.addEventListener("scroll", onScroll, { passive: true });
 
     rafId = requestAnimationFrame(step);
 
     return () => {
       cancelAnimationFrame(rafId);
-      resizeObserver.disconnect();
-      container.removeEventListener("pointerenter", onPointerEnter);
-      container.removeEventListener("pointerleave", onPointerLeave);
+      container.removeEventListener("mouseenter", onMouseEnter);
+      container.removeEventListener("mouseleave", onMouseLeave);
+      container.removeEventListener("scroll", onScroll);
     };
   }, []);
 
@@ -299,34 +284,34 @@ function AboutPage() {
                 className="mask-edge-fade marquee-touch-scroll relative -mx-6 py-6 md:-mx-12 scrollbar-hide"
               >
                 <div className="flex w-max gap-6 px-6 md:px-12">
-                  {[0, 1, 2].map((copy) => (
-                    <div key={copy} className="flex shrink-0 gap-6" aria-hidden={copy !== 1}>
-                      {vignettes.map((vignette) => (
-                        <div
-                          key={`${copy}-${vignette.story}`}
-                          className="group relative w-[82vw] max-w-[340px] shrink-0 rounded-2xl border border-border/30 bg-card/55 px-6 py-6 shadow-[0_20px_45px_-14px_rgba(0,0,0,0.06)] backdrop-blur-md transition-all duration-300 hover:border-primary/40 hover:bg-card/75 hover:shadow-[0_28px_60px_-16px_rgba(0,0,0,0.1)] sm:max-w-[380px] sm:px-8 sm:py-7 md:max-w-[420px]"
-                        >
-                          <span
-                            aria-hidden
-                            className="absolute -left-2 -top-5 font-heading text-7xl leading-none text-primary/10 select-none transition-colors duration-300 group-hover:text-primary/20 sm:-left-4 sm:-top-7 sm:text-8xl"
-                          >
-                            “
-                          </span>
-                          <div className="absolute -bottom-4 -right-4 -z-10 h-24 w-24 rounded-full bg-primary/10 blur-2xl transition-opacity duration-300 group-hover:opacity-70" />
-                          <div className="relative max-w-3xl">
-                            <p className="text-sm italic leading-relaxed text-muted-foreground">{vignette.story}</p>
-                          </div>
-                          <div className="mt-4 flex items-center gap-2 border-t border-border/30 pt-3">
-                            <span aria-hidden className="text-lg leading-none text-primary/60">
-                              “
-                            </span>
-                            <p className="text-sm font-medium text-foreground/90">{vignette.quote}</p>
-                          </div>
-                          <p className="mt-1 pl-4 text-xs uppercase tracking-wider text-muted-foreground/70">
-                            — {vignette.attribution}
-                          </p>
-                        </div>
-                      ))}
+                  {[...vignettes, ...vignettes].map((vignette, i) => (
+                    <div
+                      key={`${vignette.story}-${i}`}
+                      className="group relative w-[82vw] max-w-[340px] shrink-0 rounded-2xl border border-border/30 bg-card/55 px-6 py-6 shadow-[0_20px_45px_-14px_rgba(0,0,0,0.06)] backdrop-blur-md transition-all duration-300 hover:border-primary/40 hover:bg-card/75 hover:shadow-[0_28px_60px_-16px_rgba(0,0,0,0.1)] sm:max-w-[380px] sm:px-8 sm:py-7 md:max-w-[420px]"
+                    >
+                      {/* Decorative floating quote mark */}
+                      <span
+                        aria-hidden
+                        className="absolute -left-2 -top-5 font-heading text-7xl leading-none text-primary/10 select-none transition-colors duration-300 group-hover:text-primary/20 sm:-left-4 sm:-top-7 sm:text-8xl"
+                      >
+                        “
+                      </span>
+
+                      {/* Subtle ambient glow */}
+                      <div className="absolute -bottom-4 -right-4 -z-10 h-24 w-24 rounded-full bg-primary/10 blur-2xl transition-opacity duration-300 group-hover:opacity-70" />
+
+                      <div className="relative max-w-3xl">
+                        <p className="text-sm italic leading-relaxed text-muted-foreground">{vignette.story}</p>
+                      </div>
+                      <div className="mt-4 flex items-center gap-2 border-t border-border/30 pt-3">
+                        <span aria-hidden className="text-lg leading-none text-primary/60">
+                          “
+                        </span>
+                        <p className="text-sm font-medium text-foreground/90">{vignette.quote}</p>
+                      </div>
+                      <p className="mt-1 pl-4 text-xs uppercase tracking-wider text-muted-foreground/70">
+                        — {vignette.attribution}
+                      </p>
                     </div>
                   ))}
                 </div>
