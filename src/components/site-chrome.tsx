@@ -99,9 +99,12 @@ export function SiteHeader() {
         </nav>
 
         <button
+          type="button"
           className="rounded-full p-2 transition-all duration-200 hover:bg-primary/10 hover:text-primary md:hidden"
           onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-          aria-label="Toggle menu"
+          aria-label={mobileMenuOpen ? "Close menu" : "Open menu"}
+          aria-expanded={mobileMenuOpen}
+          aria-controls="mobile-nav"
         >
           {mobileMenuOpen ? (
             <X className="h-6 w-6 text-foreground" />
@@ -112,7 +115,7 @@ export function SiteHeader() {
       </div>
 
       {mobileMenuOpen && (
-        <div className="border-t border-border/40 bg-background px-6 py-4 md:hidden">
+        <div id="mobile-nav" className="border-t border-border/40 bg-background px-6 py-4 md:hidden">
           <nav className="flex flex-col gap-2">
             {navItems.map((item) => (
               <NavLink
