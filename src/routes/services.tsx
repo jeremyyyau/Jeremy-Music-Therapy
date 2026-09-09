@@ -220,7 +220,7 @@ function ServicesPage() {
                       {String(i + 1).padStart(2, "0")}
                     </span>
                   </div>
-                  <div className="flex flex-grow items-start gap-4">
+                  <div className="flex flex-grow items-center gap-4">
                     <div className="inline-flex shrink-0 rounded-full border border-primary/20 bg-primary/10 p-2.5 transition-all duration-300 group-hover:bg-primary/25 group-hover:shadow-glow">
                       <item.icon className="h-4.5 w-4.5 text-primary" />
                     </div>
