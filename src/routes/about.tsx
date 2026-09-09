@@ -340,21 +340,18 @@ function AboutPage() {
               <div className="mt-6 space-y-4 text-base leading-relaxed text-muted-foreground">
                 <p>
                   These moments in my work changed the way I view music. They made it less about performer and audience,
-                  and more about music that belongs to everyone: whether it’s a made-up lullaby between mother and child,
-                  a rap song blaring in a teenager’s headphones, or a shaky duet of “Fly Me to the Moon” between husband
-                  and wife.
+                  and more about music that belongs to everyone: whether it’s a made-up lullaby between mother and
+                  child, a rap song blaring in a teenager’s headphones, or a shaky duet of “Fly Me to the Moon” between
+                  husband and wife.
                 </p>
                 <p>
                   We each develop a personal relationship with music, shaped by our experiences, relationships, culture
                   and changing preferences across the lifespan. The fact that we can describe songs as “my music”
-                  reflects how closely music can become connected to our sense of identity and self-expression. Music
-                  remains present across significant and everyday moments, evolving alongside us as we grow, develop and
-                  move through different stages of life.
+                  reflects how closely music can become connected to our sense of identity and self-expression.
                 </p>
                 <p>
-                  Above all else, music should never have to feel perfect to be meaningful. That belief is what drew me
-                  to music therapy: that there is music in every person, and everyone deserves the chance to discover
-                  what it can mean for them.
+                  Music remains present across significant and everyday moments, evolving alongside us as we grow,
+                  develop and move through different stages of life.
                 </p>
               </div>
             </Reveal>
@@ -382,8 +379,11 @@ function AboutPage() {
                 ))}
               </ul>
               <p className="mt-6 text-base leading-relaxed text-muted-foreground">
-                Above all, I aim to create a welcoming space where people feel safe to connect, express themselves, and
-                discover what’s possible through the power of music.
+                <p>
+                  Above all else, music should never have to feel perfect to be meaningful. That belief is what drew me
+                  to music therapy: that there is music in every person, and everyone deserves the chance to discover
+                  what it can mean for them.
+                </p>
               </p>
             </Reveal>
           </div>
