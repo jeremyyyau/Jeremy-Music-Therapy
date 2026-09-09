@@ -141,9 +141,10 @@ function AboutPage() {
     const speed = 0.6;
     let rafId: number;
     let isInView = false;
+    const reduceMotion = window.matchMedia?.("(prefers-reduced-motion: reduce)");
 
     const step = () => {
-      if (!isHoveredRef.current && isInView && !document.hidden) {
+      if (!isHoveredRef.current && isInView && !document.hidden && !reduceMotion?.matches) {
         scrollPosRef.current += speed;
         const half = container.scrollWidth / 2;
         if (scrollPosRef.current >= half) {

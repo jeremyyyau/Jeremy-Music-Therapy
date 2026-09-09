@@ -118,14 +118,20 @@ export default function ContactForm() {
           )}
         />
 
+        <div aria-live="polite" className="sr-only">
+          {status === "submitting" ? "Sending your message." : ""}
+        </div>
+
         {status === "success" && (
-          <div className="rounded-xl bg-primary/10 p-4 text-sm text-primary">
+          <div role="status" className="rounded-xl bg-primary/10 p-4 text-sm text-primary">
             Thank you for reaching out. I’ve received your message and will be in touch soon.
           </div>
         )}
 
         {status === "error" && (
-          <div className="rounded-xl bg-destructive/10 p-4 text-sm text-destructive">{errorMessage}</div>
+          <div role="alert" className="rounded-xl bg-destructive/10 p-4 text-sm text-destructive">
+            {errorMessage}
+          </div>
         )}
 
         <Button type="submit" disabled={status === "submitting"} className="w-full rounded-full" size="lg">

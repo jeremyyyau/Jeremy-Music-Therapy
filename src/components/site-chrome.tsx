@@ -1,4 +1,4 @@
-import { useState, type ReactNode } from "react";
+import { useEffect, useState, type ReactNode } from "react";
 import { Link } from "@tanstack/react-router";
 import { Music, Menu, X } from "lucide-react";
 
@@ -65,6 +65,16 @@ function NavLink({ item, onClick, className }: { item: NavItem; onClick?: () => 
 export function SiteHeader() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
+  useEffect(() => {
+    if (!mobileMenuOpen) return;
+    const onKeyDown = (event: KeyboardEvent) => {
+      if (event.key === "Escape") setMobileMenuOpen(false);
+    };
+    window.addEventListener("keydown", onKeyDown);
+    return () => window.removeEventListener("keydown", onKeyDown);
+  }, [mobileMenuOpen]);
+
+
   return (
     <header className="sticky top-0 z-50 w-full border-b border-border/40 bg-background/70 backdrop-blur-md">
       <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4">
@@ -89,9 +99,12 @@ export function SiteHeader() {
         </nav>
 
         <button
+          type="button"
           className="rounded-full p-2 transition-all duration-200 hover:bg-primary/10 hover:text-primary md:hidden"
           onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-          aria-label="Toggle menu"
+          aria-label={mobileMenuOpen ? "Close menu" : "Open menu"}
+          aria-expanded={mobileMenuOpen}
+          aria-controls="mobile-nav"
         >
           {mobileMenuOpen ? (
             <X className="h-6 w-6 text-foreground" />
@@ -102,7 +115,7 @@ export function SiteHeader() {
       </div>
 
       {mobileMenuOpen && (
-        <div className="border-t border-border/40 bg-background px-6 py-4 md:hidden">
+        <div id="mobile-nav" className="border-t border-border/40 bg-background px-6 py-4 md:hidden">
           <nav className="flex flex-col gap-2">
             {navItems.map((item) => (
               <NavLink
@@ -160,9 +173,15 @@ export function SitePage({ children }: { children: ReactNode }) {
           is resolved against the viewport (iPad/Safari treat an ancestor with
           overflow clipping as the scroll container, which made it drift). */}
       <SiteBackground />
+      <a
+        href="#main-content"
+        className="sr-only rounded-full bg-primary px-4 py-2 text-sm font-medium text-primary-foreground focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-[60]"
+      >
+        Skip to content
+      </a>
       <div className="relative min-h-screen overflow-x-clip">
         <SiteHeader />
-        <main>{children}</main>
+        <main id="main-content">{children}</main>
         <SiteFooter />
       </div>
     </>
