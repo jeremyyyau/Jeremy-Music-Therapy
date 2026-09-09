@@ -112,7 +112,8 @@ const vignettes = [
   {
     story:
       "During a childcare group formed to support a child with selective mutism, she was able to make a “sss” sound with the group, which after several weeks progressed to her first word in public.",
-    quote: "It's like something clicked and she's ready to join in now, I see the other children starting to play with her, and I've even heard her laugh a few times!",
+    quote:
+      "It's like something clicked and she's ready to join in now, I see the other children starting to play with her, and I've even heard her laugh a few times!",
     attribution: "Educator / Staff",
   },
 ];
@@ -260,21 +261,22 @@ function AboutPage() {
               </div>
               <div className="mt-6 space-y-4 text-base leading-relaxed text-muted-foreground">
                 <p>
-                  These moments changed my relationship with music — made it less about performer and audience, and more
-                  about music that belongs to everyone: whether it's a made-up lullaby between mother and child, a rap
-                  song in a teenager’s headphones, a shaky duet of “Fly Me To The Moon” between husband and wife.
+                  These moments in my work changed the way I view music — made it less about performer and audience, and
+                  more about music that belongs to everyone: whether it's a made-up lullaby between mother and child, a
+                  rap song blaring in a teenager’s headphones, or a shaky duet of “Fly Me To The Moon” between husband
+                  and wife.
                 </p>
                 <p>
                   We each develop a personal relationship with music, shaped by our experiences, relationships, culture
-                  and changing preferences across the lifespan. The way we describe songs as “my music” reflects how
-                  closely music can become connected to our sense of identity and self-expression. Music can remain
-                  present across both significant and everyday moments, evolving alongside us as we grow, develop and
+                  and changing preferences across the lifespan. The fact that we can describe songs as “my music”
+                  reflects how closely music can become connected to our sense of identity and self-expression. Music
+                  remains present across significant and everyday moments, evolving alongside us as we grow, develop and
                   move through different stages of life.
                 </p>
                 <p>
-                  Above all else, music doesn’t have to be perfect to be meaningful. That belief is what drew me to
-                  music therapy: there is music in every person, and everyone deserves the chance to discover what it
-                  can mean for them.
+                  Above all else, music should never have to feel perfect to be meaningful. That belief is what drew me
+                  to music therapy: that there is music in every person, and everyone deserves the chance to discover
+                  what it can mean for them.
                 </p>
               </div>
             </Reveal>
