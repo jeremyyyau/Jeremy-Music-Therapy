@@ -122,7 +122,6 @@ const vignettes = [
 function AboutPage() {
   const marqueeRef = useRef<HTMLDivElement>(null);
   const isHoveredRef = useRef(false);
-  const isTouchedRef = useRef(false);
   const scrollPosRef = useRef(0);
 
   useEffect(() => {
@@ -133,7 +132,7 @@ function AboutPage() {
     let rafId: number;
 
     const step = () => {
-      if (!isHoveredRef.current && !isTouchedRef.current) {
+      if (!isHoveredRef.current) {
         scrollPosRef.current += speed;
         const half = container.scrollWidth / 2;
         if (scrollPosRef.current >= half) {
@@ -150,12 +149,6 @@ function AboutPage() {
     const onMouseLeave = () => {
       isHoveredRef.current = false;
     };
-    const onTouchStart = () => {
-      isTouchedRef.current = true;
-    };
-    const onTouchEnd = () => {
-      isTouchedRef.current = false;
-    };
     const onScroll = () => {
       const half = container.scrollWidth / 2;
       if (container.scrollLeft >= half) {
@@ -168,8 +161,6 @@ function AboutPage() {
 
     container.addEventListener("mouseenter", onMouseEnter);
     container.addEventListener("mouseleave", onMouseLeave);
-    container.addEventListener("touchstart", onTouchStart, { passive: true });
-    container.addEventListener("touchend", onTouchEnd);
     container.addEventListener("scroll", onScroll, { passive: true });
 
     rafId = requestAnimationFrame(step);
@@ -178,8 +169,6 @@ function AboutPage() {
       cancelAnimationFrame(rafId);
       container.removeEventListener("mouseenter", onMouseEnter);
       container.removeEventListener("mouseleave", onMouseLeave);
-      container.removeEventListener("touchstart", onTouchStart);
-      container.removeEventListener("touchend", onTouchEnd);
       container.removeEventListener("scroll", onScroll);
     };
   }, []);
@@ -292,7 +281,7 @@ function AboutPage() {
               </h2>
               <div
                 ref={marqueeRef}
-                className="mask-edge-fade relative -mx-6 cursor-grab overflow-x-auto py-6 active:cursor-grabbing md:-mx-12 scrollbar-hide"
+                className="mask-edge-fade marquee-touch-scroll relative -mx-6 py-6 md:-mx-12 scrollbar-hide"
               >
                 <div className="flex w-max gap-6 px-6 md:px-12">
                   {[...vignettes, ...vignettes].map((vignette, i) => (
