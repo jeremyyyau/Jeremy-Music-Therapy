@@ -265,10 +265,10 @@ function ServicesPage() {
             </h2>
             <div className="mt-6 space-y-4 text-base leading-relaxed text-muted-foreground">
               <p>
-                Larger clinics suit some families, while others value the continuity and flexibility of one clinician
-                who holds the whole clinical picture. As an independent Registered Music Therapist, I offer personalised
-                care built on therapeutic alliance, collaboration and shared decision-making — so clinical time and
-                funding are used thoughtfully and therapy stays meaningful and sustainable.
+                Larger clinics suit some families, while others value the continuity and flexibility of one clinician who holds the whole clinical picture. 
+
+
+                As an independent Registered Music Therapist, I offer personalized care built on therapeutic alliance, collaboration and shared decision-making — so clinical time and funding are used thoughtfully and therapy stays meaningful and sustainable.
               </p>
             </div>
           </Reveal>
