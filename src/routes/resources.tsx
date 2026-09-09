@@ -177,9 +177,9 @@ function ResourcesPage() {
               Have a resource to share?
             </h2>
             <p className="mt-4 text-base leading-relaxed text-muted-foreground">
-              Therapists are always looking for thoughtful, accessible tools that can support the people we walk
+               Therapists are always on the lookout for thoughtful, accessible tools that can support the people we walk
               alongside. If you know of an app, website or creative resource that has made a difference for you or someone
-              you care for, I’d love to hear about it. Your suggestion might become a meaningful bridge for another
+               you care for, I’d love to hear about it. Your suggestion might become a meaningful bridge for another
               client, another family, or another moment of connection.
             </p>
             <div className="mt-6">
