@@ -225,7 +225,7 @@ function ServicesPage() {
                       <item.icon className="h-4.5 w-4.5 text-primary" />
                     </div>
                     <div>
-                      <p className="font-heading text-base font-semibold text-card-foreground text-balance md:leading-snug">{item.title}</p>
+                      <p className="font-heading text-base font-semibold text-card-foreground line-clamp-2 text-balance md:leading-snug">{item.title}</p>
                       <p className="mt-1 text-sm leading-relaxed text-muted-foreground text-balance">{item.description}</p>
                     </div>
                   </div>
