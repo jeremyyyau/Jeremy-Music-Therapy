@@ -157,6 +157,12 @@ function AboutPage() {
       isTouchedRef.current = false;
     };
     const onScroll = () => {
+      const half = container.scrollWidth / 2;
+      if (container.scrollLeft >= half) {
+        container.scrollLeft -= half;
+      } else if (container.scrollLeft <= 0 && half > 0) {
+        container.scrollLeft += half;
+      }
       scrollPosRef.current = container.scrollLeft;
     };
 
