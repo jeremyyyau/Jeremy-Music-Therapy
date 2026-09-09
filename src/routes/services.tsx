@@ -200,8 +200,17 @@ function ServicesPage() {
                   icon: Phone,
                   label: "Notice & flexibility",
                   title: "Cancellations",
-                  description:
-                    "24 hour notice is appreciated, though flexibility is offered depending on circumstances.",
+                  description: (
+                    <>
+                      24 hour notice is appreciated,
+                      <br />
+                      though flexibility is offered
+                      <br />
+                      depending on
+                      <br />
+                      circumstances.
+                    </>
+                  ),
                 },
                 {
                   icon: Receipt,
