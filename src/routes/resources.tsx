@@ -30,6 +30,8 @@ export const Route = createFileRoute("/resources")({
         content:
           "A curated collection of free, creative and accessible music-based websites and tools for exploration, learning and play.",
       },
+      { property: "og:type", content: "website" },
+      { name: "twitter:card", content: "summary_large_image" },
     ],
   }),
 });

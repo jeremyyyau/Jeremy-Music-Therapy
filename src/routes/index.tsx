@@ -186,7 +186,7 @@ function Index() {
                 icon: Calendar,
                 title: "Tailored to you",
                 description:
-                  "Methods adapted to each individual to inspire and motivate — ensuring accessibility, strengths-based and resource-oriented processes.",
+                  "Methods adapted to each individual to inspire and motivate — ensuring accessible, strengths-based and resource-oriented processes.",
               },
             ].map((item, i) => (
               <Reveal
@@ -254,7 +254,7 @@ function Index() {
                 icon: Users,
                 title: "Community Sessions",
                 description:
-                  "Individual and group work in childcare, schools and SIL settings to generalise skills in familiar settings.",
+                  "Individual and group work in childcare, schools and SIL settings to generalise skills in familiar environments.",
               },
               {
                 icon: MessagesSquare,
@@ -460,7 +460,7 @@ function ContactForm() {
               <FormItem>
                 <FormLabel className="text-foreground">Phone (optional)</FormLabel>
                 <FormControl>
-                  <Input placeholder="0412-345-678" {...field} className="rounded-xl" />
+                  <Input placeholder="0412 345 678" {...field} className="rounded-xl" />
                 </FormControl>
                 <FormMessage />
               </FormItem>
@@ -489,7 +489,7 @@ function ContactForm() {
               <FormLabel className="text-foreground">Message</FormLabel>
               <FormControl>
                 <Textarea
-                  placeholder="Tell me a little about what you’re looking for..."
+                  placeholder="Tell me a little about what you’re looking for…"
                   rows={5}
                   {...field}
                   className="rounded-xl"

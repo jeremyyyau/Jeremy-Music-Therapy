@@ -87,7 +87,7 @@ const instruments = [
 const vignettes = [
   {
     story:
-      "After a year of sessions, a non-speaking client sang one word — \"be\" — in the song 'Let It Be' for an end-of-year performance, met with tears and thunderous applause from family and staff.",
+      "After a year of sessions, a non-speaking client sang one word — “be” — in the song ‘Let It Be’ for an end-of-year performance, met with tears and thunderous applause from family and staff.",
     quote: "I've known her for years and have never heard her voice, that was so beautiful!",
     attribution: "Support worker / Staff",
   },
@@ -99,7 +99,7 @@ const vignettes = [
   },
   {
     story:
-      "A child was introduced to me by his parents as “non-verbal” but loved making animal sounds during 'Old Macdonald'. After two years, his communication progressed to full sentences.",
+      "A child was introduced to me by his parents as “non-verbal” but loved making animal sounds during ‘Old MacDonald’. After two years, his communication progressed to full sentences.",
     quote: "We used to cry and pray he would be able to talk, now sometimes we just wish he would stop talking!",
     attribution: "Parent / Carer",
   },
