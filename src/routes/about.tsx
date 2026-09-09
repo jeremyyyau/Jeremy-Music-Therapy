@@ -86,7 +86,7 @@ const instruments = [
 const vignettes = [
   {
     story:
-      "After a year of therapy, a non-speaking client sang one word — \"be\" — in the song 'Let It Be' for an end-of-year performance, met with tears and thunderous applause from family and staff.",
+      "After a year of sessions, a non-speaking client sang one word — \"be\" — in the song 'Let It Be' for an end-of-year performance, met with tears and thunderous applause from family and staff.",
     quote: "I've known her for years and have never heard her voice, that was so beautiful!",
     attribution: "Support worker / Staff",
   },
@@ -98,7 +98,7 @@ const vignettes = [
   },
   {
     story:
-      "A child was introduced to me by his parents as “non-verbal” but loved making animal sounds. After two years, his communication progressed to full sentences.",
+      "A child was introduced to me by his parents as “non-verbal” but loved making animal sounds during 'Old Macdonald'. After two years, his communication progressed to full sentences.",
     quote: "We used to cry and pray he would be able to talk, now sometimes we just wish he would stop talking!",
     attribution: "Parent / Carer",
   },
@@ -106,14 +106,14 @@ const vignettes = [
     story:
       "I was able to have a meaningful conversation with an adolescent boy after years of school sessions, where he committed to pursuing rap and music as a career",
     quote:
-      "I'm not trying to be like my parents and waste my life, I want to make songs about my life that people like me can relate to",
+      "I'm not trying to be like my parents and waste my life, after I graduate I'm gonna write songs about my life that people like me can relate to",
     attribution: "CLIENT",
   },
   {
     story:
-      "An older adult living with dementia joined a group drumming circle and started humming the melody of a song she hadn’t heard in decades.",
-    quote: "She lit up like her old self again.",
-    attribution: "Family member / Carer",
+      "During a childcare group formed to support a child with selective mutism, she was able to make a "sss" sound with the group, which after several weeks progressed to her first word in public."
+    quote: "It's like something clicked and she's ready to join in now, I see the other children starting to play with her, and I've even heard her laugh a few times!",
+    attribution: "Educator / Staff",
   },
 ];
 
