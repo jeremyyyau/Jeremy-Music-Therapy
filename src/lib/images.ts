@@ -47,20 +47,16 @@ import res640 from "@/assets/resources-hero-640.webp";
 import res960 from "@/assets/resources-hero-960.webp";
 import res1280 from "@/assets/resources-hero-1280.webp";
 
-type Pointer = unknown;
-
-const urlOf = (pointer: Pointer): string => (pointer as { url: string }).url;
-
 function build(
-  full: Pointer,
+  full: string,
   fullWidth: number,
-  variants: Array<[Pointer, number]>,
+  variants: Array<[string, number]>,
 ): { src: string; srcSet: string } {
   return {
-    src: urlOf(full),
+    src: full,
     srcSet: [
-      ...variants.map(([p, w]) => `${urlOf(p)} ${w}w`),
-      `${urlOf(full)} ${fullWidth}w`,
+      ...variants.map(([p, w]) => `${p} ${w}w`),
+      `${full} ${fullWidth}w`,
     ].join(", "),
   };
 }
