@@ -5,14 +5,14 @@ import { Reveal } from "@/components/reveal";
 import { QuoteBand } from "@/components/quote-band";
 
 import { resourcesHeroImage, SIZES_CONTENT } from "@/lib/images";
-import imgSuno from "@/assets/res-suno.webp.asset.json";
-import imgChromeMusicLab from "@/assets/res-chromemusiclab.webp.asset.json";
-import imgBandLab from "@/assets/res-bandlab.webp.asset.json";
-import imgBlobOpera from "@/assets/res-blobopera.webp.asset.json";
-import imgIncredibox from "@/assets/res-incredibox.webp.asset.json";
-import imgPbsKids from "@/assets/res-pbskids.webp.asset.json";
-import imgLevelUpMusicianship from "@/assets/res-levelupmusicianship.webp.asset.json";
-import imgMyWayTogether from "@/assets/res-mywaytogether-v4.webp.asset.json";
+import imgSuno from "@/assets/res-suno.webp";
+import imgChromeMusicLab from "@/assets/res-chromemusiclab.webp";
+import imgBandLab from "@/assets/res-bandlab.webp";
+import imgBlobOpera from "@/assets/res-blobopera.webp";
+import imgIncredibox from "@/assets/res-incredibox.webp";
+import imgPbsKids from "@/assets/res-pbskids.webp";
+import imgLevelUpMusicianship from "@/assets/res-levelupmusicianship.webp";
+import imgMyWayTogether from "@/assets/res-mywaytogether-v4.webp";
 
 export const Route = createFileRoute("/resources")({
   component: ResourcesPage,
@@ -52,49 +52,49 @@ const resources = [
   {
     label: "Suno",
     url: "https://suno.com",
-    image: imgSuno.url,
+    image: imgSuno,
     description: "Generate songs from simple text prompts.",
   },
   {
     label: "Chrome Music Lab",
     url: "https://musiclab.chromeexperiments.com",
-    image: imgChromeMusicLab.url,
+    image: imgChromeMusicLab,
     description: "Playful experiments in rhythm, melody and sound.",
   },
   {
     label: "BandLab",
     url: "https://www.bandlab.com",
-    image: imgBandLab.url,
+    image: imgBandLab,
     description: "Create and share music in a free online studio.",
   },
   {
     label: "Blob Opera",
     url: "https://artsandculture.google.com/experiment/blob-opera/AAHWrq360NcGbw",
-    image: imgBlobOpera.url,
+    image: imgBlobOpera,
     description: "Guide singing blobs through harmonies and melodies.",
   },
   {
     label: "Incredibox",
     url: "https://www.incredibox.com",
-    image: imgIncredibox.url,
+    image: imgIncredibox,
     description: "Build layered beats by dressing up a beatbox crew.",
   },
   {
     label: "PBS Kids Music",
     url: "https://pbskids.org/games/music",
-    image: imgPbsKids.url,
+    image: imgPbsKids,
     description: "Music games and songs designed for young learners.",
   },
   {
     label: "Level Up Musicianship",
     url: "https://levelupmusicianship.com/games",
-    image: imgLevelUpMusicianship.url,
+    image: imgLevelUpMusicianship,
     description: "Playful music theory games that build listening and reading skills.",
   },
   {
     label: "My Way Together",
     url: "https://apps.apple.com/us/app/my-way-together/id6796318818",
-    image: imgMyWayTogether.url,
+    image: imgMyWayTogether,
     description: "Calm, simple tools that support communication and choice.",
   },
 ];

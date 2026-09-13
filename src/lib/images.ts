@@ -7,60 +7,56 @@
  * is unchanged from before.
  */
 
-import heroFull from "@/assets/hero-music-therapy.webp.asset.json";
-import hero640 from "@/assets/hero-music-therapy-640.webp.asset.json";
-import hero960 from "@/assets/hero-music-therapy-960.webp.asset.json";
-import hero1280 from "@/assets/hero-music-therapy-1280.webp.asset.json";
+import heroFull from "@/assets/hero-music-therapy.webp";
+import hero640 from "@/assets/hero-music-therapy-640.webp";
+import hero960 from "@/assets/hero-music-therapy-960.webp";
+import hero1280 from "@/assets/hero-music-therapy-1280.webp";
 
-import jeremyFull from "@/assets/about-jeremy.webp.asset.json";
-import jeremy640 from "@/assets/about-jeremy-640.webp.asset.json";
-import jeremy960 from "@/assets/about-jeremy-960.webp.asset.json";
-import jeremy1280 from "@/assets/about-jeremy-1280.webp.asset.json";
+import jeremyFull from "@/assets/about-jeremy.webp";
+import jeremy640 from "@/assets/about-jeremy-640.webp";
+import jeremy960 from "@/assets/about-jeremy-960.webp";
+import jeremy1280 from "@/assets/about-jeremy-1280.webp";
 
-import aboutFull from "@/assets/about-hero.webp.asset.json";
-import about640 from "@/assets/about-hero-640.webp.asset.json";
-import about960 from "@/assets/about-hero-960.webp.asset.json";
-import about1280 from "@/assets/about-hero-1280.webp.asset.json";
+import aboutFull from "@/assets/about-hero.webp";
+import about640 from "@/assets/about-hero-640.webp";
+import about960 from "@/assets/about-hero-960.webp";
+import about1280 from "@/assets/about-hero-1280.webp";
 
-import familyFull from "@/assets/mt-family.webp.asset.json";
-import family640 from "@/assets/mt-family-640.webp.asset.json";
-import family960 from "@/assets/mt-family-960.webp.asset.json";
-import family1280 from "@/assets/mt-family-1280.webp.asset.json";
+import familyFull from "@/assets/mt-family.webp";
+import family640 from "@/assets/mt-family-640.webp";
+import family960 from "@/assets/mt-family-960.webp";
+import family1280 from "@/assets/mt-family-1280.webp";
 
-import keyboardFull from "@/assets/mt-keyboard.webp.asset.json";
-import keyboard640 from "@/assets/mt-keyboard-640.webp.asset.json";
-import keyboard960 from "@/assets/mt-keyboard-960.webp.asset.json";
-import keyboard1280 from "@/assets/mt-keyboard-1280.webp.asset.json";
+import keyboardFull from "@/assets/mt-keyboard.webp";
+import keyboard640 from "@/assets/mt-keyboard-640.webp";
+import keyboard960 from "@/assets/mt-keyboard-960.webp";
+import keyboard1280 from "@/assets/mt-keyboard-1280.webp";
 
-import svcIndFull from "@/assets/svc-individual.webp.asset.json";
-import svcInd640 from "@/assets/svc-individual-640.webp.asset.json";
-import svcInd960 from "@/assets/svc-individual-960.webp.asset.json";
-import svcInd1280 from "@/assets/svc-individual-1280.webp.asset.json";
+import svcIndFull from "@/assets/svc-individual.webp";
+import svcInd640 from "@/assets/svc-individual-640.webp";
+import svcInd960 from "@/assets/svc-individual-960.webp";
+import svcInd1280 from "@/assets/svc-individual-1280.webp";
 
-import svcGrpFull from "@/assets/svc-group.webp.asset.json";
-import svcGrp640 from "@/assets/svc-group-640.webp.asset.json";
-import svcGrp960 from "@/assets/svc-group-960.webp.asset.json";
-import svcGrp1280 from "@/assets/svc-group-1280.webp.asset.json";
+import svcGrpFull from "@/assets/svc-group.webp";
+import svcGrp640 from "@/assets/svc-group-640.webp";
+import svcGrp960 from "@/assets/svc-group-960.webp";
+import svcGrp1280 from "@/assets/svc-group-1280.webp";
 
-import resFull from "@/assets/resources-hero.webp.asset.json";
-import res640 from "@/assets/resources-hero-640.webp.asset.json";
-import res960 from "@/assets/resources-hero-960.webp.asset.json";
-import res1280 from "@/assets/resources-hero-1280.webp.asset.json";
-
-type Pointer = unknown;
-
-const urlOf = (pointer: Pointer): string => (pointer as { url: string }).url;
+import resFull from "@/assets/resources-hero.webp";
+import res640 from "@/assets/resources-hero-640.webp";
+import res960 from "@/assets/resources-hero-960.webp";
+import res1280 from "@/assets/resources-hero-1280.webp";
 
 function build(
-  full: Pointer,
+  full: string,
   fullWidth: number,
-  variants: Array<[Pointer, number]>,
+  variants: Array<[string, number]>,
 ): { src: string; srcSet: string } {
   return {
-    src: urlOf(full),
+    src: full,
     srcSet: [
-      ...variants.map(([p, w]) => `${urlOf(p)} ${w}w`),
-      `${urlOf(full)} ${fullWidth}w`,
+      ...variants.map(([p, w]) => `${p} ${w}w`),
+      `${full} ${fullWidth}w`,
     ].join(", "),
   };
 }
