@@ -4,8 +4,15 @@ import type { Database } from "@/integrations/supabase/types";
 import { contactFormSchema, type ContactFormValues } from "./contact.schema";
 
 function createServerSupabaseClient() {
-  const url = process.env.SUPABASE_URL!;
-  const key = process.env.SUPABASE_PUBLISHABLE_KEY!;
+  const url = process.env.SUPABASE_URL ?? process.env.VITE_SUPABASE_URL;
+  const key =
+    process.env.SUPABASE_PUBLISHABLE_KEY ??
+    process.env.VITE_SUPABASE_PUBLISHABLE_KEY ??
+    process.env.SUPABASE_ANON_KEY;
+
+  if (!url || !key) {
+    throw new Error("The message service is not configured on this deployment.");
+  }
 
   return createClient<Database>(url, key, {
     auth: { persistSession: false },
