@@ -178,11 +178,14 @@ function ResourcesPage() {
             <h2 className="font-heading text-2xl font-semibold text-foreground md:text-3xl">
               Have a resource to share?
             </h2>
-            <p className="mt-4 text-base leading-relaxed text-muted-foreground">
-               Therapists are always on the lookout for thoughtful, accessible tools that can support the people we walk
-              alongside. If you know of an app, website or creative resource that has made a difference for you or someone
-               you care for, I’d love to hear about it. Your suggestion might become a meaningful bridge for another
-              client, another family, or another moment of connection.
+            <p className="mt-4 whitespace-pre-line text-base leading-relaxed text-muted-foreground">
+              Therapists are always on the lookout for thoughtful, accessible tools that can support the people we walk alongside.
+
+
+              If you know of an app, website or creative resource that has made a difference for you or someone you care for, I’d love to hear about it. 
+
+
+              Your suggestion might become a meaningful bridge for another client, another family, or another moment of connection.
             </p>
             <div className="mt-6">
               <Button asChild variant="outline" className="rounded-full">
