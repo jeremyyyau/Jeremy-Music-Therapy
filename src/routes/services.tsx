@@ -310,9 +310,9 @@ function ServicesPage() {
             <h2 className="font-heading text-2xl font-semibold text-foreground md:text-3xl">Finding the right fit</h2>
             <p className="mt-4 text-base italic leading-relaxed text-muted-foreground">
               There is no single approach that suits everyone. Take the time to explore your options — not only the
-              service, but the person providing it.&nbsp; &nbsp;
-                </p>
-                <p 
+              service, but the person providing it.
+            </p>
+            <p className="mt-4 text-base italic leading-relaxed text-muted-foreground">
               A strong therapeutic fit grows from trust and connection, and I am privileged to be trusted by my clients
               with that opportunity.
             </p>
