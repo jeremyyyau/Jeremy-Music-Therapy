@@ -208,9 +208,9 @@ function ServicesPage() {
                       <br />
                       appreciated, though
                       <br />
-                      flexibility offered
+                      flexibility offered according
                       <br />
-                      as circumstances allow.
+                      to circumstances.
                     </>
                   ),
                 },
