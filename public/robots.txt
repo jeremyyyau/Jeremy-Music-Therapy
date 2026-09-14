@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://harmony-connect-folio.lovable.app/sitemap.xml
+Sitemap: https://jeremymusictherapy.com/sitemap.xml
