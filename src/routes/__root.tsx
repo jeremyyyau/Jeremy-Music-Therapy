@@ -79,9 +79,9 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { name: "author", content: "Music Therapy Practice" },
+      { name: "author", content: "Jeremy Yau Music Therapy" },
       { property: "og:type", content: "website" },
-      { property: "og:site_name", content: "Music Therapy Practice" },
+      { property: "og:site_name", content: "Jeremy Yau Music Therapy" },
       { name: "twitter:card", content: "summary_large_image" },
     ],
     links: [

@@ -18,7 +18,7 @@ export const Route = createFileRoute("/resources")({
   component: ResourcesPage,
   head: () => ({
     meta: [
-      { title: "Resources | Music Therapy Practice" },
+      { title: "Resources | Jeremy Yau Music Therapy" },
       {
         name: "description",
         content:
