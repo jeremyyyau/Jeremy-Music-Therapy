@@ -37,11 +37,11 @@ export const Route = createFileRoute("/music-therapy")({
           "Music therapy uses active and receptive music interventions to support emotional, cognitive, physical and social goals — for people of all abilities.",
       },
       { property: "og:type", content: "website" },
-      { property: "og:url", content: "https://harmony-connect-folio.lovable.app/music-therapy" },
+      { property: "og:url", content: "https://jeremymusictherapy.com/music-therapy" },
       { name: "twitter:card", content: "summary_large_image" },
     ],
     links: [
-      { rel: "canonical", href: "https://harmony-connect-folio.lovable.app/music-therapy" },
+      { rel: "canonical", href: "https://jeremymusictherapy.com/music-therapy" },
       {
         rel: "preload",
         as: "image",
