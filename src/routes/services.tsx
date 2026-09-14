@@ -311,8 +311,8 @@ function ServicesPage() {
             <p className="mt-4 text-base italic leading-relaxed text-muted-foreground">
               There is no single approach that suits everyone. Take the time to explore your options — not only the
               service, but the person providing it.&nbsp; &nbsp;
-
-
+                </p>
+                <p 
               A strong therapeutic fit grows from trust and connection, and I am privileged to be trusted by my clients
               with that opportunity.
             </p>
