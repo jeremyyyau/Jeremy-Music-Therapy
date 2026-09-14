@@ -35,6 +35,16 @@ function lastLineRatio(p: HTMLElement): number {
   return blockWidth > 0 ? lastWidth / blockWidth : 1;
 }
 
+/**
+ * Keeps a short word that *starts* a new sentence from being stranded at the
+ * end of a line (". In" / ". A" reads oddly). The word is glued to the next
+ * one with a non-breaking space so they wrap together.
+ */
+const SENTENCE_START = /([.!?…]["')\]]?)\s+([^\s]{1,5})\s+/g;
+function bindSentenceStarts(text: string): string {
+  return text.replace(SENTENCE_START, (_m, end: string, word: string) => `${end} ${word}\u00a0`);
+}
+
 function fixParagraph(p: HTMLElement, original: string) {
   // Restore pristine text first so every pass starts clean.
   if (p.textContent !== original) p.textContent = original;
@@ -42,7 +52,7 @@ function fixParagraph(p: HTMLElement, original: string) {
 
   const words = original.split(" ");
   for (let joins = 1; joins <= MAX_JOINS && words.length > joins + 2; joins++) {
-    const tail = words.slice(-joins - 1).join(" ");
+    const tail = words.slice(-joins - 1).join(" ");
     const text = [...words.slice(0, -joins - 1), tail].join(" ");
     p.textContent = text;
     if (lastLineRatio(p) >= MIN_RATIO) return;
@@ -65,9 +75,14 @@ export function PrettyText() {
       paras.forEach((p) => {
         // Skip paragraphs containing links or other elements.
         if (p.children.length > 0) return;
-        const original = originals.get(p) ?? p.textContent ?? "";
+        const original =
+          originals.get(p) ?? bindSentenceStarts(p.textContent ?? "");
         originals.set(p, original);
-        if (original.trim().length < MIN_CHARS) return;
+        if (original.trim().length < MIN_CHARS) {
+          // Still apply sentence-start binding to short paragraphs.
+          if (p.textContent !== original) p.textContent = original;
+          return;
+        }
         fixParagraph(p, original);
       });
     };
