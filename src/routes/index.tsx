@@ -57,7 +57,7 @@ export const Route = createFileRoute("/")({
         children: JSON.stringify({
           "@context": "https://schema.org",
           "@type": "ProfessionalService",
-          name: "Music Therapy Practice — Jeremy Yau, Registered Music Therapist (RMT)",
+          name: "Jeremy Yau Music Therapy",
           url: "https://harmony-connect-folio.lovable.app/",
           description:
             "Independent Registered Music Therapist (RMT) with 8+ years of clinical experience. Home visits, telehealth and home clinic sessions in Picnic Point.",

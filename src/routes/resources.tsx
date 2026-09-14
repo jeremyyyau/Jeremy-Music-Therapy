@@ -18,13 +18,13 @@ export const Route = createFileRoute("/resources")({
   component: ResourcesPage,
   head: () => ({
     meta: [
-      { title: "Resources | Music Therapy Practice" },
+      { title: "Resources | Jeremy Yau Music Therapy" },
       {
         name: "description",
         content:
           "A curated collection of free, creative and accessible music-based websites and tools for exploration, learning and play.",
       },
-      { property: "og:title", content: "Resources | Music Therapy Practice" },
+      { property: "og:title", content: "Resources | Jeremy Yau Music Therapy" },
       {
         property: "og:description",
         content:
