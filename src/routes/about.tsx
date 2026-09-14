@@ -25,11 +25,11 @@ export const Route = createFileRoute("/about")({
           "Registered Music Therapist with a Master of Music Therapy (University of Melbourne) and 8+ years across hospitals, schools, disability, aged care and community settings.",
       },
       { property: "og:type", content: "website" },
-      { property: "og:url", content: "https://harmony-connect-folio.lovable.app/about" },
+      { property: "og:url", content: "https://jeremymusictherapy.com/about" },
       { name: "twitter:card", content: "summary_large_image" },
     ],
     links: [
-      { rel: "canonical", href: "https://harmony-connect-folio.lovable.app/about" },
+      { rel: "canonical", href: "https://jeremymusictherapy.com/about" },
       {
         rel: "preload",
         as: "image",

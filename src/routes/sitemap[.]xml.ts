@@ -1,7 +1,7 @@
 import { createFileRoute } from "@tanstack/react-router";
 import type {} from "@tanstack/react-start";
 
-const BASE_URL = "https://harmony-connect-folio.lovable.app";
+const BASE_URL = "https://jeremymusictherapy.com";
 
 const PATHS = [
   "/",

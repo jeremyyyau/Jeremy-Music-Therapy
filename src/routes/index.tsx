@@ -31,7 +31,7 @@ export const Route = createFileRoute("/")({
           "Independent Registered Music Therapist (RMT) with 8+ years of clinical experience. Home visits, telehealth and home clinic sessions in Picnic Point.",
       },
       { property: "og:type", content: "website" },
-      { property: "og:url", content: "https://harmony-connect-folio.lovable.app/" },
+      { property: "og:url", content: "https://jeremymusictherapy.com/" },
       { name: "twitter:card", content: "summary_large_image" },
       { name: "twitter:title", content: "Registered Music Therapist | Personalised Music Therapy" },
       {
@@ -41,7 +41,7 @@ export const Route = createFileRoute("/")({
       },
     ],
     links: [
-      { rel: "canonical", href: "https://harmony-connect-folio.lovable.app/" },
+      { rel: "canonical", href: "https://jeremymusictherapy.com/" },
       {
         rel: "preload",
         as: "image",
@@ -58,7 +58,7 @@ export const Route = createFileRoute("/")({
           "@context": "https://schema.org",
           "@type": "ProfessionalService",
           name: "Jeremy Yau Music Therapy",
-          url: "https://harmony-connect-folio.lovable.app/",
+          url: "https://jeremymusictherapy.com/",
           description:
             "Independent Registered Music Therapist (RMT) with 8+ years of clinical experience. Home visits, telehealth and home clinic sessions in Picnic Point.",
           areaServed: { "@type": "City", name: "Sydney, Australia" },
