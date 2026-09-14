@@ -119,7 +119,7 @@ const vignettes = [
     story:
       "After years of school sessions, I was able to have a meaningful conversation with an adolescent boy in which he committed to pursuing rap and music as a career.",
     quote:
-      "I'm not trying to be like my parents and waste my life, after I graduate I'm gonna write songs about my life that people like me can actually relate to.",
+      "I'm not trying to be like my parents and waste my life, after I graduate I'm gonna write songs that people like me can relate to.",
     attribution: "CLIENT",
   },
   {
@@ -380,9 +380,9 @@ function AboutPage() {
                 ))}
               </ul>
               <p className="mt-6 text-base leading-relaxed text-muted-foreground">
-                Above all else, music shouldn't need to feel perfect to be meaningful. That belief is what drew me to music
-                therapy: that there is musicality in every person, and everyone deserves the chance to discover what it
-                can mean for them.
+                Above all else, music shouldn't need to feel perfect to be meaningful. That belief is what drew me to
+                music therapy: that there is musicality in every person, and everyone deserves the chance to discover
+                what it can mean for them.
               </p>
             </Reveal>
           </div>
