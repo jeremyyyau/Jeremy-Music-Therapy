@@ -143,13 +143,37 @@ function AboutPage() {
     const speed = 0.6;
     let rafId: number;
     let isInView = false;
+    let isTouching = false;
+    let resumeAt = 0;
     const reduceMotion = window.matchMedia?.("(prefers-reduced-motion: reduce)");
+    const canHover = window.matchMedia?.("(hover: hover) and (pointer: fine)");
+
+    const wrap = () => {
+      const half = container.scrollWidth / 2;
+      if (half <= 0) return;
+      if (container.scrollLeft >= half) {
+        container.scrollLeft -= half;
+      } else if (container.scrollLeft <= 0) {
+        container.scrollLeft += half;
+      }
+      scrollPosRef.current = container.scrollLeft;
+    };
 
     const step = () => {
-      if (!isHoveredRef.current && isInView && !document.hidden && !reduceMotion?.matches) {
-        scrollPosRef.current += speed;
+      const paused =
+        isHoveredRef.current ||
+        isTouching ||
+        Date.now() < resumeAt ||
+        !isInView ||
+        document.hidden ||
+        !!reduceMotion?.matches;
+
+      if (!paused) {
+        // Re-sync in case the user scrolled manually since the last frame.
+        scrollPosRef.current = container.scrollLeft;
         const half = container.scrollWidth / 2;
-        if (scrollPosRef.current >= half) {
+        scrollPosRef.current += speed;
+        if (half > 0 && scrollPosRef.current >= half) {
           scrollPosRef.current -= half;
         }
         container.scrollLeft = scrollPosRef.current;
@@ -164,18 +188,28 @@ function AboutPage() {
       isHoveredRef.current = false;
     };
     const onScroll = () => {
-      const half = container.scrollWidth / 2;
-      if (container.scrollLeft >= half) {
-        container.scrollLeft -= half;
-      } else if (container.scrollLeft <= 0 && half > 0) {
-        container.scrollLeft += half;
-      }
+      // Only correct the loop seam while the auto-scroll owns the position,
+      // otherwise touch momentum would be cut short.
+      if (!isTouching && Date.now() >= resumeAt) wrap();
       scrollPosRef.current = container.scrollLeft;
     };
+    const onTouchStart = () => {
+      isTouching = true;
+    };
+    const onTouchEnd = () => {
+      isTouching = false;
+      // Let flick momentum finish, then pick the loop back up.
+      resumeAt = Date.now() + 900;
+    };
 
-    container.addEventListener("mouseenter", onMouseEnter);
-    container.addEventListener("mouseleave", onMouseLeave);
+    if (canHover?.matches) {
+      container.addEventListener("mouseenter", onMouseEnter);
+      container.addEventListener("mouseleave", onMouseLeave);
+    }
     container.addEventListener("scroll", onScroll, { passive: true });
+    container.addEventListener("touchstart", onTouchStart, { passive: true });
+    container.addEventListener("touchend", onTouchEnd, { passive: true });
+    container.addEventListener("touchcancel", onTouchEnd, { passive: true });
 
     const observer = new IntersectionObserver(
       ([entry]) => {
@@ -192,6 +226,9 @@ function AboutPage() {
       container.removeEventListener("mouseenter", onMouseEnter);
       container.removeEventListener("mouseleave", onMouseLeave);
       container.removeEventListener("scroll", onScroll);
+      container.removeEventListener("touchstart", onTouchStart);
+      container.removeEventListener("touchend", onTouchEnd);
+      container.removeEventListener("touchcancel", onTouchEnd);
       observer.disconnect();
     };
   }, []);
