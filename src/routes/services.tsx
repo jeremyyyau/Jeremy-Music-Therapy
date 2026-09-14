@@ -226,7 +226,9 @@ function ServicesPage() {
                   className="group relative flex h-full flex-col p-6 transition-colors duration-300 hover:bg-card/85 md:p-8"
                 >
                   <div className="mb-5 flex items-center justify-between gap-4">
-                    <span className="whitespace-nowrap text-xs font-medium uppercase tracking-widest text-primary/80">{item.label}</span>
+                    <span className="whitespace-nowrap text-xs font-medium uppercase tracking-widest text-primary/80">
+                      {item.label}
+                    </span>
                     <span className="font-heading text-3xl font-semibold text-primary/15 transition-colors duration-300 group-hover:text-primary/35">
                       {String(i + 1).padStart(2, "0")}
                     </span>
@@ -236,8 +238,12 @@ function ServicesPage() {
                       <item.icon className="h-4.5 w-4.5 text-primary" />
                     </div>
                     <div>
-                      <p className="font-heading text-base font-semibold text-card-foreground line-clamp-2 text-balance md:leading-snug">{item.title}</p>
-                      <p className="mt-1 text-sm leading-relaxed text-muted-foreground text-balance">{item.description}</p>
+                      <p className="font-heading text-base font-semibold text-card-foreground line-clamp-2 text-balance md:leading-snug">
+                        {item.title}
+                      </p>
+                      <p className="mt-1 text-sm leading-relaxed text-muted-foreground text-balance">
+                        {item.description}
+                      </p>
                     </div>
                   </div>
                 </li>
@@ -276,10 +282,10 @@ function ServicesPage() {
             </h2>
             <div className="mt-6 space-y-4 text-base leading-relaxed text-muted-foreground">
               <p>
-                Larger clinics suit some families, while others value the continuity and flexibility of one clinician who holds the whole clinical picture. 
-
-
-                As an independent Registered Music Therapist, I offer personalized care built on therapeutic alliance, collaboration and shared decision-making — so clinical time and funding are used thoughtfully and therapy stays meaningful and sustainable.
+                Larger clinics suit some families, while others value the continuity and flexibility of one clinician
+                who holds the whole clinical picture.  As an independent Registered Music Therapist, I offer
+                personalized care built on therapeutic alliance, collaboration and shared decision-making — so clinical
+                time and funding are used thoughtfully and therapy stays meaningful and sustainable.
               </p>
             </div>
           </Reveal>
@@ -310,11 +316,8 @@ function ServicesPage() {
             <h2 className="font-heading text-2xl font-semibold text-foreground md:text-3xl">Finding the right fit</h2>
             <p className="mt-4 text-base italic leading-relaxed text-muted-foreground">
               There is no single approach that suits everyone. Take the time to explore your options — not only the
-              service, but the person providing it.
-            </p>
-            <p className="mt-4 text-base italic leading-relaxed text-muted-foreground">
-              A strong therapeutic fit grows from trust and connection, and I am privileged to be trusted by my clients
-              with that opportunity.
+              service, but the person providing it. A strong therapeutic fit grows from trust and connection, and I am
+              privileged to be trusted by my clients with that opportunity.
             </p>
           </Reveal>
 
