@@ -75,9 +75,14 @@ export function PrettyText() {
       paras.forEach((p) => {
         // Skip paragraphs containing links or other elements.
         if (p.children.length > 0) return;
-        const original = originals.get(p) ?? p.textContent ?? "";
+        const original =
+          originals.get(p) ?? bindSentenceStarts(p.textContent ?? "");
         originals.set(p, original);
-        if (original.trim().length < MIN_CHARS) return;
+        if (original.trim().length < MIN_CHARS) {
+          // Still apply sentence-start binding to short paragraphs.
+          if (p.textContent !== original) p.textContent = original;
+          return;
+        }
         fixParagraph(p, original);
       });
     };
