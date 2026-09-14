@@ -155,9 +155,15 @@
   }
 
   p, blockquote, figcaption {
-    /* Balance prose so short connector words do not dangle at line edges. */
-    text-wrap: balance;
+    /* Pretty prose: lines fill out to the edges and 1–2 word orphan
+       last lines are pulled up at every viewport width. */
+    text-wrap: pretty;
     hanging-punctuation: first last;
+  }
+
+  /* Short, short intro/caption copy still reads best balanced. */
+  .text-balance {
+    text-wrap: balance;
   }
 
   li, label {
