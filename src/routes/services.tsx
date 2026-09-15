@@ -161,11 +161,11 @@ function ServicesPage() {
                 key={s.title}
                 direction={i % 2 === 0 ? "left" : "right"}
                 as="article"
-                className="rhythmic-card group rounded-2xl border border-border/60 p-8 shadow-sm transition-all duration-300 hover:border-primary hover:shadow-card-hover md:p-10"
+                className="group rounded-2xl border border-border/60 bg-card p-8 shadow-sm transition-all duration-300 hover:border-primary hover:shadow-card-hover md:p-10"
               >
                 <div className="flex items-center gap-4">
                   <h2 className="font-heading text-2xl font-semibold text-card-foreground">{s.title}</h2>
-                  <div className="rhythmic-icon inline-flex shrink-0 rounded-full border border-primary/20 bg-primary/10 p-2.5 transition-all duration-300 group-hover:bg-primary/25 group-hover:shadow-glow">
+                  <div className="inline-flex shrink-0 rounded-full border border-primary/20 bg-primary/10 p-2.5 transition-all duration-300 group-hover:bg-primary/25 group-hover:shadow-glow">
                     <s.icon className="h-4.5 w-4.5 text-primary" />
                   </div>
                 </div>
@@ -188,7 +188,7 @@ function ServicesPage() {
 
           <Reveal
             direction="up"
-            className="rhythmic-card mt-8 overflow-hidden rounded-3xl border border-border/60 bg-secondary/85 shadow-sm"
+            className="mt-8 overflow-hidden rounded-3xl border border-border/60 bg-secondary/85 shadow-sm"
           >
             <ol className="divide-y divide-border/50 md:grid md:grid-cols-3 md:divide-x md:divide-y-0">
               {[
@@ -234,7 +234,7 @@ function ServicesPage() {
                     </span>
                   </div>
                   <div className="flex flex-grow items-start gap-4">
-                    <div className="rhythmic-icon inline-flex shrink-0 rounded-full border border-primary/20 bg-primary/10 p-2.5 transition-all duration-300 group-hover:bg-primary/25 group-hover:shadow-glow">
+                    <div className="inline-flex shrink-0 rounded-full border border-primary/20 bg-primary/10 p-2.5 transition-all duration-300 group-hover:bg-primary/25 group-hover:shadow-glow">
                       <item.icon className="h-4.5 w-4.5 text-primary" />
                     </div>
                     <div>
@@ -296,7 +296,7 @@ function ServicesPage() {
                 key={item.title}
                 direction="up"
                 delay={(i % 2) * 120}
-                className="rhythmic-card group relative overflow-hidden rounded-2xl border border-border/60 p-6 shadow-sm transition-all duration-300 hover:border-primary hover:shadow-card-hover"
+                className="group relative overflow-hidden rounded-2xl border border-border/60 bg-card p-6 shadow-sm transition-all duration-300 hover:border-primary hover:shadow-card-hover"
               >
                 <div
                   aria-hidden
@@ -312,7 +312,7 @@ function ServicesPage() {
             ))}
           </div>
 
-          <Reveal className="rhythmic-card mt-12 rounded-3xl border border-border/60 bg-secondary/85 p-8 md:p-10">
+          <Reveal className="mt-12 rounded-3xl border border-border/60 bg-secondary/85 p-8 md:p-10">
             <h2 className="font-heading text-2xl font-semibold text-foreground md:text-3xl">Finding the right fit</h2>
             <p className="mt-4 text-base italic leading-relaxed text-muted-foreground">
               There is no single approach that suits everyone. Take the time to explore your options — not only the

@@ -171,9 +171,9 @@ function MusicTherapyPage() {
             </div>
 
             <div className="mt-8 grid grid-cols-1 gap-5 md:grid-cols-2">
-              <div className="rhythmic-card group rounded-2xl border border-border/60 p-6 shadow-sm transition-all duration-300 hover:border-primary hover:shadow-card-hover">
+              <div className="group rounded-2xl border border-border/60 bg-card p-6 shadow-sm transition-all duration-300 hover:border-primary hover:shadow-card-hover">
                 <div className="mb-4 flex items-center gap-3">
-                  <div className="rhythmic-icon inline-flex rounded-xl bg-primary/10 p-3 transition-all duration-300 group-hover:scale-120 group-hover:bg-primary/30 group-hover:shadow-glow">
+                  <div className="inline-flex rounded-xl bg-primary/10 p-3 transition-all duration-300 group-hover:scale-120 group-hover:bg-primary/30 group-hover:shadow-glow">
                     <Mic2 className="h-5 w-5 text-primary transition-transform duration-300 group-hover:scale-120" />
                   </div>
                   <h3 className="font-heading text-lg font-semibold text-card-foreground">Active interventions</h3>
@@ -191,9 +191,9 @@ function MusicTherapyPage() {
                 </ul>
               </div>
 
-              <div className="rhythmic-card group rounded-2xl border border-border/60 p-6 shadow-sm transition-all duration-300 hover:border-primary hover:shadow-card-hover">
+              <div className="group rounded-2xl border border-border/60 bg-card p-6 shadow-sm transition-all duration-300 hover:border-primary hover:shadow-card-hover">
                 <div className="mb-4 flex items-center gap-3">
-                  <div className="rhythmic-icon inline-flex rounded-xl bg-primary/10 p-3 transition-all duration-300 group-hover:scale-120 group-hover:bg-primary/30 group-hover:shadow-glow">
+                  <div className="inline-flex rounded-xl bg-primary/10 p-3 transition-all duration-300 group-hover:scale-120 group-hover:bg-primary/30 group-hover:shadow-glow">
                     <Ear className="h-5 w-5 text-primary transition-transform duration-300 group-hover:scale-120" />
                   </div>
                   <h3 className="font-heading text-lg font-semibold text-card-foreground">Receptive interventions</h3>
@@ -212,10 +212,10 @@ function MusicTherapyPage() {
               </div>
             </div>
 
-            <div className="rhythmic-card mt-8 overflow-hidden rounded-3xl border border-border/60 bg-secondary/85 shadow-sm">
+            <div className="mt-8 overflow-hidden rounded-3xl border border-border/60 bg-secondary/85 shadow-sm">
               <div className="grid grid-cols-1 md:grid-cols-[0.34fr_0.66fr]">
                 <div className="flex items-center gap-3 border-b border-border/50 p-6 md:border-b-0 md:border-r md:p-8">
-                    <div className="rhythmic-icon rounded-full bg-primary/10 p-2.5">
+                  <div className="rounded-full bg-primary/10 p-2.5">
                     <Target className="h-5 w-5 text-primary" />
                   </div>
                   <h3 className="font-heading text-lg font-semibold text-foreground">
@@ -251,9 +251,9 @@ function MusicTherapyPage() {
                 key={b.title}
                 direction="up"
                 delay={(i % 3) * 120}
-                className="rhythmic-card group rounded-2xl border border-border/60 p-8 shadow-sm transition-all duration-300 hover:border-primary hover:shadow-card-hover"
+                className="group rounded-2xl border border-border/60 bg-card p-8 shadow-sm transition-all duration-300 hover:border-primary hover:shadow-card-hover"
               >
-                <div className="rhythmic-icon mb-4 inline-flex rounded-xl bg-primary/10 p-3 transition-all duration-300 group-hover:scale-120 group-hover:bg-primary/30 group-hover:shadow-glow">
+                <div className="mb-4 inline-flex rounded-xl bg-primary/10 p-3 transition-all duration-300 group-hover:scale-120 group-hover:bg-primary/30 group-hover:shadow-glow">
                   <b.icon className="h-6 w-6 text-primary transition-transform duration-300 group-hover:scale-120" />
                 </div>
                 <h3 className="font-heading text-xl font-semibold text-card-foreground">{b.title}</h3>
@@ -299,13 +299,13 @@ function MusicTherapyPage() {
             </Reveal>
 
             <Reveal>
-              <div className="rhythmic-card overflow-hidden rounded-3xl border border-border/60 shadow-sm">
+              <div className="overflow-hidden rounded-3xl border border-border/60 bg-card shadow-sm">
                 <div className="flex flex-col gap-4 bg-secondary/60 p-6 md:flex-row md:items-center md:justify-between md:p-8">
                   <div>
                     <p className="mb-2 text-xs font-medium uppercase tracking-widest text-primary">Inclusive care</p>
                     <h2 className="font-heading text-xl font-semibold text-foreground md:text-2xl">Who is it for?</h2>
                   </div>
-                  <div className="rhythmic-icon inline-flex w-fit rounded-full border border-primary/20 bg-primary/10 p-3">
+                  <div className="inline-flex w-fit rounded-full border border-primary/20 bg-primary/10 p-3">
                     <Users className="h-5 w-5 text-primary" />
                   </div>
                 </div>
@@ -351,10 +351,10 @@ function MusicTherapyPage() {
           </div>
 
           <Reveal>
-            <div className="rhythmic-card mt-8 overflow-hidden rounded-3xl border border-border/60 bg-secondary/85 shadow-sm">
+            <div className="mt-8 overflow-hidden rounded-3xl border border-border/60 bg-secondary/85 shadow-sm">
               <div className="grid grid-cols-1 lg:grid-cols-[0.42fr_0.58fr]">
                 <div className="border-b border-border/50 p-6 md:p-8 lg:border-b-0 lg:border-r">
-                  <div className="rhythmic-icon mb-4 inline-flex rounded-full bg-primary/10 p-3">
+                  <div className="mb-4 inline-flex rounded-full bg-primary/10 p-3">
                     <Clock className="h-5 w-5 text-primary" />
                   </div>
                   <h2 className="font-heading text-xl font-semibold text-foreground md:text-2xl">
@@ -372,7 +372,7 @@ function MusicTherapyPage() {
                   </p>
                 </div>
                 <div className="p-6 md:p-8">
-                  <div className="rhythmic-icon mb-4 inline-flex rounded-full bg-primary/10 p-3">
+                  <div className="mb-4 inline-flex rounded-full bg-primary/10 p-3">
                     <TrendingUp className="h-5 w-5 text-primary" />
                   </div>
                   <p className="text-sm font-medium uppercase tracking-widest text-primary/80">

@@ -316,7 +316,7 @@ function AboutPage() {
                     key={item.title}
                     direction="up"
                     delay={(i % 2) * 120}
-                    className="rhythmic-card group relative overflow-hidden rounded-2xl border border-border/60 p-6 shadow-sm transition-all duration-300 hover:border-primary hover:shadow-card-hover"
+                    className="group relative overflow-hidden rounded-2xl border border-border/60 bg-card p-6 shadow-sm transition-all duration-300 hover:border-primary hover:shadow-card-hover"
                   >
                     <span
                       aria-hidden
@@ -347,7 +347,7 @@ function AboutPage() {
                   {[...vignettes, ...vignettes].map((vignette, i) => (
                     <div
                       key={`${vignette.story}-${i}`}
-                      className="rhythmic-card group relative w-[82vw] max-w-[340px] shrink-0 rounded-2xl border border-border/30 px-6 py-6 shadow-raised transition-all duration-300 hover:border-primary/40 hover:shadow-card-hover sm:max-w-[380px] sm:px-8 sm:py-7 md:max-w-[420px]"
+                      className="group relative w-[82vw] max-w-[340px] shrink-0 rounded-2xl border border-border/30 bg-card/55 px-6 py-6 shadow-[0_20px_45px_-14px_rgba(0,0,0,0.06)] backdrop-blur-md transition-all duration-300 hover:border-primary/40 hover:bg-card/75 hover:shadow-[0_28px_60px_-16px_rgba(0,0,0,0.1)] sm:max-w-[380px] sm:px-8 sm:py-7 md:max-w-[420px]"
                     >
                       {/* Decorative floating quote mark */}
                       <span
@@ -405,8 +405,8 @@ function AboutPage() {
               <ul className="mt-8 grid grid-cols-2 gap-3 sm:gap-4 md:grid-cols-4">
                 {instruments.map((inst, i) => (
                   <Reveal key={inst.name} direction="up" delay={i * 100}>
-                    <li className="rhythmic-card group flex h-full min-h-[136px] flex-col items-center justify-center gap-2.5 rounded-2xl border border-border/60 bg-secondary/95 px-4 py-5 text-center transition-all duration-300 hover:border-primary hover:bg-secondary hover:shadow-card-hover">
-                      <span className="rhythmic-icon flex h-11 w-11 items-center justify-center rounded-full bg-primary/10 text-primary transition-all duration-300 group-hover:scale-110 group-hover:bg-primary/20">
+                    <li className="group flex h-full min-h-[136px] flex-col items-center justify-center gap-2.5 rounded-2xl border border-border/60 bg-secondary/95 px-4 py-5 text-center transition-all duration-300 hover:border-primary hover:bg-secondary hover:shadow-card-hover">
+                      <span className="flex h-11 w-11 items-center justify-center rounded-full bg-primary/10 text-primary transition-all duration-300 group-hover:scale-110 group-hover:bg-primary/20">
                         <inst.icon className="h-5 w-5" aria-hidden />
                       </span>
                       <span className="text-sm font-medium leading-snug text-foreground/80 transition-colors duration-300 group-hover:text-foreground">

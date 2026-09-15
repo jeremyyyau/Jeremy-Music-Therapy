@@ -147,7 +147,7 @@ function ResourcesPage() {
                   href={r.url}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="rhythmic-card flex h-full flex-col rounded-2xl border border-border/60 p-2 shadow-sm transition-all duration-300 hover:scale-105 hover:border-primary hover:bg-secondary/75 hover:shadow-card-hover sm:p-3"
+                  className="flex h-full flex-col rounded-2xl border border-border/60 bg-card p-2 shadow-sm transition-all duration-300 hover:scale-105 hover:border-primary hover:bg-secondary/75 hover:shadow-card-hover sm:p-3"
                 >
                   <div className="overflow-hidden rounded-xl bg-background/50 transition-colors duration-300 group-hover:bg-primary/10">
                     <img
@@ -174,7 +174,7 @@ function ResourcesPage() {
         </div>
 
         <div className="mx-auto mt-16 max-w-4xl px-6">
-          <Reveal className="rhythmic-card rounded-3xl border border-border/60 bg-secondary/85 p-8 md:p-10">
+          <Reveal className="rounded-3xl border border-border/60 bg-secondary/85 p-8 md:p-10">
             <h2 className="font-heading text-2xl font-semibold text-foreground md:text-3xl">
               Have a resource to share?
             </h2>
