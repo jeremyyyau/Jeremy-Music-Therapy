@@ -14,7 +14,10 @@ export function QuoteBand({ quote, author, className }: QuoteBandProps) {
     <section
       className={`relative overflow-hidden border-y border-border/50 bg-secondary/85 py-20 lg:py-28 ${className ?? ""}`}
     >
-      <StaffLines className="absolute inset-x-0 top-1/2 h-24 -translate-y-1/2 text-primary/[0.08]" />
+      <StaffLines
+        variant="clef"
+        className="absolute inset-x-0 top-1/2 h-28 w-full -translate-y-1/2 text-primary/[0.09]"
+      />
       <div className="relative mx-auto max-w-3xl px-6 text-center">
         <Reveal direction="up">
           <Quote className="mx-auto mb-6 h-8 w-8 text-primary/50" aria-hidden="true" />

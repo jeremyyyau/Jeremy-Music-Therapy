@@ -176,25 +176,30 @@ function ResourcesPage() {
 
         <div className="mx-auto mt-16 max-w-4xl px-6">
           <Reveal className="relative overflow-hidden rounded-3xl border border-border/60 bg-secondary/85 p-8 md:p-10">
-            <StaffLines className="absolute -bottom-5 -right-8 h-24 w-72 -rotate-3 text-primary/15" />
-            <h2 className="relative font-heading text-2xl font-semibold text-foreground md:text-3xl">
-              Have a resource to share?
-            </h2>
-            <p className="mt-4 whitespace-pre-line text-base leading-relaxed text-muted-foreground">
-              Therapists are always on the lookout for thoughtful, accessible tools that can support the people we walk alongside.
+            <StaffLines
+              variant="melody"
+              className="absolute inset-x-0 top-1/2 h-32 w-full -translate-y-1/2 text-primary/10"
+            />
+            <div className="relative z-10">
+              <h2 className="font-heading text-2xl font-semibold text-foreground md:text-3xl">
+                Have a resource to share?
+              </h2>
+              <p className="mt-4 whitespace-pre-line text-base leading-relaxed text-muted-foreground">
+                Therapists are always on the lookout for thoughtful, accessible tools that can support the people we walk alongside.
 
 
-              If you know of an app, website or creative resource that has made a difference for you or someone you care for, I’d love to hear about it. 
+                If you know of an app, website or creative resource that has made a difference for you or someone you care for, I’d love to hear about it. 
 
 
-              Your suggestion might become a meaningful bridge for another client, another family, or another moment of connection.
-            </p>
-            <div className="mt-6">
-              <Button asChild variant="outline" className="rounded-full">
-                <Link to="/" hash="contact">
-                  Send a resource
-                </Link>
-              </Button>
+                Your suggestion might become a meaningful bridge for another client, another family, or another moment of connection.
+              </p>
+              <div className="mt-6">
+                <Button asChild variant="outline" className="rounded-full">
+                  <Link to="/" hash="contact">
+                    Send a resource
+                  </Link>
+                </Button>
+              </div>
             </div>
           </Reveal>
         </div>
