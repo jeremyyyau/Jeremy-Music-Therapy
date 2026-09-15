@@ -194,9 +194,15 @@ function MusicTherapyPage() {
                     </li>
                   ))}
                 </ul>
+                </div>
               </div>
 
-              <div className="group rounded-2xl border border-border/60 bg-card p-6 shadow-sm transition-all duration-300 hover:border-primary hover:shadow-card-hover">
+              <div className="group relative overflow-hidden rounded-2xl border border-border/60 bg-card px-6 pb-14 pt-6 shadow-sm transition-all duration-300 hover:border-primary hover:shadow-card-hover">
+                <SoftCrossingLines
+                  variant="drift"
+                  className="absolute inset-x-0 bottom-0 h-11 w-full text-primary/[0.09] transition-colors duration-300 group-hover:text-primary/[0.14] md:h-12"
+                />
+                <div className="relative z-10">
                 <div className="mb-4 flex items-center gap-3">
                   <div className="inline-flex rounded-xl bg-primary/10 p-3 transition-all duration-300 group-hover:scale-120 group-hover:bg-primary/30 group-hover:shadow-glow">
                     <Ear className="h-5 w-5 text-primary transition-transform duration-300 group-hover:scale-120" />
