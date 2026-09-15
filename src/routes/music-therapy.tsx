@@ -17,6 +17,7 @@ import { Button } from "@/components/ui/button";
 import { SitePage } from "@/components/site-chrome";
 import { Reveal } from "@/components/reveal";
 import { QuoteBand } from "@/components/quote-band";
+import { SoftCrossingLines } from "@/components/soft-crossing-lines";
 
 import { mtFamilyImage, mtKeyboardImage, SIZES_CONTENT } from "@/lib/images";
 
@@ -220,6 +221,7 @@ function MusicTherapyPage() {
                     </li>
                   ))}
                 </ul>
+                </div>
               </div>
             </div>
 
