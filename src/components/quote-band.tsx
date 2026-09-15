@@ -1,5 +1,6 @@
 import { Quote } from "lucide-react";
 import { Reveal } from "@/components/reveal";
+import { StaffLines } from "@/components/staff-lines";
 
 type QuoteBandProps = {
   quote: string;
@@ -11,9 +12,10 @@ export function QuoteBand({ quote, author, className }: QuoteBandProps) {
   const paragraphs = quote.split(/\n\s*\n/).filter(Boolean);
   return (
     <section
-      className={`border-y border-border/50 bg-secondary/85 py-20 lg:py-28 ${className ?? ""}`}
+      className={`relative overflow-hidden border-y border-border/50 bg-secondary/85 py-20 lg:py-28 ${className ?? ""}`}
     >
-      <div className="mx-auto max-w-3xl px-6 text-center">
+      <StaffLines className="absolute inset-x-0 top-1/2 h-24 -translate-y-1/2 text-primary/[0.08]" />
+      <div className="relative mx-auto max-w-3xl px-6 text-center">
         <Reveal direction="up">
           <Quote className="mx-auto mb-6 h-8 w-8 text-primary/50" aria-hidden="true" />
           <blockquote className="font-heading text-2xl font-medium italic leading-snug text-foreground md:text-3xl">

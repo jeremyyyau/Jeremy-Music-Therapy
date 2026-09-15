@@ -4,6 +4,7 @@ import { Button } from "@/components/ui/button";
 import { SitePage } from "@/components/site-chrome";
 import { Reveal } from "@/components/reveal";
 import { QuoteBand } from "@/components/quote-band";
+import { StaffLines } from "@/components/staff-lines";
 
 import { svcIndividualImage, svcGroupImage, SIZES_CONTENT } from "@/lib/images";
 
@@ -312,8 +313,9 @@ function ServicesPage() {
             ))}
           </div>
 
-          <Reveal className="mt-12 rounded-3xl border border-border/60 bg-secondary/85 p-8 md:p-10">
-            <h2 className="font-heading text-2xl font-semibold text-foreground md:text-3xl">Finding the right fit</h2>
+          <Reveal className="relative mt-12 overflow-hidden rounded-3xl border border-border/60 bg-secondary/85 p-8 md:p-10">
+            <StaffLines className="absolute -bottom-5 -right-8 h-24 w-72 -rotate-3 text-primary/15" />
+            <h2 className="relative font-heading text-2xl font-semibold text-foreground md:text-3xl">Finding the right fit</h2>
             <p className="mt-4 text-base italic leading-relaxed text-muted-foreground">
               There is no single approach that suits everyone. Take the time to explore your options — not only the
               service, but the person providing it. A strong therapeutic fit grows from trust and connection, and I am
