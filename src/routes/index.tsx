@@ -351,10 +351,12 @@ function Index() {
                 delay={i * 100}
                 className="group relative overflow-hidden rounded-2xl border border-border/60 bg-card p-6 shadow-sm transition-all duration-300 hover:border-primary hover:shadow-card-hover"
               >
-                <div
+                <span
                   aria-hidden
-                  className="absolute right-4 top-4 h-1.5 w-1.5 rounded-full bg-primary/25 transition-colors duration-300 group-hover:bg-primary/60"
-                />
+                  className="absolute right-5 top-4 font-heading text-2xl font-semibold text-primary/15 transition-colors duration-300 group-hover:text-primary/40"
+                >
+                  {String(i + 1).padStart(2, "0")}
+                </span>
                 <h3 className="font-heading text-lg font-semibold text-card-foreground">{item.title}</h3>
                 <div
                   aria-hidden
