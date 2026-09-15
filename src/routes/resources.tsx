@@ -3,6 +3,7 @@ import { Button } from "@/components/ui/button";
 import { SitePage } from "@/components/site-chrome";
 import { Reveal } from "@/components/reveal";
 import { QuoteBand } from "@/components/quote-band";
+import { StaffLines } from "@/components/staff-lines";
 
 import { resourcesHeroImage, SIZES_CONTENT } from "@/lib/images";
 import imgSuno from "@/assets/res-suno.webp";
@@ -174,8 +175,9 @@ function ResourcesPage() {
         </div>
 
         <div className="mx-auto mt-16 max-w-4xl px-6">
-          <Reveal className="rounded-3xl border border-border/60 bg-secondary/85 p-8 md:p-10">
-            <h2 className="font-heading text-2xl font-semibold text-foreground md:text-3xl">
+          <Reveal className="relative overflow-hidden rounded-3xl border border-border/60 bg-secondary/85 p-8 md:p-10">
+            <StaffLines className="absolute -bottom-5 -right-8 h-24 w-72 -rotate-3 text-primary/15" />
+            <h2 className="relative font-heading text-2xl font-semibold text-foreground md:text-3xl">
               Have a resource to share?
             </h2>
             <p className="mt-4 whitespace-pre-line text-base leading-relaxed text-muted-foreground">
