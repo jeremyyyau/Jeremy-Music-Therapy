@@ -4,7 +4,7 @@ import { Button } from "@/components/ui/button";
 import { SitePage } from "@/components/site-chrome";
 import { Reveal } from "@/components/reveal";
 import { QuoteBand } from "@/components/quote-band";
-import { StaffLines } from "@/components/staff-lines";
+
 import { SoftCrossingLines } from "@/components/soft-crossing-lines";
 
 import { svcIndividualImage, svcGroupImage, SIZES_CONTENT } from "@/lib/images";
@@ -321,10 +321,6 @@ function ServicesPage() {
           </div>
 
           <Reveal className="relative mt-12 overflow-hidden rounded-3xl border border-border/60 bg-secondary/85 p-8 md:p-10">
-            <StaffLines
-              variant="clef"
-              className="absolute inset-x-0 top-1/2 h-32 w-full -translate-y-1/2 text-primary/10"
-            />
             <div className="relative z-10">
               <h2 className="font-heading text-2xl font-semibold text-foreground md:text-3xl">Finding the right fit</h2>
               <p className="mt-4 text-base italic leading-relaxed text-muted-foreground">
