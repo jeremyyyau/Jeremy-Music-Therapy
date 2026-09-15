@@ -5,6 +5,7 @@ import { SitePage } from "@/components/site-chrome";
 import { Reveal } from "@/components/reveal";
 import { QuoteBand } from "@/components/quote-band";
 import { StaffLines } from "@/components/staff-lines";
+import { SoftCrossingLines } from "@/components/soft-crossing-lines";
 
 import { svcIndividualImage, svcGroupImage, SIZES_CONTENT } from "@/lib/images";
 
@@ -162,11 +163,11 @@ function ServicesPage() {
                 key={s.title}
                 direction={i % 2 === 0 ? "left" : "right"}
                 as="article"
-                className="group relative overflow-hidden rounded-2xl border border-border/60 bg-card p-8 shadow-sm transition-all duration-300 hover:border-primary hover:shadow-card-hover md:p-10"
+                className="group relative overflow-hidden rounded-2xl border border-border/60 bg-card px-8 pb-14 pt-8 shadow-sm transition-all duration-300 hover:border-primary hover:shadow-card-hover md:px-10 md:pb-16 md:pt-10"
               >
-                <StaffLines
-                  variant={(["clef", "melody", "rhythm", "sparse"] as const)[i % 4]}
-                  className="absolute inset-x-0 top-1/2 h-28 w-full -translate-y-1/2 text-primary/[0.055] transition-colors duration-300 group-hover:text-primary/[0.09]"
+                <SoftCrossingLines
+                  variant={(["rise", "drift", "swell"] as const)[i % 3]}
+                  className="absolute inset-x-0 bottom-0 h-11 w-full text-primary/[0.09] transition-colors duration-300 group-hover:text-primary/[0.14] md:h-12"
                 />
                 <div className="relative z-10">
                   <div className="flex items-center gap-4">
