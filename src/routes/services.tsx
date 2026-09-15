@@ -162,20 +162,26 @@ function ServicesPage() {
                 key={s.title}
                 direction={i % 2 === 0 ? "left" : "right"}
                 as="article"
-                className="group rounded-2xl border border-border/60 bg-card p-8 shadow-sm transition-all duration-300 hover:border-primary hover:shadow-card-hover md:p-10"
+                className="group relative overflow-hidden rounded-2xl border border-border/60 bg-card p-8 shadow-sm transition-all duration-300 hover:border-primary hover:shadow-card-hover md:p-10"
               >
-                <div className="flex items-center gap-4">
-                  <h2 className="font-heading text-2xl font-semibold text-card-foreground">{s.title}</h2>
-                  <div className="inline-flex shrink-0 rounded-full border border-primary/20 bg-primary/10 p-2.5 transition-all duration-300 group-hover:bg-primary/25 group-hover:shadow-glow">
-                    <s.icon className="h-4.5 w-4.5 text-primary" />
+                <StaffLines
+                  variant={(["clef", "melody", "rhythm", "sparse"] as const)[i % 4]}
+                  className="absolute inset-x-0 top-1/2 h-28 w-full -translate-y-1/2 text-primary/[0.055] transition-colors duration-300 group-hover:text-primary/[0.09]"
+                />
+                <div className="relative z-10">
+                  <div className="flex items-center gap-4">
+                    <h2 className="font-heading text-2xl font-semibold text-card-foreground">{s.title}</h2>
+                    <div className="inline-flex shrink-0 rounded-full border border-primary/20 bg-primary/10 p-2.5 transition-all duration-300 group-hover:bg-primary/25 group-hover:shadow-glow">
+                      <s.icon className="h-4.5 w-4.5 text-primary" />
+                    </div>
                   </div>
+                  <p className="mt-2 text-sm font-medium text-primary">{s.who}</p>
+                  <p className="mt-4 text-base leading-relaxed text-muted-foreground">{s.description}</p>
+                  <p className="mt-4 text-sm text-muted-foreground">
+                    <span className="block font-medium text-foreground sm:inline">Format:</span>{" "}
+                    <span className="block sm:inline">{s.format}</span>
+                  </p>
                 </div>
-                <p className="mt-2 text-sm font-medium text-primary">{s.who}</p>
-                <p className="mt-4 text-base leading-relaxed text-muted-foreground">{s.description}</p>
-                <p className="mt-4 text-sm text-muted-foreground">
-                  <span className="block font-medium text-foreground sm:inline">Format:</span>{" "}
-                  <span className="block sm:inline">{s.format}</span>
-                </p>
               </Reveal>
             ))}
           </div>
@@ -314,13 +320,18 @@ function ServicesPage() {
           </div>
 
           <Reveal className="relative mt-12 overflow-hidden rounded-3xl border border-border/60 bg-secondary/85 p-8 md:p-10">
-            <StaffLines className="absolute -bottom-5 -right-8 h-24 w-72 -rotate-3 text-primary/15" />
-            <h2 className="relative font-heading text-2xl font-semibold text-foreground md:text-3xl">Finding the right fit</h2>
-            <p className="mt-4 text-base italic leading-relaxed text-muted-foreground">
-              There is no single approach that suits everyone. Take the time to explore your options — not only the
-              service, but the person providing it. A strong therapeutic fit grows from trust and connection, and I am
-              privileged to be trusted by my clients with that opportunity.
-            </p>
+            <StaffLines
+              variant="clef"
+              className="absolute inset-x-0 top-1/2 h-32 w-full -translate-y-1/2 text-primary/10"
+            />
+            <div className="relative z-10">
+              <h2 className="font-heading text-2xl font-semibold text-foreground md:text-3xl">Finding the right fit</h2>
+              <p className="mt-4 text-base italic leading-relaxed text-muted-foreground">
+                There is no single approach that suits everyone. Take the time to explore your options — not only the
+                service, but the person providing it. A strong therapeutic fit grows from trust and connection, and I am
+                privileged to be trusted by my clients with that opportunity.
+              </p>
+            </div>
           </Reveal>
 
           <Reveal className="mt-12 flex flex-wrap gap-4">
