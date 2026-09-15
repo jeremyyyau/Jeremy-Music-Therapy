@@ -7,6 +7,7 @@ import { Button } from "@/components/ui/button";
 import { homeHeroImage, homeAboutImage, SIZES_HALF } from "@/lib/images";
 import { SitePage } from "@/components/site-chrome";
 import { Reveal } from "@/components/reveal";
+import { SoftCrossingLines } from "@/components/soft-crossing-lines";
 import { QuoteBand } from "@/components/quote-band";
 
 const ContactForm = lazy(() => import("@/components/contact-form"));
