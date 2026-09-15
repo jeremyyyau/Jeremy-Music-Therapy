@@ -205,13 +205,19 @@ function Index() {
                 key={item.title}
                 direction="up"
                 delay={i * 120}
-                className="group rounded-2xl border border-border/60 bg-card p-8 shadow-sm transition-all duration-300 hover:border-primary hover:shadow-card-hover"
+                className="group relative overflow-hidden rounded-2xl border border-border/60 bg-card px-8 pb-14 pt-8 shadow-sm transition-all duration-300 hover:border-primary hover:shadow-card-hover md:px-10 md:pb-16 md:pt-10"
               >
-                <div className="mb-4 inline-flex rounded-xl bg-primary/10 p-3 transition-all duration-300 group-hover:scale-120 group-hover:bg-primary/30 group-hover:shadow-glow">
-                  <item.icon className="h-6 w-6 text-primary transition-transform duration-300 group-hover:scale-120" />
+                <SoftCrossingLines
+                  variant={i === 0 ? "rise" : i === 1 ? "drift" : "swell"}
+                  className="absolute inset-x-0 bottom-0 h-11 w-full text-primary/[0.09] transition-colors duration-300 group-hover:text-primary/[0.14] md:h-12"
+                />
+                <div className="relative z-10">
+                  <div className="mb-4 inline-flex rounded-xl bg-primary/10 p-3 transition-all duration-300 group-hover:scale-120 group-hover:bg-primary/30 group-hover:shadow-glow">
+                    <item.icon className="h-6 w-6 text-primary transition-transform duration-300 group-hover:scale-120" />
+                  </div>
+                  <h3 className="font-heading text-xl font-semibold text-card-foreground">{item.title}</h3>
+                  <p className="mt-3 text-sm leading-relaxed text-muted-foreground">{item.description}</p>
                 </div>
-                <h3 className="font-heading text-xl font-semibold text-card-foreground">{item.title}</h3>
-                <p className="mt-3 text-sm leading-relaxed text-muted-foreground">{item.description}</p>
               </Reveal>
             ))}
           </div>
