@@ -205,9 +205,9 @@ function Index() {
                 key={item.title}
                 direction="up"
                 delay={i * 120}
-                className="group rounded-2xl border border-border/60 bg-card p-8 shadow-sm transition-all duration-300 hover:border-primary hover:shadow-card-hover"
+                className="rhythmic-card group rounded-2xl border border-border/60 p-8 shadow-sm transition-all duration-300 hover:border-primary hover:shadow-card-hover"
               >
-                <div className="mb-4 inline-flex rounded-xl bg-primary/10 p-3 transition-all duration-300 group-hover:scale-120 group-hover:bg-primary/30 group-hover:shadow-glow">
+                <div className="rhythmic-icon mb-4 inline-flex rounded-xl bg-primary/10 p-3 transition-all duration-300 group-hover:scale-120 group-hover:bg-primary/30 group-hover:shadow-glow">
                   <item.icon className="h-6 w-6 text-primary transition-transform duration-300 group-hover:scale-120" />
                 </div>
                 <h3 className="font-heading text-xl font-semibold text-card-foreground">{item.title}</h3>
@@ -279,11 +279,11 @@ function Index() {
                 key={service.title}
                 direction="up"
                 delay={(i % 3) * 120}
-                className="group rounded-2xl border border-border/60 bg-background p-8 shadow-sm transition-all duration-300 hover:border-primary hover:shadow-card-hover"
+                className="rhythmic-card group rounded-2xl border border-border/60 p-8 shadow-sm transition-all duration-300 hover:border-primary hover:shadow-card-hover"
               >
                 <div className="mb-4 flex items-center gap-3">
                   <h3 className="font-heading text-xl font-semibold text-foreground">{service.title}</h3>
-                  <div className="ml-auto inline-flex shrink-0 rounded-full border border-primary/20 bg-primary/10 p-2.5 transition-all duration-300 group-hover:bg-primary/25 group-hover:shadow-glow">
+                  <div className="rhythmic-icon ml-auto inline-flex shrink-0 rounded-full border border-primary/20 bg-primary/10 p-2.5 transition-all duration-300 group-hover:bg-primary/25 group-hover:shadow-glow">
                     <service.icon className="h-4.5 w-4.5 text-primary" />
                   </div>
                 </div>
@@ -342,7 +342,7 @@ function Index() {
                 key={item.title}
                 direction="up"
                 delay={i * 100}
-                className="group relative overflow-hidden rounded-2xl border border-border/60 bg-card p-6 shadow-sm transition-all duration-300 hover:border-primary hover:shadow-card-hover"
+                className="rhythmic-card group relative overflow-hidden rounded-2xl border border-border/60 p-6 shadow-sm transition-all duration-300 hover:border-primary hover:shadow-card-hover"
               >
                 <div
                   aria-hidden
@@ -393,7 +393,7 @@ function Index() {
           <Reveal
             direction="right"
             delay={150}
-            className="rounded-3xl border border-border/60 bg-card p-8 shadow-lg md:p-10"
+            className="rhythmic-card rounded-3xl border border-border/60 p-8 shadow-lg md:p-10"
           >
             <DeferredContactForm />
           </Reveal>
