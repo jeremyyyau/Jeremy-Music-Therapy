@@ -71,7 +71,7 @@ const experience = [
   {
     title: "Telehealth",
     description:
-      "Delivering sessions online, with approaches designed to maximise engagement and resources that enhance therapy both on and off screen.",
+      "Delivering sessions online to address social anxiety, or support disability in rural communities through approaches designed to maximise engagement and resources that enhance therapy both on and off screen.",
   },
   {
     title: "Group programs",
