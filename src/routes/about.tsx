@@ -61,7 +61,7 @@ const experience = [
   {
     title: "Multidisciplinary teams",
     description:
-      "Working alongside speech pathology and occupational therapy, ensuring goals are shared, reinforced and genuinely integrated.",
+      "Working alongside speech pathologists, occupational therapists, and other allied health specialists to ensure goals are shared, reinforced and genuinely integrated.",
   },
   {
     title: "Community & disability",
