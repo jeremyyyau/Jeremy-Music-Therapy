@@ -232,8 +232,6 @@ function AboutPage() {
       container.removeEventListener("mouseleave", onMouseLeave);
       container.removeEventListener("scroll", onScroll);
       container.removeEventListener("touchstart", onTouchStart);
-      container.removeEventListener("touchend", onTouchEnd);
-      container.removeEventListener("touchcancel", onTouchEnd);
       observer.disconnect();
     };
   }, []);
