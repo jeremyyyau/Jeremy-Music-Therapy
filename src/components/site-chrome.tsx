@@ -31,7 +31,7 @@ export function SiteBackground() {
         loading="eager"
         fetchPriority="high"
         decoding="async"
-        className="pointer-events-none fixed inset-0 -z-10 h-full w-full object-cover object-center opacity-30 mix-blend-multiply"
+        className="pointer-events-none fixed left-0 top-0 -z-10 h-[100lvh] w-full object-cover object-center opacity-30 mix-blend-multiply"
       />
       <div
         aria-hidden
