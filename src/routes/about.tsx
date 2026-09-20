@@ -143,8 +143,9 @@ function AboutPage() {
     const speed = 0.6;
     let rafId: number;
     let isInView = false;
-    let isTouching = false;
     let resumeAt = 0;
+    // Last scrollLeft value WE wrote — anything else means the user is scrolling.
+    let lastSet = container.scrollLeft;
     const reduceMotion = window.matchMedia?.("(prefers-reduced-motion: reduce)");
     const canHover = window.matchMedia?.("(hover: hover) and (pointer: fine)");
 
@@ -157,12 +158,12 @@ function AboutPage() {
         container.scrollLeft += half;
       }
       scrollPosRef.current = container.scrollLeft;
+      lastSet = container.scrollLeft;
     };
 
     const step = () => {
       const paused =
         isHoveredRef.current ||
-        isTouching ||
         Date.now() < resumeAt ||
         !isInView ||
         document.hidden ||
@@ -177,6 +178,7 @@ function AboutPage() {
           scrollPosRef.current -= half;
         }
         container.scrollLeft = scrollPosRef.current;
+        lastSet = container.scrollLeft;
       }
       rafId = requestAnimationFrame(step);
     };
@@ -188,18 +190,23 @@ function AboutPage() {
       isHoveredRef.current = false;
     };
     const onScroll = () => {
-      // Only correct the loop seam while the auto-scroll owns the position,
-      // otherwise touch momentum would be cut short.
-      if (!isTouching && Date.now() >= resumeAt) wrap();
-      scrollPosRef.current = container.scrollLeft;
+      const pos = container.scrollLeft;
+      if (Math.abs(pos - lastSet) > 2) {
+        // User-driven scroll (touch drag or momentum) — pause auto-scroll and
+        // keep re-arming while scroll events keep coming in. When they stop,
+        // auto-scroll resumes on its own, no touchend event required.
+        resumeAt = Date.now() + 700;
+      } else if (Date.now() >= resumeAt) {
+        // Only correct the loop seam while the auto-scroll owns the position,
+        // otherwise touch momentum would be cut short.
+        wrap();
+      }
+      scrollPosRef.current = pos;
+      lastSet = pos;
     };
     const onTouchStart = () => {
-      isTouching = true;
-    };
-    const onTouchEnd = () => {
-      isTouching = false;
-      // Let flick momentum finish, then pick the loop back up.
-      resumeAt = Date.now() + 900;
+      // Pause the moment a finger lands, before any scroll events arrive.
+      resumeAt = Date.now() + 400;
     };
 
     if (canHover?.matches) {
@@ -208,8 +215,6 @@ function AboutPage() {
     }
     container.addEventListener("scroll", onScroll, { passive: true });
     container.addEventListener("touchstart", onTouchStart, { passive: true });
-    container.addEventListener("touchend", onTouchEnd, { passive: true });
-    container.addEventListener("touchcancel", onTouchEnd, { passive: true });
 
     const observer = new IntersectionObserver(
       ([entry]) => {
