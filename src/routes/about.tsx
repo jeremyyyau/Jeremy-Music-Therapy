@@ -140,13 +140,12 @@ function AboutPage() {
     const container = marqueeRef.current;
     if (!container) return;
 
-    const speed = 0.6;
+    const speed = 36;
     let rafId: number;
-    let isInView = false;
+    let previousTime = performance.now();
     let resumeAt = 0;
     // Last scrollLeft value WE wrote — anything else means the user is scrolling.
     let lastSet = container.scrollLeft;
-    const reduceMotion = window.matchMedia?.("(prefers-reduced-motion: reduce)");
     const canHover = window.matchMedia?.("(hover: hover) and (pointer: fine)");
 
     const wrap = () => {
@@ -161,19 +160,19 @@ function AboutPage() {
       lastSet = container.scrollLeft;
     };
 
-    const step = () => {
+    const step = (time: number) => {
+      const elapsed = Math.min(time - previousTime, 50);
+      previousTime = time;
       const paused =
         isHoveredRef.current ||
         Date.now() < resumeAt ||
-        !isInView ||
-        document.hidden ||
-        !!reduceMotion?.matches;
+        document.hidden;
 
       if (!paused) {
         // Re-sync in case the user scrolled manually since the last frame.
         scrollPosRef.current = container.scrollLeft;
         const half = container.scrollWidth / 2;
-        scrollPosRef.current += speed;
+        scrollPosRef.current += (speed * elapsed) / 1000;
         if (half > 0 && scrollPosRef.current >= half) {
           scrollPosRef.current -= half;
         }
@@ -216,14 +215,6 @@ function AboutPage() {
     container.addEventListener("scroll", onScroll, { passive: true });
     container.addEventListener("touchstart", onTouchStart, { passive: true });
 
-    const observer = new IntersectionObserver(
-      ([entry]) => {
-        isInView = entry?.isIntersecting ?? false;
-      },
-      { rootMargin: "200px 0px" },
-    );
-    observer.observe(container);
-
     rafId = requestAnimationFrame(step);
 
     return () => {
@@ -232,7 +223,6 @@ function AboutPage() {
       container.removeEventListener("mouseleave", onMouseLeave);
       container.removeEventListener("scroll", onScroll);
       container.removeEventListener("touchstart", onTouchStart);
-      observer.disconnect();
     };
   }, []);
 
