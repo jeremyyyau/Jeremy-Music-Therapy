@@ -26,11 +26,11 @@ export const Route = createFileRoute("/services")({
           "Home visits, telehealth, home clinic sessions in Picnic Point, group programs and therapeutic instrumental learning — tailored to your goals and funding.",
       },
       { property: "og:type", content: "website" },
-      { property: "og:url", content: "https://jeremymusictherapy.com/services" },
+      { property: "og:url", content: "https://www.jeremymusictherapy.com/services" },
       { name: "twitter:card", content: "summary_large_image" },
     ],
     links: [
-      { rel: "canonical", href: "https://jeremymusictherapy.com/services" },
+      { rel: "canonical", href: "https://www.jeremymusictherapy.com/services" },
       {
         rel: "preload",
         as: "image",

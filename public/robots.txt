@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://jeremymusictherapy.com/sitemap.xml
+Sitemap: https://www.jeremymusictherapy.com/sitemap.xml
