@@ -32,11 +32,11 @@ export const Route = createFileRoute("/resources")({
           "A curated collection of free, creative and accessible music-based websites and tools for exploration, learning and play.",
       },
       { property: "og:type", content: "website" },
-      { property: "og:url", content: "https://jeremymusictherapy.com/resources" },
+      { property: "og:url", content: "https://www.jeremymusictherapy.com/resources" },
       { name: "twitter:card", content: "summary_large_image" },
     ],
     links: [
-      { rel: "canonical", href: "https://jeremymusictherapy.com/resources" },
+      { rel: "canonical", href: "https://www.jeremymusictherapy.com/resources" },
       {
         rel: "preload",
         as: "image",
