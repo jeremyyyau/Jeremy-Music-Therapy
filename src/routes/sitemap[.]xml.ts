@@ -3,13 +3,7 @@ import type {} from "@tanstack/react-start";
 
 const BASE_URL = "https://www.jeremymusictherapy.com";
 
-const PATHS = [
-  "/",
-  "/about",
-  "/music-therapy",
-  "/services",
-  "/resources",
-] as const;
+const PATHS = ["/"] as const;
 
 export const Route = createFileRoute("/sitemap.xml")({
   server: {
