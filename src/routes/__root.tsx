@@ -75,7 +75,7 @@ function ErrorComponent({ error, reset }: { error: Error; reset: () => void }) {
 }
 
 export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()({
-  head: () => ({
+  head: ({ location }) => ({
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
@@ -83,6 +83,9 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { property: "og:type", content: "website" },
       { property: "og:site_name", content: "Jeremy Yau Music Therapy" },
       { name: "twitter:card", content: "summary_large_image" },
+      ...(location.pathname === "/"
+        ? []
+        : [{ name: "robots", content: "noindex, nofollow" }]),
     ],
     links: [
       {
