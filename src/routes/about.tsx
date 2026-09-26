@@ -133,79 +133,87 @@ const vignettes = [
 
 function AboutPage() {
   const marqueeRef = useRef<HTMLDivElement>(null);
-  const isHoveredRef = useRef(false);
-  const scrollPosRef = useRef(0);
+  const marqueeTrackRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     const container = marqueeRef.current;
-    if (!container) return;
+    const track = marqueeTrackRef.current;
+    if (!container || !track) return;
 
     const speed = 36;
-    let rafId: number;
-    let previousTime = performance.now();
-    let resumeAt = 0;
-    // Last scrollLeft value WE wrote — anything else means the user is scrolling.
-    let lastSet = container.scrollLeft;
+    let animation: Animation | undefined;
+    let resumeTimer: ReturnType<typeof setTimeout> | undefined;
+    let isTouching = false;
+    let isManualScrolling = false;
     const canHover = window.matchMedia?.("(hover: hover) and (pointer: fine)");
 
-    const wrap = () => {
-      const half = container.scrollWidth / 2;
-      if (half <= 0) return;
-      if (container.scrollLeft >= half) {
-        container.scrollLeft -= half;
-      } else if (container.scrollLeft <= 0) {
-        container.scrollLeft += half;
-      }
-      scrollPosRef.current = container.scrollLeft;
-      lastSet = container.scrollLeft;
+    const getLoopWidth = () => track.scrollWidth / 2;
+    const normaliseOffset = (offset: number, loopWidth: number) =>
+      ((offset % loopWidth) + loopWidth) % loopWidth;
+
+    const startAnimation = (offset = 0) => {
+      const loopWidth = getLoopWidth();
+      if (loopWidth <= 0) return;
+
+      const startOffset = normaliseOffset(offset, loopWidth);
+      const duration = (loopWidth / speed) * 1000;
+      track.style.transform = "";
+      animation?.cancel();
+      animation = track.animate(
+        [
+          { transform: `translate3d(${-startOffset}px, 0, 0)` },
+          { transform: `translate3d(${-startOffset - loopWidth}px, 0, 0)` },
+        ],
+        { duration, iterations: Infinity, easing: "linear" },
+      );
     };
 
-    const step = (time: number) => {
-      const elapsed = Math.min(time - previousTime, 50);
-      previousTime = time;
-      const paused =
-        isHoveredRef.current ||
-        Date.now() < resumeAt ||
-        document.hidden;
+    const beginManualScroll = () => {
+      const loopWidth = getLoopWidth();
+      if (loopWidth <= 0) return;
 
-      if (!paused) {
-        // Re-sync in case the user scrolled manually since the last frame.
-        scrollPosRef.current = container.scrollLeft;
-        const half = container.scrollWidth / 2;
-        scrollPosRef.current += (speed * elapsed) / 1000;
-        if (half > 0 && scrollPosRef.current >= half) {
-          scrollPosRef.current -= half;
-        }
-        container.scrollLeft = scrollPosRef.current;
-        lastSet = container.scrollLeft;
-      }
-      rafId = requestAnimationFrame(step);
+      if (resumeTimer) clearTimeout(resumeTimer);
+      const matrix = new DOMMatrixReadOnly(getComputedStyle(track).transform);
+      const offset = normaliseOffset(-matrix.m41, loopWidth);
+      animation?.cancel();
+      animation = undefined;
+      track.style.transform = "none";
+      isManualScrolling = true;
+      container.scrollLeft = offset;
+    };
+
+    const resumeAnimation = () => {
+      if (isTouching || !isManualScrolling) return;
+      const loopWidth = getLoopWidth();
+      if (loopWidth <= 0) return;
+
+      const offset = normaliseOffset(container.scrollLeft, loopWidth);
+      container.scrollLeft = 0;
+      isManualScrolling = false;
+      startAnimation(offset);
+    };
+
+    const scheduleResume = () => {
+      if (resumeTimer) clearTimeout(resumeTimer);
+      resumeTimer = setTimeout(resumeAnimation, 700);
     };
 
     const onMouseEnter = () => {
-      isHoveredRef.current = true;
+      animation?.pause();
     };
     const onMouseLeave = () => {
-      isHoveredRef.current = false;
+      animation?.play();
     };
     const onScroll = () => {
-      const pos = container.scrollLeft;
-      if (Math.abs(pos - lastSet) > 2) {
-        // User-driven scroll (touch drag or momentum) — pause auto-scroll and
-        // keep re-arming while scroll events keep coming in. When they stop,
-        // auto-scroll resumes on its own, no touchend event required.
-        resumeAt = Date.now() + 700;
-      } else if (Date.now() >= resumeAt) {
-        // Only correct the loop seam while the auto-scroll owns the position,
-        // otherwise touch momentum would be cut short.
-        wrap();
-      }
-      scrollPosRef.current = pos;
-      lastSet = pos;
+      if (isManualScrolling) scheduleResume();
     };
     const onTouchStart = () => {
-      // Pause the moment a finger lands, before any scroll events arrive.
-      resumeAt = Date.now() + 400;
+      isTouching = true;
+      beginManualScroll();
+    };
+    const onTouchEnd = () => {
+      isTouching = false;
+      scheduleResume();
     };
 
     if (canHover?.matches) {
@@ -214,15 +222,20 @@ function AboutPage() {
     }
     container.addEventListener("scroll", onScroll, { passive: true });
     container.addEventListener("touchstart", onTouchStart, { passive: true });
+    container.addEventListener("touchend", onTouchEnd, { passive: true });
+    container.addEventListener("touchcancel", onTouchEnd, { passive: true });
 
-    rafId = requestAnimationFrame(step);
+    startAnimation();
 
     return () => {
-      cancelAnimationFrame(rafId);
+      animation?.cancel();
+      if (resumeTimer) clearTimeout(resumeTimer);
       container.removeEventListener("mouseenter", onMouseEnter);
       container.removeEventListener("mouseleave", onMouseLeave);
       container.removeEventListener("scroll", onScroll);
       container.removeEventListener("touchstart", onTouchStart);
+      container.removeEventListener("touchend", onTouchEnd);
+      container.removeEventListener("touchcancel", onTouchEnd);
     };
   }, []);
 
@@ -336,7 +349,7 @@ function AboutPage() {
                 ref={marqueeRef}
                 className="mask-edge-fade marquee-touch-scroll relative -mx-6 py-6 md:-mx-12 scrollbar-hide"
               >
-                <div className="flex w-max gap-6 px-6 md:px-12">
+                <div ref={marqueeTrackRef} className="flex w-max gap-6 px-6 will-change-transform md:px-12">
                   {[...vignettes, ...vignettes].map((vignette, i) => (
                     <div
                       key={`${vignette.story}-${i}`}
