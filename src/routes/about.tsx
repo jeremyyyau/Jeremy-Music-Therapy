@@ -146,6 +146,7 @@ function AboutPage() {
     let isTouching = false;
     let isManualScrolling = false;
     const canHover = window.matchMedia?.("(hover: hover) and (pointer: fine)");
+    const hasCoarsePointer = window.matchMedia?.("(pointer: coarse)");
 
     const getLoopWidth = () => track.scrollWidth / 2;
     const normaliseOffset = (offset: number, loopWidth: number) =>
@@ -157,8 +158,8 @@ function AboutPage() {
 
       const startOffset = normaliseOffset(offset, loopWidth);
       const duration = (loopWidth / speed) * 1000;
-      track.style.transform = "";
       animation?.cancel();
+      track.style.transform = `translate3d(${-startOffset}px, 0, 0)`;
       animation = track.animate(
         [
           { transform: `translate3d(${-startOffset}px, 0, 0)` },
@@ -169,17 +170,9 @@ function AboutPage() {
     };
 
     const beginManualScroll = () => {
-      const loopWidth = getLoopWidth();
-      if (loopWidth <= 0) return;
-
       if (resumeTimer) clearTimeout(resumeTimer);
-      const matrix = new DOMMatrixReadOnly(getComputedStyle(track).transform);
-      const offset = normaliseOffset(-matrix.m41, loopWidth);
-      animation?.cancel();
-      animation = undefined;
-      track.style.transform = "none";
+      animation?.pause();
       isManualScrolling = true;
-      container.scrollLeft = offset;
     };
 
     const resumeAnimation = () => {
@@ -187,7 +180,11 @@ function AboutPage() {
       const loopWidth = getLoopWidth();
       if (loopWidth <= 0) return;
 
-      const offset = normaliseOffset(container.scrollLeft, loopWidth);
+      const matrix = new DOMMatrixReadOnly(getComputedStyle(track).transform);
+      const offset = normaliseOffset(-matrix.m41 + container.scrollLeft, loopWidth);
+      animation?.cancel();
+      animation = undefined;
+      track.style.transform = `translate3d(${-offset}px, 0, 0)`;
       container.scrollLeft = 0;
       isManualScrolling = false;
       startAnimation(offset);
@@ -195,7 +192,7 @@ function AboutPage() {
 
     const scheduleResume = () => {
       if (resumeTimer) clearTimeout(resumeTimer);
-      resumeTimer = setTimeout(resumeAnimation, 700);
+      resumeTimer = setTimeout(resumeAnimation, 220);
     };
 
     const onMouseEnter = () => {
@@ -220,10 +217,12 @@ function AboutPage() {
       container.addEventListener("mouseenter", onMouseEnter);
       container.addEventListener("mouseleave", onMouseLeave);
     }
-    container.addEventListener("scroll", onScroll, { passive: true });
-    container.addEventListener("touchstart", onTouchStart, { passive: true });
-    container.addEventListener("touchend", onTouchEnd, { passive: true });
-    container.addEventListener("touchcancel", onTouchEnd, { passive: true });
+    if (hasCoarsePointer?.matches) {
+      container.addEventListener("scroll", onScroll, { passive: true });
+      container.addEventListener("touchstart", onTouchStart, { passive: true });
+      container.addEventListener("touchend", onTouchEnd, { passive: true });
+      container.addEventListener("touchcancel", onTouchEnd, { passive: true });
+    }
 
     startAnimation();
 
