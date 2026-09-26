@@ -8,3 +8,5 @@
 > Commits you push to the connected branch sync back to Lovable and show up in
 > the editor, so keep the branch in a working state.
 <!-- LOVABLE:END -->
+
+- Animate the About testimonial track with the Web Animations API; compositor transforms remain reliable on iOS while touch input temporarily uses native horizontal scrolling.
